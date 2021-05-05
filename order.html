@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="bootstrap/css/custom1.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
     <!-- Theme style -->
@@ -87,7 +89,7 @@
                                                 <a href="#">
                                                     <div class="pull-left">
                                                         <!-- User Image -->
-                                                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                                     </div>
                                                     <!-- Message title and timestamp -->
                                                     <h4>
@@ -353,33 +355,13 @@
             <!-- <legend x-data="{ open: false }"> -->
               <div class="row" style="margin-bottom: 15px">
                 <div class="col-md-12">
-                  <button
-                    type="button"
-                    class="btn btn-primary btn-md"
-                    data-toggle="modal"
-                    data-target="#modalAddContact"
-                  >
-                    Input Order
-                  </button>
+                  <button type="button" class="btn btn-primary btn-md mr-5" data-toggle="modal" data-target="#modalAddContact">Input Order</button>
                   <!-- Modal Add Contact -->
-                  <div
-                    class="modal fade"
-                    id="modalAddContact"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="myModalLabel"
-                  >
+                  <div class="modal fade" id="modalAddContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                                        </button>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         <h4 class="modal-title" id="myModalLabel">
                                             Add Order
                                         </h4>
@@ -450,109 +432,89 @@
                           </form>
                         </div>
                         <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-default"
-                            data-dismiss="modal"
-                          >
-                            Cancel
-                          </button>
-                          <button type="submit" class="btn btn-primary">
-                            Submit
-                          </button>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                          <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <!-- <div> -->
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle"
-                    data-toggle="dropdown"
-                  >
-                    Export <span class="fa fa-caret-down"></span>
-                  </button>
-                  <ul class="dropdown-menu">
+                <button type="button" class="btn btn-default bg-white dropdown-toggle mr-5" data-toggle="dropdown">Export <span class="fa fa-caret-down"></span></button>
+                <ul class="dropdown-menu">
                     <li><a href="#">Export As CSV</a></li>
-                                    <li><a href="#">Export Order ID</a></li>
-                                    <li><a href="#">Facebook Customer File</a></li>
-                                    <li><a href="#">Facebook Customer File with LTV</a></li>
-                                    <li><a href="#">Facebook Online Conversion</a></li>
-                                </ul>
+                    <li><a href="#">Export Order ID</a></li>
+                    <li><a href="#">Facebook Customer File</a></li>
+                    <li><a href="#">Facebook Customer File with LTV</a></li>
+                    <li><a href="#">Facebook Online Conversion</a></li>
+                </ul>
                                 <!-- </div> -->
-                                <button type="button" class="btn btn-danger btn-md">
-                    Barcode
-                  </button>
-                                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalSetTag">
-                    <i class="fa fa-tag"></i> Upload Receipt Number
-                  </button>
-                                <!-- Modal Set Tag -->
-                                <div class="modal fade" id="modalSetTag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                                                <h4 class="modal-title" id="myModalLabel">
-                                                    Add Order
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="recipient-name" class="control-label">File</label
-                                  >
-                                  <input type="file" id="exampleInputFile" />
-                                </div>
-                                <div>
-                                  <a href="">Dowload Example CSV File</a>
-                                </div>
-                              </div>
-
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="exampleInputEmail2">Status</label>
-                                                        <select class="form-control select2" style="width: 100%">
-                                    <option value="volvo">Completed</option>
-                                    <option value="saab">Procesing</option>
-                                  </select>
-                                                    </div>
-                                                </div>
-
-                                                <div style="margin-left: 100px">
-                                                    <p style="margin-left: 100px; font-size: 10px">
-                                                        Change uploaded order's status to
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="border-bottom"></div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            Cancel
-                          </button>
-                                        <button type="submit" class="btn btn-primary">
-                            Submit
-                          </button>
-                                    </div>
-                                </div>
+                <button type="button" class="btn btn-danger btn-md mr-5">Barcode</button>
+                <button type="button" class="btn btn-default btn-md mr-5" data-toggle="modal" data-target="#modalSetTag"><i class="fa fa-tag"></i> Upload Receipt Number</button>
+                <!-- Modal Set Tag -->
+                <div class="modal fade" id="modalSetTag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    Add Order
+                                </h4>
                             </div>
-                        </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="control-label">File</label
+                                                  >
+                                                  <input type="file" id="exampleInputFile" />
+                                              </div>
+                                              <div>
+                                                  <a href="">Dowload Example CSV File</a>
+                                              </div>
+                                          </div>
 
-                        <button type="button" class="btn btn-md" data-bs-toggle="collapse" data-bs-target="#more-status" aria-expanded="false" aria-controls="collapseExample" style="float: right" onclick="viewMoreStatus()">
-                    View More Status
-                  </button>
+                                          <div class="col-md-6">
+                                            <div class="form-group">
+                                              <label for="exampleInputEmail2">Status</label>
+                                              <select class="form-control select2" style="width: 100%">
+                                                <option value="volvo">Completed</option>
+                                                <option value="saab">Procesing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-left: 100px">
+                                        <p style="margin-left: 100px; font-size: 10px">
+                                            Change uploaded order's status to
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="border-bottom"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                Cancel
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                        </div>
                     </div>
+                </div>
             </div>
+
+            <button type="button" class="btn btn-default btn-md" data-bs-toggle="collapse" data-bs-target="#more-status" aria-expanded="false" aria-controls="collapseExample" style="float: right" onclick="viewMoreStatus()">View More Stats</button>
+        </div>
+        </div>
 
             <!-- akhir button row 1 -->
             <!-- <legend x-show="open" @click.away="open=false"> -->
@@ -564,9 +526,7 @@
                             <div class="info-box">
                                 <div class="info-box-content text-center">
                                     <span class="info-box-number">31</span>
-                                    <span class="info-box-text"><span
-                            ><i class="fa fa-fw fa-check-circle-o"></i>
-                          </span> Bump Order</span>
+                                    <span class="info-box-text"><span class="material-icons-outlined md-18">task_alt</span> Bump Order</span>
                                 </div>
                             </div>
                         </div>
@@ -575,8 +535,7 @@
                             <div class="info-box">
                                 <div class="info-box-content text-center">
                                     <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span><i class="fa fa-fw fa-user"></i></span> Bumb Revenue
-                                    </span>
+                                    <span class="info-box-text"><span class="material-icons-outlined md-18">attach_money</span> Bumb Revenue</span>
                                 </div>
                             </div>
                         </div>
@@ -585,24 +544,20 @@
                             <div class="info-box">
                                 <div class="info-box-content text-center">
                                     <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span><i class="fa fa-fw fa-shopping-cart"></i></span
-                          >Discount Claimed</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="info-box">
-                      <div class="info-box-content text-center">
-                        <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span
-                            ><i class="fa fa-fw fa-shopping-cart"></i
-                          ></span> Shipping Cost</span>
+                                    <span class="info-box-text"><span class="material-icons-outlined md-18">confirmation_number</span> Discount Claimed</span>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-3">
+                            <div class="info-box">
+                              <div class="info-box-content text-center">
+                                <span class="info-box-number">1,410</span>
+                                <span class="info-box-text"><span class="material-icons-outlined md-18">local_shipping</span> Shipping Cost</span>
+                            </div>
+                        </div>
                     </div>
+                </div>
                     <!-- akhir card 1 -->
 
                     <!-- awal card yang 2 -->
@@ -611,7 +566,7 @@
                             <div class="info-box">
                                 <div class="info-box-content text-center">
                                     <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span><i class="fa fa-fw fa-users"></i></span> Total Quantity Sold</span>
+                                    <span class="info-box-text"><span class="material-icons-outlined md-18">shopping_bag</span> Total Quantity Sold</span>
                                 </div>
                             </div>
                         </div>
@@ -620,8 +575,7 @@
                             <div class="info-box">
                                 <div class="info-box-content text-center">
                                     <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span><i class="fa fa-fw fa-user"></i></span> COGS
-                                    </span>
+                                    <span class="info-box-text"><span class="material-icons-outlined md-18">attach_money</span> COGS</span>
                                 </div>
                             </div>
                         </div>
@@ -630,24 +584,22 @@
                             <div class="info-box">
                                 <div class="info-box-content text-center">
                                     <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span><i class="fa fa-fw fa-shopping-cart"></i></span
-                          >Unpaid Revenue</span
-                        >
+                                    <span class="info-box-text"><span class="material-icons-outlined md-18">pending_actions</span> Unpaid Revenue</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="info-box">
+                              <div class="info-box-content text-center">
+                                <span class="info-box-number">1,410</span>
+                                <span class="info-box-text"><span
+                                    ><i class="fa fa-fw fa-shopping-cart"></i
+                                      ></span> Gross Revenue</span>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="info-box">
-                      <div class="info-box-content text-center">
-                        <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span
-                            ><i class="fa fa-fw fa-shopping-cart"></i
-                          ></span> Gross Revenue</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- akhir card yang 2 -->
 
                     <!-- awal card yang 3 -->
@@ -656,8 +608,7 @@
                             <div class="info-box">
                                 <div class="info-box-content text-center">
                                     <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span><i class="fa fa-fw fa-users"></i></span> Net Revenue
-                                    </span>
+                                    <span class="info-box-text"><span class="material-icons-outlined md-18">attach_money</span> Net Revenue</span>
                                 </div>
                             </div>
                         </div>
@@ -666,8 +617,7 @@
                             <div class="info-box">
                                 <div class="info-box-content text-center">
                                     <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span><i class="fa fa-fw fa-user"></i></span> Gross Profit
-                                    </span>
+                                    <span class="info-box-text"><span class="material-icons-outlined md-18">attach_money</span> Gross Profit</span>
                                 </div>
                             </div>
                         </div>
@@ -676,20 +626,16 @@
                             <div class="info-box">
                                 <div class="info-box-content text-center">
                                     <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span><i class="fa fa-fw fa-shopping-cart"></i></span
-                          >Expenses</span
-                        >
-                      </div>
-                    </div>
-                  </div>
+                                    <span class="info-box-text"><span class="material-icons-outlined md-18">attach_money</span>Expenses</span>
+                                </div>
+                            </div>
+                        </div>
 
-                  <div class="col-md-3">
-                    <div class="info-box">
-                      <div class="info-box-content text-center">
-                        <span class="info-box-number">1,410</span>
-                                    <span class="info-box-text"><span
-                            ><i class="fa fa-fw fa-shopping-cart"></i
-                          ></span> Net Profit</span>
+                        <div class="col-md-3">
+                            <div class="info-box">
+                                <div class="info-box-content text-center">
+                                    <span class="info-box-number">1,410</span>
+                                    <span class="info-box-text"><span class="material-icons-outlined md-18">attach_money</span> Net Profit</span>
                                 </div>
                             </div>
                         </div>
@@ -699,15 +645,18 @@
                     <!-- awal card yang 4 -->
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="info-box" style="height: 300px">
-                                <div class="chart" id="areaChart-wrapper">
-                                    <!-- <canvas id="areaChart" style="height: 250px"></canvas> -->
+                            <div class="box mh-310">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Daily Transactions & Orders</h3>
+                                </div>
+                                <div class="box-body">
+                                    <div class="chart" id="areaChart-wrapper"></div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-6">
-                            <div class="info-box" style="height: 300px">
+                            <div class="info-box mh-310">
                                 <div class="info-box-content text-center">
                                     <h4 class="text">Conversion Window</h4>
                                     <div class="row" style="display:flex">
@@ -832,130 +781,68 @@
                     <!-- awal card yang 5 -->
                     <div class="row mt-4">
                         <div class="col-md-6">
-                            <div class="info-box" style="height: 300px">
-                                <div class="info-box-content text-center">
-                                    <div class="box-body" id="pieChart-wrapper">
-                                        <!-- <canvas id="pieChart" style="height: 100px !important"></canvas> -->
-                                    </div>
+                            <div class="box mh-310">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Daily Transactions & Orders</h3>
+                                </div>
+                                <div class="box-body">
+                                    <div class="box-body" id="pieChart-wrapper"></div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-6">
-                            <div class="info-box" style="height: 300px">
-                                <div class="row">
-                                    <h6 class="text-center">Tracking Statistic</h6>
+                            <div class="box h-310">
+                                <div class="box-header with-border text-center">
+                                    <h4 class="text-center">Tracking Statistic</h4>
                                 </div>
+                                <div class="box-body">
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <div class="row">
-                                            <div class="col-md-3 col-xs-3">
-                                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="font-size: 15px; text-align: center">
-                                UTM Campaign
-                              </a>
-                                            </div>
-                                            <div class="col-md-3 col-xs-3">
-                                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" style="font-size: 15px; text-align: center">
-                                UTM Medium
-                              </a>
-                                            </div>
-                                            <div class="col-md-3 col-xs-3">
-                                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false" style="font-size: 15px; text-align: center">
-                                UTM Source
-                              </a>
-                                            </div>
-                                            <div class="col-md-3 col-xs-3">
-                                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false" style="font-size: 15px; text-align: center">
-                                UTM Campaign
-                              </a>
-                                            </div>
+                                        <div class="">
+                                            <ul role="tablist" class="nav nav-tabs nav-fill nav-statistic">
+                                                <li class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><a class="nav-link nav-link-small active">UTM Campaign</a></li>
+                                                <li class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><a class="nav-link nav-link-small active">UTM Medium</a></li>
+                                                
+                                                <li class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><a class="nav-link nav-link-small">UTM Source</a></li>
+                                                <li class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><a class="nav-link nav-link-small">UTM Content</a></li>
+                                                
+                                            </ul>
                                         </div>
                                     </div>
                                 </nav>
                                 <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <div class="tab-pane fade show active in" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                         <div class="table-">
-                                            <table class="table">
+                                            <table class="table table-bordered table-striped">
                                                 <thead>
                                                     <tr>
                                                         <th scope="col">
-                                                            <p style="font-size: 15px">Name</p>
+                                                            Name
                                                         </th>
                                                         <th scope="col">
-                                                            <p style="font-size: 15px">Order</p>
+                                                            Order
                                                         </th>
                                                         <th scope="col">
-                                                            <p style="font-size: 15px">Paid</p>
+                                                            Paid
                                                         </th>
                                                         <th scope="col">
-                                                            <p style="font-size: 15px">Paid Ratio</p>
+                                                            Paid Ratio
                                                         </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td scope="row">
-                                                            <p style="font-size: 10px">
-                                                                Digital Marketer
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p style="font-size: 10px">
-                                                                Entrepreneurship
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p style="font-size: 10px">
-                                                                Entrepreneurship
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p style="font-size: 10px">
-                                                                Entrepreneurship
-                                                            </p>
-                                                        </td>
+                                                        <td scope="row">Digital Marketer</td>
+                                                        <td>Entrepreneurship</td>
+                                                        <td>Entrepreneurship</td>
+                                                        <td>Entrepreneurship</td>
                                                     </tr>
                                                     <tr>
-                                                        <td scope="row">
-                                                            <p style="font-size: 10px">Business</p>
-                                                        </td>
-                                                        <td>
-                                                            <p style="font-size: 10px">
-                                                                Entrepreneurship
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p style="font-size: 10px">
-                                                                Entrepreneurship
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p style="font-size: 10px">
-                                                                Entrepreneurship
-                                                            </p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td scope="row">
-                                                            <p style="font-size: 10px">
-                                                                Entrepreneurship
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p style="font-size: 10px">
-                                                                Entrepreneurship
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p style="font-size: 10px">
-                                                                Entrepreneurship
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p style="font-size: 10px">
-                                                                Entrepreneurship
-                                                            </p>
-                                                        </td>
+                                                        <td scope="row">Business</td>
+                                                        <td>Entrepreneurship</td>
+                                                        <td>Entrepreneurship</td>
+                                                        <td>Entrepreneurship</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -968,87 +855,29 @@
                                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                         <div class="table-" style="margin-top: -220px">
                                             <div class="table-">
-                                                <table class="table">
+                                                <table class="table table-bordered table-striped">
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">
-                                                                <p style="font-size: 15px">Name</p>
+                                                                Name
                                                             </th>
                                                             <th scope="col">
-                                                                <p style="font-size: 15px">Order</p>
+                                                                Order
                                                             </th>
                                                             <th scope="col">
-                                                                <p style="font-size: 15px">Paid</p>
+                                                                Paid
                                                             </th>
                                                             <th scope="col">
-                                                                <p style="font-size: 15px">Paid Ratio</p>
+                                                                Paid Ratio
                                                             </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td scope="row">
-                                                                <p style="font-size: 10px">
-                                                                    Digital Marketer
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td scope="row">
-                                                                <p style="font-size: 10px">Business</p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td scope="row">
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
+                                                            <td scope="row">Digital Marketer</td>
+                                                            <td>Entrepreneurship</td>
+                                                            <td>Entrepreneurship</td>
+                                                            <td>Entrepreneurship</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -1059,89 +888,33 @@
                                         <div class="table-" style="margin-top: -220px">
                                             <div class="table-" style="margin-top: -220px">
                                                 <div class="table-">
-                                                    <table class="table">
+                                                    <table class="table table-bordered table-striped">
                                                         <thead>
                                                             <tr>
-                                                                <th scope="col">
-                                                                    <p style="font-size: 15px">Name</p>
-                                                                </th>
-                                                                <th scope="col">
-                                                                    <p style="font-size: 15px">Order</p>
-                                                                </th>
-                                                                <th scope="col">
-                                                                    <p style="font-size: 15px">Paid</p>
-                                                                </th>
-                                                                <th scope="col">
-                                                                    <p style="font-size: 15px">
-                                                                        Paid Ratio
-                                                                    </p>
-                                                                </th>
+                                                                <th scope="col">Name</th>
+                                                                <th scope="col">Order</th>
+                                                                <th scope="col">Paid</th>
+                                                                <th scope="col">Paid Ratio</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td scope="row">
-                                                                    <p style="font-size: 10px">
-                                                                        Digital Marketer
-                                                                    </p>
-                                                                </td>
-                                                                <td>
-                                                                    <p style="font-size: 10px">
-                                                                        Entrepreneurship
-                                                                    </p>
-                                                                </td>
-                                                                <td>
-                                                                    <p style="font-size: 10px">
-                                                                        Entrepreneurship
-                                                                    </p>
-                                                                </td>
-                                                                <td>
-                                                                    <p style="font-size: 10px">
-                                                                        Entrepreneurship
-                                                                    </p>
-                                                                </td>
+                                                                <td scope="row">Digital Marketer</td>
+                                                                <td>Entrepreneurship</td>
+                                                                <td>Entrepreneurship</td>
+                                                                <td>Entrepreneurship</td>
                                                             </tr>
                                                             <tr>
-                                                                <td scope="row">
-                                                                    <p style="font-size: 10px">Business</p>
-                                                                </td>
-                                                                <td>
-                                                                    <p style="font-size: 10px">
-                                                                        Entrepreneurship
-                                                                    </p>
-                                                                </td>
-                                                                <td>
-                                                                    <p style="font-size: 10px">
-                                                                        Entrepreneurship
-                                                                    </p>
-                                                                </td>
-                                                                <td>
-                                                                    <p style="font-size: 10px">
-                                                                        Entrepreneurship
-                                                                    </p>
-                                                                </td>
+                                                                <td scope="row">Business</td>
+                                                                <td>Entrepreneurship</td>
+                                                                <td>Entrepreneurship</td>
+                                                                <td>Entrepreneurship</td>
                                                             </tr>
                                                             <tr>
-                                                                <td scope="row">
-                                                                    <p style="font-size: 10px">
-                                                                        Entrepreneurship
-                                                                    </p>
-                                                                </td>
-                                                                <td>
-                                                                    <p style="font-size: 10px">
-                                                                        Entrepreneurship
-                                                                    </p>
-                                                                </td>
-                                                                <td>
-                                                                    <p style="font-size: 10px">
-                                                                        Entrepreneurship
-                                                                    </p>
-                                                                </td>
-                                                                <td>
-                                                                    <p style="font-size: 10px">
-                                                                        Entrepreneurship
-                                                                    </p>
-                                                                </td>
+                                                                <td scope="row">Entrepreneurship</td>
+                                                                <td>Entrepreneurship</td>
+                                                                <td>Entrepreneurship</td>
+                                                                <td>Entrepreneurship</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -1152,93 +925,49 @@
                                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                                         <div class="table-" style="margin-top: -220px">
                                             <div class="table-">
-                                                <table class="table">
+                                                <table class="table table-bordered table-striped">
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">
-                                                                <p style="font-size: 15px">Name</p>
+                                                                Name
                                                             </th>
                                                             <th scope="col">
-                                                                <p style="font-size: 15px">Order</p>
+                                                                Order
                                                             </th>
                                                             <th scope="col">
-                                                                <p style="font-size: 15px">Paid</p>
+                                                                Paid
                                                             </th>
                                                             <th scope="col">
-                                                                <p style="font-size: 15px">Paid Ratio</p>
+                                                                Paid Ratio
                                                             </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td scope="row">
-                                                                <p style="font-size: 10px">
-                                                                    Digital Marketer
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
+                                                            <td scope="row">Digital Marketer</td>
+                                                            <td>Entrepreneurship</td>
+                                                            <td>Entrepreneurship</td>
+                                                            <td>Entrepreneurship</td>
                                                         </tr>
                                                         <tr>
-                                                            <td scope="row">
-                                                                <p style="font-size: 10px">Business</p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
+                                                            <td scope="row">Business</td>
+                                                            <td>Entrepreneurship</td>
+                                                            <td>Entrepreneurship</td>
+                                                            <td>Entrepreneurship</td>
                                                         </tr>
                                                         <tr>
-                                                            <td scope="row">
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p style="font-size: 10px">
-                                                                    Entrepreneurship
-                                                                </p>
-                                                            </td>
+                                                            <td scope="row">Entrepreneurship</td>
+                                                            <td>Entrepreneurship</td>
+                                                            <td>Entrepreneurship</td>
+                                                            <td>Entrepreneurship</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            
                                 </div>
                             </div>
                         </div>
@@ -1248,19 +977,15 @@
             </legend>
 
             <!-- awal button row 2 -->
-            <div class="row" style="margin-bottom: 15px">
+            <div class="row mb-20 mt-30 table-header-menu">
                 <div class="col-md-12">
-                    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#shipping">
-                              Shipping Label
-                    </button>
+                    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#shipping">Shipping Label</button>
                     <!-- Modal Add Contact -->
                     <div class="modal fade" id="shipping" tabindex="-1" role="dialog" aria-labelledby="label">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                     <h4 class="modal-title" id="Label">Shipping Labels</h4>
                                 </div>
                                 <div class="modal-body">
@@ -1270,11 +995,11 @@
                                                 <div class="form-group">
                                                     <label for="recipient-name" class="control-label">Shipping Label Layouts</label>
                                                     <select class="form-control select2" style="width: 100%">
-                                            <option selected="selected">Layout 1</option>
-                                            <option>Layout 2</option>
-                                            <option>Layout 3</option>
-                                            <option>Layout 4</option>
-                                          </select>
+                                                        <option selected="selected">Layout 1</option>
+                                                        <option>Layout 2</option>
+                                                        <option>Layout 3</option>
+                                                        <option>Layout 4</option>
+                                                    </select>
                                                 </div>
                                             </div>
 
@@ -1296,1102 +1021,1006 @@
                                         <div class="row mt-3">
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="province" class="control-label">Sender's Name</label
-                                >
-                                <input type="text" placeholder="" />
-                              </div>
-                            </div>
+                                                    <label for="province" class="control-label">Sender's Name</label>
+                                                    <input type="text" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="city" class="control-label">Sender's Phone</label>
+                                                    <input type="number" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="city" class="control-label">Sender's Address</label>
+                                                    <div class="checkbox">
+                                                      <label><input type="checkbox" /> Show sender's address</label>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
 
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label for="city" class="control-label"
-                                  >Sender's Phone</label
-                                >
-                                <input type="number" />
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label for="city" class="control-label"
-                                  >Sender's Address</label
-                                >
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" /> Show sender's
-                                    address
-                                  </label>
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">Product</label>
+                                                <div class="checkbox"><label><input type="checkbox" /> Show product information</label></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">
+                                                  Order Data</label
+                                                  >
+                                                  <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox" /> Show order's total
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">
+                                                </label>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        Show shipping
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">Shipping Price</label
+                                                    >
+                                                    <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox" /> Show shipping
+                                                        price
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">Shipping Price
+                                                </label>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" />Show shipping price
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">
+                                                  Product Weight</label
+                                                  >
+                                                  <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox" />
+                                                        Show total weight
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">COD
+                                                </label>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        Show COD Label
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">Courier</label
+                                                    >
+                                                    <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox" /> Show courier's
+                                                        logo
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">Barcode</label
+                                                    >
+                                                    <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox" /> Show barcode
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">OrderOnline</label
+                                                    >
+                                                    <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox" /> Show OrderOnline's
+                                                        Logo
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">Notes</label
+                                                    >
+                                                    <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox" /> Show Customer's
+                                                        Note
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="city" class="control-label">Summary</label
+                                                    >
+                                                    <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox" /> Print Order's
+                                                        Summary
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="border-bottom"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Reset Sender</button>
+                                <button type="submit" class="btn btn-primary">Show Preview</button>
+                                <button type="submit" class="btn btn-primary">Download Summary</button>
+                                <button type="submit" class="btn btn-primary">Download PDf</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#AddReminder">Add Reminder</button>
+                <div class="modal fade" id="AddReminder" tabindex="-1" role="dialog" aria-labelledby="Reminder">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="Reminder">Contact Reminder</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label> Date</label>
+                                                <div class="input-group">
+                                                    <input style="width: 570px" type="date" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="title" class="control-label">Title</label
+                                                  >
+                                                  <input
+                                                  type="text"
+                                                  class="form-control"
+                                                  id="title"
+                                                  placeholder="Type title..."
+                                                  />
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                            <div class="form-group">
+                                              <label for="description" class="control-label"
+                                              >Description</label
+                                              >
+                                              <textarea
+                                              class="form-control"
+                                              rows="3"
+                                              id="description"
+                                              placeholder="Start type..."
+                                              ></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">
+                                  Cancel
+                              </button>
+                              <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+            <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle btn-md" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Mark As
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Mark As Pending</a></li>
+                    <li><a href="#">Mark As Process</a></li>
+                    <li><a href="#">Mark As Complete</a></li>
+                    <li><a href="#">Mark As Refund</a></li>
+                    <li><a href="#">Mark As Cancel</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle btn-md" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Actions
+                     <span class="fa fa-caret-down"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Set Tag</a></li>
+                  <li><a href="#">Assign to</a></li>
+                  <li><a href="#">Delete</a></li>
+                </ul>
+            </div>
+
+
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#shippe">Add Reminder </button>
+            <div class="modal fade" id="shippe" tabindex="-1" role="dialog" aria-labelledby="shippe">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="shippe">Add Tag</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Tags</label>
+                                            <select class="form-control select2">
+                                                <option selected>Input or Select Tags</option>
+                                                <option>Perlengkapan</option>
+                                                <option>Lain-lain</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="city" class="control-label">Product</label
-                                >
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" /> Show product
-                                    information
-                                  </label>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="text" style="float: right;height:30px"  placeholder="search" />
+
+    <!-- Modal Filter -->
+            <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Filter Contact</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Product</label>
+                                        <select class="form-control select2" style="width: 100%">
+                                            <option selected="selected">
+                                                Select Product
+                                            </option>
+                                            <option>Alaska</option>
+                                            <option>California</option>
+                                            <option>Delaware</option>
+                                            <option>Tennessee</option>
+                                            <option>Texas</option>
+                                            <option>Washington</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="buyer" class="control-label">Buyer Status</label
+                                            >
+                                            <select class="form-control" id="buyer">
+                                                <option value="" selected disabled>Buyer Status</option>
+                                                <option>Show All</option>
+                                                <option>Show Buyer Only</option>
+                                                <option>Show Except Buyer</option>
+                                            </select>
                                         </div>
+                                        <div class="form-group">
+                                            <label for="province" class="control-label">Province</label>
+                                            <select class="form-control" id="province">
+                                                <option value="" selected disabled>Customer Province</option>
+                                                <option>Yogyakarta</option>
+                                                <option>Jakarta</option>
+                                                <option>Bali</option>
+                                                <option>Bandung</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Last Contacted</label>
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="city" class="control-label">City</label
+                                                >
+                                                <select class="form-control" id="city">
+                                                    <option value="" selected disabled>
+                                                        Customer City
+                                                    </option>
+                                                    <option>Sleman</option>
+                                                    <option>Bantul</option>
+                                                    <option>Kulonprogo</option>
+                                                    <option>Gunungkidul</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="subdistrict" class="control-label"
+                                                >Subdistrict</label
+                                                >
+                                                <select class="form-control" id="subdistrict">
+                                                    <option value="" selected disabled>
+                                                        Customer Subdistrict
+                                                    </option>
+                                                    <option>Condongcatur</option>
+                                                    <option>Banguntapan</option>
+                                                    <option>Wates</option>
+                                                    <option>Wonosari</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="handled" class="control-label"
+                                                >Handled By</label
+                                                >
+                                                <select class="form-control" id="handled">
+                                                    <option value="" selected disabled>
+                                                        Select CS
+                                                    </option>
+                                                    <option>Condongcatur</option>
+                                                    <option>Banguntapan</option>
+                                                    <option>Wates</option>
+                                                    <option>Wonosari</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="tags-filter" class="control-label"
+                                                >Tags</label
+                                                >
+                                                <input
+                                                type="text"
+                                                value="Amsterdam,Washington,Sydney,Beijing,Cairo"
+                                                data-role="tagsinput"
+                                                id="tags-filter"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                                <button type="submit" class="btn btn-primary">Apply Filter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- end modal filter -->
+              <button type="button" class="btn btn-default btn-md" style="float: right" data-toggle="modal" data-target="#Filter"> Filter</button>
+              <!-- Modal Filter -->
+              <div class="modal fade" id="Filter" tabindex="-1" role="dialog" aria-labelledby="FilterButton">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header bg-abu-abu">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="FilterButton">Filter Orders</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row"> 
+                                <div class="col-md-4"> 
+                                        <div class="form-group">
+                                            <label class="control-label">Status</label>
+                                            <select name="type" class="form-control" id="types" style="height: 33px"> 
+                                                <option value="Pending">Pending</option> 
+                                                <option value="Processing"> Processing </option> 
+                                                <option value="Completed">Completed</option> 
+                                                <option value="Cancelled">Cancelled</option> 
+                                                <option value="Refunded">Refunded</option> 
+                                            </select>
+                                        </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Payment Status</label>
+                                        <select name="type" class="form-control" id="types" style="height: 33px">
+                                            <option value="All">All</option>
+                                            <option value="Paid">Paid</option>
+                                            <option value="Cancelled">Cancelled</option>
+                                            <option value="Unpaid">Unpaid</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="city" class="control-label">
-                                  Order Data</label
-                                >
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" /> Show order's total
-                                  </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="city" class="control-label">
-                                </label>
-                                    <div class="checkbox">
-                                        <label>
-                                    <input type="checkbox" />
-                                    Show shipping
-                                  </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="city" class="control-label">Shipping Price</label
-                                >
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" /> Show shipping
-                                    price
-                                  </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="city" class="control-label">Shipping Price
-                                </label>
-                                <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox" />Show shipping price
-                                  </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="city" class="control-label">
-                                  Product Weight</label
-                                >
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" />
-                                    Show total weight
-                                  </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="city" class="control-label">COD
-                                </label>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" />
-                                    Show COD Label
-                                  </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="city" class="control-label">Courier</label
-                                >
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" /> Show courier's
-                                    logo
-                                  </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="city" class="control-label">Barcode</label
-                                >
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" /> Show barcode
-                                  </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label for="city" class="control-label">OrderOnline</label
-                                >
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" /> Show OrderOnline's
-                                    Logo
-                                  </label>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label for="city" class="control-label">Notes</label
-                                >
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" /> Show Customer's
-                                    Note
-                                  </label>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="form-group">
-            <label for="city" class="control-label">Summary</label
-                                >
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox" /> Print Order's
-                                    Summary
-                                  </label>
-        </div>
-    </div>
-    </div>
-    </div>
+                                        <label class="control-label">Payment Method</label>
+                                        <select name="type" class="form-control" id="types" style="height: 33px">
+                                            <option value="">All</option>
+                                            <option value="banking">banking</option>
+                                            <option value="Bank Transfer">Paid</option>
+                                            <option value="COD">Cancelled</option>
+                                            <option value="E-Payment">Unpaid</option>
+                                        </select>
+                                        <!-- <input type="submit" /> -->
 
-    <div class="row">
-        <div class="col-md-12">
-            <div class="border-bottom"></div>
-        </div>
-    </div>
-    </form>
-    </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">
-                          Cancel
-                        </button>
-        <button type="submit" class="btn btn-primary">
-                          Reset Sender
-                        </button>
-        <button type="submit" class="btn btn-primary">
-                          Show Preview
-                        </button>
-        <button type="submit" class="btn btn-primary">
-                          Download Summary
-                        </button>
-        <button type="submit" class="btn btn-primary">
-                          Download PDf
-                        </button>
-    </div>
-    </div>
-    </div>
-    </div>
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#AddReminder">
-                      Add Reminder
-                    </button>
-    <div class="modal fade" id="AddReminder" tabindex="-1" role="dialog" aria-labelledby="Reminder">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                          </button>
-                    <h4 class="modal-title" id="Reminder">
-                        Contact Reminder
-                    </h4>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label> Date</label>
-                                    <div class="input-group">
-                                        <input style="width: 570px" type="date" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask />
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="title" class="control-label">Title</label
-                                                  >
-                                                  <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="title"
-                                                    placeholder="Type title..."
-                                                  />
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="subdistrict" class="control-label">Coupon Code</label>
+                                        <input type="text" class="form-control" name="" id="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="subdistrict" class="control-label">Handled By</label>
+                                        <input type="text" class="form-control" name="" id="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="subdistrict" class="control-label">Receipt Number</label>
+                                        <input type="text" name="" class="form-control" id="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="subdistrict" class="control-label">Courier</label>
+                                        <input type="text" class="form-control" name="" id="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="subdistrict" class="control-label">Pickup Status</label>
+                                        <input type="text" class="form-control" name="" id="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="subdistrict" class="control-label">Tags</label><br>
+                                        <input type="text" class="form-control" name="" id="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                    <label class="">Processing Date</label>
+                                    <div class="well p-5">
+                                        <div class="row">
+                                            <div class=" p-5">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="subdistrict" class="control-label">Date Since</label >
+                                                        <input type="date" class="form-control" name="" id="" />
+                                                    </div>
                                                 </div>
-                                              </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="subdistrict" class="control-label">Date Until</label>
+                                                        <input type="date" class="form-control"  name="" id="" />
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="row">
-                                              <div class="col-md-12">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+
+                                    <label class="">Completed Date</label>
+                                    <div class="well p-5">
+                                        <div class="row">
+                                            <div class="p-5">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="subdistrict" class="control-label">Date Since</label >
+                                                        <input type="date" class="form-control" name="" id="" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="subdistrict" class="control-label">Date Until</label>
+                                                        <input type="date" class="form-control"  name="" id="" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="">Paid at</label>
+                                    <div class="well p-5">
+                                        <div class="row">
+                                            <div class="p-5">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="subdistrict" class="control-label">Paid Date Since</label >
+                                                        <input type="date" class="form-control" name="" id="" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="subdistrict" class="control-label">Paid Date Until</label>
+                                                        <input type="date" class="form-control"  name="" id="" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Advanced Filtes</a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="row">
+                                            <div class="col-md-4">
                                                 <div class="form-group">
-                                                  <label for="description" class="control-label"
-                                                    >Description</label
-                                                  >
-                                                  <textarea
-                                                    class="form-control"
-                                                    rows="3"
-                                                    id="description"
-                                                    placeholder="Start type..."
-                                                  ></textarea>
+                                                    <label for="subdistrict" class="control-label">Coupon Code</label>
+                                                    <select class="form-control autocomplete" style="width: 100%">
+                                                        <option value="">All</option>
+                                                        <option value="">With Bump</option>
+                                                        <option value="">No Bump</option>
+                                                    </select>
                                                 </div>
-                                              </div>
                                             </div>
-                                          </form>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">Shipping Label</label>
+                                                    <select class="form-control autocomplete" style="width: 100%">
+                                                        <option value="">All</option>
+                                                        <option value="">Printed</option>
+                                                        <option value="">Not Printed Yet</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="subdistrict" class="control-label">UTM Source</label>
+                                                    <input type="text" class="form-control" name="" placeholder="Source">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-footer">
-                                          <button
-                                            type="button"
-                                            class="btn btn-default"
-                                            data-dismiss="modal"
-                                          >
-                                            Cancel
-                                          </button>
-                                          <button type="submit" class="btn btn-primary">
-                                            Save
-                                          </button>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="subdistrict" class="control-label">UTM Medium</label>
+                                                    <input type="text" class="form-control" name="" placeholder="Medium">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="subdistrict" class="control-label">UTM Campaign</label>
+                                                    <input type="text" class="form-control" name="" placeholder="Campaign">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="subdistrict" class="control-label">UTM Term</label>
+                                                    <input type="text" class="form-control" name="" placeholder="Term">
+                                                </div>
+                                            </div>
                                         </div>
-                                      </div>
-                                    </div>
-                    </div>
-
-                    <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle"
-                    data-toggle="dropdown"
-                    >
-                    Mark As <span class="fa fa-caret-down"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Mark As Pending</a></li>
-                      <li><a href="#">Mark As Process</a></li>
-                      <li><a href="#">Mark As Complete</a></li>
-                      <li><a href="#">Mark As Refund</a></li>
-                      <li><a href="#">Mark As Cancel</a></li>
-                    </ul>
-
-
-                    <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle"
-                    data-toggle="dropdown"
-                    >
-                    Actions <span class="fa fa-caret-down"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Set Tag</a></li>
-                      <li><a href="#">Assign to</a></li>
-                      <li><a href="#">Delete</a></li>
-                    </ul>
-
-
-                    <button
-                    type="button"
-                    class="btn btn-primary btn-md"
-                    data-toggle="modal"
-                    data-target="#shippe"
-                    >
-                    Add Reminder
-                    </button>
-                    <div
-                      class="modal fade"
-                      id="shippe"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-labelledby="shippe"
-                    >
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h4 class="modal-title" id="shippe">Add Tag</h4>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label>Tags</label>
-                                    <select class="form-control select2" style="width: 100%">
-                                  <option selected="selected">
-                                    Input or Select Tags
-                                  </option>
-                                  <option>Perlengkapan</option>
-                                  <option>Lain-lain</option>
-                                </select>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                          Close
-                        </button>
-                    <button type="submit" class="btn btn-primary">
-                          Save
-                        </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- <button type="button" class="btn btn-default btn-md" style="float: right" data-toggle="modal" data-target="#modalFilter">Search</button> -->
-
-    <input type="text" style="float: right;height:30px" placeholder="search" />
-
-    <!-- Modal Filter -->
-    <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    <h4 class="modal-title" id="myModalLabel">
-                        Filter Contact
-                    </h4>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Product</label>
-                                    <select class="form-control select2" style="width: 100%">
-                                <option selected="selected">
-                                  Select Product
-                                </option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                              </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="buyer" class="control-label">Buyer Status</label
-                              >
-                              <select class="form-control" id="buyer">
-                                <option value="" selected disabled>
-                                  Buyer Status
-                                </option>
-                                <option>Show All</option>
-                                <option>Show Buyer Only</option>
-                                <option>Show Except Buyer</option>
-                              </select>
-                            </div>
-                            <div class="form-group">
-                              <label for="province" class="control-label"
-                                >Province</label
-                              >
-                              <select class="form-control" id="province">
-                                <option value="" selected disabled>
-                                  Customer Province
-                                </option>
-                                <option>Yogyakarta</option>
-                                <option>Jakarta</option>
-                                <option>Bali</option>
-                                <option>Bandung</option>
-                              </select>
-                            </div>
-                          </div>
-
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label>Last Contacted</label>
-                                    <div class="input-group">
-                                        <div class="input-group-addon">
-                                            <i class="fa fa-calendar"></i>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="subdistrict" class="control-label">UTM Content</label>
+                                                    <input type="text" class="form-control" name="" placeholder="Content">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask />
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="city" class="control-label">City</label
-                              >
-                              <select class="form-control" id="city">
-                                <option value="" selected disabled>
-                                  Customer City
-                                </option>
-                                <option>Sleman</option>
-                                <option>Bantul</option>
-                                <option>Kulonprogo</option>
-                                <option>Gunungkidul</option>
-                              </select>
                             </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <label for="subdistrict" class="control-label"
-                                >Subdistrict</label
-                              >
-                              <select class="form-control" id="subdistrict">
-                                <option value="" selected disabled>
-                                  Customer Subdistrict
-                                </option>
-                                <option>Condongcatur</option>
-                                <option>Banguntapan</option>
-                                <option>Wates</option>
-                                <option>Wonosari</option>
-                              </select>
-                            </div>
-                            <div class="form-group">
-                              <label for="handled" class="control-label"
-                                >Handled By</label
-                              >
-                              <select class="form-control" id="handled">
-                                <option value="" selected disabled>
-                                  Select CS
-                                </option>
-                                <option>Condongcatur</option>
-                                <option>Banguntapan</option>
-                                <option>Wates</option>
-                                <option>Wonosari</option>
-                              </select>
-                            </div>
-                            <div class="form-group">
-                              <label for="tags-filter" class="control-label"
-                                >Tags</label
-                              >
-                              <input
-                                type="text"
-                                value="Amsterdam,Washington,Sydney,Beijing,Cairo"
-                                data-role="tagsinput"
-                                id="tags-filter"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-default"
-                        data-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="submit" class="btn btn-primary">
-                        Apply Filter
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button
-                type="button"
-                class="btn btn-default btn-md"
-                style="float: right"
-                data-toggle="modal"
-                data-target="#Filter"
-              >
-                Filter
-              </button>
-              <!-- Modal Filter -->
-              <div
-                class="modal fade"
-                id="Filter"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="FilterButton"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="FilterButton">
-                        Filter Orders
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="row">
-                          <div class="col-md-4">
-                            <label for="buyer" class="control-label"
-                              >Status</label
-                            >
-                          </div>
-                          <div class="col-md-4">
-                            <label for="buyer" class="control-label"
-                              >Payment Status</label
-                            >
-                          </div>
-                          <div class="col-md-4">
-                            <label for="buyer" class="control-label"
-                              >Payment Method</label
-                            >
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-4">
-                            <form action="/action_page.php" method="get">
-
-                              <select name="type" id="types" style="height: 33px">
-                                <option value="Pending">Pending</option>
-                                <option value="Processing">
-                                  Processing
-                                </option>
-                                <option value="Completed">Completed</option>
-                                <option value="Cancelled">Cancelled</option>
-                                <option value="Refunded">Refunded</option>
-                              </select>
-
-                              <!-- <input type="submit" /> -->
-                            </form>
-                          </div>
-                          <div class="col-md-4">
-                            <form action="/action_page.php" method="get">
-
-                              <select name="type" id="types" style="height: 33px">
-                                <option value="banking">banking</option>
-                                <option value="All">
-                                  All
-                                </option>
-                                <option value="Paid">Paid</option>
-                                <option value="Cancelled">Cancelled</option>
-                                <option value="Unpaid">Unpaid</option>
-                              </select>
-
-                              <!-- <input type="submit" /> -->
-                            </form>
-                          </div>
-                          <div class="col-md-4">
-                            <form action="/action_page.php" method="get">
-
-                              <select name="type" id="types" style="height: 33px">
-                                <option value="banking">banking</option>
-                                <option value="All">
-                                  All
-                                </option>
-                                <option value="Bank Transfer">Paid</option>
-                                <option value="COD">Cancelled</option>
-                                <option value="E-Payment">Unpaid</option>
-                              </select>
-                              <!-- <input type="submit" /> -->
-                            </form>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label for="subdistrict" class="control-label"
-                                >Coupon Code</label
-                              >
-                              <input type="text" name="" id="" />
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label for="subdistrict" class="control-label"
-                                >Handled By</label
-                              >
-                              <input type="text" name="" id="" />
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label for="subdistrict" class="control-label"
-                                >Receipt Number</label
-                              >
-                              <input type="text" name="" id="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label for="subdistrict" class="control-label"
-                                >Courier</label
-                              >
-                              <input type="text" name="" id="" />
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label for="subdistrict" class="control-label"
-                                >Pickup Status</label
-                              >
-                              <input type="text" name="" id="" />
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label for="subdistrict" class="control-label"
-                                >Tags</label
-                              ><br>
-                              <input type="text" name="" id="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <h4>Processing Date</h4>
-                          <div class="card" syle="background-color="blue">
-                            <div class="card-body">
-                              <div class="col-md-3">
-                                  <div class="form-group">
-                              <label for="subdistrict" class="control-label">Date Since</label >
-                                 
-                              <input type="text" name="" id="" />
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="form-group">
-                              <label for="subdistrict" class="control-label"
-                                >Date Until</label
-                              >
-                              <input type="text" name="" id="" />
-                            </div>
-                          </div>
-                        
-                      
-
-                          <h4>Completed Data</h4>
-                          <div class="card" syle="background-color="blue">
-                        <div class="card-body">
-                          <div class="col-md-3">
-                              <div class="form-group">
-                          <label for="subdistrict" class="control-label">Date Since</label >
-                             
-                          <input type="text" name="" id="" />
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="form-group">
-                          <label for="subdistrict" class="control-label"
-                            >Date Until</label
-                          >
-                          <input type="text" name="" id="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              
-                          
-                        </div>
-                        </div>
-                      </form>
+                        </form>
                     </div>
                    
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-default"
-                        data-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="submit" class="btn btn-primary">
-                        Apply Filter
-                      </button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Apply Filter</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <button
-                type="button"
-                class="btn btn-default btn-md"
-                style="float: right"
-                data-toggle="modal"
-                data-target="#modalIn"
-              >
-                Customize Columns
-              </button>
+              <button type="button" class="btn btn-default btn-md" style="float: right" data-toggle="modal" data-target="#modalIn">Customize Columns</button>
               <!-- Modal Filter -->
-              <div
-                class="modal fade"
-                id="modalIn"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalIn"
-              >
+              <div class="modal fade" id="modalIn" tabindex="-1" role="dialog" aria-labelledby="myModalIn">
                 <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalIn">
-                        Customize Columns
-                      </h4>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalIn">
+                                Customize Columns
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search Column.." />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="buyer" class="control-label">Order</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Order Id
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Order Type
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Product Name
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Quantity
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" /> Bump </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" /> Status </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Payment Status
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" /> Date </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" /> Coupon </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" />Gross Revenue
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" />COGS </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Handled By
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Processing At
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Completed At
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" />Paid At </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Payment Info
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Custom Fields
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Receipt Number
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" />Checkout Page Name
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Variations
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Shipping Info
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" /> Meta </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Dropshipper
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" /> Notes </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="buyer" class="control-label">Customer</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" /> Customer Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Customer Email
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" /> City </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="buyer" class="control-label">Other</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" /> Follow Up
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label> <input type="checkbox" /> Actions </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label> <input type="checkbox" /> Tags </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="buyer" class="control-label">Other</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" /> Follow Up
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label> <input type="checkbox" /> Actions </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label> <input type="checkbox" /> Tags </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" /> UTM Source
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" /> UTM Medium
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" /> UTM Campaign
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" /> UTM Term
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" /> UTM Content
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Cancel
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    Apply Filter
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <input type="text" style="width: 100%" />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <label for="buyer" class="control-label"
-                                >Order</label
-                              >
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" /> Order Id
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Order Type
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Product Name
-                              </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Quantity
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> Bump </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> Status </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Payment Status
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> Date </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> Coupon </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" />Gross Revenue
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" />COGS </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Handled By
-                              </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Processing At
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Completed At
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" />Paid At </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Payment Info
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Custom Fields
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Receipt Number
-                              </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" />Checkout Page Name
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Variations
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Shipping Info
-                              </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> Meta </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Dropshipper
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> Notes </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="buyer" class="control-label">Customer</label
-                              >
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" /> Customer Name
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> Customer Email
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> City </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="buyer" class="control-label">Other</label
-                              >
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" /> Follow Up
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> Actions </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> Tags </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="buyer" class="control-label">Other</label
-                              >
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" /> Follow Up
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> Actions </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label> <input type="checkbox" /> Tags </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> UTM Source
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> UTM Medium
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> UTM Campaign
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> UTM Term
-                              </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                <input type="checkbox" /> UTM Content
-                              </label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                        Cancel
-                      </button>
-                    <button type="submit" class="btn btn-primary">
-                        Apply Filter
-                      </button>
-                </div>
-            </div>
-        </div>
-    </div>
+        <!-- end modal filter -->
     </div>
     </div>
 
