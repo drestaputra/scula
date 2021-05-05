@@ -19,6 +19,7 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/select2/select2.css">
 
     <!-- daterange picker -->
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
@@ -33,7 +34,7 @@
 <body class="hold-transition skin-blue layout-top-nav">
     <div class="wrapper">
         <header class="main-header">
-            <nav class="navbar navbar-static-top">
+            <nav class="navbar navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header">
                         <a href="#" class="navbar-brand"><b>Scula</b></a>
@@ -243,7 +244,7 @@
             </nav>
         </header>
         <!-- Full Width Column -->
-        <div class="content-wrapper">
+        <div class="content-wrapper mt-50">
             <div class="container">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
@@ -253,7 +254,7 @@
                             <p style="font-size: 30px;line-height:1">Order</p>
                         </div>
                         <div class="col-md-2">
-                            <select name="type" id="types" style="width:90px;height:33px;">
+                            <select name="type" class="autocomplete form-control" id="types">
                   <option value="Bisnis Manager">
                     All Product
                   </option>
@@ -284,7 +285,7 @@
 
                         <div class="col-md-2 text-left">
                             <!-- <input list="Products" name="product" id="product" /> -->
-                            <select id="all-type" name="type" id="types" style="height:33px;">
+                            <select id="all-type" class="autocomplete form-control" name="type" id="types">
                   <option value="All Checkout Pages  ">All Checkout Pages</option>
                   <option value="Checkout Pages 1">Checkout Pages 1</option>
                 </select>
@@ -2672,16 +2673,7 @@
                                     <td>Suratprofit</td>
                                     <td>Metode Verifikasi FB Business Manager</td>
                                     <td>
-                                        <p style="
-                                  display: block;
-                                  border-radius: 25px;
-                                  background-color: yellow;
-                                  width: 65px;
-                                  height: 30px;
-                                  padding-top: 5px;
-                                  padding-left: 10px;
-                                  padding-right: 10px;
-                                ">
+                                       <p class="btn btn-warning btn-rounded">
                                             Pending
                                         </p>
                                     </td>
@@ -2962,16 +2954,7 @@
                                     <td>Suratprofit</td>
                                     <td>Metode Verifikasi FB Business Manager</td>
                                     <td>
-                                        <p style="
-                                  display: block;
-                                  border-radius: 25px;
-                                  background-color: yellow;
-                                  width: 65px;
-                                  height: 30px;
-                                  padding-top: 5px;
-                                  padding-left: 10px;
-                                  padding-right: 10px;
-                                ">
+                                       <p class="btn btn-warning btn-rounded">
                                             Pending
                                         </p>
                                     </td>
@@ -3243,16 +3226,7 @@
                                     <td>Suratprofit</td>
                                     <td>Metode Verifikasi FB Business Manager</td>
                                     <td>
-                                        <p style="
-                                  display: block;
-                                  border-radius: 25px;
-                                  background-color: yellow;
-                                  width: 65px;
-                                  height: 30px;
-                                  padding-top: 5px;
-                                  padding-left: 10px;
-                                  padding-right: 10px;
-                                ">
+                                       <p class="btn btn-warning btn-rounded">
                                             Pending
                                         </p>
                                     </td>
@@ -3530,16 +3504,7 @@
                                     <td>Suratprofit</td>
                                     <td>Metode Verifikasi FB Business Manager</td>
                                     <td>
-                                        <p style="
-                                  display: block;
-                                  border-radius: 25px;
-                                  background-color: yellow;
-                                  width: 65px;
-                                  height: 30px;
-                                  padding-top: 5px;
-                                  padding-left: 10px;
-                                  padding-right: 10px;
-                                ">
+                                       <p class="btn btn-warning btn-rounded">
                                             Pending
                                         </p>
                                     </td>
@@ -3824,16 +3789,7 @@
                                     <td>Suratprofit</td>
                                     <td>Metode Verifikasi FB Business Manager</td>
                                     <td>
-                                        <p style="
-                                  display: block;
-                                  border-radius: 25px;
-                                  background-color: yellow;
-                                  width: 65px;
-                                  height: 30px;
-                                  padding-top: 5px;
-                                  padding-left: 10px;
-                                  padding-right: 10px;
-                                ">
+                                       <p class="btn btn-warning btn-rounded">
                                             Pending
                                         </p>
                                     </td>
@@ -3916,8 +3872,12 @@
 
     <!-- ChartJS 1.0.1 -->
     <script src="plugins/chartjs/Chart.min.js "></script>
+    <script src="plugins/select2/select2.min.js"></script>
 
     <script>
+        $(document).ready(function() {
+            $('.autocomplete').select2();
+        });
       $(function () {
         // tanggal
         $("#daterange-btn").daterangepicker(
