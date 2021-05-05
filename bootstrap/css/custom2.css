@@ -725,7 +725,7 @@ input:checked + .switch-slider:before {
         line-height: 35px;
         color: #fff;
         font-weight: 700;
-        background: linear-gradient(90deg,#fc5c7d, #6a82fb);
+        background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
         z-index: 1;
     }
     .forms-overview__percentage:after {
@@ -740,7 +740,7 @@ input:checked + .switch-slider:before {
         height: 0;
         border-top: 30px solid transparent;
         border-bottom: 30px solid transparent;
-        border-left: 23px solid #6a82fb;
+        border-left: 23px solid #91eae4;
     }
 }
 
