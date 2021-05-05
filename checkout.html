@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Scula</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/custom2.css">
+  <!-- bootstrap slider -->
+  <link rel="stylesheet" href="plugins/bootstrap-slider/slider.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="plugins/select2/select2.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- Tags Input -->
+  <link rel="stylesheet" href="plugins/tags-input/bootstrap-tagsinput.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  
+  <style>
+    .sidenav {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 3; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: #111; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+
+    .open-nav {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      color: #f44336;
+    }
+
+    input[type="file"] {
+      display: none !important;
+    }
+    .custom-file-upload {
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+      color: #fff;
+      background-color: #0098da;
+      border-color: #0086c1;
+    }
+    .custom-file-upload:hover {
+      background-color: #007cb1;
+      border-color: #0086c1;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    /* SLIDER */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+  </style>
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand"><b>Scula</b></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Sub Menu -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="order.html">Order</a></li>
+              <li><a href="http://backscula.organilife.id/">Funnels</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="report.html">Reports</a></li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                  <li><a href="coupons.html">Coupons</a></li>
+                  <li><a href="expenses.html">Expenses</a></li>
+                  <li><a href="inventory.html">Inventory</a></li>
+                  <li><a href="payments.html">Payments</a></li>
+                  <li><a href="logistics.html">Logistics</a></li>
+                  <li><a href="team-members.html">Team Members</a></li>
+                  </ul>
+              </li>
+              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                  <!-- Menu toggle button -->
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="label label-success">4</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have 4 messages</li>
+                      <li>
+                          <!-- inner menu: contains the messages -->
+                          <ul class="menu">
+                              <li>
+                                  <!-- start message -->
+                                  <a href="#">
+                                      <div class="pull-left">
+                                          <!-- User Image -->
+                                          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                      </div>
+                                      <!-- Message title and timestamp -->
+                                      <h4>
+                                          Support Team
+                                          <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                      </h4>
+                                      <!-- The message -->
+                                      <p>Why not buy a new awesome theme?</p>
+                                  </a>
+                              </li>
+                              <!-- end message -->
+                          </ul>
+                          <!-- /.menu -->
+                      </li>
+                      <li class="footer"><a href="#">See All Messages</a></li>
+                  </ul>
+              </li>
+              <!-- /.messages-menu -->
+
+              <!-- Notifications Menu -->
+              <li class="dropdown notifications-menu">
+                  <!-- Menu toggle button -->
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-bell-o"></i>
+                      <span class="label label-warning">10</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have 10 notifications</li>
+                      <li>
+                          <!-- Inner Menu: contains the notifications -->
+                          <ul class="menu">
+                              <li>
+                                  <!-- start notification -->
+                                  <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
+                              </li>
+                              <!-- end notification -->
+                          </ul>
+                      </li>
+                      <li class="footer"><a href="#">View all</a></li>
+                  </ul>
+              </li>
+              <!-- Tasks Menu -->
+              <li class="dropdown tasks-menu" style="display: none">
+                  <!-- Menu Toggle Button -->
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-flag-o"></i>
+                      <span class="label label-danger">9</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have 9 tasks</li>
+                      <li>
+                          <!-- Inner menu: contains the tasks -->
+                          <ul class="menu">
+                              <li>
+                                  <!-- Task item -->
+                                  <a href="#">
+                                      <!-- Task title and progress text -->
+                                      <h3>
+                                          Design some buttons
+                                          <small class="pull-right">20%</small>
+                                      </h3>
+                                      <!-- The progress bar -->
+                                      <div class="progress xs">
+                                          <!-- Change the css width attribute to simulate progress -->
+                                          <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                              <span class="sr-only">20% Complete</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <!-- end task item -->
+                          </ul>
+                      </li>
+                      <li class="footer">
+                          <a href="#">View all tasks</a>
+                      </li>
+                  </ul>
+              </li>
+              <!-- User Account Menu -->
+              <li class="dropdown user user-menu">
+                  <!-- Menu Toggle Button -->
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <!-- The user image in the navbar-->
+                      <span class="hidden-xs">Alexander Pierce</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <!-- The user image in the menu -->
+                      <li class="user-header text-left">
+                          <p>
+                              <strong>Yokayuga</strong> (OWNER)
+                              <small><a href="mailto:yokayuga@gmail.com" class="text-white">yokayuga@gmail.com</a></small>
+                          </p>
+                      </li>
+                      <!-- Menu Body -->
+                      <li class="user-body">
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="profile.html" style="width: 100%;display: block;">Profile</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="credit.html" style="width: 100%;display: block;">Credits</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="billings.html" style="width: 100%;display: block;">Billings</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="change-plan.html" style="width: 100%;display: block;">Change Plan</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="apps.html" style="width: 100%;display: block;">Apps</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="bonus.html" style="width: 100%;display: block;">Bonuses</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="settings.html" style="width: 100%;display: block;">Settings</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="tutorials.html" style="width: 100%;display: block;">Tutorials</a>
+                              </div>
+                          </div>
+                          <!-- /.row -->
+                      </li>
+                      <!-- Menu Footer-->
+                      <li class="user-footer">
+                          <!-- <div class="pull-left">
+                              <a href="#" class="btn btn-default btn-flat">Profile</a>
+                          </div> -->
+                          <div class="pull-right">
+                              <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                          </div>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+        <!-- /.navbar-custom-menu -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container-fluid" style="padding: 0;">
+      <section>
+        <div class="bs-example" data-example-id="simple-nav-justified">
+          <ul class="nav nav-pills nav-justified">
+            <li role="presentation"><a href="add-product.html">Product</a></li>
+            <li role="presentation" class="active"><a href="checkout.html">Checkout Page</a></li>
+            <li role="presentation"><a href="success-page.html">Success Page</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#checkout">Checkout Page Name</a>
+          <a href="#header">Header</a>
+          <a href="#images">Images</a>
+          <a href="#guarantee">Guarantee Seals</a>
+          <a href="#product">Product Variation</a>
+          <a href="#requested">Requested Fields</a>
+          <a href="#dropship">Dropship</a>
+          <a href="#buy">Buy Button</a>
+          <a href="#video">Video</a>
+          <a href="#content">Content</a>
+          <a href="#coupon">Coupon Field</a>
+          <a href="#bullet">Bullet Points</a>
+          <a href="#order">Order's Summary</a>
+          <a href="#testimonial">Testimonials</a>
+          <a href="#logo">OrderOnline Logo</a>
+          <a href="#tracking">Tracking</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" class="open-nav" onclick="openNav()">&#9776; </span>      
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <!-- Error Message -->
+            <div class="card mb-4">
+              <div class="card-body">
+                <h4><i class="fa fa-warning text-red"></i> Please fix fields error before proceeding to next step</h4>
+                <div class="callout callout-default" style="margin-bottom: 0!important;">
+                  Product Variations is not valid
+                </div>
+              </div>
+            </div>
+
+            <form>
+              <!-- Checkout Page Name -->
+              <div class="card mb-4" id="checkout">
+                <div class="card-header">Checkout Page Name</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Checkout Page 1" value="Checkout Page 1" id="name" name="name">
+                  </div>
+                </div>
+              </div>
+              <!-- Template -->
+              
+              <!-- Header -->
+              <div class="card mb-4" id="header">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="mb-0">Upload an image to display in the header</label>
+                    <br>
+                    <small class="mb-4">(This is usually your product or company's logo)</small>
+                    <br>
+                    <label class="custom-file-upload mt-4">
+                      <input type="file" id="image" />
+                      <i class="fa fa-image"></i> Select an image
+                    </label>
+
+                    <button type="button" class="btn btn-default"><i class="fa fa-trash"></i> Delete</button>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Do you want to show title on top of your cart?
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Title" value="" id="name" name="name">
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Do you want to show tagline on top of your cart?
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Title" value="" id="name" name="name">
+                  </div>
+
+                </div>
+              </div>
+              <!-- Images -->
+              <div class="card mb-4" id="images">
+                <div class="card-header">Images</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Show product images on checkout page?
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Guarantee Seals -->
+              <div class="card mb-4" id="guarantee">
+                <div class="card-header">Guarantee Seals</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Do you want to show the guarantee seals at the top of the page?
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <select class="form-control" id="collection">
+                      <option value="" selected disabled>Options</option>
+                      <option>100% Jaminan Kepuasan</option>
+                      <option>Garansi Uang Kembali</option>
+                      <option>Enkripsi 256-Bit</option>
+                      <option>100% Satisfaction Seal</option>
+                      <option>Money Back Guarantee</option>
+                      <option>256 Bit Encrypted</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- Product Variation -->
+              <div class="card mb-4" id="product">
+                <div class="card-header">Product Variation</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="control-label">Variation Select Type <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Tampilan untuk pemilihan variasi"></i></label><br />
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-primary active">
+                        <input type="radio" name="options" id="option1" checked> Radio
+                      </label>
+                      <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2"> Dropdown
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Requested Fields -->
+              <div class="card mb-4" id="requested">
+                <div class="card-header">Requested Fields <span style="float:right;"><button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalRequestedField"><i class="fa fa-cog"></i></button></span></div>
+                <!-- Modal -->
+                <div class="modal fade" id="modalRequestedField" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Form Display Settings</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label class="control-label">Mode</label>
+                          <select class="form-control" id="mode">
+                            <option value="" selected disabled>Options</option>
+                            <option>Show All</option>
+                            <option>Progressive Form</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label">Initial Fields</label>
+                          <select class="form-control" id="mode">
+                            <option value="" selected disabled>Options</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label">Label</label>
+                          <select class="form-control" id="mode">
+                            <option value="" selected disabled>Options</option>
+                            <option>Show Label</option>
+                            <option>Hide Label</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="card-panel">
+                    <div class="row">
+                      <div class="col-md-6 col-xs-6">
+                        <span class="text-blue font-weight-bold">Mode:</span> Show All
+                        <br>
+                        <span class="text-blue font-weight-bold">Initial Fields:</span> 3 Fields
+                      </div>
+                      <div class="col-md-6 col-xs-6"><span class="text-blue font-weight-bold">Label:</span> Hide Label</div>
+                    </div>
+                  </div>
+
+                  <table>
+                    <!-- Name -->
+                    <tr>
+                      <td>
+                        <div class="form-group mb-0">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="width: 100%;">
+                        <div class="card-panel-2">
+                          <label class="mb-0">Nama <span class="text-red">*</span></label>
+                          <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalName"><i class="fa fa-cog"></i></button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalName" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label class="control-label">Label</label>
+                                    <input type="text" class="form-control" value="Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Placeholder</label>
+                                    <input type="text" class="form-control" value="Name">
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- No Handphone/WhatsApp -->
+                    <tr>
+                      <td>
+                        <div class="form-group mb-0">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="width: 100%;">
+                        <div class="card-panel-2">
+                          <label class="mb-0">No Handphone/WhatsApp <span class="text-red">*</span></label>
+                          <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalWA"><i class="fa fa-cog"></i></button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalWA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label class="control-label">Label</label>
+                                    <input type="text" class="form-control" value="No Handphone/WhatsApp">
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Placeholder</label>
+                                    <input type="text" class="form-control" value="No Handphone/WhatsApp">
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Email -->
+                    <tr>
+                      <td>
+                        <div class="form-group mb-0">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="width: 100%;">
+                        <div class="card-panel-2">
+                          <label class="mb-0">Email <span class="text-red">*</span></label>
+                          <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalEmail"><i class="fa fa-cog"></i></button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalEmail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label class="control-label">Required</label>
+                                    <select class="form-control" id="required">
+                                      <option value="" selected disabled>Options</option>
+                                      <option>No</option>
+                                      <option>Yes (Required)</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Label</label>
+                                    <input type="text" class="form-control" value="Email">
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Placeholder</label>
+                                    <input type="text" class="form-control" value="Email Anda">
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Jumlah Pesanan -->
+                    <tr>
+                      <td>
+                        <div class="form-group mb-0">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="width: 100%;">
+                        <div class="card-panel-2">
+                          <label class="mb-0">Jumlah Pesanan <span class="text-red">*</span></label>
+                          <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalQty"><i class="fa fa-cog"></i></button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalQty" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label class="control-label">Required</label>
+                                    <select class="form-control" id="required">
+                                      <option value="" selected disabled>Options</option>
+                                      <option>No</option>
+                                      <option>Yes (Required)</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Label</label>
+                                    <input type="text" class="form-control" value="Jumlah Pesanan">
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Placeholder</label>
+                                    <input type="text" class="form-control" value="Jumlah Pesanan">
+                                  </div>
+                                  <label class="control-label">Quantity</label>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label class="control-label font-weight-thin">Min</label>
+                                        <input type="number" class="form-control" value="1" min="1">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label class="control-label font-weight-thin">Max</label>
+                                        <input type="number" class="form-control" value="99" min="1">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label font-weight-thin">Default</label>
+                                    <input type="number" class="form-control" value="1" min="1">
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Catatan -->
+                    <tr>
+                      <td>
+                        <div class="form-group mb-0">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="width: 100%;">
+                        <div class="card-panel-2">
+                          <label class="mb-0">Catatan <span class="text-red">*</span></label>
+                          <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalCatatan"><i class="fa fa-cog"></i></button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalCatatan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label class="control-label">Required</label>
+                                    <select class="form-control" id="required">
+                                      <option value="" selected disabled>Options</option>
+                                      <option>No</option>
+                                      <option>Yes (Required)</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Label</label>
+                                    <input type="text" class="form-control" value="Catatan">
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Placeholder</label>
+                                    <input type="text" class="form-control" value="Masukkan Catatan Pemesanan">
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Alamat Lengkap -->
+                    <tr>
+                      <td>
+                        <div class="form-group mb-0">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="width: 100%;">
+                        <div class="card-panel-2">
+                          <label class="mb-0">Alamat Lengkap <span class="text-red">*</span></label>
+                          <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalAlamat"><i class="fa fa-cog"></i></button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalAlamat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label class="control-label">Field</label>
+                                    <select class="form-control" id="required">
+                                      <option value="" selected disabled>Options</option>
+                                      <option>Input</option>
+                                      <option>Textarea</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Required</label>
+                                    <select class="form-control" id="required">
+                                      <option value="" selected disabled>Options</option>
+                                      <option>No</option>
+                                      <option>Yes (Required)</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Label</label>
+                                    <input type="text" class="form-control" value="Alamat Lengkap">
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Placeholder</label>
+                                    <input type="text" class="form-control" value="Alamat Lengkap Anda">
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Provinsi -->
+                    <tr>
+                      <td>
+                        <div class="form-group mb-0">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="width: 100%;">
+                        <div class="card-panel-2">
+                          <label class="mb-0">Provinsi <span class="text-red">*</span></label>
+                          <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalProvinsi"><i class="fa fa-cog"></i></button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalProvinsi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label class="control-label">Required</label>
+                                    <select class="form-control" id="required">
+                                      <option value="" selected disabled>Options</option>
+                                      <option>No</option>
+                                      <option>Yes (Required)</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Label</label>
+                                    <input type="text" class="form-control" value="Provinsi">
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Placeholder</label>
+                                    <input type="text" class="form-control" value="Pilih Provinsi">
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Kota/Kabupaten -->
+                    <tr>
+                      <td>
+                        <div class="form-group mb-0">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="width: 100%;">
+                        <div class="card-panel-2">
+                          <label class="mb-0">Kota/Kabupaten <span class="text-red">*</span></label>
+                          <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalKotaKabupaten"><i class="fa fa-cog"></i></button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalKotaKabupaten" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label class="control-label">Required</label>
+                                    <select class="form-control" id="required">
+                                      <option value="" selected disabled>Options</option>
+                                      <option>No</option>
+                                      <option>Yes (Required)</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Label</label>
+                                    <input type="text" class="form-control" value="Kota/Kabupaten">
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Placeholder</label>
+                                    <input type="text" class="form-control" value="Pilih Kota/Kabupaten">
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Kecamatan -->
+                    <tr>
+                      <td>
+                        <div class="form-group mb-0">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="width: 100%;">
+                        <div class="card-panel-2">
+                          <label class="mb-0">Kecamatan <span class="text-red">*</span></label>
+                          <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalKecamatan"><i class="fa fa-cog"></i></button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalKecamatan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label class="control-label">Required</label>
+                                    <select class="form-control" id="required">
+                                      <option value="" selected disabled>Options</option>
+                                      <option>No</option>
+                                      <option>Yes (Required)</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Label</label>
+                                    <input type="text" class="form-control" value="Kecamatan">
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Placeholder</label>
+                                    <input type="text" class="form-control" value="Pilih Kecamatan">
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Kota / Kecamatan -->
+                    <tr>
+                      <td>
+                        <div class="form-group mb-0">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="width: 100%;">
+                        <div class="card-panel-2">
+                          <label class="mb-0">Kota / Kecamatan <span class="text-red">*</span></label>
+                          <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalKotaKecamatan"><i class="fa fa-cog"></i></button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modalKotaKecamatan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label class="control-label">Required</label>
+                                    <select class="form-control" id="required">
+                                      <option value="" selected disabled>Options</option>
+                                      <option>No</option>
+                                      <option>Yes (Required)</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Label</label>
+                                    <input type="text" class="form-control" value="Kota / Kecamatan">
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label">Placeholder</label>
+                                    <input type="text" class="form-control" value="Pilih Kota / Kecamatan">
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <div class="row text-right mt-3">
+                    <div class="col-md-12">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCustomField">Add Custom Field</button>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalCustomField" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="myModalLabel">Custom Field</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label class="control-label">Field</label>
+                                <select class="form-control" id="category">
+                                  <option value="" selected disabled>Options</option>
+                                  <option>Input</option>
+                                  <option>Textarea</option>
+                                  <option>Select</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label">Required</label>
+                                <select class="form-control" id="category">
+                                  <option value="" selected disabled>Options</option>
+                                  <option>No</option>
+                                  <option>Yes (Required)</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label">Placeholder</label>
+                                <input type="text" class="form-control" value="Custom Field">
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label class="control-label">Input Type</label>
+                                <select class="form-control" id="category">
+                                  <option value="" selected disabled>Options</option>
+                                  <option>Text</option>
+                                  <option>Date</option>
+                                  <option>Number</option>
+                                  <option>Email</option>
+                                  <option>URL</option>
+                                  <option>File</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label">Label</label>
+                                <input type="text" class="form-control" value="Custom Field">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Ok</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="alert alert-warning mt-4" role="alert">Untuk menggunakan fitur perhitungan ongkir otomatis, harap aktifkan field Kecamatan</div>
+                </div>
+              </div>
+
+              <!-- Dropship -->
+              <div class="card mb-4" id="dropship">
+                <div class="card-header">Dropship</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Do you want to enable dropship on your cart?
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Buy Button -->
+              <div class="card mb-4" id="buy">
+                <div class="card-header">Buy Button</div>
+                <div class="card-body">
+                  <label class="control-label font-weight-thin mb-3">Customize your template's buy button below.</label>
+                  <div class="form-group">
+                    <button class="btn btn-success btn-block">Beli sekarang</button>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card-color-green mb-4"></div>
+                      <div class="card-color-orange mb-4"></div>
+                      <div class="card-color-red mb-4"></div>
+                      <div class="card-color-blue mb-4"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label font-weight-thin mb-0">Enter the text for your buy button.</label>
+                    <br>
+                    <label class="text-grey font-weight-thin mb-3">(Suggestions: 'Buy Now!' or 'Complete Order')</label>
+                    <input type="text" class="form-control" value="">
+                  </div>
+                </div>
+              </div>
+              <!-- Video -->
+              <div class="card mb-4" id="video">
+                <div class="card-header">Video</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="control-label font-weight-thin">Add a video to your sidebar to speak to customers or show off your product.</label>
+                    <input type="text" class="form-control" placeholder="Enter your youtube video url here" value="" id="name" name="name">
+                  </div>
+                </div>
+              </div>
+              <!-- Content -->
+              <div class="card mb-4" id="content">
+                <div class="card-header">Content</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="control-label font-weight-thin">Add checkout page content to explain more about your product</label>
+                    <textarea class="form-control" value="" id="name" name="name" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+              <!-- Coupon Field -->
+              <div class="card mb-4" id="coupon">
+                <div class="card-header">Coupon Field</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Do you want to show the coupon field on your cart?
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Bullet Points -->
+              <div class="card mb-4" id="bullet">
+                <div class="card-header">Bullet Points</div>
+                <div class="card-body">
+                  <label class="font-weight-thin">Add bullet points to list the benefits or features of your product.</label>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Point">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-trash"></i> Delete</button>
+                      </span>
+                    </div>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Point">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-trash"></i> Delete</button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row text-right">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <button class="btn btn-primary">Add bullet point</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Order's Summary -->
+              <div class="card mb-4" id="order">
+                <div class="card-header">Order's Summary</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Do you want to show order's summary on your cart?
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonials -->
+              <div class="card mb-4" id="tertimonial">
+                <div class="card-header">Testimonials</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="control-label font-weight-thin">Add testimonials to increase social proof to attract more customers</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg" class="rounded-circle">
+                      <div class="form-group">
+                        <label class="custom-file-upload">
+                          <input type="file" id="image" />
+                          <i class="fa fa-image"></i> Select an image
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nama">
+                      </div>
+                      <div class="form-group">
+                        <textarea type="text" class="form-control" rows="3" placeholder="Pesan"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row text-right">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <button class="btn btn-primary">Add Testimonial</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- OrderOnline Logo -->
+              <div class="card mb-4" id="logo">
+                <div class="card-header">OrderOnline Logo</div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Do you want to show the OrderOnline.id logo at the bottom of the page?
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tracking -->
+              <div class="card mb-4" id="tracking">
+                <div class="card-header">Tracking</div>
+                <div class="card-body">
+                  <label class="control-label">Facebook Pixel</label>
+                  
+                  <div class="form-group">
+                    <label class="control-label font-weight-thin">Pixel IDs</label>
+                    <select class="form-control" id="collection">
+                      <option value="" selected disabled>Input or Select Pixel ID</option>
+                      <option>082762343856435893</option>
+                      <option>485853458934659</option>
+                      <option>328946329462394</option>
+                      <option>343849328462923489</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="control-label font-weight-thin">Pixel Events</label>
+                    <table style="width: 100%;">
+                      <!-- ViewContent -->
+                      <tr>
+                        <td style="width: 100%;">
+                          <div class="card-panel-2">
+                            <label class="mb-0 font-weight-thin">ViewContent</label>
+                            <div style="float: right;">
+                              <button type="button" class="no-button" data-toggle="modal" data-target="#modalView"><i class="fa fa-cog"></i></button>
+                              <button class="no-button" type="button"><i class="fa fa-close"></i></button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalView" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Pixel Event Settings</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <label class="control-label font-weight-thin">Event:</label>
+                                    <table style="width: 100%;">
+                                      <tr>
+                                        <td>
+                                          <input type="text" class="form-control" value="value" disabled>
+                                        </td>
+                                        <td style="padding: 5px;">
+                                          <select class="form-control" id="category">
+                                            <option value="" selected disabled>Param Value</option>
+                                            <option>{{total_price}}</option>
+                                            <option>{{product_price}}</option>
+                                            <option>{{product_name}}</option>
+                                            <option>{{product_category_full}}</option>
+                                          </select>
+                                        </td>
+                                        <td>
+                                          <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>
+                                          <input type="text" class="form-control" value="currency" disabled>
+                                        </td>
+                                        <td style="padding: 5px;">
+                                          <input type="text" class="form-control" value="" placeholder="Param Value">
+                                        </td>
+                                        <td>
+                                          <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>
+                                          <input type="text" class="form-control" value="content_name" disabled>
+                                        </td>
+                                        <td style="padding: 5px;">
+                                          <select class="form-control" id="category">
+                                            <option value="" selected disabled>Param Value</option>
+                                            <option>{{total_price}}</option>
+                                            <option>{{product_price}}</option>
+                                            <option>{{product_name}}</option>
+                                            <option>{{product_category_full}}</option>
+                                          </select>
+                                        </td>
+                                        <td>
+                                          <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>
+                                          <input type="text" class="form-control" value="content_category" disabled>
+                                        </td>
+                                        <td style="padding: 5px;">
+                                          <select class="form-control" id="category">
+                                            <option value="" selected disabled>Param Value</option>
+                                            <option>{{total_price}}</option>
+                                            <option>{{product_price}}</option>
+                                            <option>{{product_name}}</option>
+                                            <option>{{product_category_full}}</option>
+                                          </select>
+                                        </td>
+                                        <td>
+                                          <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                    </table>
+
+                                    <div class="form-group mt-4">
+                                      <label class="control-label font-weight-thin">Add More Parameter</label>
+                                      <select class="form-control" id="category">
+                                        <option value="" selected disabled>Select or type to add new param</option>
+                                        <option>value</option>
+                                        <option>currency</option>
+                                        <option>content_name</option>
+                                        <option>content_category</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td style="width: 100%;">
+                          <div class="card-panel-2">
+                            <label class="mb-0 font-weight-thin">AddToWishlist</label>
+                            <div style="float: right;">
+                              <button type="button" class="no-button" data-toggle="modal" data-target="#modalAddToWishlist"><i class="fa fa-cog"></i></button>
+                              <button class="no-button" type="button"><i class="fa fa-close"></i></button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalAddToWishlist" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Pixel Event Settings</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <label class="control-label font-weight-thin">Event:</label>
+                                    <table style="width: 100%;">
+                                      <tr>
+                                        <td>
+                                          <input type="text" class="form-control" value="value" disabled>
+                                        </td>
+                                        <td style="padding: 5px;">
+                                          <select class="form-control" id="category">
+                                            <option value="" selected disabled>Param Value</option>
+                                            <option>{{total_price}}</option>
+                                            <option>{{product_price}}</option>
+                                            <option>{{product_name}}</option>
+                                            <option>{{product_category_full}}</option>
+                                          </select>
+                                        </td>
+                                        <td>
+                                          <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>
+                                          <input type="text" class="form-control" value="currency" disabled>
+                                        </td>
+                                        <td style="padding: 5px;">
+                                          <input type="text" class="form-control" value="" placeholder="Param Value">
+                                        </td>
+                                        <td>
+                                          <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>
+                                          <input type="text" class="form-control" value="content_name" disabled>
+                                        </td>
+                                        <td style="padding: 5px;">
+                                          <select class="form-control" id="category">
+                                            <option value="" selected disabled>Param Value</option>
+                                            <option>{{total_price}}</option>
+                                            <option>{{product_price}}</option>
+                                            <option>{{product_name}}</option>
+                                            <option>{{product_category_full}}</option>
+                                          </select>
+                                        </td>
+                                        <td>
+                                          <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>
+                                          <input type="text" class="form-control" value="content_category" disabled>
+                                        </td>
+                                        <td style="padding: 5px;">
+                                          <select class="form-control" id="category">
+                                            <option value="" selected disabled>Param Value</option>
+                                            <option>{{total_price}}</option>
+                                            <option>{{product_price}}</option>
+                                            <option>{{product_name}}</option>
+                                            <option>{{product_category_full}}</option>
+                                          </select>
+                                        </td>
+                                        <td>
+                                          <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                    </table>
+
+                                    <div class="form-group mt-4">
+                                      <label class="control-label font-weight-thin">Add More Parameter</label>
+                                      <select class="form-control" id="category">
+                                        <option value="" selected disabled>Select or type to add new param</option>
+                                        <option>value</option>
+                                        <option>currency</option>
+                                        <option>content_name</option>
+                                        <option>content_category</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+  
+                  <div class="form-group">
+                    <select class="form-control" id="collection">
+                      <option value="" selected disabled>Input or Select Pixel Events</option>
+                      <option>Add Payment Info</option>
+                      <option>Add To Cart</option>
+                      <option>Add To Whislist</option>
+                      <option>Lead</option>
+                    </select>
+                  </div>
+
+                  <label class="control-label">Google Tag Manager</label>
+                  <br>
+                  <label class="control-label font-weight-thin">GTM IDs</label>
+                  <tr>
+                    <td style="width: 100%;">
+                      <div class="card-panel-2">
+                        <label class="mb-0 font-weight-thin">GTM-M6VTWFM</label>
+                        <div style="float: right;">
+                          <button class="no-button" type="button"><i class="fa fa-close"></i></button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100%;">
+                      <div class="card-panel-2">
+                        <label class="mb-0 font-weight-thin">GTM-M6VTWFM</label>
+                        <div style="float: right;">
+                          <button class="no-button" type="button"><i class="fa fa-close"></i></button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <div class="form-group mt-4">
+                    <select class="form-control" id="collection">
+                      <option value="" selected disabled>Input or Select GTM ID</option>
+                      <option>GTM-MMHGFU</option>
+                      <option>GTM-MMHGFU</option>
+                      <option>GTM-MMHGFU</option>
+                      <option>GTM-MMHGFU</option>
+                    </select>
+                  </div>
+
+                  <label class="control-label">TikTok Pixel</label>
+                  <br>
+                  <label class="control-label font-weight-thin">TikTok Pixel IDs</label>
+                  <tr>
+                    <td style="width: 100%;">
+                      <div class="card-panel-2">
+                        <label class="mb-0 font-weight-thin">Tiktok</label>
+                        <div style="float: right;">
+                          <button class="no-button" type="button"><i class="fa fa-close"></i></button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <div class="form-group mt-4">
+                    <select class="form-control" id="collection">
+                      <option value="" selected disabled>Input or Tiktok Pixel ID</option>
+                      <option>Tiktok</option>
+                      <option>Tiktok</option>
+                      <option>Tiktok</option>
+                      <option>Tiktok</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <a href="add-product.html" class="btn btn-default">Back</a>
+                </div>
+                <div class="col-md-6 col-xs-6 text-right">
+                  <a href="success-page.html" class="btn btn-info">Next <i class="fa fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-6"></div>
+        </div>
+      </section>
+      
+    </div>
+    
+  </div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- Tags Input -->
+<script src="plugins/tags-input/bootstrap-tagsinput.js"></script>
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- Select2 -->
+<script src="plugins/select2/select2.full.min.js"></script>
+<!-- CK Editor -->
+<script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Bootstrap slider -->
+<script src="plugins/bootstrap-slider/bootstrap-slider.js"></script>
+<script>
+  $(function () {
+    $('#ex1').slider({
+      formatter: function(value) {
+        return 'Current value: ' + value;
+      }
+    });
+    $('#ex2').slider({
+      formatter: function(value) {
+        return 'Current value: ' + value;
+      }
+    });
+
+    //Initialize Select2 Elements
+    $(".select2").select2();
+    
+    //Date range picker
+    $('#reservation').daterangepicker();
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
+
+    //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+
+    CKEDITOR.replace('editor1');
+    //bootstrap WYSIHTML5 - text editor
+    $(".textarea").wysihtml5();
+
+    //Money Euro
+    $("[data-mask]").inputmask();
+    
+  });
+</script>
+<!-- InputMask -->
+<script src="plugins/input-mask/jquery.inputmask.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+
+</body>
+</html>

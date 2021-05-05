@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Scula</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/custom2.css">
+  <!-- bootstrap slider -->
+  <link rel="stylesheet" href="plugins/bootstrap-slider/slider.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="plugins/select2/select2.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- Tags Input -->
+  <link rel="stylesheet" href="plugins/tags-input/bootstrap-tagsinput.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  
+  <style>
+    .sidenav {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 3; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: #111; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+
+    .open-nav {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      color: #f44336;
+    }
+
+    input[type="file"] {
+      display: none !important;
+    }
+    .custom-file-upload {
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+      color: #fff;
+      background-color: #0098da;
+      border-color: #0086c1;
+    }
+    .custom-file-upload:hover {
+      background-color: #007cb1;
+      border-color: #0086c1;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+  </style>
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand"><b>Scula</b></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Sub Menu -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="order.html">Order</a></li>
+              <li><a href="http://backscula.organilife.id/">Funnels</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="report.html">Reports</a></li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                  <li><a href="coupons.html">Coupons</a></li>
+                  <li><a href="expenses.html">Expenses</a></li>
+                  <li><a href="inventory.html">Inventory</a></li>
+                  <li><a href="payments.html">Payments</a></li>
+                  <li><a href="logistics.html">Logistics</a></li>
+                  <li><a href="team-members.html">Team Members</a></li>
+                  </ul>
+              </li>
+              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                  <!-- Menu toggle button -->
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="label label-success">4</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have 4 messages</li>
+                      <li>
+                          <!-- inner menu: contains the messages -->
+                          <ul class="menu">
+                              <li>
+                                  <!-- start message -->
+                                  <a href="#">
+                                      <div class="pull-left">
+                                          <!-- User Image -->
+                                          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                      </div>
+                                      <!-- Message title and timestamp -->
+                                      <h4>
+                                          Support Team
+                                          <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                      </h4>
+                                      <!-- The message -->
+                                      <p>Why not buy a new awesome theme?</p>
+                                  </a>
+                              </li>
+                              <!-- end message -->
+                          </ul>
+                          <!-- /.menu -->
+                      </li>
+                      <li class="footer"><a href="#">See All Messages</a></li>
+                  </ul>
+              </li>
+              <!-- /.messages-menu -->
+
+              <!-- Notifications Menu -->
+              <li class="dropdown notifications-menu">
+                  <!-- Menu toggle button -->
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-bell-o"></i>
+                      <span class="label label-warning">10</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have 10 notifications</li>
+                      <li>
+                          <!-- Inner Menu: contains the notifications -->
+                          <ul class="menu">
+                              <li>
+                                  <!-- start notification -->
+                                  <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
+                              </li>
+                              <!-- end notification -->
+                          </ul>
+                      </li>
+                      <li class="footer"><a href="#">View all</a></li>
+                  </ul>
+              </li>
+              <!-- Tasks Menu -->
+              <li class="dropdown tasks-menu" style="display: none">
+                  <!-- Menu Toggle Button -->
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-flag-o"></i>
+                      <span class="label label-danger">9</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have 9 tasks</li>
+                      <li>
+                          <!-- Inner menu: contains the tasks -->
+                          <ul class="menu">
+                              <li>
+                                  <!-- Task item -->
+                                  <a href="#">
+                                      <!-- Task title and progress text -->
+                                      <h3>
+                                          Design some buttons
+                                          <small class="pull-right">20%</small>
+                                      </h3>
+                                      <!-- The progress bar -->
+                                      <div class="progress xs">
+                                          <!-- Change the css width attribute to simulate progress -->
+                                          <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                              <span class="sr-only">20% Complete</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <!-- end task item -->
+                          </ul>
+                      </li>
+                      <li class="footer">
+                          <a href="#">View all tasks</a>
+                      </li>
+                  </ul>
+              </li>
+              <!-- User Account Menu -->
+              <li class="dropdown user user-menu">
+                  <!-- Menu Toggle Button -->
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <!-- The user image in the navbar-->
+                      <span class="hidden-xs">Alexander Pierce</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <!-- The user image in the menu -->
+                      <li class="user-header text-left">
+                          <p>
+                              <strong>Yokayuga</strong> (OWNER)
+                              <small><a href="mailto:yokayuga@gmail.com" class="text-white">yokayuga@gmail.com</a></small>
+                          </p>
+                      </li>
+                      <!-- Menu Body -->
+                      <li class="user-body">
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="profile.html" style="width: 100%;display: block;">Profile</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="credit.html" style="width: 100%;display: block;">Credits</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="billings.html" style="width: 100%;display: block;">Billings</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="change-plan.html" style="width: 100%;display: block;">Change Plan</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="apps.html" style="width: 100%;display: block;">Apps</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="bonus.html" style="width: 100%;display: block;">Bonuses</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="settings.html" style="width: 100%;display: block;">Settings</a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xs-12 text-left user-padding">
+                                  <a href="tutorials.html" style="width: 100%;display: block;">Tutorials</a>
+                              </div>
+                          </div>
+                          <!-- /.row -->
+                      </li>
+                      <!-- Menu Footer-->
+                      <li class="user-footer">
+                          <!-- <div class="pull-left">
+                              <a href="#" class="btn btn-default btn-flat">Profile</a>
+                          </div> -->
+                          <div class="pull-right">
+                              <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                          </div>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+        <!-- /.navbar-custom-menu -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container-fluid" style="padding: 0;">
+      <section>
+        <div class="bs-example" data-example-id="simple-nav-justified">
+          <ul class="nav nav-pills nav-justified">
+            <li role="presentation" class="active"><a href="add-product.html">Product</a></li>
+            <li role="presentation"><a href="checkout.html">Checkout Page</a></li>
+            <li role="presentation"><a href="success-page.html">Success Page</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#options">Options</a>
+          <a href="#storefront">Storefront</a>
+          <a href="#images">Images</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#inventory">Inventory</a>
+          <a href="#bump">Bump</a>
+          <a href="#shipping">Shipping</a>
+          <a href="#payment">Payment</a>
+          <a href="#unique">Unique Code</a>
+          <a href="#assign">Assign Product to</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" class="open-nav" onclick="openNav()">&#9776; </span>      
+      </section>
+
+      <!-- Main content -->
+
+      <section class="content">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <!-- Error Message -->
+            <div class="card mb-4">
+              <div class="card-body">
+                <h4><i class="fa fa-warning text-red"></i> Please fix fields error before proceeding to next step</h4>
+                <div class="callout callout-default" style="margin-bottom: 0!important;">
+                  Product Variations is not valid
+                </div>
+              </div>
+            </div>
+            
+            <form>
+              <!-- Options -->
+              <div class="card mb-4" id="options">
+                <div class="card-header">Options</div>
+                <div class="card-body">
+
+                  <div class="form-group">
+                    <label for="name">Product Name <span class="font-weight-thin">will appear on the cart & invoice</span></label>
+                    <input type="text" class="form-control" id="name" name="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="url">Checkout Page URL</label>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">/</span>
+                      <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" id="url" name="url">
+                    </div>
+                    <small class="font-italic">Checkout page URL: <a href="https://yokayuga.orderonline.id/">https://yokayuga.orderonline.id/</a></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Product Code <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Digunakan untuk penamaan kontak di Google Contacts"></i></label>
+                    <input type="text" class="form-control" id="name" name="name">
+                    <small class="font-italic">Example: product code for "Kelambu Anak Bayi" is KAB</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="category" class="control-label">Product Category</label>
+                    <select class="form-control" id="category">
+                      <option value="" selected disabled>Select Category</option>
+                      <option>Buku</option>
+                      <option>Dapur</option>
+                      <option>Elektronik</option>
+                      <option>Fashion</option>
+                    </select>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <select class="form-control" id="collection">
+                          <option value="" selected disabled>Select Category</option>
+                          <option>Buku</option>
+                          <option>Dapur</option>
+                          <option>Elektronik</option>
+                          <option>Fashion</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <select class="form-control" id="collection">
+                          <option value="" selected disabled>Select Category</option>
+                          <option>Alam</option>
+                          <option>Fotografi</option>
+                          <option>Hiburan</option>
+                          <option>Humor</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label>Product Collections</label>
+                    <select class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
+                      <option>Alabama</option>
+                      <option>Alaska</option>
+                      <option>California</option>
+                      <option>Delaware</option>
+                      <option>Tennessee</option>
+                      <option>Texas</option>
+                      <option>Washington</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="collection" class="control-label">Product Status 
+                      <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Disabled: Halaman pemesanan produk tidak dapat dikunjungi, Test Mode: Halaman
+                      Pemesanan produk dapat dikunjungi tetapi order yang terjadi tidak akan diproses, Live: Halaman pemesanan produk siap untuk digunakan"></i>
+                    </label>
+                    <br />
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-primary active">
+                        <input type="radio" name="options" id="option1" checked> Disabled
+                      </label>
+                      <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2"> Test Mode
+                      </label>
+                      <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3"> Live
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Storefront -->
+              <div class="card mb-4" id="storefront">
+                <div class="card-header">Storefront</div>
+                <div class="card-body">
+
+                  <div class="form-group">
+                    <label for="name">Visibility</label><br />
+                    <div class="switch-flex">
+                      <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="switch-slider round"></span>
+                      </label>
+                      <span class="show-product">Show product in Storefront</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Max Quantity</label><br />
+                    <div class="switch-flex">
+                      <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="switch-slider round"></span>
+                      </label>
+                      <span class="show-product">Show product in Storefront</span>
+                      <br>
+                      <span class="show-product"><input type="number" class="form-control" min="1" value="1"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Description <span class="font-weight-thin">(Explain more about your product)</span></label><br />
+                    <textarea class="textarea-description" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Images -->
+              <div class="card mb-4" id="images">
+                <div class="card-header">Images</div>
+                <div class="card-body">
+
+                  <div class="form-group mb-1">
+                    <label class="font-weight-thin">Upload your product images (up to 10 images)</label><br />
+                    <!-- <input type="file" id="image"> -->
+                    <label class="custom-file-upload">
+                      <input type="file"  id="image" />
+                      Upload Images
+                    </label>
+                  </div>
+                  <small class="font-italic">You can choose to show or hide product images on Checkout Page section</small>
+
+                </div>
+              </div>
+              <!-- Pricing -->
+              <div class="card mb-4" id="pricing">
+                <div class="card-header">Pricing</div>
+                <div class="card-body">
+
+                  <label>Product Type <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Apakah produk ini memiliki variasi atau tidak"></i></label><br />
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#simple" aria-controls="simple" role="tab" data-toggle="tab">Simple</a></li>
+                    <li role="presentation"><a href="#variable" aria-controls="variable" role="tab" data-toggle="tab">Variable</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="simple">
+                      <div class="form-group mt-4">
+                        <label for="price" class="font-weight-thin">Regular Price</label>
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">Rp</span>
+                          <input type="text" class="form-control" placeholder="price" value="0" aria-describedby="basic-addon1" id="price" name="price">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Sale Price
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">Rp</span>
+                          <input type="text" class="form-control" placeholder="sale-price" value="0" aria-describedby="basic-addon1" id="sale-price" name="sale-price">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Schedule Sale Price
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Date range:</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                          </div>
+                          <input type="text" class="form-control pull-right" id="reservation">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="cogs" class="font-weight-thin">COGS <span class="text-grey">(optional)</span> 
+                          <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Cost of Goods Sold / Harga Pokok"></i>
+                        </label>
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">Rp</span>
+                          <input type="text" class="form-control" placeholder="cogs" value="0" aria-describedby="basic-addon1" id="cogs" name="cogs">
+                        </div>
+                      </div>
+
+                      <a role="button" data-toggle="collapse" href="#addWholesaleProces" aria-expanded="false" aria-controls="addWholesaleProces">
+                        Add Wholesale Prices
+                      </a>
+                      <div class="collapse" id="addWholesaleProces">
+                        <div class="well">
+                          <table class="table mb-0">
+                            <tr>
+                              <td style="text-align: center;">>=</td>
+                              <td style="text-align: center;">
+                                <input type="number" class="form-control" placeholder="Min. Quantity" min="0">
+                              </td>
+                              <td style="text-align: center;">=</td>
+                              <td style="text-align: center;">
+                                <input type="number" class="form-control" placeholder="Price">
+                              </td>
+                              <td style="text-align: center;">
+                                <i class="fa fa-close"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: center;">>=</td>
+                              <td style="text-align: center;">
+                                <input type="number" class="form-control" placeholder="Min. Quantity" min="0">
+                              </td>
+                              <td style="text-align: center;">=</td>
+                              <td style="text-align: center;">
+                                <input type="number" class="form-control" placeholder="Price">
+                              </td>
+                              <td style="text-align: center;">
+                                <i class="fa fa-close"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: center;">>=</td>
+                              <td style="text-align: center;">
+                                <input type="number" class="form-control" placeholder="Min. Quantity" min="0">
+                              </td>
+                              <td style="text-align: center;">=</td>
+                              <td style="text-align: center;">
+                                <input type="number" class="form-control" placeholder="Price">
+                              </td>
+                              <td style="text-align: center;">
+                                <i class="fa fa-close"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: center;">>=</td>
+                              <td style="text-align: center;">
+                                <input type="number" class="form-control" placeholder="Min. Quantity" min="0">
+                              </td>
+                              <td style="text-align: center;">=</td>
+                              <td style="text-align: center;">
+                                <input type="number" class="form-control" placeholder="Price">
+                              </td>
+                              <td style="text-align: center;">
+                                <i class="fa fa-close"></i>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: center;">>=</td>
+                              <td style="text-align: center;">
+                                <input type="number" class="form-control" placeholder="Min. Quantity" min="0">
+                              </td>
+                              <td style="text-align: center;">=</td>
+                              <td style="text-align: center;">
+                                <input type="number" class="form-control" placeholder="Price">
+                              </td>
+                              <td style="text-align: center;">
+                                <i class="fa fa-close"></i>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="variable">
+                      <div class="form-group mt-4">
+                        <label>Multiple Variations</label>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Do you want to enable multiple variations order?
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="attribute" class="control-label">Attributes <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Ketik untuk menambah atribut lain"></i></label>
+                        <select class="form-control" id="attribute">
+                          <option value="" selected disabled>Input or Select Attribute</option>
+                          <option>Ukuran</option>
+                          <option>Warna</option>
+                        </select>
+                      </div>
+                      <table class="table background-table mb-0">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-group mb-0">
+                                <input type="text" class="form-control" placeholder="warna" value="warna" id="warna" name="warna">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-group mb-0">
+                                <div class="form-group">
+                                  <input type="text" placeholder="Input 'Warna' Option" value="Amsterdam,Washington" data-role="tagsinput" id="tags-filter">
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-right">
+                              <div class="form-group mb-0">
+                                <button class="btn btn-sm btn-default"><i class="fa fa-close"></i> Remove Attribute</button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table background-table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-group mb-0">
+                                <input type="text" class="form-control" placeholder="ukuran" value="ukuran" id="ukuran" name="ukuran">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-group mb-0">
+                                <div class="form-group">
+                                  <input type="text" placeholder="Input 'Ukuran' Option" value="Amsterdam,Washington" data-role="tagsinput" id="tags-filter">
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-right">
+                              <div class="form-group mb-0">
+                                <button class="btn btn-sm btn-default"><i class="fa fa-close"></i> Remove Attribute</button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <div class="form-group">
+                        <label for="variation" class="control-label">Variations Price</label><br />
+                        <input type="text" placeholder="No Variations Available" class="form-control" disabled id="variation" name="variation">
+                        <table class="table background-table">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <label class="control-label">silver - Besar</label>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <div class="input-group" id="warna">
+                                        <div class="input-group-addon">Rp</div>
+                                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="" value="0">
+                                        <div class="input-group-addon">
+                                          <button type="button" class="no-button" data-toggle="tooltip" data-placement="top" title="Apply to all variations"><i class="fa fa-clone"></i></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="phone" class="control-label">COGS <span class="font-weight-thin text-grey">(optional)</span> <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Cost of Goods Sold / Harga Pokok"></i></label>
+                                      <div class="input-group" id="warna">
+                                        <div class="input-group-addon">Rp</div>
+                                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="" value="0">
+                                        <div class="input-group-addon">
+                                          <button type="button" class="no-button" data-toggle="tooltip" data-placement="top" title="Apply to all variations"><i class="fa fa-clone"></i></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <div class="input-group" id="warna">
+                                        <div class="input-group-addon">Weight (gr)</div>
+                                        <input type="number" min="0" class="form-control" id="exampleInputAmount" placeholder="" value="1000">
+                                        <div class="input-group-addon">
+                                          <button type="button" class="no-button" data-toggle="tooltip" data-placement="top" title="Apply to all variations"><i class="fa fa-clone"></i></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="mt-6">
+                                      <div class="text-center">
+                                        <button type="button" class="no-button" data-toggle="modal" data-target="#modalWholesale">Add / Edit Wholesale Price</button>
+                                        <br>
+                                        <small style="color: red;">Wholesale Price Error</small>
+                                      </div>
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="modalWholesale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                              <h4 class="modal-title" id="myModalLabel">Wholesale</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                              <div class="form-group">
+                                                <label class="control-label">Normal Price: Rp0</label>
+                                                <table class="table">
+                                                  <tr>
+                                                    <td style="text-align: center;">>=</td>
+                                                    <td style="text-align: center;">
+                                                      <input type="number" class="form-control" placeholder="Min. Quantity" min="0">
+                                                    </td>
+                                                    <td style="text-align: center;">=</td>
+                                                    <td style="text-align: center;">
+                                                      <input type="number" class="form-control" placeholder="Price">
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                      <i class="fa fa-close"></i>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="text-align: center;">>=</td>
+                                                    <td style="text-align: center;">
+                                                      <input type="number" class="form-control" placeholder="Min. Quantity" min="0">
+                                                    </td>
+                                                    <td style="text-align: center;">=</td>
+                                                    <td style="text-align: center;">
+                                                      <input type="number" class="form-control" placeholder="Price">
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                      <i class="fa fa-close"></i>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="text-align: center;">>=</td>
+                                                    <td style="text-align: center;">
+                                                      <input type="number" class="form-control" placeholder="Min. Quantity" min="0">
+                                                    </td>
+                                                    <td style="text-align: center;">=</td>
+                                                    <td style="text-align: center;">
+                                                      <input type="number" class="form-control" placeholder="Price">
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                      <i class="fa fa-close"></i>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="text-align: center;">>=</td>
+                                                    <td style="text-align: center;">
+                                                      <input type="number" class="form-control" placeholder="Min. Quantity" min="0">
+                                                    </td>
+                                                    <td style="text-align: center;">=</td>
+                                                    <td style="text-align: center;">
+                                                      <input type="number" class="form-control" placeholder="Price">
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                      <i class="fa fa-close"></i>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="text-align: center;">>=</td>
+                                                    <td style="text-align: center;">
+                                                      <input type="number" class="form-control" placeholder="Min. Quantity" min="0">
+                                                    </td>
+                                                    <td style="text-align: center;">=</td>
+                                                    <td style="text-align: center;">
+                                                      <input type="number" class="form-control" placeholder="Price">
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                      <i class="fa fa-close"></i>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                              <button type="button" class="btn btn-primary">Ok</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Inventory -->
+              <div class="card mb-4" id="inventory">
+                <div class="card-header">Inventory</div>
+                <div class="card-body">
+
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Enable Stock Management
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="stock" class="control-label">Stock Quantity</label>
+                        <input type="number" class="form-control" placeholder="Stock Quantity" value="0" min="0">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="stock" class="control-label">Allow Backorders? <i class="fa fa-info-circle"></i></label>
+                        <select class="form-control" id="stock">
+                          <option value="" selected disabled>In Stock</option>
+                          <option>Allow</option>
+                          <option>Dont Allow</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="stock" class="control-label">Stock Status</label>
+                    <select class="form-control" id="stock">
+                      <option value="" selected disabled>Select Stock</option>
+                      <option>In Stock</option>
+                      <option>Out of Stock</option>
+                    </select>
+                  </div>
+
+                  <div class="inventory mb-2">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label class="control-label">silver - Besar</label>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-0">
+                          <input type="number" class="form-control" placeholder="Stock Quantity" value="0" min="0">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="stock" class="control-label">Allow Backorders? <i class="fa fa-info-circle"></i></label>
+                        <select class="form-control" id="stock">
+                          <option value="" selected disabled>In Stock</option>
+                          <option>Allow</option>
+                          <option>Dont Allow</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Bump -->
+              <div class="card mb-4" id="bump">
+                <div class="card-header">Bump</div>
+                <div class="card-body">
+
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Do you want to show a bump offer on this product?
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="bump" class="control-label">Bump Product Name <span class="font-weight-thin">will appear on the cart & invoice</span></label>
+                    <input type="text" class="form-control" placeholder="" name="bump" id="bump" >
+                  </div>
+                  <div class="form-group">
+                    <label for="price">Price</label>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">Rp</span>
+                      <input type="text" class="form-control" placeholder="price" value="0" aria-describedby="basic-addon1" id="price" name="price">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="bump-weight">Bump Weight <span class="font-weight-thin">(gr)</span></label>
+                    <input type="number" class="form-control" placeholder="bump-weight" value="0" min="0" aria-describedby="basic-addon1" id="bump-weight" name="bump-weight">
+                  </div>
+                  <div class="form-group">
+                    <label>Bump Image</label><br />
+                    <label class="custom-file-upload">
+                      <input type="file"  id="image" />
+                      Upload Image
+                    </label>
+                  </div>
+                  <div class="produk-bump">
+                    <div class="border">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" aria-label="...">
+                          </span>
+                          <input type="text" class="form-control" aria-label="Centang untuk memesan juga" value="Centang untuk memesan juga">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nama Produk Bump Anda + Harga" value="Nama Produk Bump Anda + Harga" aria-describedby="basic-addon1" >
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" placeholder="Penjelasan Tentang Produk Bump Anda Disini" rows="3"></textarea>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Shipping -->
+              <div class="card mb-4" id="shipping">
+                <div class="card-header">Shipping</div>
+                <div class="card-body">
+
+                  <div class="form-group mb-1">
+                    <label for="bump-weight" class="font-weight-thin">Weight (gr)</label>
+                    <input type="number" class="form-control" placeholder="bump-weight" value="0" min="0" aria-describedby="basic-addon1" id="bump-weight" name="bump-weight">
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Do you want to add shipping cost calculation?
+                      </label>
+                    </div>
+                  </div>
+
+                  <label>Shipping Type</label><br />
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#automated" aria-controls="automated" role="tab" data-toggle="tab">Automated</a></li>
+                    <li role="presentation"><a href="#flat" aria-controls="flat" role="tab" data-toggle="tab">Flat</a></li>
+                    <li role="presentation"><a href="#free" aria-controls="free" role="tab" data-toggle="tab">Free</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="automated">
+                      <div class="form-group mt-4">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> <img src="dist/img/scula/icon-logo.png" width="100px" alt="">
+                          </label>
+                        </div>
+                      </div>
+
+                      <label class="mt-2 mb-0">Shipping Services:</label>
+                      <table style="width: 100%;">
+                        <tr>
+                          <td>
+                            <div class="form-group mb-0">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Regular
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-group mb-0">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Next Day
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-group mb-0">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Economical
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-group mb-0">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Same Day (Beta) <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Hanya tersedia di kurir POS"></i>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-group mb-0">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Trucking Beta <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Hanya tersedia di kurir JNE"></i>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <label>Ship From:</label>
+                      <div class="form-group">
+                        <label for="province" class="control-label font-weight-thin">Province</label>
+                        <select class="form-control" id="province">
+                          <option value="" selected disabled>Province</option>
+                          <option>Yogyakarta</option>
+                          <option>Jakarta</option>
+                          <option>Bali</option>
+                          <option>Bandung</option>
+                        </select>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="city" class="control-label font-weight-thin">City</label>
+                            <select class="form-control" id="city">
+                              <option value="" selected disabled>City</option>
+                              <option>Sleman</option>
+                              <option>Bantul</option>
+                              <option>Kulonprogo</option>
+                              <option>Gunungkidul</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="subdistrict" class="control-label font-weight-thin">Subdistrict</label>
+                            <select class="form-control" id="subdistrict">
+                              <option value="" selected disabled>Subdistrict</option>
+                              <option>Condongcatur</option>
+                              <option>Banguntapan</option>
+                              <option>Wates</option>
+                              <option>Wonosari</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group mb-0">
+                        <label for="shipping">Additional Shipping Cost</label>
+                        <input type="number" class="form-control" placeholder="shipping" value="0" min="0" aria-describedby="basic-addon1" id="shipping" name="shipping">
+                      </div>
+                      <small class="font-italic">Additional/Reduction Shipping Price here. (insert negative value to reduce shipping cost)</small>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="flat">
+                      <div class="form-group mt-4">
+                        <label for="shipping-price" class="font-weight-thin">Flat Shipping Price</label>
+                        <input type="text" class="form-control" placeholder="Flat Shipping Price" value="0" id="shipping-price" name="shipping-price">
+                      </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="free">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Payment -->
+              <div class="card mb-4" id="payment">
+                <div class="card-header">Payment</div>
+                <div class="card-body">
+
+                  <label class="font-weight-thin">Choose your payment method</label><br />
+                  <div class="form-group">
+                    <!-- Bank Transfer -->
+                    <div class="bank-transfer">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Bank Transfer
+                        </label>
+                      </div>
+                      <button type="button" class="btn-gear" data-toggle="modal" data-target="#bankModal">
+                        <i class="fa fa-gear"></i>
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Method Description - Bank Transfer</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="form-group">
+                                <textarea class="form-control" id="description" placeholder="Description"></textarea>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Ok</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- COD -->
+                    <div class="bank-transfer">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> COD
+                        </label>
+                      </div>
+                      <div>
+                        <button type="button" class="btn-gear" data-toggle="tooltip" data-placement="top" title="Cash on Delivery"><i class="fa fa-info-circle"></i></button>
+                        <button type="button" class="btn-gear" data-toggle="modal" data-target="#codModal">
+                          <i class="fa fa-gear"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="codModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Method Description - COD</h4>
+                              </div>
+                              <div class="modal-body">
+                                <div class="form-group">
+                                  <textarea class="form-control" id="description" placeholder="Description"></textarea>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Ok</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-payment">
+                      <label>COD Settings</label>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="courier" class="control-label">Courier Fee Percentage</label>
+                            <div class="input-group" id="courier">
+                              <input type="number" min="0" value="0" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                              <div class="input-group-addon">%</div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="min-courier">Courier Minimal Fee</label>
+                            <input type="number" class="form-control" placeholder="min-courier" value="5000" min="0" aria-describedby="basic-addon1" id="min-courier" name="min-courier">
+                          </div>
+                          <div class="form-grou">
+                            <label>Shipping</label>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Include Shipping
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="fee-type" class="control-label">Fee Type</label>
+                            <select class="form-control" id="fee-type">
+                              <option value="" selected disabled>Type</option>
+                              <option>Product Only</option>
+                              <option>Product + Shipping</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="min-courier">Courier Maximal Fee</label>
+                            <input type="number" class="form-control" placeholder="max-courier" value="15000" min="0" aria-describedby="basic-addon1" id="max-courier" name="max-courier">
+                          </div>
+                          <div class="form-grou">
+                            <label>COD Couriers</label>
+                            <br>
+
+                            <label class="font-weight-thin">ID Express</label> <br>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#kurirModal">Set Couriers</button>
+                            <div class="modal fade" id="kurirModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="exampleModalLabel">COD Couriers</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="form-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input type="checkbox"> <img src="dist/img/scula/icon-logo.png" width="100px" alt="">
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Ok</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- E-Payment -->
+                    <div class="bank-transfer">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> E-Payment
+                        </label>
+                      </div>
+                      <button type="button" class="btn-gear" data-toggle="tooltip" data-placement="top" title="Menggunakan Rekber (Payment Gateway)"><i class="fa fa-info-circle"></i></button>
+                    </div>
+
+                    <div class="form-payment">
+                      <label>E-Payment Channels</label>
+                      <!-- <button type="button" class="btn-gear" data-toggle="tooltip" data-placement="top" title="Cash on Delivery"><i class="fa fa-info-circle"></i></button> -->
+                      <div class="payment-transfer">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> <img src="dist/img/scula/visa.png" width="50px" alt=""> &nbsp;Credit Card
+                          </label>
+                        </div>
+                        <div>
+                          <button type="button" class="btn-gear" data-toggle="modal" data-target="#codModal">
+                            <i class="fa fa-gear"></i>
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="codModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                  <h4 class="modal-title" id="myModalLabel">Channel - Credit Card</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <textarea class="form-control" id="description" placeholder="Description"></textarea>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Ok</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <label class="font-weight-thin">Biaya per transaksi dapat di-check di sini: <a href="">Biaya Transaksi</a></label>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Unique Code -->
+              <div class="card mb-4" id="unique">
+                <div class="card-header">Unique Code</div>
+                <div class="card-body">
+
+                  <label class="font-weight-thin">Set up unique code for each payment</label><br />
+                  <div class="form-group mb-1">
+                    <div class="form-group">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Enable Unique Code
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label font-weight-thin">Type</label><br />
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-primary active">
+                        <input type="radio" name="options" id="option1" checked> Decrease
+                      </label>
+                      <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2"> Increase
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="font-weight-thin">Min</label>
+                        <input type="number" class="form-control" value="1" min="1" >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="font-weight-thin">Max</label>
+                        <input type="number" class="form-control" value="1" min="999" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Assign Product to -->
+              <div class="card mb-4" id="assign">
+                <div class="card-header">Assign Product to</div>
+                <div class="card-body">
+
+                  <div>
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#customer-service" aria-controls="customer-service" role="tab" data-toggle="tab">Customer Service</a></li>
+                      <li role="presentation"><a href="#shipper" aria-controls="shipper" role="tab" data-toggle="tab">Shipper</a></li>
+                      <li role="presentation"><a href="#admin" aria-controls="admin" role="tab" data-toggle="tab">Admin</a></li>
+                    </ul>
+                  
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="customer-service">
+                        <div class="form-group mt-3">
+                          <select class="form-control" id="stock">
+                            <option value="" selected disabled>Select Customer Service</option>
+                            <option>Allow</option>
+                            <option>Dont Allow</option>
+                          </select>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="no-service">
+                              <label class="font-weight-thin">No Customer Service assigned to this product</label>
+                            </div>
+
+                            <div class="tab-content">
+                              <div role="tabpanel" class="tab-pane active" id="equals">
+                                <div class="data-service mb-4">
+                                  <label class="font-weight-thin">Putri Naura</label> <button class="btn btn-default"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+
+                              <div role="tabpanel" class="tab-pane" id="percentage">
+                                <div>
+                                  <div class="box-slider">
+                                    <div class="data-service-2">
+                                      <label class="font-weight-thin">Putri Naura</label> <button class="btn btn-default"><i class="fa fa-close"></i></button>
+                                    </div>
+                                    <div class="padding-slider">
+                                      <label style="margin:0 20px 0 0;">61%</label>
+                                      <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+                                    </div>
+                                  </div>
+                                  <div class="row text-right mt-2">
+                                    <div class="col-md-12">
+                                      <label class="font-weight-thin">Total Percentages: <span style="color:red">61%</span> <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Total percentages must be 100%"></i></label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div role="tabpanel" class="tab-pane" id="fixed">
+                                <div>
+                                  <div class="box-slider">
+                                    <div class="data-service-2">
+                                      <label class="font-weight-thin">Putri Naura</label> <button class="btn btn-default"><i class="fa fa-close"></i></button>
+                                    </div>
+                                    <div class="padding-slider">
+                                      <label style="margin:0 20px 0 0;">0</label>
+                                      <input id="ex2" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+                                    </div>
+                                  </div>
+                                  <div class="row text-right mt-2">
+                                    <div class="col-md-12">
+                                      <label class="font-weight-thin">Total Rates: <span style="color:red">0</span> <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Total rates must be > 0"></i></label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <label>Order's Distribution</label><br />
+                            <ul class="nav nav-tabs order" role="tablist">
+                              <li role="presentation" class="active"><a href="#equals" aria-controls="equals" role="tab" data-toggle="tab">Equals</a></li>
+                              <li role="presentation"><a href="#percentage" aria-controls="percentage" role="tab" data-toggle="tab">Percentage</a></li>
+                              <li role="presentation"><a href="#fixed" aria-controls="fixed" role="tab" data-toggle="tab">Fixed</a></li>
+                            </ul>
+
+                          </div>
+                        </div>
+
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="shipper">
+                        <div class="form-group mt-3">
+                          <select class="form-control" id="stock">
+                            <option value="" selected disabled>Select Customer Service</option>
+                            <option>Allow</option>
+                            <option>Dont Allow</option>
+                          </select>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="no-service">
+                              <label class="font-weight-thin">No Customer Service assigned to this product</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div role="tabpanel" class="tab-pane" id="admin">
+                        <div class="form-group mt-3">
+                          <select class="form-control" id="stock">
+                            <option value="" selected disabled>Select Customer Service</option>
+                            <option>Allow</option>
+                            <option>Dont Allow</option>
+                          </select>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="no-service">
+                              <label class="font-weight-thin">No Customer Service assigned to this product</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 text-right">
+                  <a href="checkout.html" class="btn btn-info">Next <i class="fa fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-6"></div>
+        </div>
+      </section>
+      
+    </div>
+    
+  </div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- Tags Input -->
+<script src="plugins/tags-input/bootstrap-tagsinput.js"></script>
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- Select2 -->
+<script src="plugins/select2/select2.full.min.js"></script>
+<!-- CK Editor -->
+<script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Bootstrap slider -->
+<script src="plugins/bootstrap-slider/bootstrap-slider.js"></script>
+<script>
+  $(function () {
+    $('#ex1').slider({
+      formatter: function(value) {
+        return 'Current value: ' + value;
+      }
+    });
+    $('#ex2').slider({
+      formatter: function(value) {
+        return 'Current value: ' + value;
+      }
+    });
+
+    //Initialize Select2 Elements
+    $(".select2").select2();
+    
+    //Date range picker
+    $('#reservation').daterangepicker();
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
+
+    //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+
+    //bootstrap WYSIHTML5 - text editor
+    $(".textarea-description").wysihtml5();
+
+    //Money Euro
+    $("[data-mask]").inputmask();
+    
+  });
+</script>
+<!-- InputMask -->
+<script src="plugins/input-mask/jquery.inputmask.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+</body>
+</html>
