@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bootstrap/css/custom1.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
     <!-- Theme style -->
@@ -30,12 +30,12 @@
 <body class="hold-transition skin-blue layout-top-nav">
   <div class="wrapper">
     <header class="main-header">
-      <nav class="navbar navbar-static-top">
+      <nav class="navbar navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
               <a href="#" class="navbar-brand"><b>Scula</b></a>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                <i class="fa fa-bars"></i>
+                <span class="material-icons-outlined">horizontal_split</span>
               </button>
           </div>
 
@@ -59,7 +59,7 @@
                   <li><a href="team-members.html">Team Members</a></li>
                 </ul>
               </li>
-              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
+              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
             </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -69,7 +69,7 @@
                 <li class="dropdown messages-menu">
                     <!-- Menu toggle button -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-envelope-o"></i>
+                        <span class="material-icons md-16">mail</span>
                         <span class="label label-success">4</span>
                     </a>
                     <ul class="dropdown-menu">
@@ -82,12 +82,12 @@
                                     <a href="#">
                                         <div class="pull-left">
                                             <!-- User Image -->
-                                            <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                         </div>
                                         <!-- Message title and timestamp -->
                                         <h4>
                                             Support Team
-                                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            <small><span class="material-icons-outlined">schedule</span> 5 mins</small>
                                         </h4>
                                         <!-- The message -->
                                         <p>Why not buy a new awesome theme?</p>
@@ -106,7 +106,7 @@
                 <li class="dropdown notifications-menu">
                     <!-- Menu toggle button -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-bell-o"></i>
+                        <span class="material-icons md-16">notifications</span>
                         <span class="label label-warning">10</span>
                     </a>
                     <ul class="dropdown-menu">
@@ -116,7 +116,7 @@
                             <ul class="menu">
                                 <li>
                                     <!-- start notification -->
-                                    <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
+                                    <a href="#"> <span class="material-icons-outlined">person</span> 5 new members joined today </a>
                                 </li>
                                 <!-- end notification -->
                             </ul>
@@ -241,17 +241,20 @@
       </nav>
     </header>
       <!-- Full Width Column -->
-      <div class="content-wrapper">
+      <div class="content-wrapper mt-50">
         <div class="container">
-          <!-- Content Header (Page header) -->
-          <section class="content-header">
-            <!-- <div class="row"> -->
-            <!-- <div class="col-md-10"> -->
-            <h1>Dashboard</h1>
-            <!-- </div> -->
-            <!-- <div class="col-md-2 text-right"> -->
-            <ol class="breadcrumb">
-              <div class="form-group">
+          
+
+          <!-- Main content -->
+          <section class="content">
+            <!-- Content Header (Page header) -->
+          
+            <div class="row">
+              <div class="col-xs-6">
+                <h1 class="mb-0 judul-halaman">Dashboard</h1>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group pull-right">
                 <div class="input-group">
                   <button
                     type="button"
@@ -259,21 +262,19 @@
                     id="daterange-btn"
                   >
                     <span>
-                      <i class="fa fa-calendar"></i> Date range picker
+                      <span class="material-icons md-18">date_range</span> Date range picker
                     </span>
-                    <i class="fa fa-caret-down"></i>
+                    <span class="material-icons md-12">expand_more</span>
                   </button>
                 </div>
               </div>
-            </ol>
-            <!-- </div> -->
-            <!-- </div> -->
-          </section>
-
-          <!-- Main content -->
-          <section class="content">
+              </div>
+              
+            </div>
+            
+          
             <div class="row" style="margin-left: 1px">
-              <h3>Transaction</h3>
+              <h3 class="summary-title">Transaction</h3>
             </div>
             <div class="row">
               <div class="col-md-6">
@@ -299,11 +300,9 @@
 
                       <div class="info-box-content">
                         <span class="info-box-number">591</span>
-                        <span class="info-box-text text-center"
-                          ><span>
-                            <i class="fa fa-shopping-cart text-green"></i
-                          ></span>
-                          Total Order</span
+                        <span class="info-box-text text-center">
+                          <span class="material-icons-outlined">shopping_cart</span>
+                           Total Order</span
                         >
                       </div>
                       <!-- /.info-box-content -->
@@ -317,11 +316,9 @@
                         <!-- <span class="info-box-text">Messages</span> -->
                         <span class="info-box-number">257</span>
                         <span class="info-box-text text-center"
-                          ><span
-                            ><i class="fa fa-fw fa-credit-card"></i>Total
-                            Paid</span
-                          >
-                          Total Paid</span
+                          ><span class="material-icons-outlined">
+credit_card
+</span> Total Paid</span
                         >
                       </div>
                       <!-- /.info-box-content -->
@@ -337,7 +334,7 @@
                         <!-- <span class="info-box-text">Messages</span> -->
                         <span class="info-box-number">43%</span>
                         <span class="info-box-text text-center"
-                          ><span><i class="fa fa-fw fa-users"></i></span> Paid
+                          ><span class="material-icons-outlined">emoji_symbols</span> Paid
                           Ratio</span
                         >
                       </div>
@@ -352,10 +349,7 @@
                         <!-- <span class="info-box-text">Messages</span> -->
                         <span class="info-box-number">1,410</span>
                         <span class="info-box-text text-center"
-                          ><span>
-                            <i class="fa fa-shopping-cart text-green"></i
-                          ></span>
-                          Unpaid Orders</span
+                          ><span class="material-icons-outlined">shopping_cart</span> Unpaid Orders</span
                         >
                       </div>
                       <!-- /.info-box-content -->
@@ -366,7 +360,7 @@
             </div>
 
             <div class="row" style="margin-left: 1px">
-              <h3>Revenue</h3>
+              <h3 class="summary-title">Revenue</h3>
             </div>
             <div class="row">
               <div class="col-md-6">
@@ -399,7 +393,7 @@
                         <!-- <span class="info-box-text">Messages</span> -->
                         <span class="info-box-number">31</span>
                         <span class="info-box-text text-center"
-                          ><span><i class="fa fa-fw fa-users"></i></span> Bump
+                          ><span class="material-icons-outlined">point_of_sale</span> Bump
                           Order</span
                         >
                       </div>
@@ -414,7 +408,7 @@
                         <!-- <span class="info-box-text">Messages</span> -->
                         <span class="info-box-number">Rp15.407.000</span>
                         <span class="info-box-text text-center"
-                          ><span><i class="fa fa-fw fa-users"></i></span> Bumb
+                          ><span class="material-icons-outlined">monetization_on</span> Bumb
                           Revenue</span
                         >
                       </div>
@@ -430,9 +424,8 @@
                       <div class="info-box-content">
                         <!-- <span class="info-box-text">Messages</span> -->
                         <span class="info-box-number">Rp 918.000</span>
-                        <span class="info-box-text text-center"
-                          ><span></span> Discount Claimed</span
-                        >
+                        <span class="info-box-text text-center">
+                          <span class="material-icons-outlined">local_offer</span> Discount Claimed</span>
                       </div>
                       <!-- /.info-box-content -->
                     </div>
@@ -444,10 +437,8 @@
                       <div class="info-box-content">
                         <!-- <span class="info-box-text">Messages</span> -->
                         <span class="info-box-number">Rp 0</span>
-                        <span class="info-box-text text-center"
-                          ><span><i class="fa fa-fw fa-users"></i></span>
-                          Shipping Cost</span
-                        >
+                        <span class="info-box-text text-center">
+                          <span class="material-icons-outlined">local_shipping</span>Shipping Cost</span>
                       </div>
                       <!-- /.info-box-content -->
                     </div>
@@ -464,8 +455,22 @@
                     <!-- <span class="info-box-text">Messages</span> -->
                     <span class="info-box-number">257</span>
                     <span class="info-box-text text-center"
-                      ><span><i class="fa fa-fw fa-users"></i></span> Total
-                      Quality Sold</span
+                      ><span class="material-icons-outlined">credit_card</span> Total Quality Sold</span
+                    >
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="info-box" style="height: 152px">
+                  <!-- <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span> -->
+
+                  <div class="info-box-content">
+                    <!-- <span class="info-box-text">Messages</span> -->
+                    <span class="info-box-number">Rp 0</span>
+                    <span class="info-box-text text-center">
+                      <span class="material-icons-outlined">price_change</span> COGS</span
                     >
                   </div>
                   <!-- /.info-box-content -->
@@ -480,22 +485,7 @@
                     <!-- <span class="info-box-text">Messages</span> -->
                     <span class="info-box-number">Rp 0</span>
                     <span class="info-box-text text-center"
-                      ><span><i class="fa fa-fw fa-users"></i></span> COGS</span
-                    >
-                  </div>
-                  <!-- /.info-box-content -->
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <div class="info-box" style="height: 152px">
-                  <!-- <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span> -->
-
-                  <div class="info-box-content">
-                    <!-- <span class="info-box-text">Messages</span> -->
-                    <span class="info-box-number">Rp 0</span>
-                    <span class="info-box-text text-center"
-                      ><span><i class="fa fa-fw fa-users"></i></span> Unpaid
+                      ><span class="material-icons-outlined">pending_actions</span> Unpaid
                       Revenue</span
                     >
                   </div>
@@ -511,7 +501,7 @@
                     <!-- <span class="info-box-text">Messages</span> -->
                     <span class="info-box-number">Rp126.257.012</span>
                     <span class="info-box-text text-center"
-                      ><span><i class="fa fa-fw fa-users"></i></span> Gross
+                      ><span class="material-icons-outlined">price_change</span> Gross
                       Revenue</span
                     >
                   </div>
@@ -528,8 +518,7 @@
                     <!-- <span class="info-box-text">Messages</span> -->
                     <span class="info-box-number">Rp126.257.012</span>
                     <span class="info-box-text text-center"
-                      ><span><i class="fa fa-fw fa-users"></i></span> Net
-                      Revenueinfo</span
+                      ><span class="material-icons-outlined">info</span> Net Revenue info</span
                     >
                   </div>
                   <!-- /.info-box-content -->
@@ -544,7 +533,7 @@
                     <!-- <span class="info-box-text">Messages</span> -->
                     <span class="info-box-number">Rp126.257.012</span>
                     <span class="info-box-text text-center"
-                      ><span><i class="fa fa-fw fa-users"></i></span> Gross
+                      ><span class="material-icons-outlined">payments</span> Gross
                       Profit</span
                     >
                   </div>
@@ -560,7 +549,7 @@
                     <!-- <span class="info-box-text">Messages</span> -->
                     <span class="info-box-number">Rp50.199.903</span>
                     <span class="info-box-text text-center"
-                      ><span><i class="fa fa-fw fa-users"></i></span>
+                      ><span class="material-icons-outlined">logout</span>
                       Expenses</span
                     >
                   </div>
@@ -575,10 +564,8 @@
                   <div class="info-box-content">
                     <!-- <span class="info-box-text">Messages</span> -->
                     <span class="info-box-number">Rp76.057.109</span>
-                    <span class="info-box-text text-center"
-                      ><span><i class="fa fa-fw fa-users"></i></span> Net
-                      Profit</span
-                    >
+                    <span class="info-box-text text-center">
+                      <span class="material-icons-outlined">payments</span> Net Profit</span>
                   </div>
                   <!-- /.info-box-content -->
                 </div>
@@ -586,7 +573,7 @@
             </div>
 
             <div class="row" style="margin-left: 1px">
-              <h3>Profitable Products</h3>
+              <h3 class="summary-title">Profitable Products</h3>
             </div>
 
             <div class="box">
@@ -595,7 +582,7 @@
                 <div class="table-responsive">
                   <table
                     id="example1"
-                    class="table table-bordered table-striped"
+                    class="table table-bordered table-striped table-span-red"
                   >
                     <tbody>
                       <tr>
@@ -611,7 +598,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -620,7 +607,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -629,7 +616,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -638,7 +625,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -659,7 +646,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -668,7 +655,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -677,7 +664,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -686,7 +673,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -707,7 +694,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -716,7 +703,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -725,7 +712,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -734,7 +721,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -755,7 +742,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -764,7 +751,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -773,7 +760,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -782,7 +769,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -803,7 +790,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -812,7 +799,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -821,7 +808,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -830,7 +817,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -851,7 +838,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -860,7 +847,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -869,7 +856,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -878,7 +865,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -899,7 +886,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -908,7 +895,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -917,7 +904,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -926,7 +913,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -947,7 +934,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -956,7 +943,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -965,7 +952,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -974,7 +961,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -995,7 +982,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1004,7 +991,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1013,7 +1000,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1022,7 +1009,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1043,7 +1030,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1052,7 +1039,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1061,7 +1048,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1070,7 +1057,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1091,7 +1078,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1100,7 +1087,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1109,7 +1096,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1118,7 +1105,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1139,7 +1126,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1148,7 +1135,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1157,7 +1144,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1166,7 +1153,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1189,7 +1176,7 @@
                 <div class="table-responsive">
                   <table
                     id="example1"
-                    class="table table-bordered table-striped"
+                    class="table table-bordered table-striped table-span-red"
                   >
                     <tbody>
                       <tr>
@@ -1204,7 +1191,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1213,7 +1200,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1222,7 +1209,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1231,7 +1218,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1251,7 +1238,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1260,7 +1247,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1269,7 +1256,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1278,7 +1265,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1298,7 +1285,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1307,7 +1294,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1316,7 +1303,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1325,7 +1312,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1345,7 +1332,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1354,7 +1341,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1363,7 +1350,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1372,7 +1359,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1392,7 +1379,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1401,7 +1388,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1410,7 +1397,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1419,7 +1406,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1439,7 +1426,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1448,7 +1435,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1457,7 +1444,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1466,7 +1453,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1486,7 +1473,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1495,7 +1482,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1504,7 +1491,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1513,7 +1500,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1533,7 +1520,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1542,7 +1529,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1551,7 +1538,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1560,7 +1547,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
@@ -1580,7 +1567,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >325</span
                           >
                           <br />
@@ -1589,7 +1576,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >145</span
                           >
                           <br />
@@ -1598,7 +1585,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >45%</span
                           >
                           <br />
@@ -1607,7 +1594,7 @@
                         <td>
                           <span
                             class="text-center"
-                            style="font-size: 25px; color: red"
+                            style="font-size: 25px;"
                             >Rp84.987.000</span
                           >
                           <br />
