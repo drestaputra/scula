@@ -5,28 +5,28 @@ body {
     color: #656565;
 }
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 18px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
 
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
 
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
 .material-icons, .material-icons-outlined{
     vertical-align: middle !important;
@@ -112,7 +112,6 @@ body {
 nav.navbar.navbar-fixed-top {
     background-color: #f95353 !important;
     /*background-color: #f56b62 !important;*/
-
 }
 nav.navbar.navbar-static-top {
     background-color: #f95353 !important;
@@ -372,9 +371,9 @@ nav.navbar.navbar-static-top {
     color: #fd6257;;
 }
 
-.content-wrapper{
+/* .content-wrapper{
     background-color: #f3f3f3!important
-}
+} */
 .table-header-menu .dropdown{
     display: inline-block;
 }
@@ -541,4 +540,133 @@ legend table th,legend table td{
 }
 table tr:hover .row-actions {
     opacity: 1;
+}
+
+/* MODAL MENU PRODUCT / ADD PRODUCT */
+.nav-tabs.pesan, .nav-tabs.order {
+    border-bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+}
+.nav-tabs.pesan>li, .nav-tabs.order>li {
+    width: 50%;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+.nav-tabs.pesan>li.active>a, .nav-tabs.pesan>li.active>a:focus, .nav-tabs.pesan>li.active>a:hover, .nav-tabs.order>li.active>a, .nav-tabs.order>li.active>a:focus, .nav-tabs.order>li.active>a:hover {
+    background-color: #2979ff;
+    color: #F5F5F5;
+}
+.sms-gateway {
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+}
+
+/* PAGE BUILDER */
+.font-weight-thin {
+    font-weight: 500;
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    /* border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important; */
+    background-color: #fff;
+    /* background-color: rgba(0,0,0,.03); */
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+.card-body {
+    padding: 1.25rem;
+    background-color: #fff;
+}
+.input-group .input-group-addon {
+    background-color: #eee !important;
+}
+.font-italic {
+    font-style: italic;
+}
+.text-grey {
+    color: #bbbfca;
+}
+.background-table {
+    background-color: #F8FBFF;
+    border: 1px solid #ddd;
+}
+.produk-bump {
+    background-color: #EEEEEE;
+    padding: 30px;
+}
+.produk-bump .border {
+    border: 1px dashed red;
+    padding: 10px;
+}
+.btn-gear {
+    background: transparent;
+    outline: none;
+    border: 0px;
+}
+.bank-transfer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 0 10px;
+    align-items: center;
+}
+.payment-transfer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 10px;
+    align-items: center;
+}
+.form-payment {
+    background-color: #F8FBFF;
+    padding: 10px;
+}
+.no-service {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+.data-service {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-slider {
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+.data-service-2 {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-panel-2 {
+    padding: 5px 10px;
+    background-color: #FCFCFC;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.no-button {
+    color: #3c8dbc;
+    padding: 0;
+    background-color: transparent;
+    border: 0px;
+}
+.no-button:hover {
+    outline: none;
+    text-decoration: none;
+    color: #72afd2;
 }

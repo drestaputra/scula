@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Registrasi | Toko Ghoib</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/registrasi.css">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+</head>
+
+<body class="app-container grey">
+  <div class="container">
+    <div class="app-wrapper">
+      <div class="app-header">
+        <h1 class="app-header__title">OrderOnline Business</h1>
+				<h2 class="app-header__description">Tingkatkan Penjualan dan Konversi dengan OrderOnline</h2>
+      </div>
+
+      <form>
+        <div class="container-fluid checkout-body">
+          <div class="row d-flex">
+            <div class="col checkout-body__form">
+              <div class="image-container">
+                <div class="row">
+                  <div class="col-md-6 col-xs-6">
+                    <img src="https://cdn.orderonline.id/img/seal_secure_id.png" class="img-fluid" alt="Transaksi Aman">
+                  </div>
+                  <div class="col-md-6 col-xs-6">
+                    <img src="https://cdn.orderonline.id/img/seal_money_back_id.png" class="img-fluid" alt="money_back_id">
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-information">
+                <div class="contact-information-header section-title">
+                  <span>Data Penerima:</span>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="field-name" placeholder="Nama Anda" maxlength="160" data-label="Nama" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="phone" class="form-control" id="field-phone" placeholder="No. WhatsApp Anda" maxlength="160" data-label="No Handphone/WhatsApp" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" id="field-email" placeholder="Email Anda" maxlength="160" data-label="Email" required>
+                </div>
+                <div class="form-group">
+                  <select name="complete_district" class="form-control" placeholder="Masukkan Kota / Kecamatan" title="Masukkan Kota / Kecamatan" data-label="Kota / Kecamatan" required>
+                    <option value="" selected disabled>Masukkan Kota / Kecamatan</option>
+                    <option>Yogyakarta</option>
+                    <option>Sleman</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="payment-information">
+                <div class="payment-information-header section-title">
+                  <span>Metode Pembayaran:</span>
+                </div>
+                <div class="ooef-payment-options">
+                  <div class="ooef-payment-option">
+                    <div class="ooef-payment-option-title">
+                      <label class="custom-control custom-radio">
+                        <input type="radio" name="ooef_payment_method" class="ooef-payment-method custom-control-input" value="bank_transfer" checked>
+                        <div class="custom-control-label">
+                          <img src="https://cdn.orderonline.id/icons/payment-bank_transfer.png" alt="bank_transfer">
+                          <span>Bank Transfer</span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="ooef-payment-option ">
+                    <div class="ooef-payment-option-title">
+                      <label class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          name="ooef_payment_method"
+                          class="ooef-payment-method custom-control-input ooef-payment-channels"
+                          data-channel="credit_card"
+                          value="instant"
+                        >
+                        <div class="custom-control-label">
+                          <img src="https://cdn.orderonline.id/icons/payment-channel-credit_card.png" alt="credit_card">
+                          <span>Credit Card</span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="ooef-payment-option ">
+                    <div class="ooef-payment-option-title">
+                      <label class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          name="ooef_payment_method"
+                          class="ooef-payment-method custom-control-input ooef-payment-channels"
+                          data-channel="bca_va"
+                          value="instant"
+                        >
+                        <div class="custom-control-label">
+                          <img src="https://cdn.orderonline.id/icons/payment-channel-bca_va.png" alt="bca_va">
+                          <span>BCA Virtual Account</span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="ooef-payment-option ">
+                    <div class="ooef-payment-option-title">
+                      <label class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          name="ooef_payment_method"
+                          class="ooef-payment-method custom-control-input ooef-payment-channels"
+                          data-channel="bni_va"
+                          value="instant"
+                        >
+                        <div class="custom-control-label">
+                          <img src="https://cdn.orderonline.id/icons/payment-channel-bni_va.png" alt="bni_va">
+                          <span>BNI Virtual Account</span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="ooef-payment-option ">
+                    <div class="ooef-payment-option-title">
+                      <label class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          name="ooef_payment_method"
+                          class="ooef-payment-method custom-control-input ooef-payment-channels"
+                          data-channel="gopay"
+                          value="instant"
+                        >
+                        <div class="custom-control-label">
+                          <img src="https://cdn.orderonline.id/icons/payment-channel-gopay.png" alt="gopay">
+                          <span>GoPay</span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="ooef-payment-option ">
+                    <div class="ooef-payment-option-title">
+                      <label class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          name="ooef_payment_method"
+                          class="ooef-payment-method custom-control-input ooef-payment-channels"
+                          data-channel="shopeepay"
+                          value="instant"
+                        >
+                        <div class="custom-control-label">
+                          <img src="https://cdn.orderonline.id/icons/payment-channel-shopeepay.png" alt="shopeepay">
+                          <span>ShopeePay</span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bump-information">
+                <div class="bump-actions d-flex-2">
+                  <div class="form-arrow">
+                    <img src="https://cdn.orderonline.id/arrow.gif" alt="">
+                  </div>
+                  <label class="bump-check m-0">
+                    <div class="custom-control custom-checkbox large white">
+                      <input type="checkbox" class="custom-control-input ooef-check-bump">
+                      <div class="custom-control-label pl-10">OrderOnline Personal (1 Tahun)</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="bump-body">
+                  <div class="bump-title">
+                    GRATIS biaya langganan 2 BULAN jika berlangganan langsung selama 1 tahun
+                  </div>
+                  <div class="bump-description">
+                    Harga normal OrderOnline Personal 1 tahun adalah Rp1.788.000. Namun jika Anda berlangganan langsung selama 1 tahun, Anda mendapatkan potongan biaya langganan 2 bulan, sehingga cukup bayar Rp1.499.000 saja. Silahkan centang checkbox diatas!
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-actions">
+                <button type="submit" class="btn btn-block btn-complete-order" id="btn-complete-order">
+                  PESAN SEKARANG
+                  <span class="material-icons-outlined">keyboard_tab</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="col checkout-body__sidebar">
+              <div class="product-image-slider">
+                <!-- <img src="https://cdn.orderonline.id/uploads/4521001614268094735.png" class="img-responsive"> -->
+                <img src="dist/img/scula/logo.png" class="img-responsive">
+              </div>
+
+              <div class="product-features">
+                <div class="product-features-header section-title mb-20">
+                  <span>Yang Anda Dapatkan:</span>
+                </div>
+                
+                <div class="product-feature-item  d-flex-2">
+                  <div class="product-feature-item__mark mr-1">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mark-icon svg-inline--fa fa-check"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" class=""></path></svg>
+                  </div>
+                  <div class="product-feature-item__content">
+                    100% web-based software - Anda tinggal login lewat browser, tidak perlu install atau download apapun.
+                  </div>
+                </div>
+
+                <div class="product-feature-item  d-flex-2">
+                  <div class="product-feature-item__mark mr-1">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mark-icon svg-inline--fa fa-check"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" class=""></path></svg>
+                  </div>
+                  <div class="product-feature-item__content">
+                    Gratis support dan updates.
+                  </div>
+                </div>
+
+                <div class="product-feature-item  d-flex-2">
+                  <div class="product-feature-item__mark mr-1">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mark-icon svg-inline--fa fa-check"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" class=""></path></svg>
+                  </div>
+                  <div class="product-feature-item__content">
+                    Tutorial lengkap &amp; komunitas Facebook group.
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-summary">
+                <div class="order-summary-header">RINCIAN PESANAN:</div>
+                <div class="product-price clearfix">
+                  <div class="product-price__name float-left summary-product-name">
+                    OrderOnline Personal
+                  </div>
+                  <div style="display: block;">
+                    <div class="product-price-tag float-right">
+                      <div class="product-price__price float-right lined-price summary-product-lined-price">Rp. 199.000</div>
+                    </div>
+                  </div>
+                      
+                  <div class="product-price-tag order-summary-item-normal float-right">
+                    <div class="product-price__price float-right summary-product-price">Rp. 149.000</div>
+                  </div>
+                </div>
+              
+                <div class="order-summary-multiple-variations"></div>
+
+                <div class="product-price clearfix">
+                  <div class="product-price__name float-left summary-product-bump">
+                    OrderOnline Personal (1 Tahun)
+                  </div>
+                  <div class="product-price-tag float-right">
+                    <div class="product-price__price__currency float-left"></div>
+                    <div class="product-price__price float-right summary-product-bump-price">Rp1.341.000</div>
+                  </div>
+                </div>
+                                
+                <div class="product-price discount-summary-container order-summary-item-discount">
+                  <div class="product-price__name discount-summary-text">
+                    Diskon
+                  </div>
+                  <div class="product-price__price discount-summary-text discount-summary-value"></div>
+                </div>
+              
+                <div class="product-price clearfix">
+                  <div class="product-price-tag float-left unique-code-summary-text">
+                    Kode Unik
+                  </div>
+                  <div class="product-price__price float-right unique-code-summary-text summary-unique-code-value">Rp 130</div>
+                </div>
+                
+                <div class="total-price product-price clearfix">
+                  <div class="product-price__name float-left">Total</div>
+                  <div class="product-price-tag float-right">
+                    <div class="product-price__price__currency float-left"></div>
+                    <div class="product-price__price float-right summary-product-total-price">Rp1.490.130</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="coupon-code">
+                <div class="coupon-header">
+                  GUNAKAN KODE KUPON:
+                </div>
+                <div class="form-group">
+                  <div class="coupon-container">
+                    <div class="input-group">
+                      <input type="text" name="coupon" class="form-control" autocomplete="nope" placeholder="Input coupon">
+                      <span class="input-group-btn">
+                        <button class="btn btn-info" type="submit">Apply</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="hidden-md">
+                <button type="submit" class="btn btn-block btn-complete-order" id="btn-complete-order">
+                  PESAN SEKARANG
+                  <span class="material-icons-outlined">keyboard_tab</span>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </form>
+
+      <div class="app-footer">
+				<div class="footer-title">
+          Powered by <img src="dist/img/scula/logo.png" class="img-fluid">
+        </div>
+        <div class="footer-copyright">Alright Reserved 2021</div>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+  $(function () {
+    
+  });
+</script>
+</body>
+</html>

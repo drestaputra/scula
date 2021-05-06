@@ -9,7 +9,7 @@ body {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 18px;  /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -29,6 +29,28 @@ body {
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
+.material-icons, .material-icons-outlined{
+    vertical-align: middle !important;
+    padding-bottom: 3px;
+}
+
+/* Rules for sizing the icon. */
+.material-icons-outlined.md,.material-icons.md-6 { font-size: 6px; }
+.material-icons-outlined.md-12,.material-icons.md-12 { font-size: 12px; }
+.material-icons-outlined.md-13,.material-icons.md-13 { font-size: 13px; }
+.material-icons-outlined.md-16,.material-icons.md-16 { font-size: 16px; }
+.material-icons-outlined.md-18,.material-icons.md-18 { font-size: 18px; }
+.material-icons-outlined.md-24,.material-icons.md-24 { font-size: 24px; }
+.material-icons-outlined.md-36,.material-icons.md-36 { font-size: 36px; }
+.material-icons-outlined.md-48,.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 .h1 {
     font-size: 24px;
@@ -144,6 +166,15 @@ button:focus {
     border-left: 4px solid #cf0000;
     padding: 10px 30px 10px 15px;
 }
+.content{
+    padding: 35px 0!important;
+}
+.content-detail{
+    padding: 90px 0!important;
+}
+.table-span-red span{
+    color: #fd6257;;
+}
 .btn.btn-product {
     padding: 5px 10px;
     margin-top: 8px;
@@ -151,8 +182,15 @@ button:focus {
 .btn.btn-product:hover {
     background-color: #fa9905 !important;
 }
+.navbar{
+    box-shadow: 0px 0px 4px 0px #868686;
+}
+nav.navbar.navbar-fixed-top {
+    background-color: #f95353 !important;
+    /*background-color: #f56b62 !important;*/
+}
 nav.navbar.navbar-static-top {
-    background-color: #f56b62 !important;
+    background-color: #f95353 !important;
 }
 .font-weight-bold {
     font-weight: 700!important;
@@ -175,9 +213,6 @@ nav.navbar.navbar-static-top {
     outline: none;
     text-decoration: none;
     color: #72afd2;
-}
-.line-height {
-    /* line-height: 3.3; */
 }
 .inventory {
     background-color: #F8FBFF;
@@ -639,27 +674,6 @@ input:checked + .switch-slider:before {
     color: #fff;
     background-color: #f27121;
     transform: translateX(-3px);
-}
-
-/* MODAL MENU PRODUCT */
-.nav-tabs.pesan, .nav-tabs.order {
-    border-bottom: 0 !important;
-    display: flex;
-    justify-content: center;
-}
-.nav-tabs.pesan>li, .nav-tabs.order>li {
-    width: 50%;
-    text-align: center;
-    background-color: #F5F5F5;
-}
-.nav-tabs.pesan>li.active>a, .nav-tabs.pesan>li.active>a:focus, .nav-tabs.pesan>li.active>a:hover, .nav-tabs.order>li.active>a, .nav-tabs.order>li.active>a:focus, .nav-tabs.order>li.active>a:hover {
-    background-color: #2979ff;
-    color: #F5F5F5;
-}
-.sms-gateway {
-    border: 1px solid #ddd;
-    padding: 30px;
-    text-align: center;
 }
 
 @media (min-width: 992px) {
