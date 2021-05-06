@@ -348,3 +348,34 @@ legend table th,legend table td{
     width: 100%;
     height: 400px;
 }
+.order-status{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 2px 15px;
+    max-width: 100%;
+    color: #777;
+    font-size: .8em;
+    line-height: 2.1em;
+    background: #e5e5e5;
+    border-radius: 30px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    cursor: inherit!important;
+    white-space: nowrap;
+}
+.order-status.status-warning{
+    color: #94660c;
+    background: #f8dda7;
+}
+.order-status.status-danger{
+    color: #732222;
+    background: #f99292;
+}
+.order-status.status-success{
+    color: #5b841b;
+    background: #c6e1c6;
+}
+.order-status.status-default{
+    background: #e5e5e5;
+    color: #777;
+}
