@@ -28,6 +28,10 @@ body {
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+.material-icons, .material-icons-outlined{
+    vertical-align: middle !important;
+    padding-bottom: 3px;
+}
 
 /* Rules for sizing the icon. */
 .material-icons-outlined.md,.material-icons.md-6 { font-size: 6px; }
@@ -60,7 +64,7 @@ body {
 .mb-4, .my-4 {
     margin-bottom: 1.5rem!important;
 }
-.mb-5, .my-5 {
+.my-5 {
     margin-bottom: 3rem!important;
 }
 .mt-0, .my-0{
@@ -163,10 +167,6 @@ nav.navbar.navbar-static-top {
     background: #fafcfb !important;
 }
 
-#exampleInputFile {
-    font-size: 20px !important;
-}
-
 #box-bonus {
     border-left: 3px solid #fa1e0e !important;
 }
@@ -192,7 +192,11 @@ nav.navbar.navbar-static-top {
 .user-padding:hover {
     background-color: #eee;
 }
-
+@media (min-width: 992px){
+    .modal-xl {
+        width: 1280px;
+    }
+}
 @media (min-width: 768px) {
     .p-0x {
         height: 1314px;
@@ -255,6 +259,12 @@ nav.navbar.navbar-static-top {
 .mb-0{
     margin-bottom: 0px!important;
 }
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
 .mb-20{
     margin-bottom: 20px;
 }
@@ -290,7 +300,7 @@ nav.navbar.navbar-static-top {
     font-weight: 700;
 }
 .content{
-    padding: 2em 0!important;
+    padding: 35px 0!important;
 }
 .table-span-red span{
     color: #fd6257;;
@@ -326,4 +336,15 @@ legend#more-status{
 }
 legend table th,legend table td{
     font-size: 14px;
+}
+
+.modal-body{
+    padding: 20px;
+}
+.preview-pane {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
 }
