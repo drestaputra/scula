@@ -9,7 +9,9 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="bootstrap/css/custom2.css" />
+    <link rel="stylesheet" href="bootstrap/css/custom1.css" />
+    <!-- bootstrap slider -->
+    <link rel="stylesheet" href="plugins/bootstrap-slider/slider.css">
     <!-- Font Awesome -->
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <!-- Ionicons -->
@@ -59,7 +61,7 @@
                                 <li><a href="team-members.html">Team Members</a></li>
                                 </ul>
                             </li>
-                            <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
+                            <li><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -70,7 +72,7 @@
                             <li class="dropdown messages-menu">
                                 <!-- Menu toggle button -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="material-icons md-16">mail</span>
+                                    <span class="material-icons md-18">mail</span>
                                     <span class="label label-success">4</span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -107,7 +109,7 @@
                             <li class="dropdown notifications-menu">
                                 <!-- Menu toggle button -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="material-icons md-16">notifications</span>
+                                    <span class="material-icons md-18">notifications</span>
                                     <span class="label label-warning">10</span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -241,378 +243,377 @@
         </header>
         <!-- Full Width Column -->
         <div class="content-wrapper">
-            <div class="container-fluid">
+            <div class="container">
                 <!-- Content Header (Page header) -->
                 <section class="content-detail">
                     <a href="products.html"><i class="fa fa-chevron-left"></i> Back to List</a>
-                    <div class="row mt-2 mb-35">
-                        <div class="col-md-5">
-                            <h1 class="h1 mt-0 mb-0">Bisnis Manager Verified</h1>
+                    <div class="row mb-20">
+                        <div class="col-md-5 btn-group-modal">
+                            <h1 class="mt-0 judul-halaman">Bisnis Manager Verified</h1>
                         </div>
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-default"><i class="fa fa-edit"></i> Edit Product</button>
+                        <div class="col-md-2 btn-group-modal">
+                            <button type="button" class="btn btn-lg btn-default"><span class="material-icons-outlined md-18">edit</span> Edit Product</button>
                         </div>
                         <div class="col-md-5 text-right">
-                            <a href="order.html" class="btn btn-default"><i class="fa fa-eye"></i> View Orders</a>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default"><i class="fa fa-external-link"></i> View Checkout Page</button>
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">https://yokayuga.orderonline.id (Default)</a></li>
-                                <li><a href="#">https://yokayuga.orderonline.id</a></li>
-                                <li><a href="#">https://yokayuga.orderonline.id</a></li>
-                                <li><a href="#">https://yokayuga.orderonline.id</a></li>
-                            </ul>
+                            <a href="order.html" class="btn btn-lg btn-default"><span class="material-icons-outlined md-18">visibility</span> View Orders</a>
+                            <div class="btn-group btn-group-modal">
+                                <button type="button" class="btn btn-lg btn-default"><span class="material-icons-outlined md-18">launch</span> View Checkout Page</button>
+                                <button type="button" class="btn btn-lg btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">https://yokayuga.orderonline.id (Default)</a></li>
+                                    <li><a href="#">https://yokayuga.orderonline.id</a></li>
+                                    <li><a href="#">https://yokayuga.orderonline.id</a></li>
+                                    <li><a href="#">https://yokayuga.orderonline.id</a></li>
+                                </ul>
                             </div>
-                            <button type="button" class="btn btn-default"><i class="fa fa-delete"></i> Delete</button>
+                            <button type="button" class="btn btn-lg btn-default"><span class="material-icons-outlined md-18">delete</span> Delete</button>
                         </div>
                     </div>
 
-                    <div class="row mb-35">
-                        <!-- <div class="col-md-12" style="display: flex; justify-content: space-between;"> -->
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalFollow"><i class="fa fa-text-height"></i> Follow-up Text</button>
+                    <div class="row mb-20">
+                        <div class="col-md-2 btn-group-modal">
+                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalFollow"><span class="material-icons-outlined md-20">title</span> Follow-up Text</button>
                             <!-- Modal Follow -->
                             <div class="modal fade" id="modalFollow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog modal-xl" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span> Follow-up Text</h4>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">title</span> Follow-up Text</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="alert alert-warning mb-10" role="alert">Please be aware, that this settings will override all follow up text settings on the selected products.</div>
+                                                        <div>
+
+                                                            <!-- Nav tabs -->
+                                                            <ul class="nav nav-tabs" role="tablist">
+                                                                <li role="presentation" class="active"><a href="#welcome" aria-controls="welcome" role="tab" data-toggle="tab">Welcome</a></li>
+                                                                <li role="presentation"><a href="#order-detail" aria-controls="order-detail" role="tab" data-toggle="tab">Order Detail</a></li>
+                                                                <li role="presentation"><a href="#follow-up-1" aria-controls="follow-up-1" role="tab" data-toggle="tab">Follow Up 1</a></li>
+                                                                <li role="presentation"><a href="#follow-up-2" aria-controls="follow-up-2" role="tab" data-toggle="tab">Follow Up 2</a></li>
+                                                                <li role="presentation"><a href="#follow-up-3" aria-controls="follow-up-3" role="tab" data-toggle="tab">Follow Up 3</a></li>
+                                                                <li role="presentation"><a href="#follow-up-4" aria-controls="follow-up-4" role="tab" data-toggle="tab">Follow Up 4</a></li>
+                                                                <li role="presentation"><a href="#processing" aria-controls="processing" role="tab" data-toggle="tab">Processing</a></li>
+                                                                <li role="presentation"><a href="#completed" aria-controls="completed" role="tab" data-toggle="tab">Completed</a></li>
+                                                                <li role="presentation"><a href="#up-selling" aria-controls="up-selling" role="tab" data-toggle="tab">Up Selling</a></li>
+                                                                <li role="presentation"><a href="#redirect" aria-controls="redirect" role="tab" data-toggle="tab">Redirect</a></li>
+                                                            </ul>
+                                                            
+                                                            <!-- Tab panes -->
+                                                            <div class="tab-content">
+                                                                <div role="tabpanel" class="tab-pane active" id="welcome">
+                                                                    <ul class="nav nav-tabs pesan mt-20" role="tablist">
+                                                                        <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
+                                                                        <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
+                                                                    </ul>
+
+                                                                    <div class="tab-content">
+                                                                        <div role="tabpanel" class="tab-pane active mt-20" id="whatsapp">
+                                                                        <div class="form-group">
+                                                                            <textarea class="form-control" rows="5">
+                                                                            Selamat datang di Toko kami {{name}} ☺️
+                                                                            </textarea>
+                                                                        </div>
+
+                                                                        <div class="text-right">
+                                                                            <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
+                                                                        </div>
+                                                                        </div>
+
+                                                                        <div role="tabpanel" class="tab-pane" id="sms">
+                                                                        <div class="sms-gateway">
+                                                                            <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
+                                                                            <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div role="tabpanel" class="tab-pane" id="order-detail">
+                                                                    <div class="form-group mt-20">
+                                                                        <textarea class="form-control" rows="5">
+                                                                        Pesanan anda:
+                                                                        </textarea>
+                                                                    </div>
+                                                                    <div class="text-right">
+                                                                        <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div role="tabpanel" class="tab-pane" id="follow-up-1">
+                                                                    <ul class="nav nav-tabs pesan mt-20" role="tablist">
+                                                                        <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
+                                                                        <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
+                                                                    </ul>
+
+                                                                    <div class="tab-content">
+                                                                        <div role="tabpanel" class="tab-pane active mt-20" id="whatsapp">
+                                                                            <div class="form-group">
+                                                                                <textarea class="form-control" rows="5">
+                                                                                Hari ini mau transfer jam berapa {{name}}?
+                                                                                Pesanan kami siapkan ya...
+                                                                                </textarea>
+                                                                            </div>
+
+                                                                            <div class="text-right">
+                                                                                <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div role="tabpanel" class="tab-pane" id="sms">
+                                                                            <div class="sms-gateway">
+                                                                                <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
+                                                                                <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div role="tabpanel" class="tab-pane" id="follow-up-2">
+                                                                    <ul class="nav nav-tabs pesan mt-20" role="tablist">
+                                                                        <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
+                                                                        <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
+                                                                    </ul>
+
+                                                                    <div class="tab-content">
+                                                                        <div role="tabpanel" class="tab-pane active mt-20" id="whatsapp">
+                                                                            <div class="form-group">
+                                                                                <textarea class="form-control" rows="5">
+                                                                                Selamat siang {{name}}... Pesanan {{product_name}} sudah siap kirim ya... ☺🙏🏻
+                                                                                </textarea>
+                                                                            </div>
+
+                                                                            <div class="text-right">
+                                                                                <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div role="tabpanel" class="tab-pane" id="sms">
+                                                                            <div class="sms-gateway">
+                                                                                <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
+                                                                                <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div role="tabpanel" class="tab-pane" id="follow-up-3">
+                                                                    <ul class="nav nav-tabs pesan mt-20" role="tablist">
+                                                                        <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
+                                                                        <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
+                                                                    </ul>
+
+                                                                    <div class="tab-content">
+                                                                        <div role="tabpanel" class="tab-pane active mt-20" id="whatsapp">
+                                                                            <div class="form-group">
+                                                                                <textarea class="form-control" rows="5">
+                                                                                Selamat siang, promo untuk pembelian {{product_name}} HARI INI
+                                                                                Diskon Rp10.000 ya.. ☺🙏🏻
+                                                                                </textarea>
+                                                                            </div>
+
+                                                                            <div class="text-right">
+                                                                                <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div role="tabpanel" class="tab-pane" id="sms">
+                                                                            <div class="sms-gateway">
+                                                                                <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
+                                                                                <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div role="tabpanel" class="tab-pane" id="follow-up-4">
+                                                                    <ul class="nav nav-tabs pesan mt-20" role="tablist">
+                                                                        <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
+                                                                        <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
+                                                                    </ul>
+
+                                                                    <div class="tab-content">
+                                                                        <div role="tabpanel" class="tab-pane active mt-20" id="whatsapp">
+                                                                            <div class="form-group">
+                                                                                <textarea class="form-control" rows="5">
+                                                                                Selamat siang {{name}},
+                                                                                Produk {{product_name}} laris manis nih, stok kami sisa 5 item saja ya...
+                                                                                Jangan sampe kehabisan ☺🙏🏻
+                                                                                </textarea>
+                                                                            </div>
+
+                                                                            <div class="text-right">
+                                                                                <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div role="tabpanel" class="tab-pane" id="sms">
+                                                                            <div class="sms-gateway">
+                                                                                <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
+                                                                                <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div role="tabpanel" class="tab-pane" id="processing">
+                                                                    <ul class="nav nav-tabs pesan mt-20" role="tablist">
+                                                                        <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
+                                                                        <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
+                                                                    </ul>
+
+                                                                    <div class="tab-content">
+                                                                        <div role="tabpanel" class="tab-pane active mt-20" id="whatsapp">
+                                                                            <div class="form-group">
+                                                                                <textarea class="form-control" rows="5">
+                                                                                Pembayaran dari {{name}} untuk pembelian {{product_name}} senilai {{total_price}} telah kami terima, pesanan anda kini kami proses.
+                                                                                </textarea>
+                                                                            </div>
+
+                                                                            <div class="text-right">
+                                                                                <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div role="tabpanel" class="tab-pane" id="sms">
+                                                                            <div class="sms-gateway">
+                                                                                <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
+                                                                                <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div role="tabpanel" class="tab-pane" id="completed">
+                                                                    <ul class="nav nav-tabs pesan mt-20" role="tablist">
+                                                                        <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
+                                                                        <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
+                                                                    </ul>
+
+                                                                    <div class="tab-content">
+                                                                        <div role="tabpanel" class="tab-pane active mt-20" id="whatsapp">
+                                                                            <div class="form-group">
+                                                                                <textarea class="form-control" rows="5">
+                                                                                Terima kasih {{name}} sudah belanja di toko kami 🙏🏻
+                                                                                </textarea>
+                                                                            </div>
+
+                                                                            <div class="text-right">
+                                                                                <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div role="tabpanel" class="tab-pane" id="sms">
+                                                                            <div class="sms-gateway">
+                                                                                <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
+                                                                                <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div role="tabpanel" class="tab-pane" id="up-selling">
+                                                                    <ul class="nav nav-tabs pesan mt-20" role="tablist">
+                                                                        <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
+                                                                        <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
+                                                                    </ul>
+
+                                                                    <div class="tab-content">
+                                                                        <div role="tabpanel" class="tab-pane active mt-20" id="whatsapp">
+                                                                            <div class="form-group">
+                                                                                <textarea class="form-control" rows="5">
+                                                                                Halo, kami lagi ada promo khusus hanya untuk anda {{name}}
+                                                                                - Produk XYZ, dari Rp180.000 jadi cuma Rp140rb aja ☺
+                                                                                Stok terbatas ya, pesan sekarang sebelum kehabisan...️
+                                                                                </textarea>
+                                                                            </div>
+
+                                                                            <div class="text-right">
+                                                                                <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div role="tabpanel" class="tab-pane" id="sms">
+                                                                            <div class="sms-gateway">
+                                                                                <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
+                                                                                <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div role="tabpanel" class="tab-pane" id="redirect">
+                                                                    <p class="mt-20">Jika anda membuat Success Page dengan tipe "Redirect to Whatsapp", customer akan mengirimkan text dibawah ini setelah mereka melakukan pemesanan!</p>
+                                                                    <div class="form-group">
+                                                                        <textarea class="form-control" rows="5">
+                                                                        Halo, saya sudah melakukan pemesanan {{product_name}}, atas nama {{name}}. Mohon segera diproses ya 🙏🏻
+                                                                        </textarea>
+                                                                    </div>
+                                                                    <div class="text-right">
+                                                                        <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 btn-group-modal">
+                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalContact"><span class="material-icons-outlined md-20">account_circle</span> Google Contacts</button>
+                            <!-- Modal Contact -->
+                            <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">account_circle</span> Google Contacts</h4>
+                                        </div>
+                                        <div class="modal-body">
                                         <form>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="alert alert-warning mt-0" role="alert">Please be aware, that this settings will override all follow up text settings on the selected products.</div>
-                                                    <div>
-
-                                                        <!-- Nav tabs -->
-                                                        <ul class="nav nav-tabs" role="tablist">
-                                                            <li role="presentation" class="active"><a href="#welcome" aria-controls="welcome" role="tab" data-toggle="tab">Welcome</a></li>
-                                                            <li role="presentation"><a href="#order-detail" aria-controls="order-detail" role="tab" data-toggle="tab">Order Detail</a></li>
-                                                            <li role="presentation"><a href="#follow-up-1" aria-controls="follow-up-1" role="tab" data-toggle="tab">Follow Up 1</a></li>
-                                                            <li role="presentation"><a href="#follow-up-2" aria-controls="follow-up-2" role="tab" data-toggle="tab">Follow Up 2</a></li>
-                                                            <li role="presentation"><a href="#follow-up-3" aria-controls="follow-up-3" role="tab" data-toggle="tab">Follow Up 3</a></li>
-                                                            <li role="presentation"><a href="#follow-up-4" aria-controls="follow-up-4" role="tab" data-toggle="tab">Follow Up 4</a></li>
-                                                            <li role="presentation"><a href="#processing" aria-controls="processing" role="tab" data-toggle="tab">Processing</a></li>
-                                                            <li role="presentation"><a href="#completed" aria-controls="completed" role="tab" data-toggle="tab">Completed</a></li>
-                                                            <li role="presentation"><a href="#up-selling" aria-controls="up-selling" role="tab" data-toggle="tab">Up Selling</a></li>
-                                                            <li role="presentation"><a href="#redirect" aria-controls="redirect" role="tab" data-toggle="tab">Redirect</a></li>
-                                                        </ul>
-                                                        
-                                                        <!-- Tab panes -->
-                                                        <div class="tab-content">
-                                                            <div role="tabpanel" class="tab-pane active" id="welcome">
-                                                            <ul class="nav nav-tabs pesan mt-4" role="tablist">
-                                                                <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
-                                                                <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
-                                                            </ul>
-
-                                                            <div class="tab-content">
-                                                                <div role="tabpanel" class="tab-pane active mb-4" id="whatsapp">
-                                                                <div class="form-group">
-                                                                    <textarea class="form-control" rows="5">
-                                                                    Selamat datang di Toko kami {{name}} ☺️
-                                                                    </textarea>
-                                                                </div>
-
-                                                                <div class="text-right">
-                                                                    <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
-                                                                </div>
-                                                                </div>
-
-                                                                <div role="tabpanel" class="tab-pane" id="sms">
-                                                                <div class="sms-gateway">
-                                                                    <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
-                                                                    <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
-                                                                </div>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-
-                                                            <div role="tabpanel" class="tab-pane" id="order-detail">
-                                                            <div class="form-group mt-4">
-                                                                <textarea class="form-control" rows="5">
-                                                                Pesanan anda:
-                                                                </textarea>
-                                                            </div>
-                                                            <div class="text-right">
-                                                                <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
-                                                            </div>
-                                                            </div>
-
-                                                            <div role="tabpanel" class="tab-pane" id="follow-up-1">
-                                                            <ul class="nav nav-tabs pesan mt-4" role="tablist">
-                                                                <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
-                                                                <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
-                                                            </ul>
-
-                                                            <div class="tab-content">
-                                                                <div role="tabpanel" class="tab-pane active mb-4" id="whatsapp">
-                                                                <div class="form-group">
-                                                                    <textarea class="form-control" rows="5">
-                                                                    Hari ini mau transfer jam berapa {{name}}?
-                                                                    Pesanan kami siapkan ya...
-                                                                    </textarea>
-                                                                </div>
-
-                                                                <div class="text-right">
-                                                                    <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
-                                                                </div>
-                                                                </div>
-
-                                                                <div role="tabpanel" class="tab-pane" id="sms">
-                                                                <div class="sms-gateway">
-                                                                    <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
-                                                                    <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
-                                                                </div>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-
-                                                            <div role="tabpanel" class="tab-pane" id="follow-up-2">
-                                                            <ul class="nav nav-tabs pesan mt-4" role="tablist">
-                                                                <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
-                                                                <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
-                                                            </ul>
-
-                                                            <div class="tab-content">
-                                                                <div role="tabpanel" class="tab-pane active mb-4" id="whatsapp">
-                                                                <div class="form-group">
-                                                                    <textarea class="form-control" rows="5">
-                                                                    Selamat siang {{name}}... Pesanan {{product_name}} sudah siap kirim ya... ☺🙏🏻
-                                                                    </textarea>
-                                                                </div>
-
-                                                                <div class="text-right">
-                                                                    <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
-                                                                </div>
-                                                                </div>
-
-                                                                <div role="tabpanel" class="tab-pane" id="sms">
-                                                                <div class="sms-gateway">
-                                                                    <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
-                                                                    <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
-                                                                </div>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-
-                                                            <div role="tabpanel" class="tab-pane" id="follow-up-3">
-                                                            <ul class="nav nav-tabs pesan mt-4" role="tablist">
-                                                                <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
-                                                                <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
-                                                            </ul>
-
-                                                            <div class="tab-content">
-                                                                <div role="tabpanel" class="tab-pane active mb-4" id="whatsapp">
-                                                                <div class="form-group">
-                                                                    <textarea class="form-control" rows="5">
-                                                                    Selamat siang, promo untuk pembelian {{product_name}} HARI INI
-                                                                    Diskon Rp10.000 ya.. ☺🙏🏻
-                                                                    </textarea>
-                                                                </div>
-
-                                                                <div class="text-right">
-                                                                    <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
-                                                                </div>
-                                                                </div>
-
-                                                                <div role="tabpanel" class="tab-pane" id="sms">
-                                                                <div class="sms-gateway">
-                                                                    <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
-                                                                    <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
-                                                                </div>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-
-                                                            <div role="tabpanel" class="tab-pane" id="follow-up-4">
-                                                            <ul class="nav nav-tabs pesan mt-4" role="tablist">
-                                                                <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
-                                                                <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
-                                                            </ul>
-
-                                                            <div class="tab-content">
-                                                                <div role="tabpanel" class="tab-pane active mb-4" id="whatsapp">
-                                                                <div class="form-group">
-                                                                    <textarea class="form-control" rows="5">
-                                                                    Selamat siang {{name}},
-                                                                    Produk {{product_name}} laris manis nih, stok kami sisa 5 item saja ya...
-                                                                    Jangan sampe kehabisan ☺🙏🏻
-                                                                    </textarea>
-                                                                </div>
-
-                                                                <div class="text-right">
-                                                                    <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
-                                                                </div>
-                                                                </div>
-
-                                                                <div role="tabpanel" class="tab-pane" id="sms">
-                                                                <div class="sms-gateway">
-                                                                    <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
-                                                                    <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
-                                                                </div>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-
-                                                            <div role="tabpanel" class="tab-pane" id="processing">
-                                                            <ul class="nav nav-tabs pesan mt-4" role="tablist">
-                                                                <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
-                                                                <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
-                                                            </ul>
-
-                                                            <div class="tab-content">
-                                                                <div role="tabpanel" class="tab-pane active mb-4" id="whatsapp">
-                                                                <div class="form-group">
-                                                                    <textarea class="form-control" rows="5">
-                                                                    Pembayaran dari {{name}} untuk pembelian {{product_name}} senilai {{total_price}} telah kami terima, pesanan anda kini kami proses.
-                                                                    </textarea>
-                                                                </div>
-
-                                                                <div class="text-right">
-                                                                    <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
-                                                                </div>
-                                                                </div>
-
-                                                                <div role="tabpanel" class="tab-pane" id="sms">
-                                                                <div class="sms-gateway">
-                                                                    <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
-                                                                    <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
-                                                                </div>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-
-                                                            <div role="tabpanel" class="tab-pane" id="completed">
-                                                            <ul class="nav nav-tabs pesan mt-4" role="tablist">
-                                                                <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
-                                                                <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
-                                                            </ul>
-
-                                                            <div class="tab-content">
-                                                                <div role="tabpanel" class="tab-pane active mb-4" id="whatsapp">
-                                                                <div class="form-group">
-                                                                    <textarea class="form-control" rows="5">
-                                                                    Terima kasih {{name}} sudah belanja di toko kami 🙏🏻
-                                                                    </textarea>
-                                                                </div>
-
-                                                                <div class="text-right">
-                                                                    <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
-                                                                </div>
-                                                                </div>
-
-                                                                <div role="tabpanel" class="tab-pane" id="sms">
-                                                                <div class="sms-gateway">
-                                                                    <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
-                                                                    <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
-                                                                </div>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-
-                                                            <div role="tabpanel" class="tab-pane" id="up-selling">
-                                                            <ul class="nav nav-tabs pesan mt-4" role="tablist">
-                                                                <li role="presentation" class="active"><a href="#whatsapp" aria-controls="whatsapp" role="tab" data-toggle="tab">Whatsapp</a></li>
-                                                                <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
-                                                            </ul>
-
-                                                            <div class="tab-content">
-                                                                <div role="tabpanel" class="tab-pane active mb-4" id="whatsapp">
-                                                                <div class="form-group">
-                                                                    <textarea class="form-control" rows="5">
-                                                                    Halo, kami lagi ada promo khusus hanya untuk anda {{name}}
-                                                                    - Produk XYZ, dari Rp180.000 jadi cuma Rp140rb aja ☺
-                                                                    Stok terbatas ya, pesan sekarang sebelum kehabisan...️
-                                                                    </textarea>
-                                                                </div>
-
-                                                                <div class="text-right">
-                                                                    <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
-                                                                </div>
-                                                                </div>
-
-                                                                <div role="tabpanel" class="tab-pane" id="sms">
-                                                                <div class="sms-gateway">
-                                                                    <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
-                                                                    <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
-                                                                </div>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-
-                                                            <div role="tabpanel" class="tab-pane" id="redirect">
-                                                            <p class=" mt-4">Jika anda membuat Success Page dengan tipe "Redirect to Whatsapp", customer akan mengirimkan text dibawah ini setelah mereka melakukan pemesanan!</p>
-                                                            <div class="form-group">
-                                                                <textarea class="form-control" rows="5">
-                                                                Halo, saya sudah melakukan pemesanan {{product_name}}, atas nama {{name}}. Mohon segera diproses ya 🙏🏻
-                                                                </textarea>
-                                                            </div>
-                                                            <div class="text-right">
-                                                                <button type="button" class="btn btn-default">Reset Whatsapp to default</button>
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                    
+                                                    <div class="sms-gateway">
+                                                        <p>Integrate your Google account to synchronize your customers data to Google Contacts</p>
+                                                        <button type="button" class="btn btn-primary">Integrate Google Account</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Save</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalContact"><i class="fa fa-user"></i> Google Contacts</button>
-                            <!-- Modal Contact -->
-                            <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Google Contacts</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="sms-gateway">
-                                                    <p>Integrate your Google account to synchronize your customers data to Google Contacts</p>
-                                                    <button type="button" class="btn btn-primary">Integrate Google Account</button>
-                                                </div>
-                                            </div>
                                         </div>
-                                    </form>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
                                     </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalAutoresponder"><i class="fa fa-envelope"></i> Autoresponder</button>
+                        <div class="col-md-2 btn-group-modal">
+                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalAutoresponder"><span class="material-icons-outlined md-20">email</span> Autoresponder</button>
                             <!-- Modal Autoresponder -->
                             <div class="modal fade" id="modalAutoresponder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Autoresponder</h4>
+                                            <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">email</span> Autoresponder</h4>
                                         </div>
                                         <div class="modal-body">
                                         <form>
@@ -628,14 +629,14 @@
                                                     
                                                         <!-- Tab panes -->
                                                         <div class="tab-content">
-                                                            <div role="tabpanel" class="tab-pane active" id="pending-order">
-                                                                <div class="form-group mt-4">
+                                                            <div role="tabpanel" class="tab-pane active autoresponder" id="pending-order">
+                                                                <div class="form-group">
                                                                     <label class="font-weight-thin">When a customer orders this product, add them to:</label>
                                                                     <div class="no-service">
                                                                         <label class="font-weight-thin">No Autoresponders list selected yet.</label>
                                                                     </div>
 
-                                                                    <div class="input-group mt-4">
+                                                                    <div class="input-group mt-20">
                                                                         <div class="input-group-btn">
                                                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Option <span class="caret"></span></button>
                                                                             <ul class="dropdown-menu">
@@ -655,7 +656,7 @@
                                                                         Embedded Form
                                                                     </button>
                                                                     <div class="collapse" id="embeddedForm1">
-                                                                        <div class="form-group mt-4">
+                                                                        <div class="form-group mt-20">
                                                                             <label>Option Name</label>
                                                                             <input type="text" class="form-control" id="name" placeholder="" required>
                                                                         </div>
@@ -670,14 +671,14 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div role="tabpanel" class="tab-pane" id="proses">
-                                                                <div class="form-group mt-4">
+                                                            <div role="tabpanel" class="tab-pane autoresponder" id="proses">
+                                                                <div class="form-group">
                                                                     <label class="font-weight-thin">When a customer's order is processed, add them to:</label>
                                                                     <div class="no-service">
                                                                         <label class="font-weight-thin">No Autoresponders list selected yet.</label>
                                                                     </div>
 
-                                                                    <div class="input-group mt-4">
+                                                                    <div class="input-group mt-20">
                                                                         <div class="input-group-btn">
                                                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Option <span class="caret"></span></button>
                                                                             <ul class="dropdown-menu">
@@ -697,7 +698,7 @@
                                                                         Embedded Form
                                                                     </button>
                                                                     <div class="collapse" id="embeddedForm2">
-                                                                        <div class="form-group mt-4">
+                                                                        <div class="form-group mt-20">
                                                                             <label>Option Name</label>
                                                                             <input type="text" class="form-control" id="name" placeholder="" required>
                                                                         </div>
@@ -712,14 +713,14 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div role="tabpanel" class="tab-pane" id="complete">
-                                                                <div class="form-group mt-4">
+                                                            <div role="tabpanel" class="tab-pane autoresponder" id="complete">
+                                                                <div class="form-group">
                                                                     <label class="font-weight-thin">When a customer's order is completed, add them to:</label>
                                                                     <div class="no-service">
                                                                         <label class="font-weight-thin">No Autoresponders list selected yet.</label>
                                                                     </div>
 
-                                                                    <div class="input-group mt-4">
+                                                                    <div class="input-group mt-20">
                                                                         <div class="input-group-btn">
                                                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Option <span class="caret"></span></button>
                                                                             <ul class="dropdown-menu">
@@ -739,7 +740,7 @@
                                                                         Embedded Form
                                                                     </button>
                                                                     <div class="collapse" id="embeddedForm3">
-                                                                        <div class="form-group mt-4">
+                                                                        <div class="form-group mt-20">
                                                                             <label>Option Name</label>
                                                                             <input type="text" class="form-control" id="name" placeholder="" required>
                                                                         </div>
@@ -768,15 +769,15 @@
                             </div>
                         </div>
 
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalCustomAudience"><i class="fa fa-facebook"></i> Custom Audience</button>
+                        <div class="col-md-2 btn-group-modal">
+                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalCustomAudience"><span class="material-icons-outlined md-20">facebook</span> Custom Audience</button>
                             <!-- Modal Custom Audience -->
                             <div class="modal fade" id="modalCustomAudience" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel"><i class="fa fa-facebook"></i> Custom Audience</h4>
+                                            <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">facebook</span> Custom Audience</h4>
                                         </div>
                                         <div class="modal-body">
                                         <form>
@@ -792,14 +793,14 @@
                                                     
                                                         <!-- Tab panes -->
                                                         <div class="tab-content">
-                                                            <div role="tabpanel" class="tab-pane active" id="pending-order">
-                                                                <div class="form-group mt-4">
+                                                            <div role="tabpanel" class="tab-pane active autoresponder" id="pending-order">
+                                                                <div class="form-group">
                                                                     <label class="font-weight-thin">When a customer's order is completed, add them to:</label>
                                                                     <div class="no-service">
                                                                         <label class="font-weight-thin">No Custom Audiences selected yet.</label>
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group">
+                                                                <div class="form-group mt-20">
                                                                     <label>Facebook Ad Accounts</label>
                                                                     <select class="form-control" id="stock">
                                                                         <option value="" selected disabled>Select Options</option>
@@ -816,14 +817,14 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div role="tabpanel" class="tab-pane" id="proses">
-                                                                <div class="form-group mt-4">
+                                                            <div role="tabpanel" class="tab-pane autoresponder" id="proses">
+                                                                <div class="form-group">
                                                                     <label class="font-weight-thin">When a customer's order is completed, add them to:</label>
                                                                     <div class="no-service">
                                                                         <label class="font-weight-thin">No Custom Audiences selected yet.</label>
                                                                     </div>
 
-                                                                    <div class="input-group mt-4">
+                                                                    <div class="input-group mt-20">
                                                                         <div class="input-group-btn">
                                                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Option <span class="caret"></span></button>
                                                                             <ul class="dropdown-menu">
@@ -858,14 +859,14 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div role="tabpanel" class="tab-pane" id="complete">
-                                                                <div class="form-group mt-4">
+                                                            <div role="tabpanel" class="tab-pane autoresponder" id="complete">
+                                                                <div class="form-group">
                                                                     <label class="font-weight-thin">When a customer's order is completed, add them to:</label>
                                                                     <div class="no-service">
                                                                         <label class="font-weight-thin">No Custom Audiences selected yet.</label>
                                                                     </div>
 
-                                                                    <div class="input-group mt-4">
+                                                                    <div class="input-group mt-20">
                                                                         <div class="input-group-btn">
                                                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Option <span class="caret"></span></button>
                                                                             <ul class="dropdown-menu">
@@ -914,23 +915,182 @@
                             </div>
                         </div>
 
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalNotifications"><i class="fa fa-bell"></i> Notifications</button>
+                        <div class="col-md-2 btn-group-modal">
+                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalNotifications"><span class="material-icons-outlined md-20">notifications</span> Notifications</button>
                             <!-- Modal Notifications -->
                             <div class="modal fade" id="modalNotifications" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel"><i class="fa fa-facebook"></i> Custom Audience</h4>
+                                            <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">notifications</span> Custom Audience</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <label class="font-weight-thin">When a customer order this product, send me notification to:</label>
+                                                        <div class="data-service mb-4">
+                                                            <label>Email <span class="font-weight-thin">- yokayuga@gmail.com</span></label> <button class="btn btn-default"><span class="material-icons-outlined md-18">delete</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-20">
+                                                    <div class="col-md-12">
+                                                        <div class="alert alert-warning mt-0" role="alert">Anda tidak perlu menambahkan email CS yang sudah di-assign ke product ini. Secara otomatis CS akan mendapatkan notifikasi ke email CS tersebut.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="alert alert-warning mt-0" role="alert">Harap cek folder spam pada inbox email yang anda masukkan.</div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 btn-group-modal">
+                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalAssignation"><span class="material-icons-outlined md-20">people</span> Assingation</button>
+                            <!-- Modal Assignation -->
+                            <div class="modal fade" id="modalAssignation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">email</span> Autoresponder</h4>
                                         </div>
                                         <div class="modal-body">
                                         <form>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <label class="font-weight-thin">When a customer order this product, send me notification to:</label>
-                                                    <div class="data-service mb-4">
-                                                        <label>Email <span class="font-weight-thin">- yokayuga@gmail.com</span></label> <button class="btn btn-default"><i class="fa fa-close"></i></button>
+                                                    <div>
+
+                                                        <!-- Nav tabs -->
+                                                        <ul class="nav nav-tabs contacts" role="tablist">
+                                                            <li role="presentation" class="active"><a href="#customer-service" aria-controls="customer-service" role="tab" data-toggle="tab">Customer Service</a></li>
+                                                            <li role="presentation"><a href="#shipper" aria-controls="shipper" role="tab" data-toggle="tab">Shipper</a></li>
+                                                            <li role="presentation"><a href="#admin" aria-controls="admin" role="tab" data-toggle="tab">Admin</a></li>
+                                                            </ul>
+                                                        
+                                                            <!-- Tab panes -->
+                                                            <div class="tab-content">
+                                                                <div role="tabpanel" class="tab-pane active" id="customer-service">
+                                                                    <div class="form-group mt-20">
+                                                                    <select class="form-control" >
+                                                                        <option value="" selected disabled>Select Customer Service</option>
+                                                                        <option>Adinda</option>
+                                                                        <option>Fadila</option>
+                                                                    </select>
+                                                                    </div>
+                                            
+                                                                    <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="no-service">
+                                                                        <label class="font-weight-thin">No Customer Service assigned to this product</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                
+                                                                    <div class="tab-content">
+                                                                    <div role="tabpanel" class="tab-pane active" id="equals">
+                                                                        <div class="data-service mb-4">
+                                                                        <label class="font-weight-thin">Putri Naura</label> <button class="btn btn-default"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                                        </div>
+                                                                    </div>
+                                        
+                                                                    <div role="tabpanel" class="tab-pane" id="percentage">
+                                                                        <div>
+                                                                        <div class="box-slider">
+                                                                            <div class="data-service-2">
+                                                                            <label class="font-weight-thin">Putri Naura</label> <button class="btn btn-default"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                                            </div>
+                                                                            <div class="padding-slider">
+                                                                            <label style="margin:0 20px 0 0;">61%</label>
+                                                                            <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row text-right mt-2">
+                                                                            <div class="col-md-12">
+                                                                            <label class="font-weight-thin">Total Percentages: <span style="color:red">61%</span> <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Total percentages must be 100%"></i></label>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                        
+                                                                    <div role="tabpanel" class="tab-pane" id="fixed">
+                                                                        <div>
+                                                                        <div class="box-slider">
+                                                                            <div class="data-service-2">
+                                                                            <label class="font-weight-thin">Putri Naura</label> <button class="btn btn-default"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                                            </div>
+                                                                            <div class="padding-slider">
+                                                                            <label style="margin:0 20px 0 0;">0</label>
+                                                                            <input id="ex2" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row text-right mt-2">
+                                                                            <div class="col-md-12">
+                                                                            <label class="font-weight-thin">Total Rates: <span style="color:red">0</span> <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Total rates must be > 0"></i></label>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                        
+                                                                    <label>Order's Distribution</label><br />
+                                                                    <ul class="nav nav-tabs order" role="tablist">
+                                                                    <li role="presentation" class="active"><a href="#equals" aria-controls="equals" role="tab" data-toggle="tab">Equals</a></li>
+                                                                    <li role="presentation"><a href="#percentage" aria-controls="percentage" role="tab" data-toggle="tab">Percentage</a></li>
+                                                                    <li role="presentation"><a href="#fixed" aria-controls="fixed" role="tab" data-toggle="tab">Fixed</a></li>
+                                                                    </ul>
+                                
+                                                                </div>
+                            
+                                                            <div role="tabpanel" class="tab-pane" id="shipper">
+                                                                <div class="form-group mt-20">
+                                                                <select class="form-control" >
+                                                                    <option value="" selected disabled>Select Customer Service</option>
+                                                                    <option>Allow</option>
+                                                                    <option>Dont Allow</option>
+                                                                </select>
+                                                                </div>
+                                        
+                                                                <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="no-service">
+                                                                    <label class="font-weight-thin">No Customer Service assigned to this product</label>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                            
+                                                            <div role="tabpanel" class="tab-pane" id="admin">
+                                                                <div class="form-group mt-20">
+                                                                <select class="form-control" >
+                                                                    <option value="" selected disabled>Select Customer Service</option>
+                                                                    <option>Allow</option>
+                                                                    <option>Dont Allow</option>
+                                                                </select>
+                                                                </div>
+                                        
+                                                                <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="no-service">
+                                                                    <label class="font-weight-thin">No Customer Service assigned to this product</label>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -944,13 +1104,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-default btn-block"><i class="fa fa-users"></i> Assingation</button>
-                        </div>
                     </div>
 
-                    <div class="row mt-4">
+                    <div class="row mb-20">
                         <div class="col-md-12 text-right">
                             <div class="form-group pull-right">
                                 <div class="input-group">
@@ -967,17 +1123,51 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="forms-overview">
-                                    <span class="forms-overview__icon"><i class="fa fa-bank"></i></span>
-                                    <div class="mb-2 mt-2"><h4>Sales Page View</h4></div>
-                                    <button type="button" class="btn btn-default mt-3"><i class="fa fa-dot-circle-o"></i> Install Tracker</button>
+                                    <span class="forms-overview__icon"><span class="material-icons-outlined md-48">storefront</span></span>
+                                    <div class="mb-2 mt-2">
+                                        <h4>Sales Page View</h4>
+                                    </div>
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalSalesPageView"><span class="material-icons-outlined md-18">gps_fixed</span> Install Tracker</button>
                                     <div class="forms-overview__percentage">
                                         0%
                                     </div>
                                 </div>
+
+                                <!-- Modal Sales Page View -->
+                                <div class="modal fade" id="modalSalesPageView" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-18">gps_fixed</span> Sales Page Tracker</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <p>To measure the effectiveness of your funnel, you can activate Order Online's tracker in your sales page.</p>
+                                                            <p>Copy tracking code below & paste it into your sales page. You can see the tutorial here <a href="https://help.orderonline.id/sales-page-tracking/">https://help.orderonline.id/sales-page-tracking/</a></p>
+                                                            <div class="mb-20">
+                                                                <textarea class="form-control" rows="3" readonly>
+
+                                                                </textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">Copy Tracking Code</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="col-md-3">
                                 <div class="forms-overview">
-                                    <span class="forms-overview__icon"><i class="fa fa-shopping-cart"></i></span> <br>
+                                    <span class="forms-overview__icon"><span class="material-icons-outlined md-48">local_grocery_store</span></span> <br>
                                     <div class="mb-2 mt-2"><h4>Checkout Page View</h4></div>
                                     <div class="qty-product">7</div>
                                     <div class="forms-overview__percentage">
@@ -987,7 +1177,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="forms-overview">
-                                    <span class="forms-overview__icon"><i class="fa fa-file-o"></i></span> <br>
+                                    <span class="forms-overview__icon"><span class="material-icons-outlined md-48">description</span></span> <br>
                                     <div class="mb-2 mt-2"><h4>Order</h4></div>
                                     <div class="qty-product">4</div>
                                     <div class="forms-overview__percentage">
@@ -997,7 +1187,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="forms-overview-last">
-                                    <span class="forms-overview__icon"><i class="fa fa-money"></i></span> <br>
+                                    <span class="forms-overview__icon"><span class="material-icons-outlined md-48">paid</span></span> <br>
                                     <div class="mb-2 mt-2"><h4>Paid</h4></div>
                                     <div class="qty-product">3</div>
                                 </div>
@@ -1005,164 +1195,284 @@
                         </div>
                     </div>
 
-                    <div class="row mb-4">
+                    <div class="row mb-20">
                         <div class="col-md-6">
-                            <div style="display: flex;justify-content: space-between;">
-                                <a href="#" class="btn btn-primary btn-md"><i class="fa fa-plus"></i> Create Checkout Page</a>
-                                <button type="button" class="btn btn-default btn-md" style="float: right;"  data-toggle="modal" data-target="#modalEmbed"><i class="fa fa-code"></i> Embed Checkout Page</button>
-                                <!-- Modal Embed -->
-                                <div class="modal fade" id="modalEmbed" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
+                            <a href="#" class="btn btn-primary btn-group-modal"><span class="material-icons-outlined md-16">add</span> Create Checkout Page</a>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalEmbedCheckoutPage"><span class="material-icons-outlined md-16">code</span> Embed Checkout Page</button>
+                            <!-- Modal Embed Checkout Page -->
+                            <div class="modal fade" id="modalEmbedCheckoutPage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">Filter Products</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">code</span> Embed Product</h4>
                                         </div>
                                         <div class="modal-body">
-                                        <form>
-                                            <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                <label>Product Category</label>
-                                                <select class="form-control select2" style="width: 100%;">
-                                                    <option selected="selected">Select Category</option>
-                                                    <option>Alaska</option>
-                                                    <option>California</option>
-                                                    <option>Delaware</option>
-                                                    <option>Tennessee</option>
-                                                    <option>Texas</option>
-                                                    <option>Washington</option>
-                                                </select>
+                                            <form>
+                                                <div class="row mb-10">
+                                                    <div class="col-md-12">
+                                                        <label class="control-label font-weight-thin">Copy embed code below & paste it into your website</label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            </div>
-    
-                                            <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                <select class="form-control" id="collection">
-                                                    <option value="" selected disabled>Select Category</option>
-                                                    <option>Buku</option>
-                                                    <option>Dapur</option>
-                                                    <option>Elektronik</option>
-                                                    <option>Fashion</option>
-                                                </select>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Embed Mode:</label>
+                                                            <select class="form-control" id="stock">
+                                                                <option value="" selected disabled>Options</option>
+                                                                <option>On-Page</option>
+                                                                <option>Pop-up</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="stock" class="control-label">Redirect to:</label>
+                                                            <select class="form-control" id="stock">
+                                                                <option value="" selected disabled>Options</option>
+                                                                <option>cart.wearmoura.shop</option>
+                                                                <option>cart.wearmoura.shop</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                <select class="form-control" id="collection">
-                                                    <option value="" selected disabled>Select Category</option>
-                                                    <option>Alam</option>
-                                                    <option>Fotografi</option>
-                                                    <option>Hiburan</option>
-                                                    <option>Humor</option>
-                                                </select>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Facebook Pixel</label>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox"> Trigger Pixel on Embed Page
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="stock" class="control-label">Google Tag Manager</label>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox"> Trigger GTM on Embed Page
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            </div>
-    
-                                            <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                <label>Storefront Visibility</label>
-                                                <select class="form-control select2" style="width: 100%;">
-                                                    <option selected="selected">Storefront Visibility</option>
-                                                    <option>All</option>
-                                                    <option>Visible</option>
-                                                    <option>Not Visible</option>
-                                                </select>
+                                                <div class="row mb-10">
+                                                    <div class="col-md-12">
+                                                        <textarea class="form-control" rows="3" readonly>
+
+                                                        </textarea>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            </div>
-                                            
-                                        </form>
+                                            </form>
                                         </div>
                                         <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Apply Filter</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Copy Tracking Code</button>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-default btn-group-modal" data-toggle="modal" data-target="#modalTrafficDistribution"><span class="material-icons-outlined md-16">bar_chart</span> Traffic Distribution</button>
+                            <!-- Modal Traffic Distribution -->
+                            <div class="modal fade" id="modalTrafficDistribution" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">bar_chart</span> Traffic Distribution</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="mb-20">Form Name</label> <br>
+                                                            <label class="font-weight-thin">Checkout Page 1</label> <br>
+                                                            <button type="button" class="btn btn-default">Preset Distribution</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="mb-20">Traffic</label> <br>
+                                                            <div class="mb-20">
+                                                                <input id="ex3" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
+                                                            </div>
+                                                            <div class="mb-10 text-right">
+                                                                <label class="font-weight-thin">Total Traffic: <span style="color: green;">100%</span></label>
+                                                            </div>
+                                                            <div class="text-right">
+                                                                <label class="font-weight-thin">Total Traffic: <span style="color: red;">90%</span></label> <br>
+                                                                <small>Total traffic distribution must be 100%</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                        </div>
                                     </div>
                                 </div>
-    
-                                <button type="button" class="btn btn-default btn-md" style="float: right;"  data-toggle="modal" data-target="#modalEmbed"><i class="fa fa-bar-chart"></i> Traffic Distribution</button>
                             </div>
 
                         </div>
                     </div>
 
+                    <!-- TABEL -->
                     <div class="row">
                         <div class="col-md-12">
                             <table class="table table-striped" style="background-color: #fff;">
                                 <tr>
                                     <th style="width: 30%">Checkout Page</th>
                                     <th class="text-center">View</th>
-                                    <th class="text-center">Order</th>
-                                    <th class="text-center">Paid</th>
-                                    <th class="text-center">Paid Ratio</th>
-                                    <th class="text-center">Net Revenue</th>
-                                    <th class="text-center">Traffic Distribution</th>
+                                    <th class="text-center mobile-none">Order</th>
+                                    <th class="text-center mobile-none">Paid</th>
+                                    <th class="text-center mobile-none">Paid Ratio</th>
+                                    <th class="text-center mobile-none">Net Revenue</th>
+                                    <th class="text-center mobile-none">Traffic Distribution</th>
                                 </tr>
                                 <tr>
-                                    <td class="text-left">
-                                        <div class="mb-3">
-                                            <a href="#"><strong>Checkout Page 1</strong></a>
+                                    <td class="text-left w-100">
+                                        <div class="mb-10">
+                                            <a href="order.html"><strong>Checkout Page 1</strong></a>
                                         </div>
-                                        <div class="desktop-none">
+                                        <div class="desktop-none mb-10">
                                             <span>Orders: 4</span> <br>
                                             <span>Paid: 3s</span> <br>
                                             <span>Net Revenue: <span class="text-blue">Rp 4.500.000</span></span>
                                         </div>
 
-                                        <div class="d-flex text-left">
-                                            <a href=""><i class="fa fa-edit"></i> Edit</a>
+                                        <div class="display-flex text-left">
+                                            <a href=""><span class="material-icons-outlined md-16">edit</span> Edit</a>
+
                                             <button type="button" class="no-button" data-toggle="modal" data-target="#duplicateModal">
-                                                <i class="fa fa-clone"></i> Duplicate
+                                                <span class="material-icons-outlined md-16">content_copy</span> Duplicate
                                             </button>
-                                            <!-- Modal -->
+                                            <!-- Modal Duplicate -->
                                             <div class="modal fade" id="duplicateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-clone"></i> Duplicate Product</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                <div class="form-group">
-                                                    <label><span class="font-weight-thin">Are you sure want to duplicate</span> Bisnis Manager Verified <span class="font-weight-thin">?</span></label>
-                                                </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                                <button type="button" class="btn btn-primary">Duplicate</button>
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                            <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">content_copy</span> Duplicate Product</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="form-group">
+                                                                <label><span class="font-weight-thin">Are you sure want to duplicate</span> Bisnis Manager Verified <span class="font-weight-thin">?</span></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                            <button type="button" class="btn btn-primary">Duplicate</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            </div>
-                                            </div>
-                                            <button type="button" class="no-button" data-toggle="modal" data-target="#duplicateModal">
-                                                <i class="fa fa-code"></i> Embed Form
+                                            
+                                            <button type="button" class="no-button" data-toggle="modal" data-target="#embedForm">
+                                                <span class="material-icons-outlined md-16">code</span> Embed Form
                                             </button>
+                                            <!-- Modal Embed Form -->
+                                            <div class="modal fade" id="embedForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                            <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">code</span> Embed Product</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <div class="row mb-10">
+                                                                    <div class="col-md-12">
+                                                                        <label class="control-label font-weight-thin">Copy embed code below & paste it into your website</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="control-label">Embed Mode:</label>
+                                                                            <select class="form-control" id="stock">
+                                                                                <option value="" selected disabled>Options</option>
+                                                                                <option>On-Page</option>
+                                                                                <option>Pop-up</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="stock" class="control-label">Redirect to:</label>
+                                                                            <select class="form-control" id="stock">
+                                                                                <option value="" selected disabled>Options</option>
+                                                                                <option>cart.wearmoura.shop</option>
+                                                                                <option>cart.wearmoura.shop</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="control-label">Facebook Pixel</label>
+                                                                            <div class="checkbox">
+                                                                                <label>
+                                                                                    <input type="checkbox"> Trigger Pixel on Embed Page
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="stock" class="control-label">Google Tag Manager</label>
+                                                                            <div class="checkbox">
+                                                                                <label>
+                                                                                    <input type="checkbox"> Trigger GTM on Embed Page
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-10">
+                                                                    <div class="col-md-12">
+                                                                        <textarea class="form-control" rows="3" readonly>
+
+                                                                        </textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            <button type="submit" class="btn btn-primary">Copy Tracking Code</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </td>
                                     <td class="text-center">
                                         <span>7</span> <br>
-                                        <a href="#"><i class="fa fa-eye"></i> Orders</a>
+                                        <a href="#"><span class="material-icons-outlined md-16">visibility</span> View</a>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center mobile-none">
                                         <span>4</span> <br>
-                                        <a href="#"><i class="fa fa-eye"></i> Orders</a>
+                                        <a href="order.html"><span class="material-icons-outlined md-16">visibility</span> Orders</a>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center mobile-none">
                                         3
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center mobile-none">
                                         75%
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center mobile-none">
                                         <span class="text-blue">Rp4.500.000</span>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center mobile-none">
                                         <span>100%</span> <br>
                                         <div class="progress height">
                                             <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
@@ -1206,11 +1516,28 @@
     <!-- ChartJS 1.0.1 -->
     <script src="plugins/chartjs/Chart.min.js"></script>
     <!-- page script -->
-
+    <!-- Bootstrap slider -->
+    <script src="plugins/bootstrap-slider/bootstrap-slider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
     <script src="plugins/daterangepicker/daterangepicker.js"></script>
     <script>
         $(function() {
+            $('#ex1').slider({
+                formatter: function(value) {
+                    return 'Current value: ' + value;
+                }
+            });
+            $('#ex2').slider({
+                formatter: function(value) {
+                    return 'Current value: ' + value;
+                }
+            });
+            $('#ex3').slider({
+                formatter: function(value) {
+                    return 'Current value: ' + value;
+                }
+            });
+                
             //Date picker
             $('#daterange-btn').daterangepicker({
                     ranges: {
