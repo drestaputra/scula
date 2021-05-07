@@ -182,10 +182,6 @@ nav.navbar.navbar-static-top {
 .text-left {
     text-align: left !important;
 }
-.pull-right {
-    /*float: inherit !important;*/
-    /*text-align: center;*/
-}
 .user-padding {
     padding: 5px 20px;
 }
@@ -669,4 +665,11 @@ table tr:hover .row-actions {
     outline: none;
     text-decoration: none;
     color: #72afd2;
+}
+
+.btn-rounded-20{
+    border-radius: 20px!important;
+}
+.btn-shadow{
+    box-shadow: 0px 1px 13px 1px #a9a9a985!important;
 }
