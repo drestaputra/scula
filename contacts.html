@@ -8,12 +8,13 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/css/custom2.css">
+  <link rel="stylesheet" href="bootstrap/css/custom1.css">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="plugins/select2/select2.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
@@ -21,9 +22,9 @@
   <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
   <!-- Morris chart -->
   <link rel="stylesheet" href="plugins/morris/morris.css">
-  <!-- jvectormap -->
-  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <!-- leaflet -->
   <!-- DataTables -->
+  <!-- select2 -->
   <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
   <!-- Tags Input -->
   <link rel="stylesheet" href="plugins/tags-input/bootstrap-tagsinput.css">
@@ -37,246 +38,245 @@
 <div class="wrapper">
 
   <header class="main-header">
-    <nav class="navbar navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand"><b>Scula</b></a>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-            <i class="fa fa-bars"></i>
-          </button>
-        </div>
+      <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+              <a href="#" class="navbar-brand"><b>Scula</b></a>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="material-icons-outlined">horizontal_split</span>
+              </button>
+          </div>
 
-        <!-- Sub Menu -->
-        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index3.html">Dashboard</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="http://backscula.organilife.id/">Funnels</a></li>
-            <li class="active"><a href="contacts.html">Contacts <span class="sr-only">(current)</span></a></li>
-            <li><a href="report.html">Reports</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="coupons.html">Coupons</a></li>
-                <li><a href="expenses.html">Expenses</a></li>
-                <li><a href="inventory.html">Inventory</a></li>
-                <li><a href="payments.html">Payments</a></li>
-                <li><a href="logistics.html">Logistics</a></li>
-                <li><a href="team-members.html">Team Members</a></li>
-              </ul>
-            </li>
-            <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
-          </ul>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="order.html">Order</a></li>
+              <li><a href="http://backscula.organilife.id/">Funnels</a></li>
+              <li class="active"><a href="contacts.html">Contacts</a></li>
+              <li><a href="report.html">Reports</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="coupons.html">Coupons</a></li>
+                  <li><a href="expenses.html">Expenses</a></li>
+                  <li><a href="inventory.html">Inventory</a></li>
+                  <li><a href="payments.html">Payments</a></li>
+                  <li><a href="logistics.html">Logistics</a></li>
+                  <li><a href="team-members.html">Team Members</a></li>
+                </ul>
+              </li>
+              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <!-- Messages: style can be found in dropdown.less-->
+                <li class="dropdown messages-menu">
+                    <!-- Menu toggle button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="material-icons md-16">mail</span>
+                        <span class="label label-success">4</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">You have 4 messages</li>
+                        <li>
+                            <!-- inner menu: contains the messages -->
+                            <ul class="menu">
+                                <li>
+                                    <!-- start message -->
+                                    <a href="#">
+                                        <div class="pull-left">
+                                            <!-- User Image -->
+                                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                        </div>
+                                        <!-- Message title and timestamp -->
+                                        <h4>
+                                            Support Team
+                                            <small><span class="material-icons-outlined">schedule</span> 5 mins</small>
+                                        </h4>
+                                        <!-- The message -->
+                                        <p>Why not buy a new awesome theme?</p>
+                                    </a>
+                                </li>
+                                <!-- end message -->
+                            </ul>
+                            <!-- /.menu -->
+                        </li>
+                        <li class="footer"><a href="#">See All Messages</a></li>
+                    </ul>
+                </li>
+                <!-- /.messages-menu -->
+  
+                <!-- Notifications Menu -->
+                <li class="dropdown notifications-menu">
+                    <!-- Menu toggle button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="material-icons md-16">notifications</span>
+                        <span class="label label-warning">10</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">You have 10 notifications</li>
+                        <li>
+                            <!-- Inner Menu: contains the notifications -->
+                            <ul class="menu">
+                                <li>
+                                    <!-- start notification -->
+                                    <a href="#"> <span class="material-icons-outlined">person</span> 5 new members joined today </a>
+                                </li>
+                                <!-- end notification -->
+                            </ul>
+                        </li>
+                        <li class="footer"><a href="#">View all</a></li>
+                    </ul>
+                </li>
+                <!-- Tasks Menu -->
+                <li class="dropdown tasks-menu" style="display: none">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="material-icons-outlined md-18">flag</span>
+                        <span class="label label-danger">9</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">You have 9 tasks</li>
+                        <li>
+                            <!-- Inner menu: contains the tasks -->
+                            <ul class="menu">
+                                <li>
+                                    <!-- Task item -->
+                                    <a href="#">
+                                        <!-- Task title and progress text -->
+                                        <h3>
+                                            Design some buttons
+                                            <small class="pull-right">20%</small>
+                                        </h3>
+                                        <!-- The progress bar -->
+                                        <div class="progress xs">
+                                            <!-- Change the css width attribute to simulate progress -->
+                                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="sr-only">20% Complete</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- end task item -->
+                            </ul>
+                        </li>
+                        <li class="footer">
+                            <a href="#">View all tasks</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- User Account Menu -->
+                <li class="dropdown user user-menu">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <!-- The user image in the navbar-->
+                        <span class="hidden-xs">Alexander Pierce</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- The user image in the menu -->
+                        <li class="user-header text-left">
+                            <p>
+                                <strong>Yokayuga</strong> (OWNER)
+                                <small><a href="mailto:yokayuga@gmail.com" class="text-white">yokayuga@gmail.com</a></small>
+                            </p>
+                        </li>
+                        <!-- Menu Body -->
+                        <li class="user-body">
+                            <div class="row">
+                                <div class="col-xs-12 text-left user-padding">
+                                    <a href="profile.html" style="width: 100%;display: block;">Profile</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 text-left user-padding">
+                                    <a href="credit.html" style="width: 100%;display: block;">Credits</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 text-left user-padding">
+                                    <a href="billings.html" style="width: 100%;display: block;">Billings</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 text-left user-padding">
+                                    <a href="change-plan.html" style="width: 100%;display: block;">Change Plan</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 text-left user-padding">
+                                    <a href="apps.html" style="width: 100%;display: block;">Apps</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 text-left user-padding">
+                                    <a href="bonus.html" style="width: 100%;display: block;">Bonuses</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 text-left user-padding">
+                                    <a href="settings.html" style="width: 100%;display: block;">Settings</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 text-left user-padding">
+                                    <a href="tutorials.html" style="width: 100%;display: block;">Tutorials</a>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </li>
+                        <!-- Menu Footer-->
+                        <li class="user-footer">
+                            <!-- <div class="pull-left">
+                                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                            </div> -->
+                            <div class="pull-right">
+                                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <!-- Navbar Right Menu -->
+                    
+          <!-- /.navbar-custom-menu -->
         </div>
-        <!-- /.navbar-collapse -->
-        <!-- Navbar Right Menu -->
-        <div class="navbar-custom-menu">
-          <ul class="nav navbar-nav">
-              <!-- Messages: style can be found in dropdown.less-->
-              <li class="dropdown messages-menu">
-                  <!-- Menu toggle button -->
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <i class="fa fa-envelope-o"></i>
-                      <span class="label label-success">4</span>
-                  </a>
-                  <ul class="dropdown-menu">
-                      <li class="header">You have 4 messages</li>
-                      <li>
-                          <!-- inner menu: contains the messages -->
-                          <ul class="menu">
-                              <li>
-                                  <!-- start message -->
-                                  <a href="#">
-                                      <div class="pull-left">
-                                          <!-- User Image -->
-                                          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
-                                      </div>
-                                      <!-- Message title and timestamp -->
-                                      <h4>
-                                          Support Team
-                                          <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                      </h4>
-                                      <!-- The message -->
-                                      <p>Why not buy a new awesome theme?</p>
-                                  </a>
-                              </li>
-                              <!-- end message -->
-                          </ul>
-                          <!-- /.menu -->
-                      </li>
-                      <li class="footer"><a href="#">See All Messages</a></li>
-                  </ul>
-              </li>
-              <!-- /.messages-menu -->
-
-              <!-- Notifications Menu -->
-              <li class="dropdown notifications-menu">
-                  <!-- Menu toggle button -->
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <i class="fa fa-bell-o"></i>
-                      <span class="label label-warning">10</span>
-                  </a>
-                  <ul class="dropdown-menu">
-                      <li class="header">You have 10 notifications</li>
-                      <li>
-                          <!-- Inner Menu: contains the notifications -->
-                          <ul class="menu">
-                              <li>
-                                  <!-- start notification -->
-                                  <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
-                              </li>
-                              <!-- end notification -->
-                          </ul>
-                      </li>
-                      <li class="footer"><a href="#">View all</a></li>
-                  </ul>
-              </li>
-              <!-- Tasks Menu -->
-              <li class="dropdown tasks-menu" style="display: none">
-                  <!-- Menu Toggle Button -->
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <i class="fa fa-flag-o"></i>
-                      <span class="label label-danger">9</span>
-                  </a>
-                  <ul class="dropdown-menu">
-                      <li class="header">You have 9 tasks</li>
-                      <li>
-                          <!-- Inner menu: contains the tasks -->
-                          <ul class="menu">
-                              <li>
-                                  <!-- Task item -->
-                                  <a href="#">
-                                      <!-- Task title and progress text -->
-                                      <h3>
-                                          Design some buttons
-                                          <small class="pull-right">20%</small>
-                                      </h3>
-                                      <!-- The progress bar -->
-                                      <div class="progress xs">
-                                          <!-- Change the css width attribute to simulate progress -->
-                                          <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                              <span class="sr-only">20% Complete</span>
-                                          </div>
-                                      </div>
-                                  </a>
-                              </li>
-                              <!-- end task item -->
-                          </ul>
-                      </li>
-                      <li class="footer">
-                          <a href="#">View all tasks</a>
-                      </li>
-                  </ul>
-              </li>
-              <!-- User Account Menu -->
-              <li class="dropdown user user-menu">
-                  <!-- Menu Toggle Button -->
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <!-- The user image in the navbar-->
-                      <span class="hidden-xs">Alexander Pierce</span>
-                  </a>
-                  <ul class="dropdown-menu">
-                      <!-- The user image in the menu -->
-                      <li class="user-header text-left">
-                          <p>
-                              <strong>Yokayuga</strong> (OWNER)
-                              <small><a href="mailto:yokayuga@gmail.com" class="text-white">yokayuga@gmail.com</a></small>
-                          </p>
-                      </li>
-                      <!-- Menu Body -->
-                      <li class="user-body">
-                          <div class="row">
-                              <div class="col-xs-12 text-left user-padding">
-                                  <a href="profile.html" style="width: 100%;display: block;">Profile</a>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-xs-12 text-left user-padding">
-                                  <a href="credit.html" style="width: 100%;display: block;">Credits</a>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-xs-12 text-left user-padding">
-                                  <a href="billings.html" style="width: 100%;display: block;">Billings</a>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-xs-12 text-left user-padding">
-                                  <a href="change-plan.html" style="width: 100%;display: block;">Change Plan</a>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-xs-12 text-left user-padding">
-                                  <a href="apps.html" style="width: 100%;display: block;">Apps</a>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-xs-12 text-left user-padding">
-                                  <a href="bonus.html" style="width: 100%;display: block;">Bonuses</a>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-xs-12 text-left user-padding">
-                                  <a href="settings.html" style="width: 100%;display: block;">Settings</a>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-xs-12 text-left user-padding">
-                                  <a href="tutorials.html" style="width: 100%;display: block;">Tutorials</a>
-                              </div>
-                          </div>
-                          <!-- /.row -->
-                      </li>
-                      <!-- Menu Footer-->
-                      <li class="user-footer">
-                          <!-- <div class="pull-left">
-                              <a href="#" class="btn btn-default btn-flat">Profile</a>
-                          </div> -->
-                          <div class="pull-right">
-                              <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                          </div>
-                      </li>
-                  </ul>
-              </li>
-          </ul>
-        </div>
-        <!-- /.navbar-custom-menu -->
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
-  </header>
+          <!-- /.container-fluid -->
+      </nav>
+    </header>
   <!-- Full Width Column -->
-  <div class="content-wrapper">
+  <div class="content-wrapper mt-50">
     <div class="container">
       <!-- Content Header (Page header) -->
-      <section class="content-header mb-4">
-        <h1>
-          Contacts
-        </h1>
-        <ol class="breadcrumb">
-          <li>
-            <button class="btn btn-primary" type="button">
-              Reminders <span class="badge">4</span>
-            </button>
-          </li>
-        </ol>
-      </section>
 
       <!-- Main content -->
       <section class="content">
+        <div class="row">
+          <div class="col-xs-6">
+            <h1 class="mb-0 judul-halaman">Contacts</h1>
+          </div>
+          <div class="col-xs-6">
+            <div class="form-group pull-right">
+              <button class="btn btn-default" type="button">
+                <span class="material-icons-outlined">alarm</span> Reminders <span class="badge">4</span>
+              </button>
+            </div>
+          </div>
+        </div>
         <div class="row mb-4">
           <div class="col-md-12">
             <!-- Date and time range -->
             <div class="form-group">
               <div class="input-group" style="display: block;">
-                <button type="button" class="btn btn-default pull-right" id="daterange-btn">
-                  <span>
-                    <i class="fa fa-calendar"></i> Date range picker
-                  </span>
-                  <i class="fa fa-caret-down"></i>
-                </button>
-              </div>
+                  <button type="button" class="btn btn-default pull-right btn-rounded-20" id="daterange-btn"> 
+                    <span class="material-icons md-18">date_range</span> Date range picker
+                    <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
+                  </button>
+                </div>
             </div>
           </div>
         </div>
@@ -286,7 +286,7 @@
             <div class="info-box">
               <div class="info-box-content text-center">
                 <span class="info-box-number">1,410</span>
-                <span class="info-box-text"><span><i class="fa fa-fw fa-users"></i></span> Total Contact</span>
+                <span class="info-box-text"><span class="material-icons-outlined md-18">people</span> Total Contact</span>
               </div>
             </div>
           </div>
@@ -295,7 +295,7 @@
             <div class="info-box">
               <div class="info-box-content text-center">
                 <span class="info-box-number">1,410</span>
-                <span class="info-box-text"><span><i class="fa fa-fw fa-user"></i></span> Total Customer</span>
+                <span class="info-box-text"><span class="material-icons-outlined md-18">account_circle</span> Total Customer</span>
               </div>
             </div>
           </div>
@@ -304,7 +304,7 @@
             <div class="info-box">
               <div class="info-box-content text-center">
                 <span class="info-box-number">1,410</span>
-                <span class="info-box-text"><span><i class="fa fa-fw fa-shopping-cart"></i></span> Average Order</span>
+                <span class="info-box-text"><span class="material-icons-outlined md-18">shopping_bag</span> Average Order</span>
               </div>
             </div>
           </div>
@@ -313,7 +313,7 @@
             <div class="info-box">
               <div class="info-box-content text-center">
                 <span class="info-box-number">1,410</span>
-                <span class="info-box-text"><span><i class="fa fa-fw fa-shopping-cart"></i></span> ARPC/ARPU</span>
+                <span class="info-box-text"><span class="material-icons-outlined md-18">credit_card</span> ARPC/ARPU</span>
               </div>
             </div>
           </div>
@@ -322,7 +322,7 @@
         <!-- Upload -->
         <div class="row mb-4">
           <div class="col-md-4">
-            <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalContact"><i class="fa fa-cloud-upload"></i> Upload Contacts</button>
+            <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalContact"><span class="material-icons-outlined md-18">file_upload</span> Upload Contacts</button>
             <!-- Modal -->
             <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -350,10 +350,10 @@
               </div>
             </div>
             
-            <button type="button" class="btn btn-default btn-md"><i class="fa fa-cloud-download"></i> Export as CSV</button>
+            <button type="button" class="btn btn-default btn-md"><span class="material-icons-outlined md-18">file_download</span> Export as CSV</button>
           </div>
           <div class="col-md-8 text-right">
-            <button type="button" class="btn btn-default btn-md" data-bs-toggle="collapse" data-bs-target="#more-status" aria-expanded="false" aria-controls="collapseExample" style="float: right" onclick="viewMoreStatus()"><i class="fa fa-bar-chart"></i> View More Stats
+            <button type="button" class="btn btn-default btn-md" data-bs-toggle="collapse" data-bs-target="#more-status" aria-expanded="false" aria-controls="collapseExample" style="float: right" onclick="viewMoreStatus()"><span class="material-icons-outlined md-18">bar_chart</span> View More Stats
             </button>
           </div>
         </div>
@@ -362,7 +362,7 @@
           <legend class="card card-body">
             <div class="box box-solid bg-light-blue-gradient">
               <div class="box-body">
-                <div id="world-map" style="height: 250px; width: 100%;"></div>
+                <div id="map" style="width: 100%; height: 600px;"></div>
               </div>
               <!-- /.box-body-->
               <div class="box-footer no-border">
@@ -392,7 +392,7 @@
         <!-- Add Data -->
         <div class="row mb-4">
           <div class="col-md-12">
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAddContact"><i class="fa fa-plus"></i> Add Contacts</button>
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAddContact"><span class="material-icons-outlined md-18">add</span> Add Contacts</button>
             <!-- Modal Add Contact -->
             <div class="modal fade" id="modalAddContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -523,7 +523,7 @@
               </div>
             </div>
             
-            <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalCreateReminder"><i class="fa fa-clock-o"></i> Create Reminder</button>
+            <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalCreateReminder"><span class="material-icons-outlined md-18">alarm</span> Create Reminder</button>
             <!-- Modal Create Reminder -->
             <div class="modal fade" id="modalCreateReminder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -540,7 +540,7 @@
                             <label>Expense Date</label>
                             <div class="input-group">
                               <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
+                                <span class="material-icons-outlined md-18">event</span>
                               </div>
                               <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
                             </div>
@@ -565,15 +565,15 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-clock-o"></i> Create Remnder</button>
+                    <button type="submit" class="btn btn-primary"><span class="material-icons-outlined md-18">alarm</span> Create Remnder</button>
                   </div>
                 </div>
               </div>
             </div>
-            <button type="button" class="btn btn-danger btn-md"><i class="fa fa-trash"></i> Delete</button>
-            <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalSetTag"><i class="fa fa-tag"></i> Set Tag</button>
+            <button type="button" class="btn btn-danger btn-md"><span class="material-icons-outlined md-18">delete</span> Delete</button>
+            <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalSetTag"><span class="material-icons-outlined md-18">label</span> Set Tag</button>
             <!-- Modal Set Tag -->
-            <div class="modal fade" id="modalSetTag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="modalSetTag" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -603,9 +603,9 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="btn btn-default btn-md" style="float: right;"  data-toggle="modal" data-target="#modalFilter"><i class="fa fa-filter"></i> Filter</button>
+            <button type="button" class="btn btn-default btn-md" style="float: right;"  data-toggle="modal" data-target="#modalFilter"><span class="material-icons-outlined md-18">filter_list</span> Filter</button>
             <!-- Modal Filter -->
-            <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="modalFilter" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -659,7 +659,7 @@
                             <label>Last Contacted</label>
                             <div class="input-group">
                               <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
+                                <span class="material-icons-outlined md-18">event</span>
                               </div>
                               <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
                             </div>
@@ -1177,9 +1177,10 @@
 <script src="plugins/morris/morris.min.js"></script>
 <!-- Sparkline -->
 <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
-<!-- jvectormap -->
-<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- leaflet -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
 <!-- jQuery Knob Chart -->
 <script src="plugins/knob/jquery.knob.js"></script>
 <!-- SlimScroll -->
@@ -1193,17 +1194,11 @@
 <!-- DataTables -->
 <script src="plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+<script src="plugins/select2/select2.full.min.js"></script>
+
 <script>
   $(function () {
     $("#example1").DataTable();
-    $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false
-    });
   });
 </script>
 <!-- Tags Input -->
@@ -1220,7 +1215,7 @@
     //Datemask dd/mm/yyyy
     $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
     $("[data-mask]").inputmask();
-
+    $(".select2").select2();
     //Date picker
     $('#datepicker').datepicker({
       autoclose: true
@@ -1262,6 +1257,88 @@
 <script src="plugins/input-mask/jquery.inputmask.js"></script>
 <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
 <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<script src="plugins/highmap/highmaps.js"></script>
+<script src="plugins/highmap/exporting.js"></script>
+<script src="plugins/highmap/id-all.js"></script>
+<script type="text/javascript">
+  var data = [
+    ['id-3700', 0],
+    ['id-ac', 1],
+    ['id-jt', 2],
+    ['id-be', 3],
+    ['id-bt', 4],
+    ['id-kb', 5],
+    ['id-bb', 6],
+    ['id-ba', 7],
+    ['id-ji', 8],
+    ['id-ks', 9],
+    ['id-nt', 10],
+    ['id-se', 11],
+    ['id-kr', 12],
+    ['id-ib', 13],
+    ['id-su', 14],
+    ['id-ri', 15],
+    ['id-sw', 16],
+    ['id-ku', 17],
+    ['id-la', 18],
+    ['id-sb', 19],
+    ['id-ma', 20],
+    ['id-nb', 21],
+    ['id-sg', 22],
+    ['id-st', 23],
+    ['id-pa', 24],
+    ['id-jr', 25],
+    ['id-ki', 26],
+    ['id-1024', 27],
+    ['id-jk', 28],
+    ['id-go', 29],
+    ['id-yo', 30],
+    ['id-sl', 31],
+    ['id-sr', 32],
+    ['id-ja', 33],
+    ['id-kt', 34]
+];
+  // Create the chart
+Highcharts.mapChart('map', {
+    chart: {
+        map: 'countries/id/id-all'
+    },
+
+    title: {
+        text: 'Highmaps basic demo'
+    },
+
+    subtitle: {
+        text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/id/id-all.js">Indonesia</a>'
+    },
+
+    mapNavigation: {
+        enabled: true,
+        buttonOptions: {
+            verticalAlign: 'bottom'
+        }
+    },
+
+    colorAxis: {
+        min: 0
+    },
+
+    series: [{
+        data: data,
+        name: 'Random data',
+        states: {
+            hover: {
+                color: '#BADA55'
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            format: '{point.name}'
+        }
+    }]
+});
+
+</script>
 
 </body>
 </html>

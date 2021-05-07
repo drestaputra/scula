@@ -346,7 +346,7 @@
             <!-- <legend x-data="{ open: false }"> -->
               <div class="row" style="margin-bottom: 15px">
                 <div class="col-md-12">
-                  <button type="button" class="btn btn-primary btn-md mr-5" data-toggle="modal" data-target="#modalAddContact">Input Order</button>
+                  <button type="button" class="btn btn-primary btn-md mr-5" data-toggle="modal" data-target="#modalAddContact"><span class="material-icons-outlined md-18">add</span> Input Order</button>
                   <!-- Modal Add Contact -->
                   <div class="modal fade" id="modalAddContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
@@ -413,7 +413,7 @@
                     </div>
                 </div>
                   <!-- <div> -->
-                <button type="button" class="btn btn-default bg-white dropdown-toggle mr-5" data-toggle="dropdown">Export <span class="material-icons-outlined md-16"> arrow_drop_down_circle</span></button>
+                <button type="button" class="btn btn-default bg-white dropdown-toggle mr-5" data-toggle="dropdown"><span class="material-icons-outlined md-18">file_download</span>Export <span class="material-icons-outlined md-16"> arrow_drop_down_circle</span></button>
                 <ul class="dropdown-menu">
                     <li><a href="#">Export As CSV</a></li>
                     <li><a href="#">Export Order ID</a></li>
@@ -422,7 +422,7 @@
                     <li><a href="#">Facebook Online Conversion</a></li>
                 </ul>
                                 <!-- </div> -->
-                <button type="button" class="btn btn-danger btn-md mr-5">Barcode</button>
+                <button type="button" class="btn btn-default btn-md mr-5">Barcode</button>
                 <button type="button" class="btn btn-default btn-md mr-5" data-toggle="modal" data-target="#modalSetTag"><span class="material-icons-outlined md-18">file_upload</span> Upload Receipt Number</button>
                 <!-- Modal Set Tag -->
                 <div class="modal fade" id="modalSetTag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -938,8 +938,8 @@
 
             <!-- awal button row 2 -->
             <div class="row mb-20 mt-30 table-header-menu">
-                <div class="col-md-12">
-                    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#shipping">Shipping Label</button>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#shipping"><span class="material-icons-outlined md-18">article</span> Shipping Label</button>
                     <!-- Modal Add Contact -->
                     <div class="modal fade" id="shipping" tabindex="-1" role="dialog" aria-labelledby="label">
                         <div class="modal-xl modal-dialog" role="document">
@@ -1137,7 +1137,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#AddReminder">Add Reminder</button>
+                <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#AddReminder"><span class="material-icons-outlined md-18">notifications</span> Add Reminder</button>
                 <div class="modal fade" id="AddReminder" tabindex="-1" role="dialog" aria-labelledby="Reminder">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -1197,10 +1197,7 @@
               </div>
 
             <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle btn-md" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Mark As
-                    <span class="caret"></span>
-                </button>
+                  <button class="btn btn-default dropdown-toggle btn-sm" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Mark As<span class="caret"></span></button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li><a href="#">Mark As Pending</a></li>
                     <li><a href="#">Mark As Process</a></li>
@@ -1210,9 +1207,7 @@
                 </ul>
             </div>
             <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle btn-md" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Actions
-                     <span class="material-icons-outlined md-16"> arrow_drop_down_circle</span>
+                  <button class="btn btn-default dropdown-toggle btn-sm" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Actions<span class="material-icons-outlined md-16"> arrow_drop_down_circle</span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="#">Set Tag</a></li>
@@ -1222,7 +1217,7 @@
             </div>
 
 
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#shippe">Add Reminder </button>
+            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#shippe"><span class="material-icons-outlined md-18">local_shipping</span>Shipment </button>
             <div class="modal fade" id="shippe" tabindex="-1" role="dialog" aria-labelledby="shippe">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -1255,8 +1250,15 @@
                     </div>
                 </div>
             </div>
-
-            <input type="text" style="float: right;height:30px"  placeholder="search" />
+            </div>
+            <div class="col-md-6">
+                <div class="text-right">
+                    <button type="button" class="btn btn-default btn-md " data-toggle="modal" data-target="#Filter"> Filter</button>
+                    <button type="button" class="btn btn-default btn-md "  data-toggle="modal" data-target="#modalIn">Customize Columns</button>
+                    <div class="inline-block">
+                        <input type="text"  placeholder="Search.." class="form-control "/>
+                    </div>
+                </div>
 
     <!-- Modal Filter -->
             <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -1390,7 +1392,7 @@
                     </div>
                 </div>
         <!-- end modal filter -->
-              <button type="button" class="btn btn-default btn-md" style="float: right" data-toggle="modal" data-target="#Filter"> Filter</button>
+              
               <!-- Modal Filter -->
               <div class="modal fade" id="Filter" tabindex="-1" role="dialog" aria-labelledby="FilterButton">
                 <div class="modal-dialog" role="document">
@@ -1626,7 +1628,7 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn btn-default btn-md" style="float: right" data-toggle="modal" data-target="#modalIn">Customize Columns</button>
+              
               <!-- Modal Filter -->
               <div class="modal fade" id="modalIn" tabindex="-1" role="dialog" aria-labelledby="myModalIn">
                 <div class="modal-dialog" role="document">
@@ -1953,6 +1955,7 @@
                         </div>
                     </div>
                 </div>
+                
         <!-- end modal filter -->
     </div>
     </div>
