@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Scula</title>
+  <title>Coupons | Toko Ghoib</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/css/custom2.css">
+  <link rel="stylesheet" href="bootstrap/css/custom1.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
@@ -59,7 +59,7 @@
                   <li><a href="team-members.html">Team Members</a></li>
                   </ul>
               </li>
-              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
+              <li><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -243,18 +243,17 @@
   <div class="content-wrapper">
     <div class="container">
       <!-- Content Header (Page header) -->
-      <section class="content-header mb-4">
-        <h1>
-          Coupons
-        </h1>
-      </section>
-
-      <!-- Main content -->
       <section class="content">
+        <div class="row">
+          <div class="col-xs-6">
+            <h1 class="mb-20 judul-halaman">Coupons</h1>
+          </div>
+        </div>
+
         <!-- Add Data -->
-        <div class="row mb-4">
+        <div class="row mb-20">
           <div class="col-md-12">
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModalCoupon"><i class="fa fa-plus"></i> Create New Coupon</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalCoupon"><span class="material-icons md-18">add</span> Create New Coupon</button>
             <!-- Modal Add Contact -->
             <div class="modal fade" id="myModalCoupon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog modal-lg" role="document">
@@ -286,7 +285,7 @@
                               <option>Shipping</option>
                             </select>
                           </div>
-
+  
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
@@ -305,7 +304,7 @@
                               </div>
                             </div>
                           </div>
-
+  
                           <div class="form-group">
                             <label for="coupon-status" class="control-label">Coupon Status</label>
                             <select class="form-control" id="coupon-status">
@@ -315,11 +314,11 @@
                             </select>
                           </div>
                         </div>
-
+  
                         <div class="col-md-6">
                           <h4 class="font-weight-bold">Coupon Usage Restriction</h4>
                           <div class="border-bottom"></div>
-
+  
                           <div class="form-group">
                             <label for="usage-limit" class="control-label">Usage Limit</label>
                             <select class="form-control" id="usage-limit">
@@ -379,7 +378,7 @@
               </div>
             </div>
             
-            <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalUpdateStatus"><i class="fa fa-filter"></i> Update Status</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalUpdateStatus"><i class="fa fa-filter"></i> Update Status</button>
             <!-- Modal Update Status -->
             <div class="modal fade" id="modalUpdateStatus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -411,7 +410,7 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="btn btn-danger btn-md"><i class="fa fa-trash"></i> Delete</button>
+            <button type="button" class="btn btn-default"><span class="material-icons md-18">delete</span> Delete</button>
           </div>
         </div>
         
