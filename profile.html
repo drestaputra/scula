@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Scula</title>
+    <title>Profile | Toko Ghoib</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="bootstrap/css/custom2.css" />
+    <link rel="stylesheet" href="bootstrap/css/custom1.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
     <!-- Theme style -->
@@ -79,7 +80,7 @@
                                 <li><a href="team-members.html">Team Members</a></li>
                                 </ul>
                             </li>
-                            <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
+                            <li><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -90,7 +91,7 @@
                             <li class="dropdown messages-menu">
                                 <!-- Menu toggle button -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="material-icons md-16">mail</span>
                                     <span class="label label-success">4</span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -103,12 +104,12 @@
                                                 <a href="#">
                                                     <div class="pull-left">
                                                         <!-- User Image -->
-                                                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                                     </div>
                                                     <!-- Message title and timestamp -->
                                                     <h4>
                                                         Support Team
-                                                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                        <small><span class="material-icons-outlined">schedule</span> 5 mins</small>
                                                     </h4>
                                                     <!-- The message -->
                                                     <p>Why not buy a new awesome theme?</p>
@@ -122,12 +123,12 @@
                                 </ul>
                             </li>
                             <!-- /.messages-menu -->
-
+              
                             <!-- Notifications Menu -->
                             <li class="dropdown notifications-menu">
                                 <!-- Menu toggle button -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-bell-o"></i>
+                                    <span class="material-icons md-16">notifications</span>
                                     <span class="label label-warning">10</span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -137,7 +138,7 @@
                                         <ul class="menu">
                                             <li>
                                                 <!-- start notification -->
-                                                <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
+                                                <a href="#"> <span class="material-icons-outlined">person</span> 5 new members joined today </a>
                                             </li>
                                             <!-- end notification -->
                                         </ul>
@@ -155,14 +156,19 @@
                                 <ul class="dropdown-menu">
                                     <li class="header">You have 9 tasks</li>
                                     <li>
+                                        <!-- Inner menu: contains the tasks -->
                                         <ul class="menu">
                                             <li>
+                                                <!-- Task item -->
                                                 <a href="#">
+                                                    <!-- Task title and progress text -->
                                                     <h3>
                                                         Design some buttons
                                                         <small class="pull-right">20%</small>
                                                     </h3>
+                                                    <!-- The progress bar -->
                                                     <div class="progress xs">
+                                                        <!-- Change the css width attribute to simulate progress -->
                                                         <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                                             <span class="sr-only">20% Complete</span>
                                                         </div>
@@ -271,21 +277,21 @@
                                     <br>
                                     <button class="btn btn-md btn-info" @click="addPhoto">Tambah Foto Profil</button>
                                     <br>
-                                    <p class="mt-4">Hi, <span class="font-weight-bold">Yokayuga</span></p>
+                                    <p class="mt-20">Hi, <span class="font-weight-bold">Yokayuga</span></p>
                                 </div>
                                 <div class="card-box-title text-center">
                                     <h3 class="mt-0 mb-0 text-uppercase">YOUR CURRENT PLAN</h3>
                                 </div>
                                 <div class="card-box-title text-center">
                                     <h3 class="mt-0 mb-0 text-uppercase font-weight-bold" style="color: orange;">BUSINESS</h3>
-                                    <p class="mt-2 mb-0">Active Until: <span class="font-weight-bold">27-07-2021</span></p>
+                                    <p class="mt-10 mb-0">Active Until: <span class="font-weight-bold">27-07-2021</span></p>
                                 </div>
                                 <div class="card-box-title text-center">
                                     <h3 class="mt-0 mb-0 text-uppercase">YOUR CREDITS:</h3>
                                     <ul class="card-info">
-                                        <li class="font-weight-bold">Unlimited <span class="font-weight-thin">Products</span></li>
-                                        <li class="font-weight-bold border">24.405 <span class="font-weight-thin">orders</span></li>
-                                        <li class="font-weight-bold">20 <span class="font-weight-thin">Team Member</span></li>
+                                        <li class="font-weight-bold"><span class="material-icons-outlined md-18 text-red">inventory_2</span> Unlimited <span class="font-weight-thin">Products</span></li>
+                                        <li class="font-weight-bold border"><span class="material-icons-outlined md-18 text-red">shopping_bag</span>2 4.405 <span class="font-weight-thin">orders</span></li>
+                                        <li class="font-weight-bold"><span class="material-icons-outlined md-18 text-red">people</span> 20 <span class="font-weight-thin">Team Member</span></li>
                                     </ul>
                                 </div>
                                 <div class="card-box-footer text-center">
@@ -307,7 +313,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <form>
-                                                    <div class="form-group mt-4">
+                                                    <div class="form-group mt-20">
                                                         <label for="name">Full Name</label>
                                                         <input type="name" class="form-control" id="name" placeholder="Your Name" value="">
                                                     </div>
@@ -324,7 +330,7 @@
                                                         <label for="phoneNumber">Phone Number</label>
                                                         <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">
                                                     </div>
-                                                    <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalPassword"><i class="fa fa-lock"></i> Change my password</button>
+                                                    <button type="button" class="btn btn-default btn-block " data-toggle="modal" data-target="#modalPassword"><span class="material-icons-outlined md-18">lock_open</span> Change my password</button>
                                                     <!-- Modal -->
                                                     <div class="modal fade" id="modalPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                                         <div class="modal-dialog modal-sm" role="document">
@@ -355,14 +361,14 @@
                                                         </div>
                                                     </div>
 
-                                                    <button type="submit" class="btn btn-info btn-block mt-4">Save my profile</button>
+                                                    <button type="submit" class="btn btn-info btn-block mt-10">Save my profile</button>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div role="tabpanel" class="tab-pane" id="profile">
-                                        <div class="row mt-4">
+                                        <div class="row 20">
                                             <div class="col-md-8">
                                                 <div class="panel panel-default">
                                                     <div class="panel-heading">
