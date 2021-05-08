@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Scula</title>
+    <title>Add New | Toko Ghoib</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bootstrap/css/custom1.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
     <!-- Theme style -->
@@ -59,7 +60,7 @@
                                 <li><a href="team-members.html">Team Members</a></li>
                                 </ul>
                             </li>
-                            <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
+                            <li><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -70,7 +71,7 @@
                             <li class="dropdown messages-menu">
                                 <!-- Menu toggle button -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="material-icons md-16">mail</span>
                                     <span class="label label-success">4</span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -83,12 +84,12 @@
                                                 <a href="#">
                                                     <div class="pull-left">
                                                         <!-- User Image -->
-                                                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                                     </div>
                                                     <!-- Message title and timestamp -->
                                                     <h4>
                                                         Support Team
-                                                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                        <small><span class="material-icons-outlined">schedule</span> 5 mins</small>
                                                     </h4>
                                                     <!-- The message -->
                                                     <p>Why not buy a new awesome theme?</p>
@@ -107,7 +108,7 @@
                             <li class="dropdown notifications-menu">
                                 <!-- Menu toggle button -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-bell-o"></i>
+                                    <span class="material-icons md-16">notifications</span>
                                     <span class="label label-warning">10</span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -117,7 +118,7 @@
                                         <ul class="menu">
                                             <li>
                                                 <!-- start notification -->
-                                                <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
+                                                <a href="#"> <span class="material-icons-outlined">person</span> 5 new members joined today </a>
                                             </li>
                                             <!-- end notification -->
                                         </ul>
@@ -243,12 +244,10 @@
         <div class="content-wrapper">
             <div class="container">
                 <!-- Content Header (Page header) -->
-                <section class="content-header mb-4">
-                    <a href="team-members.html"><i class="fa fa-backward"></i> Back to List</a>
-                    <h1 class="mt-2">Add New Member</h1>
-                </section>
-                
                 <section class="content">
+                    <a href="team-members.html"><span class="material-icons-outlined md-18">arrow_back_ios</span> Back to List</a>
+                    <h1 class="mb-20 judul-halaman">Add New Member</h1>
+
                     <div class="card-group" style="border-radius: 10px">
                         <div class="row">
                             <!-- awal sidebar kiri -->
@@ -258,7 +257,7 @@
                                     <form role="form">
                                         <div class="box-body">
                                             <div class="form-group">
-                                                <label for="exampleInputEmail1">Member Profil</label>
+                                                <h2 class="mt-0">Member Profile</h2>
                                                 <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email" /> -->
                                             </div>
                                             <div class="form-group">
@@ -300,7 +299,7 @@
                                         <div class="box-body">
                                             <div class="row mb-4">
                                                 <div class="col-md-12">
-                                                    <strong>Permissions</strong>
+                                                    <h2 class="mt-0">Permissions</h2>
                                                 </div>
                                             </div>
                                             <div class="row">
