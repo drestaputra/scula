@@ -261,7 +261,6 @@ legend#more-status{
 legend table th,legend table td{
     font-size: 14px;
 }
-
 .modal-body{
     padding: 20px;
 }
@@ -598,6 +597,9 @@ table tr:hover .row-actions {
     }
     #li {
         width: 100px;
+    }
+    .f-right {
+        float: right;
     }
     #all-type {
         margin-left: -50px !important;

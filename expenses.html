@@ -249,7 +249,7 @@
             <h1 class="mt-0 judul-halaman">Expenses</h1>
           </div>
           <div class="col-xs-6 text-right">
-            <a href="" class="btn btn-default"><i class="fa fa-dollar"></i> Automatic Expense List</a>
+            <a href="" class="btn btn-default"><span class="material-icons-outlined md-18">paid</span> Automatic Expense List</a>
           </div>
         </div>
 
@@ -258,10 +258,10 @@
             <!-- Date and time range -->
             <div class="form-group pull-right">
               <div class="input-group">
-                  <button type="button" class="btn btn-default pull-right" id="daterange-btn"> 
-                      <span class="material-icons md-18">date_range</span> Date range picker
-                      <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
-                  </button>
+                <button type="button" class="btn btn-default pull-right" id="daterange-btn"> 
+                  <span class="material-icons md-18">date_range</span> Date range picker
+                  <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
+                </button>
               </div>
             </div>
           </div>
@@ -299,7 +299,7 @@
         <!-- Add Expenses -->
         <div class="row mb-20">
           <div class="col-md-12">
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#modalAddContact"><i class="fa fa-plus"></i> Add Expenses</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAddContact"><span class="material-icons md-18">add</span> Add Expenses</button>
             <!-- Modal Add Contact -->
             <div class="modal fade" id="modalAddContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -363,7 +363,7 @@
               </div>
             </div>
   
-            <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#modalAutomaticExpenses"><i class="fa fa-plus"></i> Automatic Expenses</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalAutomaticExpenses"><span class="material-icons md-18">add</span> Automatic Expenses</button>
             <!-- Modal Automatic Expenses -->
             <div class="modal fade" id="modalAutomaticExpenses" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -427,8 +427,8 @@
               </div>
             </div>
             
-            <button type="button" class="btn btn-danger btn-md"><i class="fa fa-trash"></i> Delete</button>
-            <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalSetTag"><i class="fa fa-tag"></i> Set Tag</button>
+            <button type="button" class="btn btn-default"><span class="material-icons md-18">delete</span> Delete</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalSetTag"><span class="material-icons md-18">local_offer</span> Set Tag</button>
             <!-- Modal Set Tag -->
             <div class="modal fade" id="modalSetTag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -461,9 +461,11 @@
               </div>
             </div>
   
-            <button type="button" class="btn btn-default btn-md"><i class="fa fa-download"></i> Export as CSV</button>
-  
-            <button type="button" class="btn btn-default btn-md" style="float: right;"  data-toggle="modal" data-target="#modalFilter"><i class="fa fa-filter"></i> Filter</button>
+            <button type="button" class="btn btn-default"><span class="material-icons md-18">file_download</span> Export as CSV</button>
+            
+            <div class="f-right">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalFilter"><span class="material-icons md-18">filter_list</span> Filter</button>
+            </div>
             <!-- Modal Filter -->
             <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">

@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Scula</title>
+  <title>Payments | Toko Ghoib</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/css/custom2.css">
+  <link rel="stylesheet" href="bootstrap/css/custom1.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
@@ -59,7 +60,7 @@
                   <li><a href="team-members.html">Team Members</a></li>
                   </ul>
               </li>
-              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
+              <li><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -243,14 +244,14 @@
   <div class="content-wrapper">
     <div class="container">
       <!-- Content Header (Page header) -->
-      <section class="content-header mb-4">
-        <h1>
-          Payments Confirmations
-        </h1>
-        <ol class="breadcrumb">
-          <li>
+      <section class="content">
+        <div class="row mb-20">
+          <div class="col-xs-6">
+            <h1 class="mb-0 judul-halaman">Payments Confirmations</h1>
+          </div>
+          <div class="col-xs-6 text-right">
             <div class="btn-group">
-              <button type="button" class="btn btn-default">Visit Page</button>
+              <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">launch</span> Visit Page</button>
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                 <span class="caret"></span>
                 <span class="sr-only">Toggle Dropdown</span>
@@ -263,14 +264,11 @@
                 <li><a href="#">Separated link</a></li>
               </ul>
             </div>
-            <a href="" class="btn btn-default"><i class="fa fa-dollar"></i> Customize Page</a>
-          </li>
-        </ol>
-      </section>
+            <a href="" class="btn btn-default"><span class="material-icons-outlined md-16">edit</span> Customize Page</a>
+          </div>
+        </div>
 
-      <!-- Main content -->
-      <section class="content">
-        <div class="row mb-4">
+        <div class="row mb-20">
           <div class="col-md-12">
             <!-- Date and time range -->
             <div class="form-group">
@@ -283,125 +281,136 @@
                 </button>
               </div>
             </div>
+            <!-- Date and time range -->
+            <!-- <div class="form-group pull-right">
+              <div class="input-group">
+                <button type="button" class="btn btn-default pull-right" id="daterange-btn"> 
+                  <span class="material-icons md-18">date_range</span> Date range picker
+                  <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
+                </button>
+              </div>
+            </div> -->
           </div>
         </div>
-
-        <!-- Add Expenses -->
-        <div class="row mb-4">
+  
+        <!-- Filter -->
+        <div class="row mb-20">
           <div class="col-md-12">
-            <button type="button" class="btn btn-danger btn-md"><i class="fa fa-trash"></i> Delete</button>
-            <button type="button" class="btn btn-default btn-md"><i class="fa fa-download"></i> Export as CSV</button>
-
-            <button type="button" class="btn btn-default btn-md" style="float: right;"  data-toggle="modal" data-target="#modalFilter"><i class="fa fa-filter"></i> Filter</button>
-            <!-- Modal Filter -->
-            <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Filter Contact</h4>
+            <button type="button" class="btn btn-default"><span class="material-icons md-18">delete</span> Delete</button>
+            <button type="button" class="btn btn-default"><span class="material-icons md-18">file_download</span> Export as CSV</button>
+            
+            <div class="f-right">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalFilter"><span class="material-icons-outlined md-18">filter_list</span> Filter</button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Filter -->
+        <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Filter Contact</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Product</label>
+                        <select class="form-control select2" style="width: 100%;">
+                          <option selected="selected">Select Product</option>
+                          <option>Alaska</option>
+                          <option>California</option>
+                          <option>Delaware</option>
+                          <option>Tennessee</option>
+                          <option>Texas</option>
+                          <option>Washington</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label>Product</label>
-                            <select class="form-control select2" style="width: 100%;">
-                              <option selected="selected">Select Product</option>
-                              <option>Alaska</option>
-                              <option>California</option>
-                              <option>Delaware</option>
-                              <option>Tennessee</option>
-                              <option>Texas</option>
-                              <option>Washington</option>
-                            </select>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="buyer" class="control-label">Buyer Status</label>
+                        <select class="form-control" id="buyer">
+                          <option value="" selected disabled>Buyer Status</option>
+                          <option>Show All</option>
+                          <option>Show Buyer Only</option>
+                          <option>Show Except Buyer</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="province" class="control-label">Province</label>
+                        <select class="form-control" id="province">
+                          <option value="" selected disabled>Customer Province</option>
+                          <option>Yogyakarta</option>
+                          <option>Jakarta</option>
+                          <option>Bali</option>
+                          <option>Bandung</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Last Contacted</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
                           </div>
+                          <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
                         </div>
                       </div>
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="buyer" class="control-label">Buyer Status</label>
-                            <select class="form-control" id="buyer">
-                              <option value="" selected disabled>Buyer Status</option>
-                              <option>Show All</option>
-                              <option>Show Buyer Only</option>
-                              <option>Show Except Buyer</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="province" class="control-label">Province</label>
-                            <select class="form-control" id="province">
-                              <option value="" selected disabled>Customer Province</option>
-                              <option>Yogyakarta</option>
-                              <option>Jakarta</option>
-                              <option>Bali</option>
-                              <option>Bandung</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label>Last Contacted</label>
-                            <div class="input-group">
-                              <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
-                              </div>
-                              <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="city" class="control-label">City</label>
-                            <select class="form-control" id="city">
-                              <option value="" selected disabled>Customer City</option>
-                              <option>Sleman</option>
-                              <option>Bantul</option>
-                              <option>Kulonprogo</option>
-                              <option>Gunungkidul</option>
-                            </select>
-                          </div>
-                        </div>
+                      <div class="form-group">
+                        <label for="city" class="control-label">City</label>
+                        <select class="form-control" id="city">
+                          <option value="" selected disabled>Customer City</option>
+                          <option>Sleman</option>
+                          <option>Bantul</option>
+                          <option>Kulonprogo</option>
+                          <option>Gunungkidul</option>
+                        </select>
                       </div>
+                    </div>
+                  </div>
 
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label for="subdistrict" class="control-label">Subdistrict</label>
-                            <select class="form-control" id="subdistrict">
-                              <option value="" selected disabled>Customer Subdistrict</option>
-                              <option>Condongcatur</option>
-                              <option>Banguntapan</option>
-                              <option>Wates</option>
-                              <option>Wonosari</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="handled" class="control-label">Handled By</label>
-                            <select class="form-control" id="handled">
-                              <option value="" selected disabled>Select CS</option>
-                              <option>Condongcatur</option>
-                              <option>Banguntapan</option>
-                              <option>Wates</option>
-                              <option>Wonosari</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="tags-filter" class="control-label">Tags</label>
-                            <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" id="tags-filter">
-                          </div>
-                        </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="subdistrict" class="control-label">Subdistrict</label>
+                        <select class="form-control" id="subdistrict">
+                          <option value="" selected disabled>Customer Subdistrict</option>
+                          <option>Condongcatur</option>
+                          <option>Banguntapan</option>
+                          <option>Wates</option>
+                          <option>Wonosari</option>
+                        </select>
                       </div>
-                      
-                    </form>
+                      <div class="form-group">
+                        <label for="handled" class="control-label">Handled By</label>
+                        <select class="form-control" id="handled">
+                          <option value="" selected disabled>Select CS</option>
+                          <option>Condongcatur</option>
+                          <option>Banguntapan</option>
+                          <option>Wates</option>
+                          <option>Wonosari</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="tags-filter" class="control-label">Tags</label>
+                        <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" id="tags-filter">
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Apply Filter</button>
-                  </div>
-                </div>
+                  
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Apply Filter</button>
               </div>
             </div>
           </div>
