@@ -214,13 +214,13 @@
         <div class="row mb-20">
           <div class="col-md-12">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalCoupon"><span class="material-icons md-18">add</span> Create New Coupon</button>
-            <!-- Modal Add Contact -->
-            <div class="modal fade" id="myModalCoupon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <!-- Modal Add Coupon -->
+            <div class="modal fade" id="myModalCoupon" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Add New Contact</h4>
+                    <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">local_activity</span> Add New Contact</h4>
                   </div>
                   <div class="modal-body">
                     <form>
@@ -228,7 +228,7 @@
                         <div class="col-md-6">
                           <h4 class="font-weight-bold">Coupon Details</h4>
                           <div class="border-bottom"></div>
-                          <div class="form-group mt-2">
+                          <div class="form-group mt-10">
                             <label for="coupon-name" class="control-label">Coupon Name</label>
                             <input type="text" class="form-control" id="coupon-name">
                           </div>
@@ -238,9 +238,9 @@
                             <small style="color: red;">Coupon code is minimum 3 characters & maximum 50 characters</small>
                           </div>
                           <div class="form-group">
-                            <label for="discount" class="control-label">Discount For</label>
+                            <label for="discount" class="control-label">Discount For <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Tentukan apakah diskon akan memotong harga produk atau biaya pengiriman">info</span></label>
                             <select class="form-control" id="discount">
-                              <option value="" selected disabled>Discount For</option>
+                              <option value="" selected disabled>Select Discount For</option>
                               <option>Product</option>
                               <option>Shipping</option>
                             </select>
@@ -249,7 +249,7 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label for="discount-type" class="control-label">Discount Type</label>
+                                <label for="discount-type" class="control-label">Discount Type <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Fixed Price: memotong harga berdasarkan nilai yang ditentukan. Percentage: memotong harga berdasarkan persentase">info</span></label>
                                 <select class="form-control" id="discount-type">
                                   <option value="" selected disabled>Discount Type</option>
                                   <option>Fixed Price</option>
@@ -259,7 +259,7 @@
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label for="discount" class="control-label">Discount</label>
+                                <label for="discount" class="control-label">Discount <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Nilai diskon yang diterapkan, jika Diskon Type Fixed Price maka masukkan nominal potongan harga, jika Discount Type Percentage maka masukkan nilai persentase potongan (tanpa simbol %)">info</span></label>
                                 <input type="number" min="0" class="form-control" id="discount">
                               </div>
                             </div>
@@ -288,7 +288,7 @@
                             </select>
                           </div>
                           <div class="form-group">
-                            <label for="product" class="control-label">Products</label> (optional) <i class="fa fa-info-circle"></i>
+                            <label for="product" class="control-label">Products</label> (optional) <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Hanya produk berikut yang dapat menggunakan kupon ini">info</span>
                             <select class="form-control" id="product">
                               <option value="" selected disabled>Select Products</option>
                               <option>Suratprofit</option>
@@ -297,32 +297,32 @@
                           </div>
                           <div class="form-group">
                             <div class="checkbox">
-                              <label><input type="checkbox"> Schedule Coupon Availability (optional)</label> <i class="fa fa-info-circle"></i>
+                              <label><input type="checkbox"> Schedule Coupon Availability (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Tentukan rentang waktu berlaku kupon">info</span>
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="checkbox">
-                              <label><input type="checkbox"> Minimal Order Quantity (optional) </label> <i class="fa fa-info-circle"></i>
+                              <label><input type="checkbox"> Minimal Order Quantity (optional) </label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Kupon hanya berlaku jika memenuhi syarat minimal jumlah order">info</span>
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="checkbox">
-                              <label><input type="checkbox"> Maximum Discount (optional)</label> <i class="fa fa-info-circle"></i>
+                              <label><input type="checkbox"> Maximum Discount (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Potongan maksimal diskon kupon">info</span>
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="checkbox">
-                              <label><input type="checkbox"> Minimum Spend (optional)</label> <i class="fa fa-info-circle"></i>
+                              <label><input type="checkbox"> Minimum Spend (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Jumlah minimum pembelanjaan agar kupon valid">info</span>
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="checkbox">
-                              <label><input type="checkbox"> Payment Method (optional) </label> <i class="fa fa-info-circle"></i>
+                              <label><input type="checkbox"> Payment Method (optional) </label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Metode pembayaran agar kupon valid">info</span>
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="checkbox">
-                              <label><input type="checkbox"> New Customer Only (optional)</label> <i class="fa fa-info-circle"></i>
+                              <label><input type="checkbox"> New Customer Only (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Hanya dapat digunakan pada pembelanjaan pertama">info</span>
                             </div>
                           </div>
                         </div>
@@ -338,14 +338,14 @@
               </div>
             </div>
             
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalUpdateStatus"><i class="fa fa-filter"></i> Update Status</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalUpdateStatus">Update Status</button>
             <!-- Modal Update Status -->
-            <div class="modal fade" id="modalUpdateStatus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="modalUpdateStatus" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Filter Contact</h4>
+                    <h4 class="modal-title" id="myModalLabel">Update Status</h4>
                   </div>
                   <div class="modal-body">
                     <form>
@@ -374,429 +374,224 @@
           </div>
         </div>
         
-        <!-- Tabel -->
+        <!-- TABEL -->
         <div class="row">
           <div class="col-md-12">
             <div class="box">
               <!-- /.box-header -->
               <div class="box-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="example1" class="table table-bordered table-striped product">
                   <thead>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform(s)</th>
-                      <th>Engine version</th>
-                      <th>CSS grade</th>
+                      <th class="text-left"><input type="checkbox"></th>
+                      <th class="text-center mobile-none"></th>
+                      <th class="text-left">Name</th>
+                      <th class="text-left mobile-none">Code</th>
+                      <th class="text-center mobile-none">Discount</th>
+                      <th class="text-center mobile-none">Discount for</th>
+                      <th class="text-center mobile-none">Usage</th>
+                      <th class="text-center mobile-none">Usage Limit</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 4.0
+                      <td class="text-left"><input type="checkbox"></td>
+                      <td class="text-center mobile-none">
+                        <span class="material-icons-outlined md-48 text-orange">money</span>
                       </td>
-                      <td>Win 95+</td>
-                      <td> 4</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 5.0
+                      <td class="text-left">
+                        <div class="mb-10">
+                          <p>DISC 20%</p>
+                        </div>
+
+                        <div class="desktop-none">
+                          <div class="text-blue"><strong>KPN12</strong></div> <br>
+                          <span>Discount: Rp10.000</span>
+                        </div>
+
+                        <div class="row-actions">
+                          <button type="button" class="no-button" data-toggle="modal" data-target="#myModalEditCoupon">
+                            <span class="material-icons-outlined md-16">edit</span> Edit
+                          </button>
+                          
+                          <button type="button" class="no-button" data-toggle="modal" data-target="#modalCopyUrl">
+                            <span class="material-icons-outlined md-16">content_copy</span> Copy URL
+                          </button>
+                          
+                          <button class="text-link"><span class="material-icons-outlined md-16">delete</span> Delete</button>
+                        </div>
+
+                        <!-- Modal CopyUrl -->
+                        <div class="modal fade" id="modalCopyUrl" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">link</span> Coupon URL
+                                </h4>
+                              </div>
+                              <div class="modal-body">
+                                <div class="form-group">
+                                  <label>Get a URL from product that automatically applies this KPN12 coupon</label>
+                                  <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">Select Options</option>
+                                    <option>Webinar Cara Iklan di TV Gratis bahkan Malah Dapat Honor</option>
+                                    <option>Suratprofit</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Copy URL</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Modal Edit Coupon -->
+                        <div class="modal fade" id="myModalEditCoupon" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">local_activity</span> Add New Contact</h4>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <h4 class="font-weight-bold">Coupon Details</h4>
+                                      <div class="border-bottom"></div>
+                                      <div class="form-group mt-10">
+                                        <label for="coupon-name" class="control-label">Coupon Name</label>
+                                        <input type="text" class="form-control" id="coupon-name">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="coupon-code" class="control-label">Coupon Code</label>
+                                        <input type="text" class="form-control" id="coupon-code">
+                                        <small style="color: red;">Coupon code is minimum 3 characters & maximum 50 characters</small>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="discount" class="control-label">Discount For <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Tentukan apakah diskon akan memotong harga produk atau biaya pengiriman">info</span></label>
+                                        <select class="form-control" id="discount">
+                                          <option value="" selected disabled>Select Discount For</option>
+                                          <option>Product</option>
+                                          <option>Shipping</option>
+                                        </select>
+                                      </div>
+              
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                            <label for="discount-type" class="control-label">Discount Type <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Fixed Price: memotong harga berdasarkan nilai yang ditentukan. Percentage: memotong harga berdasarkan persentase">info</span></label>
+                                            <select class="form-control" id="discount-type">
+                                              <option value="" selected disabled>Discount Type</option>
+                                              <option>Fixed Price</option>
+                                              <option>Percentage</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                            <label for="discount" class="control-label">Discount <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Nilai diskon yang diterapkan, jika Diskon Type Fixed Price maka masukkan nominal potongan harga, jika Discount Type Percentage maka masukkan nilai persentase potongan (tanpa simbol %)">info</span></label>
+                                            <input type="number" min="0" class="form-control" id="discount">
+                                          </div>
+                                        </div>
+                                      </div>
+              
+                                      <div class="form-group">
+                                        <label for="coupon-status" class="control-label">Coupon Status</label>
+                                        <select class="form-control" id="coupon-status">
+                                          <option value="" selected disabled>Coupon Status</option>
+                                          <option>Enabled</option>
+                                          <option>Disabled</option>
+                                        </select>
+                                      </div>
+                                    </div>
+              
+                                    <div class="col-md-6">
+                                      <h4 class="font-weight-bold">Coupon Usage Restriction</h4>
+                                      <div class="border-bottom"></div>
+              
+                                      <div class="form-group">
+                                        <label for="usage-limit" class="control-label">Usage Limit</label>
+                                        <select class="form-control" id="usage-limit">
+                                          <option value="" selected disabled>Usage Limit</option>
+                                          <option>25</option>
+                                          <option>50</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="product" class="control-label">Products</label> (optional) <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Hanya produk berikut yang dapat menggunakan kupon ini">info</span>
+                                        <select class="form-control" id="product">
+                                          <option value="" selected disabled>Select Products</option>
+                                          <option>Suratprofit</option>
+                                          <option>Suratprofit</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="checkbox">
+                                          <label><input type="checkbox"> Schedule Coupon Availability (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Tentukan rentang waktu berlaku kupon">info</span>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="checkbox">
+                                          <label><input type="checkbox"> Minimal Order Quantity (optional) </label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Kupon hanya berlaku jika memenuhi syarat minimal jumlah order">info</span>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="checkbox">
+                                          <label><input type="checkbox"> Maximum Discount (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Potongan maksimal diskon kupon">info</span>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="checkbox">
+                                          <label><input type="checkbox"> Minimum Spend (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Jumlah minimum pembelanjaan agar kupon valid">info</span>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="checkbox">
+                                          <label><input type="checkbox"> Payment Method (optional) </label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Metode pembayaran agar kupon valid">info</span>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="checkbox">
+                                          <label><input type="checkbox"> New Customer Only (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Hanya dapat digunakan pada pembelanjaan pertama">info</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Create</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                       </td>
-                      <td>Win 95+</td>
-                      <td>5</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 5.5
+
+                      <td class="text-left mobile-none">
+                        <div class="text-blue"><strong>KPN12</strong></div>
+                        <div class="row-actions">
+                          <a href=""><span class="material-icons-outlined md-16">file_copy</span> Copy Code</a>
+                        </div>
                       </td>
-                      <td>Win 95+</td>
-                      <td>5.5</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 6
+                      <td class="text-center mobile-none">
+                        Rp10.000
                       </td>
-                      <td>Win 98+</td>
-                      <td>6</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet Explorer 7</td>
-                      <td>Win XP SP2+</td>
-                      <td>7</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>AOL browser (AOL desktop)</td>
-                      <td>Win XP</td>
-                      <td>6</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 1.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 1.5</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 2.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 3.0</td>
-                      <td>Win 2k+ / OSX.3+</td>
-                      <td>1.9</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Camino 1.0</td>
-                      <td>OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Camino 1.5</td>
-                      <td>OSX.3+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Netscape 7.2</td>
-                      <td>Win 95+ / Mac OS 8.6-9.2</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Netscape Browser 8</td>
-                      <td>Win 98SE+</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Netscape Navigator 9</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.0</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.1</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.1</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.2</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.2</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.3</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.3</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.4</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.4</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.5</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.5</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.6</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.6</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.7</td>
-                      <td>Win 98+ / OSX.1+</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.8</td>
-                      <td>Win 98+ / OSX.1+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Seamonkey 1.1</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Epiphany 2.20</td>
-                      <td>Gnome</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>Safari 1.2</td>
-                      <td>OSX.3</td>
-                      <td>125.5</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>Safari 1.3</td>
-                      <td>OSX.3</td>
-                      <td>312.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>Safari 2.0</td>
-                      <td>OSX.4+</td>
-                      <td>419.3</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>Safari 3.0</td>
-                      <td>OSX.4+</td>
-                      <td>522.1</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>OmniWeb 5.5</td>
-                      <td>OSX.4+</td>
-                      <td>420</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>iPod Touch / iPhone</td>
-                      <td>iPod</td>
-                      <td>420.1</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>S60</td>
-                      <td>S60</td>
-                      <td>413</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 7.0</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 7.5</td>
-                      <td>Win 95+ / OSX.2+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 8.0</td>
-                      <td>Win 95+ / OSX.2+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 8.5</td>
-                      <td>Win 95+ / OSX.2+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 9.0</td>
-                      <td>Win 95+ / OSX.3+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 9.2</td>
-                      <td>Win 88+ / OSX.3+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 9.5</td>
-                      <td>Win 88+ / OSX.3+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera for Wii</td>
-                      <td>Wii</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Nokia N800</td>
-                      <td>N800</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Nintendo DS browser</td>
-                      <td>Nintendo DS</td>
-                      <td>8.5</td>
-                      <td>C/A<sup>1</sup></td>
-                    </tr>
-                    <tr>
-                      <td>KHTML</td>
-                      <td>Konqureror 3.1</td>
-                      <td>KDE 3.1</td>
-                      <td>3.1</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>KHTML</td>
-                      <td>Konqureror 3.3</td>
-                      <td>KDE 3.3</td>
-                      <td>3.3</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>KHTML</td>
-                      <td>Konqureror 3.5</td>
-                      <td>KDE 3.5</td>
-                      <td>3.5</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Tasman</td>
-                      <td>Internet Explorer 4.5</td>
-                      <td>Mac OS 8-9</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Tasman</td>
-                      <td>Internet Explorer 5.1</td>
-                      <td>Mac OS 7.6-9</td>
-                      <td>1</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Tasman</td>
-                      <td>Internet Explorer 5.2</td>
-                      <td>Mac OS 8-X</td>
-                      <td>1</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>NetFront 3.1</td>
-                      <td>Embedded devices</td>
-                      <td>-</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>NetFront 3.4</td>
-                      <td>Embedded devices</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>Dillo 0.8</td>
-                      <td>Embedded devices</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>Links</td>
-                      <td>Text only</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>Lynx</td>
-                      <td>Text only</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>IE Mobile</td>
-                      <td>Windows Mobile 6</td>
-                      <td>-</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>PSP browser</td>
-                      <td>PSP</td>
-                      <td>-</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Other browsers</td>
-                      <td>All others</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>U</td>
+                      <td class="text-center mobile-none">
+                        Product
+                      </td>
+                      <td class="text-center mobile-none">
+                        7
+                      </td>
+                      <td class="text-center mobile-none">
+                        <span class="material-icons-outlined md-16">all_inclusive</span>
+                      </td>
                     </tr>
                   </tbody>
                 </table>

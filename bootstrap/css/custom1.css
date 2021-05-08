@@ -287,6 +287,9 @@ nav.navbar.navbar-static-top {
 .text-white {
     color: #fff !important;
 }
+.text-orange {
+    color: #FBAF5D !important;
+}
 .text-red {
     color: #F95353 !important;
 }
@@ -848,6 +851,9 @@ table tr:hover .row-actions {
     }
     .pull-kiri {
         float: inherit !important;
+    }
+    .row-actions {
+        opacity: 1;
     }
 }
 @media (max-width: 991px) {
