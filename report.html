@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="bootstrap/css/custom1.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="plugins/select2/select2.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/AdminLTE.min.css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -31,13 +31,11 @@
 <body class="hold-transition skin-blue layout-top-nav">
     <div class="wrapper">
         <header class="main-header">
-            <nav class="navbar navbar-static-top">
+            <nav class="navbar navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header">
                         <a href="#" class="navbar-brand"><b>Scula</b></a>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                            <i class="fa fa-bars"></i>
-                        </button>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><span class="material-icons-outlined md-18"> horizontal_split</span></button>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,22 +43,22 @@
                         <ul class="nav navbar-nav">
                             <li><a href="dashboard.html">Dashboard</a></li>
                             <li><a href="products.html">Products</a></li>
-                            <li><a href="order.html">Order</a></li>
+                            <li><a href="order.html">Order <span class="sr-only">(current)</span></a></li>
                             <li><a href="http://backscula.organilife.id/">Funnels</a></li>
                             <li><a href="contacts.html">Contacts</a></li>
-                            <li class="active"><a href="report.html">Reports <span class="sr-only">(current)</span></a></li>
+                            <li class="active"><a href="report.html">Reports</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                <li><a href="coupons.html">Coupons</a></li>
-                                <li><a href="expenses.html">Expenses</a></li>
-                                <li><a href="inventory.html">Inventory</a></li>
-                                <li><a href="payments.html">Payments</a></li>
-                                <li><a href="logistics.html">Logistics</a></li>
-                                <li><a href="team-members.html">Team Members</a></li>
+                                    <li><a href="coupons.html">Coupons</a></li>
+                                    <li><a href="expenses.html">Expenses</a></li>
+                                    <li><a href="inventory.html">Inventory</a></li>
+                                    <li><a href="payments.html">Payments</a></li>
+                                    <li><a href="logistics.html">Logistics</a></li>
+                                    <li><a href="team-members.html">Team Members</a></li>
                                 </ul>
                             </li>
-                            <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
+                            <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons-outlined md-18"> add</span> Add Product</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -71,7 +69,7 @@
                             <li class="dropdown messages-menu">
                                 <!-- Menu toggle button -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="material-icons-outlined md-18"> mail</span>
                                     <span class="label label-success">4</span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -84,12 +82,12 @@
                                                 <a href="#">
                                                     <div class="pull-left">
                                                         <!-- User Image -->
-                                                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                                     </div>
                                                     <!-- Message title and timestamp -->
                                                     <h4>
                                                         Support Team
-                                                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                        <small><span class="material-icons-outlined md-18">schedule</span> 5 mins</small>
                                                     </h4>
                                                     <!-- The message -->
                                                     <p>Why not buy a new awesome theme?</p>
@@ -103,13 +101,13 @@
                                 </ul>
                             </li>
                             <!-- /.messages-menu -->
-              
+
                             <!-- Notifications Menu -->
                             <li class="dropdown notifications-menu">
                                 <!-- Menu toggle button -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-bell-o"></i>
-                                    <span class="label label-warning">10</span>
+                                    <span class="material-icons-outlined md-18"> notifications</span>
+                                    <span class="label label-warning"> 10</span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="header">You have 10 notifications</li>
@@ -118,7 +116,7 @@
                                         <ul class="menu">
                                             <li>
                                                 <!-- start notification -->
-                                                <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
+                                                <a href="#"> <span class="material-icons-outlined md-18"> person</span> 5 new members joined today </a>
                                             </li>
                                             <!-- end notification -->
                                         </ul>
@@ -130,7 +128,7 @@
                             <li class="dropdown tasks-menu" style="display: none">
                                 <!-- Menu Toggle Button -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-flag-o"></i>
+                                    <span class="material-icons-outlined md-18"> flag</span>
                                     <span class="label label-danger">9</span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -225,8 +223,8 @@
                                     <!-- Menu Footer-->
                                     <li class="user-footer">
                                         <!-- <div class="pull-left">
-                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                        </div> -->
+                                          <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                      </div> -->
                                         <div class="pull-right">
                                             <a href="#" class="btn btn-default btn-flat">Sign out</a>
                                         </div>
@@ -241,349 +239,152 @@
             </nav>
         </header>
         <!-- Full Width Column -->
-        <div class="content-wrapper">
+        <div class="content-wrapper mt-50">
             <div class="container">
                 <!-- Content Header (Page header) -->
-                <section>
-                    <div class="row" style="margin-left: -6px;">
-                        <h1>Team Performance</h1>
+                
+                <div class="content">
+                    <div class="row mb-20">
+                        <div class="col-md-6">                            
+                            <h1 class="mb-0 judul-halaman">Team Performance</h1>
+                        </div>
                     </div>
-                </section>
-                <section class="content-header">
                     <!-- <div class="row"> -->
                     <!-- <div class="col-md-10"> -->
-                    <div class="row">
-                        <div class="col-md-2 col-xs-5" style="margin-left: -14px;">
-                            <!-- <div class="input-group-btn"> -->
-                            <input list="allproduct" name="product" id="product" />
-                            <datalist id="allproduct">
-                                  <option
-                                    value="Bimbingan Private Iklan di TV Bahkan Malah Dapat Webinar Gratis  "
-                                  ></option>
-                                  <option value="Bisnis Manager Verifed"></option>
-                                  <option
-                                    value="Metode Setting Add Account Facebook tanpa PPN10%"
-                                  ></option>
-                                  <option value="Metode Verifikasi FB Bisnis Manager"></option>
-                                  <option value="Scaculator"></option>
-                                  <option value="Surat Profit"></option>
-                                  <option value="Surat Profit Indonesia"></option>
-                                  <option value="Surat Profit A"></option>
-                                  <option value="Surat Profit MA"></option>
-                                  <option value="Surat Profit MA2"></option>
-                                  <option value="Surat Profit Mimi"></option>
-                                  <option value="Surat Profit Pak Uha"></option>
-                                  <option value="Surat Profit Saputra"></option>
-                                  <option value="Surat Profit Yama"></option>
-                                  <option value="Tes Fisik"></option>
-                                  <option value="Tes "></option>
-                                  <option
-                                    value="Viral Webinar Cara Iklan di Tv Bahkan Malah Dapat Honor "
-                                  ></option>
-                                  <option
-                                    value="Webinar Cara Iklan di Tv Bahkan Malah Dapat Honor "
-                                  ></option>
-                                </datalist>
-                            <!-- <select class="form-control select2" style="width: 100%">
-                                    <option value="All Product">All Product</option>
-                                    <option value="Webinar Cara Iklan">Webinar Cara Iklan di TV Gratis Bahkan Dapat Bonus</option>
-                                    <option value="Bimbingan Private Iklan">Bimbingan Private Iklan di TV Gratis bahkan Malah Dapat Bonus Webinar Gratis</option>
-                                    <option value="Viral Webinar Cara Iklan">Viral Webinar Cara Iklan di TV Gratis Bahkan Dapat Bonus</option>
-                                    <option value="Surat Profit">Surat Profit</option>
-                                  </select> -->
-                            <!-- </div> -->
-                        </div>
-                        <!-- </div> -->
-                        <!-- <div class="col-md-2 text-right"> -->
-                        <div class="col-md-2" style="float: right;margin-right: -17px;">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <button type="button" class="btn btn-default pull-right" id="daterange-btn">
-                    <span> <i class="fa fa-calendar"></i> Date range picker </span>
-                    <i class="fa fa-caret-down"></i>
-                  </button>
+                        <div class="row">
+                            <div class="col-md-3 mb-10">
+                                <select class="form-control select2" id="allproduct" style="width: 100%">
+                                    <option value="">All Products</option>
+                                    <option value="">Bimbingan Private Iklan di TV Bahkan Malah Dapat Webinar Gratis </option>
+                                    <option value="">Bisnis Manager Verifed</option>
+                                    <option value="">Metode Setting Add Account Facebook tanpa PPN10%</option>
+                                    <option value="">Metode Verifikasi FB Bisnis Manager</option>
+                                    <option value="">Scaculator</option>
+                                    <option value="">Surat Profit</option>
+                                    <option value="">Surat Profit Indonesia</option>
+                                    <option value="">Surat Profit A</option>
+                                    <option value="">Surat Profit MA</option>
+                                    <option value="">Surat Profit MA2</option>
+                                    <option value="">Surat Profit Mimi</option>
+                                    <option value="">Surat Profit Pak Uha</option>
+                                    <option value="">Surat Profit Saputra</option>
+                                    <option value="">Surat Profit Yama</option>
+                                    <option value="">Tes Fisik</option>
+                                    <option value="">Tes </option>
+                                    <option value="">Viral Webinar Cara Iklan di Tv Bahkan Malah Dapat Honor</option>
+                                    <option value="">Webinar Cara Iklan di Tv Bahkan Malah Dapat Honor</option>
+                                
+                                </select>
+                            </div>
+                            <div class="col-md-6 pull-right">
+                                <div class="form-group pull-right">
+                                  <div class="input-group" style="display: block;">
+                                      <button type="button" class="btn btn-default pull-right btn-rounded-20" id="daterange-btn"> 
+                                        <span class="material-icons md-18">date_range</span> Date range picker
+                                        <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
+                                    </button>
                                 </div>
                             </div>
+                            </div>
                         </div>
-                    </div>
                     <!-- </div> -->
-                </section>
+                
 
-                <div class="row">
+                <div class="row mb-10">
                     <div class="col-md-4">
-                        <div class="info-box " style="height:175px">
+                        <div class="info-box ">
                             <!-- <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span> -->
 
-                            <div class="info-box-content box1">
-                                <!-- <span class="info-box-text">Messages</span> -->
-                                <h4 class="bg-red text-center" style="height: 45px;padding-right:170px; padding-top: 10px;padding-bottom: 10px;background-image: linear-gradient(to right,white ,purple); ">Top Paid Ratio</h4>
-                                <div class="row " style="margin-bottom: 30px; ">
-                                    <div class=" col-xs-1 col-md-1 ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
+                            <div class="box box-widget widget-user-2">
+                                <!-- Add the bg color to the header using any of the bg-* classes -->
+                                <div class="widget-user-header widget-user-header-sm bg-yellow">
+                                    <div class="widget-user-image">
+                                        <span class="material-icons-outlined md-24">recommend</span> Top Paid Ratio
                                     </div>
-
-                                    <div class="col-xs-2 col-md-2 ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-                                        <div class="row " style="margin-top: 10px;margin-left: 10px; ">
-                                            <span class="sparkpie ">1,5</span>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                    <div class="col-xs-2 col-md-2 ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="50 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                        <div class="knob-label text-left ">
-                                            <h4 style="font-weight: 800; "> 43%</h4>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                    <div class="col-xs-7 col-md-7 text-left ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="30 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                        <div class="knob-label ">
-                                            <h4> Yasmin </h4>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
                                 </div>
-                                <div class="row ">
-                                    <div class="col-xs-1 col-md-1 ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-                                    </div>
-
-                                    <div class="col-xs-2 col-md-2 ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-
-                                        <div class="row " style="margin-top: 10px;margin-left: 10px; ">
-                                            <span class="sparkpie "> 1,1,2 </span>
-                                        </div>
-
-
-                                    </div>
-                                    <!-- ./col -->
-                                    <div class="col-xs-2 col-md-2 ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="50 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                        <div class="knob-label text-left ">
-                                            <h4 style="font-weight: 800; "> 0%</h4>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                    <div class="col-xs-7 col-md-7 text-left ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="30 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                        <div class="knob-label ">
-                                            <h4 class="text-left "> Manstaff </h4>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
+                                <div class="box-footer no-padding">
+                                    <ul class="nav nav-stacked">
+                                        <li><a href="#">Projects <span class="pull-right badge bg-blue">31</span></a></li>
+                                        <li><a href="#">Tasks <span class="pull-right badge bg-aqua">5</span></a></li>
+                                        <li><a href="#">Completed Projects <span class="pull-right badge bg-green">12</span></a></li>
+                                        <li><a href="#">Followers <span class="pull-right badge bg-red">842</span></a></li>
+                                    </ul>
                                 </div>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
                     </div>
 
-                    <div class="col-md-4 ">
-                        <div class="info-box " style="height: 175px ">
-                            <!-- <span class="info-box-icon bg-aqua "><i class="fa fa-envelope-o "></i></span> -->
-
-                            <div class="info-box-content box1 ">
-                                <!-- <span class="info-box-text ">Messages</span> -->
-                                <h4 class="bg-red text-center " style="height: 45px;padding-right:170px; padding-top: 10px;padding-bottom: 10px;background-image: linear-gradient(to right,white ,purple); ">Top Sales</h4>
-
-                                <div class="row " style="margin-bottom: 10px; ">
-
-                                    <!-- <div class="col-xs-4 col-md-1 text-center "> -->
-                                    <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                    <!-- </div> -->
-                                    <div class="col-xs-4 col-md-4 text-center ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-                                        <div class="knob-label ">
-                                            <h4 style="color: coral; font-weight: 800; ">227</h4>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                    <div class="col-xs-4 col-md-4 text-left ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="50 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                        <div class="knob-label ">
-
-                                            <div class="row " style="margin-bottom: -5px; ">
-                                                <p> Yasmin</p>
-                                            </div>
-                                            <div class="row " style="margin-bottom: -10px; ">
-                                                <p style="color: aqua; "> 518 Order</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                </div>
-                                <div class="row ">
-                                    <!-- <div class="col-xs-4 col-md-1 text-center "> -->
-                                    <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                    <!-- </div> -->
-
-                                    <div class="col-xs-4 col-md-4 text-center ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-                                        <div class="knob-label ">
-                                            <h4 style="color: coral; font-weight: 800; ">0</h4>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                    <div class="col-xs-4 col-md-4 text-left ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="50 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                        <div class="knob-label ">
-                                            <div class="row " style="margin-bottom: -5px; ">
-                                                <p> Manstuff</p>
-                                            </div>
-                                            <div class="row " style="margin-bottom: 10px; ">
-                                                <p style="color: aqua; "> 1 Order</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                </div>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                    </div>
+                    <div class="col-md-4 "></div>
 
                     <div class="col-md-4 ">
-                        <div class="info-box " style="height: 175px ">
-                            <!-- <span class="info-box-icon bg-aqua "><i class="fa fa-envelope-o "></i></span> -->
-
-                            <div class="info-box-content box1 ">
-                                <!-- <span class="info-box-text ">Messages</span> -->
-                                <h4 class="bg-red text-center " style="height: 45px;padding-right:170px; padding-top: 10px;padding-bottom: 10px;background-image: linear-gradient(to right,white ,purple); ">Top Revenue</h4>
-                                <!-- <div class="row " style="margin-bottom: 10px; "> -->
-                                <div class="row " style="margin-bottom: 10px; ">
-
-                                    <!-- <div class="col-xs-4 col-md-1 text-center "> -->
-                                    <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                    <!-- </div> -->
-                                    <div class="col-xs-4 col-md-4 text-center ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-                                        <div class="knob-label ">
-                                            <h4 style="color: coral; font-weight: 800; ">1</h4>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                    <div class="col-xs-4 col-md-4 text-left ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="50 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                        <div class="knob-label ">
-                                            <div class="row " style="margin-bottom: -5px; ">
-                                                <p> Yasmin</p>
-                                            </div>
-                                            <div class="row " style="margin-bottom: -10px; ">
-                                                <p style="color: aqua; "> Rp113.832.012</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                </div>
-                                <!-- ./col -->
-                                <!-- </div> -->
-                                <!-- <div class="row "> -->
-                                <div class="row " style="margin-bottom: 10px; ">
-
-                                    <!-- <div class="col-xs-4 col-md-1 text-center "> -->
-                                    <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                    <!-- </div> -->
-                                    <div class="col-xs-4 col-md-4 text-center ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="20 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-                                        <div class="knob-label ">
-                                            <h4 style="color: coral; font-weight: 800; ">2</h4>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                    <div class="col-xs-4 col-md-4 text-left ">
-                                        <!-- <input type="text " class="knob " data-readonly="true " value="50 " data-width="60 " data-height="60 " data-fgColor="#39CCCC "> -->
-
-                                        <div class="knob-label ">
-                                            <div class="row " style="margin-bottom: -5px; ">
-                                                <p>Manstuff</p>
-                                            </div>
-
-                                            <div class="row " style="margin-bottom: 10px; ">
-                                                <p style="color: aqua; "> Rp. 0</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ./col -->
-                                </div>
-                                <!-- </div> -->
-
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
+                        
                     </div>
                 </div>
 
 
-                <div class="box ">
-                    <!-- /.box-header -->
-                    <div class="box-body ">
-                        <div class="table-responsive ">
-                            <table id="example1 " class="table table-bordered table-striped ">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Order</th>
-                                        <th>Paid</th>
-                                        <th>Paid Ratio</th>
-                                        <th>Quantity</th>
-                                        <th>Unpaid Order</th>
-                                        <th>Gross Revenue</th>
-                                        <th>Net Revenue</th>
-                                        <th>Gross Provit</th>
-                                    </tr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box">
+                            <!-- /.box-header -->
+                            <div class="box-body ">
+                                <div class="table-responsive ">
+                                    <table id="example1 " class="table table-striped ">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Order</th>
+                                                <th>Paid</th>
+                                                <th>Paid Ratio</th>
+                                                <th>Quantity</th>
+                                                <th>Unpaid Order</th>
+                                                <th>Gross Revenue</th>
+                                                <th>Net Revenue</th>
+                                                <th>Gross Provit</th>
+                                            </tr>
 
-                                </thead>
+                                        </thead>
 
 
-                                <tbody>
-                                    <tr>
-                                        <td>Manstuff</td>
-                                        <td>1</td>
-                                        <td>0</td>
-                                        <td>0%</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>Rp 0</td>
-                                        <td>Rp 0</td>
-                                        <td>Rp 0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Yasmin</td>
-                                        <td>519</td>
-                                        <td>228
-                                        </td>
-                                        <td>43%%</td>
-                                        <td>228</td>
-                                        <td>0</td>
-                                        <td>Rp111.248.012</td>
-                                        <td>Rp111.248.012</td>
-                                        <td>Rp111.248.012</td>
+                                        <tbody>
+                                            <tr>
+                                                <td>Manstuff</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                                <td>0%</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>Rp 0</td>
+                                                <td>Rp 0</td>
+                                                <td>Rp 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Yasmin</td>
+                                                <td>519</td>
+                                                <td>228
+                                                </td>
+                                                <td>43%%</td>
+                                                <td>228</td>
+                                                <td>0</td>
+                                                <td>Rp111.248.012</td>
+                                                <td>Rp111.248.012</td>
+                                                <td>Rp111.248.012</td>
 
-                                    </tr>
+                                            </tr>
 
-                                </tbody>
-                            </table>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
                         </div>
                     </div>
-                    <!-- /.box-body -->
                 </div>
                 </section>
 
                 <!-- /.content -->
             </div>
+        </div>
             <!-- /.container -->
         </div>
 
@@ -626,9 +427,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js "></script>
     <script src="plugins/daterangepicker/daterangepicker.js "></script>
+    <script src="plugins/select2/select2.min.js"></script>
     <script>
         $(function() {
-
+            $(".select2").select2();
 
             $('.sparkpie').sparkline('html', {
                 type: 'pie',
