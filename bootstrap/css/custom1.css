@@ -305,6 +305,12 @@ legend table th,legend table td{
 .text-grey {
     color: #bbbfca;
 }
+.text-red {
+    color: #f95353;
+}
+.text-white{
+    color: white;
+}
 .background-table {
     background-color: #F8FBFF;
     border: 1px solid #ddd;
@@ -714,4 +720,28 @@ table tr:hover .row-actions {
 }
 .widget-user-header-sm{
     padding: 10px 15px!important;
+}
+.box .box-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 28%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 12px 10px;
+}
+.box .box-item .sparkline canvas{
+    height: 40px!important;
+    width: auto!important;
+}
+.box .box-item:hover{
+    background-color: hsla(0,0%,40%,.1);
+}
+.bg-gradient-red{
+    background: linear-gradient(62deg, #f95353, #f6812b) !important;
+    color: white;
+}
+.box .box-item p{
+    margin: 0px;
 }
