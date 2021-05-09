@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Scula</title>
+  <title>Checkout | Toko Ghoib</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/css/custom2.css">
+  <link rel="stylesheet" href="bootstrap/css/custom1.css">
+  <link rel="stylesheet" href="bootstrap/css/registrasi.css">
   <!-- bootstrap slider -->
   <link rel="stylesheet" href="plugins/bootstrap-slider/slider.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Select2 -->
@@ -195,7 +197,7 @@
                   <li><a href="team-members.html">Team Members</a></li>
                   </ul>
               </li>
-              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
+              <li><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -206,7 +208,7 @@
               <li class="dropdown messages-menu">
                   <!-- Menu toggle button -->
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <i class="fa fa-envelope-o"></i>
+                      <span class="material-icons md-18">mail</span>
                       <span class="label label-success">4</span>
                   </a>
                   <ul class="dropdown-menu">
@@ -219,12 +221,12 @@
                                   <a href="#">
                                       <div class="pull-left">
                                           <!-- User Image -->
-                                          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                       </div>
                                       <!-- Message title and timestamp -->
                                       <h4>
                                           Support Team
-                                          <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                          <small><span class="material-icons-outlined">schedule</span> 5 mins</small>
                                       </h4>
                                       <!-- The message -->
                                       <p>Why not buy a new awesome theme?</p>
@@ -243,7 +245,7 @@
               <li class="dropdown notifications-menu">
                   <!-- Menu toggle button -->
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <i class="fa fa-bell-o"></i>
+                      <span class="material-icons md-18">notifications</span>
                       <span class="label label-warning">10</span>
                   </a>
                   <ul class="dropdown-menu">
@@ -253,7 +255,7 @@
                           <ul class="menu">
                               <li>
                                   <!-- start notification -->
-                                  <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
+                                  <a href="#"> <span class="material-icons-outlined">person</span> 5 new members joined today </a>
                               </li>
                               <!-- end notification -->
                           </ul>
@@ -416,9 +418,9 @@
       <!-- Main content -->
       <section class="content">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
+          <div class="col-md-6">
             <!-- Error Message -->
-            <div class="card mb-4">
+            <div class="card mb-100">
               <div class="card-body">
                 <h4><i class="fa fa-warning text-red"></i> Please fix fields error before proceeding to next step</h4>
                 <div class="callout callout-default" style="margin-bottom: 0!important;">
@@ -429,7 +431,7 @@
 
             <form>
               <!-- Checkout Page Name -->
-              <div class="card mb-4" id="checkout">
+              <div class="card mb-100" id="checkout">
                 <div class="card-header">Checkout Page Name</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -440,15 +442,15 @@
               <!-- Template -->
               
               <!-- Header -->
-              <div class="card mb-4" id="header">
+              <div class="card mb-100" id="header">
                 <div class="card-header">Header</div>
                 <div class="card-body">
                   <div class="form-group">
                     <label class="mb-0">Upload an image to display in the header</label>
                     <br>
-                    <small class="mb-4">(This is usually your product or company's logo)</small>
+                    <small class="mb-100">(This is usually your product or company's logo)</small>
                     <br>
-                    <label class="custom-file-upload mt-4">
+                    <label class="custom-file-upload mt-100">
                       <input type="file" id="image" />
                       <i class="fa fa-image"></i> Select an image
                     </label>
@@ -479,7 +481,7 @@
                 </div>
               </div>
               <!-- Images -->
-              <div class="card mb-4" id="images">
+              <div class="card mb-100" id="images">
                 <div class="card-header">Images</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -492,7 +494,7 @@
                 </div>
               </div>
               <!-- Guarantee Seals -->
-              <div class="card mb-4" id="guarantee">
+              <div class="card mb-100" id="guarantee">
                 <div class="card-header">Guarantee Seals</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -517,7 +519,7 @@
                 </div>
               </div>
               <!-- Product Variation -->
-              <div class="card mb-4" id="product">
+              <div class="card mb-100" id="product">
                 <div class="card-header">Product Variation</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -535,7 +537,7 @@
               </div>
 
               <!-- Requested Fields -->
-              <div class="card mb-4" id="requested">
+              <div class="card mb-100" id="requested">
                 <div class="card-header">Requested Fields <span style="float:right;"><button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalRequestedField"><i class="fa fa-cog"></i></button></span></div>
                 <!-- Modal -->
                 <div class="modal fade" id="modalRequestedField" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -1144,12 +1146,12 @@
                     </div>
                   </div>
 
-                  <div class="alert alert-warning mt-4" role="alert">Untuk menggunakan fitur perhitungan ongkir otomatis, harap aktifkan field Kecamatan</div>
+                  <div class="alert alert-warning mt-100" role="alert">Untuk menggunakan fitur perhitungan ongkir otomatis, harap aktifkan field Kecamatan</div>
                 </div>
               </div>
 
               <!-- Dropship -->
-              <div class="card mb-4" id="dropship">
+              <div class="card mb-100" id="dropship">
                 <div class="card-header">Dropship</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -1162,7 +1164,7 @@
                 </div>
               </div>
               <!-- Buy Button -->
-              <div class="card mb-4" id="buy">
+              <div class="card mb-100" id="buy">
                 <div class="card-header">Buy Button</div>
                 <div class="card-body">
                   <label class="control-label font-weight-thin mb-3">Customize your template's buy button below.</label>
@@ -1171,10 +1173,10 @@
                   </div>
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="card-color-green mb-4"></div>
-                      <div class="card-color-orange mb-4"></div>
-                      <div class="card-color-red mb-4"></div>
-                      <div class="card-color-blue mb-4"></div>
+                      <div class="card-color-green mb-100"></div>
+                      <div class="card-color-orange mb-100"></div>
+                      <div class="card-color-red mb-100"></div>
+                      <div class="card-color-blue mb-100"></div>
                     </div>
                   </div>
                   <div class="form-group">
@@ -1186,7 +1188,7 @@
                 </div>
               </div>
               <!-- Video -->
-              <div class="card mb-4" id="video">
+              <div class="card mb-100" id="video">
                 <div class="card-header">Video</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -1196,7 +1198,7 @@
                 </div>
               </div>
               <!-- Content -->
-              <div class="card mb-4" id="content">
+              <div class="card mb-100" id="content">
                 <div class="card-header">Content</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -1206,7 +1208,7 @@
                 </div>
               </div>
               <!-- Coupon Field -->
-              <div class="card mb-4" id="coupon">
+              <div class="card mb-100" id="coupon">
                 <div class="card-header">Coupon Field</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -1219,7 +1221,7 @@
                 </div>
               </div>
               <!-- Bullet Points -->
-              <div class="card mb-4" id="bullet">
+              <div class="card mb-100" id="bullet">
                 <div class="card-header">Bullet Points</div>
                 <div class="card-body">
                   <label class="font-weight-thin">Add bullet points to list the benefits or features of your product.</label>
@@ -1247,7 +1249,7 @@
                 </div>
               </div>
               <!-- Order's Summary -->
-              <div class="card mb-4" id="order">
+              <div class="card mb-100" id="order">
                 <div class="card-header">Order's Summary</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -1260,7 +1262,7 @@
                 </div>
               </div>
               <!-- Testimonials -->
-              <div class="card mb-4" id="tertimonial">
+              <div class="card mb-100" id="tertimonial">
                 <div class="card-header">Testimonials</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -1295,7 +1297,7 @@
                 </div>
               </div>
               <!-- OrderOnline Logo -->
-              <div class="card mb-4" id="logo">
+              <div class="card mb-100" id="logo">
                 <div class="card-header">OrderOnline Logo</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -1308,7 +1310,7 @@
                 </div>
               </div>
               <!-- Tracking -->
-              <div class="card mb-4" id="tracking">
+              <div class="card mb-100" id="tracking">
                 <div class="card-header">Tracking</div>
                 <div class="card-body">
                   <label class="control-label">Facebook Pixel</label>
@@ -1414,7 +1416,7 @@
                                       </tr>
                                     </table>
 
-                                    <div class="form-group mt-4">
+                                    <div class="form-group mt-100">
                                       <label class="control-label font-weight-thin">Add More Parameter</label>
                                       <select class="form-control" id="category">
                                         <option value="" selected disabled>Select or type to add new param</option>
@@ -1522,7 +1524,7 @@
                                       </tr>
                                     </table>
 
-                                    <div class="form-group mt-4">
+                                    <div class="form-group mt-100">
                                       <label class="control-label font-weight-thin">Add More Parameter</label>
                                       <select class="form-control" id="category">
                                         <option value="" selected disabled>Select or type to add new param</option>
@@ -1580,7 +1582,7 @@
                     </td>
                   </tr>
 
-                  <div class="form-group mt-4">
+                  <div class="form-group mt-100">
                     <select class="form-control" id="collection">
                       <option value="" selected disabled>Input or Select GTM ID</option>
                       <option>GTM-MMHGFU</option>
@@ -1604,7 +1606,7 @@
                     </td>
                   </tr>
 
-                  <div class="form-group mt-4">
+                  <div class="form-group mt-100">
                     <select class="form-control" id="collection">
                       <option value="" selected disabled>Input or Tiktok Pixel ID</option>
                       <option>Tiktok</option>
@@ -1627,7 +1629,296 @@
             </form>
           </div>
 
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <form>
+              <div class="container-fluid checkout-body">
+                <div class="row d-flex">
+                  <div class="col checkout-body__form">
+                    <div class="image-container">
+                      <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                          <img src="https://cdn.orderonline.id/img/seal_secure_id.png" class="img-fluid" alt="Transaksi Aman">
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                          <img src="https://cdn.orderonline.id/img/seal_money_back_id.png" class="img-fluid" alt="money_back_id">
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="contact-information">
+                      <div class="contact-information-header section-title">
+                        <span>Data Penerima:</span>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="field-name" placeholder="Nama Anda" maxlength="160" data-label="Nama" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-control" id="field-phone" placeholder="No. WhatsApp Anda" maxlength="160" data-label="No Handphone/WhatsApp" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" name="email" class="form-control" id="field-email" placeholder="Email Anda" maxlength="160" data-label="Email" required>
+                      </div>
+                      <div class="form-group">
+                        <select name="complete_district" class="form-control" placeholder="Masukkan Kota / Kecamatan" title="Masukkan Kota / Kecamatan" data-label="Kota / Kecamatan" required>
+                          <option value="" selected disabled>Masukkan Kota / Kecamatan</option>
+                          <option>Yogyakarta</option>
+                          <option>Sleman</option>
+                        </select>
+                      </div>
+                    </div>
+      
+                    <div class="payment-information">
+                      <div class="payment-information-header section-title">
+                        <span>Metode Pembayaran:</span>
+                      </div>
+                      <div class="ooef-payment-options">
+                        <div class="ooef-payment-option">
+                          <div class="ooef-payment-option-title">
+                            <label class="custom-control custom-radio">
+                              <input type="radio" name="ooef_payment_method" class="ooef-payment-method custom-control-input" value="bank_transfer" checked>
+                              <div class="custom-control-label">
+                                <img src="https://cdn.orderonline.id/icons/payment-bank_transfer.png" alt="bank_transfer">
+                                <span>Bank Transfer</span>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="ooef-payment-option ">
+                          <div class="ooef-payment-option-title">
+                            <label class="custom-control custom-radio">
+                              <input
+                                type="radio"
+                                name="ooef_payment_method"
+                                class="ooef-payment-method custom-control-input ooef-payment-channels"
+                                data-channel="credit_card"
+                                value="instant"
+                              >
+                              <div class="custom-control-label">
+                                <img src="https://cdn.orderonline.id/icons/payment-channel-credit_card.png" alt="credit_card">
+                                <span>Credit Card</span>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="ooef-payment-option ">
+                          <div class="ooef-payment-option-title">
+                            <label class="custom-control custom-radio">
+                              <input
+                                type="radio"
+                                name="ooef_payment_method"
+                                class="ooef-payment-method custom-control-input ooef-payment-channels"
+                                data-channel="bca_va"
+                                value="instant"
+                              >
+                              <div class="custom-control-label">
+                                <img src="https://cdn.orderonline.id/icons/payment-channel-bca_va.png" alt="bca_va">
+                                <span>BCA Virtual Account</span>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="ooef-payment-option ">
+                          <div class="ooef-payment-option-title">
+                            <label class="custom-control custom-radio">
+                              <input
+                                type="radio"
+                                name="ooef_payment_method"
+                                class="ooef-payment-method custom-control-input ooef-payment-channels"
+                                data-channel="bni_va"
+                                value="instant"
+                              >
+                              <div class="custom-control-label">
+                                <img src="https://cdn.orderonline.id/icons/payment-channel-bni_va.png" alt="bni_va">
+                                <span>BNI Virtual Account</span>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="ooef-payment-option ">
+                          <div class="ooef-payment-option-title">
+                            <label class="custom-control custom-radio">
+                              <input
+                                type="radio"
+                                name="ooef_payment_method"
+                                class="ooef-payment-method custom-control-input ooef-payment-channels"
+                                data-channel="gopay"
+                                value="instant"
+                              >
+                              <div class="custom-control-label">
+                                <img src="https://cdn.orderonline.id/icons/payment-channel-gopay.png" alt="gopay">
+                                <span>GoPay</span>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="ooef-payment-option ">
+                          <div class="ooef-payment-option-title">
+                            <label class="custom-control custom-radio">
+                              <input
+                                type="radio"
+                                name="ooef_payment_method"
+                                class="ooef-payment-method custom-control-input ooef-payment-channels"
+                                data-channel="shopeepay"
+                                value="instant"
+                              >
+                              <div class="custom-control-label">
+                                <img src="https://cdn.orderonline.id/icons/payment-channel-shopeepay.png" alt="shopeepay">
+                                <span>ShopeePay</span>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="bump-information">
+                      <div class="bump-actions d-flex-2">
+                        <div class="form-arrow">
+                          <img src="https://cdn.orderonline.id/arrow.gif" alt="">
+                        </div>
+                        <label class="bump-check m-0">
+                          <div class="custom-control custom-checkbox large white">
+                            <input type="checkbox" class="custom-control-input ooef-check-bump">
+                            <div class="custom-control-label pl-10">OrderOnline Personal (1 Tahun)</div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="bump-body">
+                        <div class="bump-title">
+                          GRATIS biaya langganan 2 BULAN jika berlangganan langsung selama 1 tahun
+                        </div>
+                        <div class="bump-description">
+                          Harga normal OrderOnline Personal 1 tahun adalah Rp1.788.000. Namun jika Anda berlangganan langsung selama 1 tahun, Anda mendapatkan potongan biaya langganan 2 bulan, sehingga cukup bayar Rp1.499.000 saja. Silahkan centang checkbox diatas!
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="checkout-actions">
+                      <button type="submit" class="btn btn-block btn-complete-order" id="btn-complete-order">
+                        PESAN SEKARANG
+                        <span class="material-icons-outlined">keyboard_tab</span>
+                      </button>
+                    </div>
+                  </div>
+      
+                  <div class="col checkout-body__sidebar">
+                    <div class="product-image-slider">
+                      <!-- <img src="https://cdn.orderonline.id/uploads/4521001614268094735.png" class="img-responsive"> -->
+                      <img src="dist/img/scula/logo.png" class="img-responsive">
+                    </div>
+      
+                    <div class="product-features">
+                      <div class="product-features-header section-title mb-100">
+                        <span>Yang Anda Dapatkan:</span>
+                      </div>
+                      
+                      <div class="product-feature-item  d-flex-2">
+                        <div class="product-feature-item__mark mr-1">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mark-icon svg-inline--fa fa-check"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" class=""></path></svg>
+                        </div>
+                        <div class="product-feature-item__content">
+                          100% web-based software - Anda tinggal login lewat browser, tidak perlu install atau download apapun.
+                        </div>
+                      </div>
+      
+                      <div class="product-feature-item  d-flex-2">
+                        <div class="product-feature-item__mark mr-1">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mark-icon svg-inline--fa fa-check"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" class=""></path></svg>
+                        </div>
+                        <div class="product-feature-item__content">
+                          Gratis support dan updates.
+                        </div>
+                      </div>
+      
+                      <div class="product-feature-item  d-flex-2">
+                        <div class="product-feature-item__mark mr-1">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mark-icon svg-inline--fa fa-check"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" class=""></path></svg>
+                        </div>
+                        <div class="product-feature-item__content">
+                          Tutorial lengkap &amp; komunitas Facebook group.
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="order-summary">
+                      <div class="order-summary-header">RINCIAN PESANAN:</div>
+                      <div class="product-price clearfix">
+                        <div class="product-price__name float-left summary-product-name">
+                          OrderOnline Personal
+                        </div>
+                        <div style="display: block;">
+                          <div class="product-price-tag float-right">
+                            <div class="product-price__price float-right lined-price summary-product-lined-price">Rp. 199.000</div>
+                          </div>
+                        </div>
+                            
+                        <div class="product-price-tag order-summary-item-normal float-right">
+                          <div class="product-price__price float-right summary-product-price">Rp. 149.000</div>
+                        </div>
+                      </div>
+                    
+                      <div class="order-summary-multiple-variations"></div>
+      
+                      <div class="product-price clearfix">
+                        <div class="product-price__name float-left summary-product-bump">
+                          OrderOnline Personal (1 Tahun)
+                        </div>
+                        <div class="product-price-tag float-right">
+                          <div class="product-price__price__currency float-left"></div>
+                          <div class="product-price__price float-right summary-product-bump-price">Rp1.341.000</div>
+                        </div>
+                      </div>
+                                      
+                      <div class="product-price discount-summary-container order-summary-item-discount">
+                        <div class="product-price__name discount-summary-text">
+                          Diskon
+                        </div>
+                        <div class="product-price__price discount-summary-text discount-summary-value"></div>
+                      </div>
+                    
+                      <div class="product-price clearfix">
+                        <div class="product-price-tag float-left unique-code-summary-text">
+                          Kode Unik
+                        </div>
+                        <div class="product-price__price float-right unique-code-summary-text summary-unique-code-value">Rp 130</div>
+                      </div>
+                      
+                      <div class="total-price product-price clearfix">
+                        <div class="product-price__name float-left">Total</div>
+                        <div class="product-price-tag float-right">
+                          <div class="product-price__price__currency float-left"></div>
+                          <div class="product-price__price float-right summary-product-total-price">Rp1.490.130</div>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="coupon-code">
+                      <div class="coupon-header">
+                        GUNAKAN KODE KUPON:
+                      </div>
+                      <div class="form-group">
+                        <div class="coupon-container">
+                          <div class="input-group">
+                            <input type="text" name="coupon" class="form-control" autocomplete="nope" placeholder="Input coupon">
+                            <span class="input-group-btn">
+                              <button class="btn btn-info" type="submit">Apply</button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                  </div>
+      
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       

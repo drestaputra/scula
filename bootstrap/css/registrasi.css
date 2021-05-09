@@ -328,6 +328,31 @@ input[type=checkbox], input[type=radio] {
     text-transform: uppercase;
 }
 
+.preview-success {
+    padding: 2em;
+}
+.success-body {
+    margin: 0 auto;
+}
+.harga {
+    font-size: 16px;
+    color: green;
+    font-weight: 700;
+}
+.bank {
+    /* max-width: 400px; */
+    margin: 30px auto;
+}
+.body-bank {
+    padding: 1.5em;
+    /* min-width: 50%; */
+    border: 1px dashed #ddd;
+    text-align: center;
+}
+.img-responsive.auto {
+    margin: auto;
+}
+
 @media (max-width: 768px) {
     .mb-20 {
         margin-bottom: 20px;

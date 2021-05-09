@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Scula</title>
+  <title>Success Page | Toko Ghoib</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/css/custom2.css">
+  <link rel="stylesheet" href="bootstrap/css/custom1.css">
+  <link rel="stylesheet" href="bootstrap/css/registrasi.css">
   <!-- bootstrap slider -->
   <link rel="stylesheet" href="plugins/bootstrap-slider/slider.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Select2 -->
@@ -195,7 +197,7 @@
                   <li><a href="team-members.html">Team Members</a></li>
                   </ul>
               </li>
-              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><i class="fa fa-plus"></i> Add Product</a></li>
+              <li><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -206,7 +208,7 @@
               <li class="dropdown messages-menu">
                   <!-- Menu toggle button -->
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <i class="fa fa-envelope-o"></i>
+                      <span class="material-icons md-18">mail</span>
                       <span class="label label-success">4</span>
                   </a>
                   <ul class="dropdown-menu">
@@ -219,12 +221,12 @@
                                   <a href="#">
                                       <div class="pull-left">
                                           <!-- User Image -->
-                                          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                       </div>
                                       <!-- Message title and timestamp -->
                                       <h4>
                                           Support Team
-                                          <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                          <small><span class="material-icons-outlined">schedule</span> 5 mins</small>
                                       </h4>
                                       <!-- The message -->
                                       <p>Why not buy a new awesome theme?</p>
@@ -243,7 +245,7 @@
               <li class="dropdown notifications-menu">
                   <!-- Menu toggle button -->
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <i class="fa fa-bell-o"></i>
+                      <span class="material-icons md-18">notifications</span>
                       <span class="label label-warning">10</span>
                   </a>
                   <ul class="dropdown-menu">
@@ -253,7 +255,7 @@
                           <ul class="menu">
                               <li>
                                   <!-- start notification -->
-                                  <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
+                                  <a href="#"> <span class="material-icons-outlined">person</span> 5 new members joined today </a>
                               </li>
                               <!-- end notification -->
                           </ul>
@@ -406,9 +408,9 @@
 
       <section class="content">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
+          <div class="col-md-6">
             <!-- Error Message -->
-            <div class="card mb-4">
+            <div class="card mb-20">
               <div class="card-body">
                 <h4><i class="fa fa-warning text-red"></i> Please fix fields error before proceeding to next step</h4>
                 <div class="callout callout-default" style="margin-bottom: 0!important;">
@@ -419,7 +421,7 @@
 
             <form>
               <!-- When purchase is complete -->
-              <div class="card mb-4" id="purchase">
+              <div class="card mb-20" id="purchase">
                 <div class="card-header">When purchase is complete...</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -452,7 +454,7 @@
                         <button class="btn btn-default" type="button"><i class="fa fa-trash"></i></button>
                       </span>
                     </div>
-                    <div class="row text-right mt-4">
+                    <div class="row text-right mt-100">
                       <div class="col-md-12">
                         <div class="form-group">
                           <button class="btn btn-primary">Add Whatsapp Number</button>
@@ -463,7 +465,7 @@
                 </div>
               </div>
               <!-- Headline Text -->
-              <div class="card mb-4" id="headline">
+              <div class="card mb-20" id="headline">
                 <div class="card-header">Headline Text</div>
                 <div class="card-body">
                   <label class="font-weight-thin">Enter your success page's heading below</label>
@@ -487,7 +489,7 @@
                 </div>
               </div>
               <!-- Video -->
-              <div class="card mb-4" id="video">
+              <div class="card mb-20" id="video">
                 <div class="card-header">Video</div>
                 <div class="card-body">
                   <div class="form-group">
@@ -499,7 +501,7 @@
                 </div>
               </div>
               <!-- Body Text -->
-              <div class="card mb-4" id="bodytext">
+              <div class="card mb-20" id="bodytext">
                 <div class="card-header">Body Text</div>
                 <div class="card-body">
                   <label class="control-label font-weight-thin">Edit your success page's content and link below</label>
@@ -513,7 +515,7 @@
 
                   <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="bank_transfer">
-                      <div class="form-group mt-4">
+                      <div class="form-group mt-100">
                         <textarea class="form-control" rows="4" placeholder="bank">
                           Untuk menyelesaikan proses order, silahkan transfer sejumlah {{total_price}} ke salah satu bank berikut ini: {{bank_accounts}} Konfirmasikan pembayaran anda di: {{payment_link}}
                         </textarea>
@@ -521,7 +523,7 @@
                     </div>
 
                     <div role="tabpanel" class="tab-pane" id="cod">
-                      <div class="form-group mt-4">
+                      <div class="form-group mt-100">
                         <textarea class="form-control" rows="4" placeholder="bank">
                           Orderan anda kini kami proses, silahkan tunggu kedatangan kurir dalam 2-4 hari kedepan dan siapkan pembayaran senilai
                         {{total_price}}
@@ -531,7 +533,7 @@
                     </div>
 
                     <div role="tabpanel" class="tab-pane" id="payment">
-                      <div class="form-group mt-4">
+                      <div class="form-group mt-100">
                         <textarea class="form-control" rows="4" placeholder="bank">
                           <h4>Selamat, pembayaranmu berhasil!</h4>
                           Total Bayar {{total_price}}
@@ -544,7 +546,7 @@
               </div>
               
               <!-- Tracking -->
-              <div class="card mb-4" id="tracking">
+              <div class="card mb-20" id="tracking">
                 <div class="card-header">Tracking</div>
                 <div class="card-body">
                   <label class="control-label">Facebook Pixel</label>
@@ -650,7 +652,7 @@
                                       </tr>
                                     </table>
 
-                                    <div class="form-group mt-4">
+                                    <div class="form-group mt-100">
                                       <label class="control-label font-weight-thin">Add More Parameter</label>
                                       <select class="form-control" id="category">
                                         <option value="" selected disabled>Select or type to add new param</option>
@@ -758,7 +760,7 @@
                                       </tr>
                                     </table>
 
-                                    <div class="form-group mt-4">
+                                    <div class="form-group mt-100">
                                       <label class="control-label font-weight-thin">Add More Parameter</label>
                                       <select class="form-control" id="category">
                                         <option value="" selected disabled>Select or type to add new param</option>
@@ -816,7 +818,7 @@
                     </td>
                   </tr>
 
-                  <div class="form-group mt-4">
+                  <div class="form-group mt-100">
                     <select class="form-control" id="collection">
                       <option value="" selected disabled>Input or Select GTM ID</option>
                       <option>GTM-MMHGFU</option>
@@ -840,7 +842,7 @@
                     </td>
                   </tr>
 
-                  <div class="form-group mt-4">
+                  <div class="form-group mt-100">
                     <select class="form-control" id="collection">
                       <option value="" selected disabled>Input or Tiktok Pixel ID</option>
                       <option>Tiktok</option>
@@ -863,7 +865,44 @@
             </form>
           </div>
 
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <form>
+              <div class="container-fluid checkout-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="preview-success text-center">
+                      <h3 class="mt-0"><b>Terimakasih sudah melakukan order kompor</b></h3>
+
+                      <div class="success-body mt-20">
+                        <p>Untuk menyelesaikan proses order, silahkan transfer sejumlah</p>
+                        <p class="harga">Rp1.250.000</p>
+                        <p>ke salah satu bank berikut ini:</p>
+
+                        <div class="bank">
+                          <div class="row">
+                            <div class="col-md-8 col-md-offset-3 body-bank">
+                              <img src="https://cdn.orderonline.id/icons/payment-channel-bca_va.png" alt="" class="img-responsive auto" />
+                              <div class="bank-account">
+                                No. Rek. 73548376496395
+                              </div>
+                              <div class="bank-name">
+                                Atas Nama: <b>Rizhan</b>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p>
+                          Konfirmasikan pembayaran anda di: <span class="text-blue"><b>Konfirmasi Pembayaran</b></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       
