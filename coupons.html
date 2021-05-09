@@ -420,158 +420,6 @@
                           
                           <button class="text-link"><span class="material-icons-outlined md-16">delete</span> Delete</button>
                         </div>
-
-                        <!-- Modal CopyUrl -->
-                        <div class="modal fade" id="modalCopyUrl" role="dialog" aria-labelledby="myModalLabel">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">link</span> Coupon URL
-                                </h4>
-                              </div>
-                              <div class="modal-body">
-                                <div class="form-group">
-                                  <label>Get a URL from product that automatically applies this KPN12 coupon</label>
-                                  <select class="form-control select2" style="width: 100%;">
-                                    <option selected="selected">Select Options</option>
-                                    <option>Webinar Cara Iklan di TV Gratis bahkan Malah Dapat Honor</option>
-                                    <option>Suratprofit</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-primary">Copy URL</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Modal Edit Coupon -->
-                        <div class="modal fade" id="myModalEditCoupon" role="dialog" aria-labelledby="myModalLabel">
-                          <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">local_activity</span> Add New Contact</h4>
-                              </div>
-                              <div class="modal-body">
-                                <form>
-                                  <div class="row">
-                                    <div class="col-md-6">
-                                      <h4 class="font-weight-bold">Coupon Details</h4>
-                                      <div class="border-bottom"></div>
-                                      <div class="form-group mt-10">
-                                        <label for="coupon-name" class="control-label">Coupon Name</label>
-                                        <input type="text" class="form-control" id="coupon-name">
-                                      </div>
-                                      <div class="form-group">
-                                        <label for="coupon-code" class="control-label">Coupon Code</label>
-                                        <input type="text" class="form-control" id="coupon-code">
-                                        <small style="color: red;">Coupon code is minimum 3 characters & maximum 50 characters</small>
-                                      </div>
-                                      <div class="form-group">
-                                        <label for="discount" class="control-label">Discount For <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Tentukan apakah diskon akan memotong harga produk atau biaya pengiriman">info</span></label>
-                                        <select class="form-control" id="discount">
-                                          <option value="" selected disabled>Select Discount For</option>
-                                          <option>Product</option>
-                                          <option>Shipping</option>
-                                        </select>
-                                      </div>
-              
-                                      <div class="row">
-                                        <div class="col-md-6">
-                                          <div class="form-group">
-                                            <label for="discount-type" class="control-label">Discount Type <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Fixed Price: memotong harga berdasarkan nilai yang ditentukan. Percentage: memotong harga berdasarkan persentase">info</span></label>
-                                            <select class="form-control" id="discount-type">
-                                              <option value="" selected disabled>Discount Type</option>
-                                              <option>Fixed Price</option>
-                                              <option>Percentage</option>
-                                            </select>
-                                          </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                          <div class="form-group">
-                                            <label for="discount" class="control-label">Discount <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Nilai diskon yang diterapkan, jika Diskon Type Fixed Price maka masukkan nominal potongan harga, jika Discount Type Percentage maka masukkan nilai persentase potongan (tanpa simbol %)">info</span></label>
-                                            <input type="number" min="0" class="form-control" id="discount">
-                                          </div>
-                                        </div>
-                                      </div>
-              
-                                      <div class="form-group">
-                                        <label for="coupon-status" class="control-label">Coupon Status</label>
-                                        <select class="form-control" id="coupon-status">
-                                          <option value="" selected disabled>Coupon Status</option>
-                                          <option>Enabled</option>
-                                          <option>Disabled</option>
-                                        </select>
-                                      </div>
-                                    </div>
-              
-                                    <div class="col-md-6">
-                                      <h4 class="font-weight-bold">Coupon Usage Restriction</h4>
-                                      <div class="border-bottom"></div>
-              
-                                      <div class="form-group">
-                                        <label for="usage-limit" class="control-label">Usage Limit</label>
-                                        <select class="form-control" id="usage-limit">
-                                          <option value="" selected disabled>Usage Limit</option>
-                                          <option>25</option>
-                                          <option>50</option>
-                                        </select>
-                                      </div>
-                                      <div class="form-group">
-                                        <label for="product" class="control-label">Products</label> (optional) <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Hanya produk berikut yang dapat menggunakan kupon ini">info</span>
-                                        <select class="form-control" id="product">
-                                          <option value="" selected disabled>Select Products</option>
-                                          <option>Suratprofit</option>
-                                          <option>Suratprofit</option>
-                                        </select>
-                                      </div>
-                                      <div class="form-group">
-                                        <div class="checkbox">
-                                          <label><input type="checkbox"> Schedule Coupon Availability (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Tentukan rentang waktu berlaku kupon">info</span>
-                                        </div>
-                                      </div>
-                                      <div class="form-group">
-                                        <div class="checkbox">
-                                          <label><input type="checkbox"> Minimal Order Quantity (optional) </label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Kupon hanya berlaku jika memenuhi syarat minimal jumlah order">info</span>
-                                        </div>
-                                      </div>
-                                      <div class="form-group">
-                                        <div class="checkbox">
-                                          <label><input type="checkbox"> Maximum Discount (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Potongan maksimal diskon kupon">info</span>
-                                        </div>
-                                      </div>
-                                      <div class="form-group">
-                                        <div class="checkbox">
-                                          <label><input type="checkbox"> Minimum Spend (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Jumlah minimum pembelanjaan agar kupon valid">info</span>
-                                        </div>
-                                      </div>
-                                      <div class="form-group">
-                                        <div class="checkbox">
-                                          <label><input type="checkbox"> Payment Method (optional) </label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Metode pembayaran agar kupon valid">info</span>
-                                        </div>
-                                      </div>
-                                      <div class="form-group">
-                                        <div class="checkbox">
-                                          <label><input type="checkbox"> New Customer Only (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Hanya dapat digunakan pada pembelanjaan pertama">info</span>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  
-                                </form>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary">Create</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
                       </td>
 
                       <td class="text-left mobile-none">
@@ -595,6 +443,157 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
+
+              <!-- Modal CopyUrl -->
+              <div class="modal fade" id="modalCopyUrl" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">link</span> Coupon URL
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label>Get a URL from product that automatically applies this KPN12 coupon</label>
+                        <select class="form-control select2" style="width: 100%;">
+                          <option selected="selected">Select Options</option>
+                          <option>Webinar Cara Iklan di TV Gratis bahkan Malah Dapat Honor</option>
+                          <option>Suratprofit</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary">Copy URL</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal Edit Coupon -->
+              <div class="modal fade" id="myModalEditCoupon" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-20">local_activity</span> Add New Contact</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h4 class="font-weight-bold">Coupon Details</h4>
+                            <div class="border-bottom"></div>
+                            <div class="form-group mt-10">
+                              <label for="coupon-name" class="control-label">Coupon Name</label>
+                              <input type="text" class="form-control" id="coupon-name">
+                            </div>
+                            <div class="form-group">
+                              <label for="coupon-code" class="control-label">Coupon Code</label>
+                              <input type="text" class="form-control" id="coupon-code">
+                              <small style="color: red;">Coupon code is minimum 3 characters & maximum 50 characters</small>
+                            </div>
+                            <div class="form-group">
+                              <label for="discount" class="control-label">Discount For <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Tentukan apakah diskon akan memotong harga produk atau biaya pengiriman">info</span></label>
+                              <select class="form-control" id="discount">
+                                <option value="" selected disabled>Select Discount For</option>
+                                <option>Product</option>
+                                <option>Shipping</option>
+                              </select>
+                            </div>
+    
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="discount-type" class="control-label">Discount Type <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Fixed Price: memotong harga berdasarkan nilai yang ditentukan. Percentage: memotong harga berdasarkan persentase">info</span></label>
+                                  <select class="form-control" id="discount-type">
+                                    <option value="" selected disabled>Discount Type</option>
+                                    <option>Fixed Price</option>
+                                    <option>Percentage</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="discount" class="control-label">Discount <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Nilai diskon yang diterapkan, jika Diskon Type Fixed Price maka masukkan nominal potongan harga, jika Discount Type Percentage maka masukkan nilai persentase potongan (tanpa simbol %)">info</span></label>
+                                  <input type="number" min="0" class="form-control" id="discount">
+                                </div>
+                              </div>
+                            </div>
+    
+                            <div class="form-group">
+                              <label for="coupon-status" class="control-label">Coupon Status</label>
+                              <select class="form-control" id="coupon-status">
+                                <option value="" selected disabled>Coupon Status</option>
+                                <option>Enabled</option>
+                                <option>Disabled</option>
+                              </select>
+                            </div>
+                          </div>
+    
+                          <div class="col-md-6">
+                            <h4 class="font-weight-bold">Coupon Usage Restriction</h4>
+                            <div class="border-bottom"></div>
+    
+                            <div class="form-group mt-10">
+                              <label for="usage-limit" class="control-label">Usage Limit</label>
+                              <select class="form-control" id="usage-limit">
+                                <option value="" selected disabled>Usage Limit</option>
+                                <option>25</option>
+                                <option>50</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="product" class="control-label">Products</label> (optional) <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Hanya produk berikut yang dapat menggunakan kupon ini">info</span>
+                              <select class="form-control" id="product">
+                                <option value="" selected disabled>Select Products</option>
+                                <option>Suratprofit</option>
+                                <option>Suratprofit</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <div class="checkbox">
+                                <label><input type="checkbox"> Schedule Coupon Availability (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Tentukan rentang waktu berlaku kupon">info</span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="checkbox">
+                                <label><input type="checkbox"> Minimal Order Quantity (optional) </label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Kupon hanya berlaku jika memenuhi syarat minimal jumlah order">info</span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="checkbox">
+                                <label><input type="checkbox"> Maximum Discount (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Potongan maksimal diskon kupon">info</span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="checkbox">
+                                <label><input type="checkbox"> Minimum Spend (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Jumlah minimum pembelanjaan agar kupon valid">info</span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="checkbox">
+                                <label><input type="checkbox"> Payment Method (optional) </label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Metode pembayaran agar kupon valid">info</span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="checkbox">
+                                <label><input type="checkbox"> New Customer Only (optional)</label> <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Hanya dapat digunakan pada pembelanjaan pertama">info</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                      <button type="submit" class="btn btn-primary">Create</button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- /.box-body -->
             </div>
