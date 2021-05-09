@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Contact | Toko Ghoib</title>
+  <title>Reminder | Toko Ghoib</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -62,7 +62,7 @@
                   <li><a href="team-members.html">Team Members</a></li>
                 </ul>
               </li>
-              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
+              <li><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
             </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -204,25 +204,20 @@
       </nav>
     </header>
   <!-- Full Width Column -->
-  <div class="content-wrapper mt-50">
+  <div class="content-wrapper">
     <div class="container">
       <!-- Content Header (Page header) -->
       <!-- Main content -->
-      <section class="content">
-        <div class="row">
-          <div class="col-md-1">
-            
-          <a href="contacts.html"><b>< Contacts</b></a>
+      <section class="content-detail">
+        <a href="contacts.html"><span class="material-icons-outlined md-18">arrow_back_ios</span> Contacts</a>
+        <div class="row mb-20">
+          <div class="col-md-5 btn-group-modal">
+            <h1 class="mt-0 judul-halaman">Reminder</h1>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-6">
-            <h1 class="mb-0 judul-halaman">Reminder</h1>
-          </div>
-          <div class="col-xs-6">
+          <div class="col-md-7 text-right">
             <div class="form-group pull-right">
               <div class="input-group">
-                <button type="button" class="btn btn-default pull-right" id="daterange-btn"> 
+                <button type="button" class="btn btn-default pull-right btn-rounded-20" id="daterange-btn"> 
                   <span class="material-icons md-18">date_range</span> Date range picker
                   <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
                 </button>
@@ -231,10 +226,8 @@
           </div>
         </div>
         
-      
-
-        <!-- Delete Data -->
-        <div class="row mb-4">
+        <!-- Search Data -->
+        <div class="row mb-20">
           <div class="col-md-4">
             <div class="table-header-menu">
               <button type="button" data-toggle="modal" data-target="#modalCreateNote" class="btn btn-default btn-md mr-5"><span class="material-icons-outlined md-16">edit</span> Create Note</button>
