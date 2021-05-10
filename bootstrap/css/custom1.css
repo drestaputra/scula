@@ -1182,3 +1182,6 @@ fieldset[disabled] .btn-warning-gradient.focus {
     padding: 1.1em;
     border-bottom: 1px solid #ddd;
 }
+.integration-item .container-fluid.p-0{
+    width: 100%;
+}
