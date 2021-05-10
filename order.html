@@ -434,7 +434,7 @@
                     </div>
                 </div>
 
-            <button type="button" class="btn btn-default btn-md" data-bs-toggle="collapse" data-bs-target="#more-status" aria-expanded="false" aria-controls="collapseExample" style="float: right" onclick="viewMoreStatus()">View More Stats</button>
+            <button type="button" class="btn btn-default btn-md" data-bs-toggle="collapse" data-bs-target="#more-status" aria-expanded="false" aria-controls="collapseExample" style="float: right" onclick="viewMoreStatus()"><span class="material-icons-outlined md-18">bar_chart</span> View More Stats</button>
         </div>
         </div>
 
@@ -3383,7 +3383,7 @@
 
       function viewMoreStatus() {
         if ($('#more-status').hasClass('collapse')) {
-               $('#more-status').removeClass('collapse');
+          $('#more-status').removeClass('collapse');
           const areaCanvas = document.createElement('canvas');
           areaCanvas.setAttribute('id', 'areaChart');
           document.getElementById('areaChart-wrapper').appendChild(areaCanvas);

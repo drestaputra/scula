@@ -22,9 +22,9 @@
   <!-- Tags Input -->
   <link rel="stylesheet" href="plugins/tags-input/bootstrap-tagsinput.css">
   <!-- daterange picker -->
-  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
   <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css" />
 </head>
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
 <body class="hold-transition skin-blue layout-top-nav">
@@ -219,11 +219,11 @@
 
         <div class="row mb-20">
           <div class="col-md-4">
-            <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">file_download</span> Export</button>
+            <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">file_download'</span> Export</button>
             
           </div>
-          <div class="col-md-8">
-            <div class="btn-group">
+          <div class="col-md-8 flex-group-button">
+            <div class="btn-group mr-5">
               <button type="button" class="btn btn-default btn-flat">All Couriers</button>
               <button type="button" class="btn btn-default btn-flat dropdown-toggle" data-toggle="dropdown">
                 <span class="caret"></span>
@@ -238,11 +238,9 @@
             <!-- Date and time range -->
             <div class="form-group">
               <div class="input-group">
-                <button type="button" class="btn btn-default pull-right btn-rounded-20" id="daterange-btn">
-                  <span>
-                    <i class="fa fa-calendar"></i> Date range picker
-                  </span>
-                  <i class="fa fa-caret-down"></i>
+                <button type="button" class="btn btn-default pull-right btn-rounded-20" id="daterange-btn"> 
+                  <span class="material-icons md-18">date_range</span> <span class="span-label">Date range picker</span>
+                  <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
                 </button>
               </div>
             </div>
@@ -254,7 +252,7 @@
             <div class="info-box">
               <div class="info-box-content text-center">
                 <span class="info-box-number">0</span>
-                <span class="info-box-text"><span><i class="fa fa-shopping-cart"></i></span> Total Orders</span>
+                <span class="info-box-text"><span class="material-icons-outlined md-18">shopping_cart</span> Total Orders</span>
               </div>
             </div>
           </div>
@@ -263,7 +261,7 @@
             <div class="info-box">
               <div class="info-box-content text-center">
                 <span class="info-box-number">0</span>
-                <span class="info-box-text"><span><i class="fa fa-smile-o"></i></span> COD Success</span>
+                <span class="info-box-text"><span class="material-icons-outlined md-18">sentiment_satisfied</span> COD Success</span>
               </div>
             </div>
           </div>
@@ -272,7 +270,7 @@
             <div class="info-box">
               <div class="info-box-content text-center">
                 <span class="info-box-number">0</span>
-                <span class="info-box-text"><span><i class="fa fa-truck"></i></span> COD On Process</span>
+                <span class="info-box-text"><span class="material-icons-outlined md-18">local_shipping</span> COD On Process</span>
               </div>
             </div>
           </div>
@@ -280,7 +278,7 @@
             <div class="info-box">
               <div class="info-box-content text-center">
                 <span class="info-box-number">0</span>
-                <span class="info-box-text"><span><i class="fa fa-frown-o"></i></span> COD Failed</span>
+                <span class="info-box-text"><span class="material-icons-outlined md-18">mood_bad</span> COD Failed</span>
               </div>
             </div>
           </div>
@@ -300,7 +298,7 @@
             <div class="info-box">
               <div class="info-box-content text-center">
                 <span class="info-box-number">Rp0</span>
-                <span class="info-box-text"><span class="text-rp">Rp</span> Dikumpulkan dari Pelanggan <i class="fa fa-info-circle"></i></span>
+                <span class="info-box-text"><span class="text-rp">Rp</span> Dikumpulkan dari Pelanggan  <span class="material-icons-outlined md-16" data-toggle="tooltip" data-placement="top" title="Belum dikurangi Ongkir dan Biaya COD">info</span></span>
               </div>
             </div>
           </div>
@@ -323,11 +321,23 @@
           </div>
         </div>
   
-        <div class="row">
+        <div class="row mt-10">
           <div class="col-md-12 text-right">
-            <button type="button" class="btn btn-default btn-md"><i class="fa fa-bar-chart"></i> View More Stats</button>
+            <button type="button" class="btn btn-default btn-md" data-bs-toggle="collapse" data-bs-target="#more-status" aria-expanded="false" aria-controls="collapseExample" onclick="viewMoreStatus()"><span class="material-icons-outlined md-18">bar_chart</span> View More Stats</button>
           </div>
         </div>
+        
+        <legend class="collapse mt-20" id="more-status">
+          <h3 class="mt-0">Delivery Status - Failed (RTS)</h3>
+          <legend class="card card-body">
+            <div class="box box-solid bg-light-blue-gradient">
+              <div class="box-body">
+                <div id="map" style="width: 100%; height: 600px;"></div>
+              </div>
+              
+            </div>
+          </legend>
+        </legend>
       </section>
       
     </div>
@@ -374,43 +384,163 @@
       "autoWidth": false
     });
   });
+
+  function viewMoreStatus() {
+    if ($('#more-status').hasClass('collapse')) {
+      $('#more-status').removeClass('collapse');
+    } else {
+      $('#more-status').addClass('collapse');
+    }
+  }
+</script>
+<script src="plugins/highmap/highmaps.js"></script>
+<script src="plugins/highmap/exporting.js"></script>
+<script src="plugins/highmap/id-all.js"></script>
+<script type="text/javascript">
+  var data = [
+    ['id-3700', 0],
+    ['id-ac', 1],
+    ['id-jt', 2],
+    ['id-be', 3],
+    ['id-bt', 4],
+    ['id-kb', 5],
+    ['id-bb', 6],
+    ['id-ba', 7],
+    ['id-ji', 8],
+    ['id-ks', 9],
+    ['id-nt', 10],
+    ['id-se', 11],
+    ['id-kr', 12],
+    ['id-ib', 13],
+    ['id-su', 14],
+    ['id-ri', 15],
+    ['id-sw', 16],
+    ['id-ku', 17],
+    ['id-la', 18],
+    ['id-sb', 19],
+    ['id-ma', 20],
+    ['id-nb', 21],
+    ['id-sg', 22],
+    ['id-st', 23],
+    ['id-pa', 24],
+    ['id-jr', 25],
+    ['id-ki', 26],
+    ['id-1024', 27],
+    ['id-jk', 28],
+    ['id-go', 29],
+    ['id-yo', 30],
+    ['id-sl', 31],
+    ['id-sr', 32],
+    ['id-ja', 33],
+    ['id-kt', 34]
+];
+  // Create the chart
+Highcharts.mapChart('map', {
+    chart: {
+        map: 'countries/id/id-all'
+    },
+
+    title: {
+        text: ''
+    },
+
+    subtitle: {
+        text: ''
+    },
+
+    mapNavigation: {
+        enabled: true,
+        buttonOptions: {
+            verticalAlign: 'bottom'
+        }
+    },
+
+    colorAxis: {
+        min: 0
+    },
+
+    series: [{
+        data: data,
+        name: 'Random data',
+        states: {
+            hover: {
+                color: '#BADA55'
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            format: '{point.name}'
+        }
+    }]
+});
+
 </script>
 <!-- Tags Input -->
 <script src="plugins/tags-input/bootstrap-tagsinput.js"></script>
 <!-- date-range-picker -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 <script src="plugins/daterangepicker/daterangepicker.js"></script>
-<!-- bootstrap datepicker -->
-<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
 <script>
   $(function () {
-    //Datemask dd/mm/yyyy
-    $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
-    $("[data-mask]").inputmask();
-
-    //Date picker
-    $('#datepicker').datepicker({
-      autoclose: true
-    });
-
     //Date range as a button
-    $('#daterange-btn').daterangepicker(
-        {
-          ranges: {
-            'Today': [moment(), moment()],
-            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-            'This Month': [moment().startOf('month'), moment().endOf('month')],
-            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-          },
-          startDate: moment().subtract(29, 'days'),
-          endDate: moment()
-        },
-        function (start, end) {
-          $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-        }
-    );
+    $('#daterange-btn').daterangepicker({
+      "singleDatePicker": true,
+      "showDropdowns": true,
+      "showWeekNumbers": true,
+      "showISOWeekNumbers": true,
+      ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+      },
+      "locale": {
+          "format": "MM/DD/YYYY",
+          "separator": " - ",
+          "applyLabel": "Apply",
+          "cancelLabel": "Cancel",
+          "fromLabel": "From",
+          "toLabel": "To",
+          "customRangeLabel": "Custom",
+          "weekLabel": "W",
+          "daysOfWeek": [
+              "Su",
+              "Mo",
+              "Tu",
+              "We",
+              "Th",
+              "Fr",
+              "Sa"
+          ],
+          "monthNames": [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December"
+          ],
+          "firstDay": 1
+      },
+      "alwaysShowCalendars": true,
+      "startDate": "05/04/2021",
+      "endDate": "05/10/2021",
+      "opens": "left",
+      "drops": "auto"
+    }, function(start, end, label) {
+
+        $("#daterange-btn .span-label").html(
+          start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+        );
+    });
   });
 </script>
 <!-- InputMask -->
