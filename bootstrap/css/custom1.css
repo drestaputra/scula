@@ -34,15 +34,15 @@ body {
 }
 
 /* Rules for sizing the icon. */
-.material-icons-outlined.md,.material-icons.md-6 { font-size: 6px; }
-.material-icons-outlined.md-12,.material-icons.md-12 { font-size: 12px; }
-.material-icons-outlined.md-13,.material-icons.md-13 { font-size: 13px; }
-.material-icons-outlined.md-16,.material-icons.md-16 { font-size: 16px; }
-.material-icons-outlined.md-18,.material-icons.md-18 { font-size: 18px; }
-.material-icons-outlined.md-24,.material-icons.md-24 { font-size: 24px; }
-.material-icons-outlined.md-36,.material-icons.md-36 { font-size: 36px; }
-.material-icons-outlined.md-48,.material-icons.md-48 { font-size: 48px; }
-.material-icons-outlined.md-60,.material-icons.md-60 { font-size: 60px; }
+.material-icons-two-tone.md, .material-icons-outlined.md,.material-icons.md-6 { font-size: 6px; }
+.material-icons-two-tone.md-12, .material-icons-outlined.md-12,.material-icons.md-12 { font-size: 12px; }
+.material-icons-two-tone.md-13, .material-icons-outlined.md-13,.material-icons.md-13 { font-size: 13px; }
+.material-icons-two-tone.md-16, .material-icons-outlined.md-16,.material-icons.md-16 { font-size: 16px; }
+.material-icons-two-tone.md-18, .material-icons-outlined.md-18,.material-icons.md-18 { font-size: 18px; }
+.material-icons-two-tone.md-24, .material-icons-outlined.md-24,.material-icons.md-24 { font-size: 24px; }
+.material-icons-two-tone.md-36, .material-icons-outlined.md-36,.material-icons.md-36 { font-size: 36px; }
+.material-icons-two-tone.md-48, .material-icons-outlined.md-48,.material-icons.md-48 { font-size: 48px; }
+.material-icons-two-tone.md-60, .material-icons-outlined.md-60,.material-icons.md-60 { font-size: 60px; }
 
 /* Rules for using icons as black on a light background. */
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
@@ -327,6 +327,11 @@ nav.navbar.navbar-static-top {
     -ms-flex-align: center;
     align-items: center;
 }
+.judul-halaman .page-breadcrumb {
+    margin-left: 1rem;
+    font-size: .8em;
+    font-weight: 400;
+}
 .mt-0 {
     margin-top: 0 !important;
 }
@@ -371,6 +376,9 @@ nav.navbar.navbar-static-top {
 }
 .p-5{
     padding: 5px;
+}
+.p-20{
+    padding: 20px;
 }
 .p-10-15{
     padding: 10px 15px!important;
@@ -1132,4 +1140,44 @@ fieldset[disabled] .btn-warning-gradient.focus {
 .btn-warning-gradient .badge {
   color: #f0ad4e;
   background-color: #fff;
+}
+.box {
+    border: none!important;
+    -webkit-box-shadow: rgb(0 0 0 / 10%) 0 1px 3px 0, rgb(0 0 0 / 6%) 0 1px 2px 0;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ecf0f5;
+    border-radius: 3px;
+}
+.integration-app{
+    padding: 1em;
+    background-color: #f1f1f1;
+}
+.integration-accounts .wrapper, .integration-app .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: transparent!important;
+}
+.integration-warning {
+    border: 1.3px dashed #ceb020;
+    margin: 20px;
+    padding: 20px;
+    color: #333;
+    border-radius: 3px;
+    background: #fffde0;
+}
+.integration-accounts {
+    padding: 1.1em;
+    border-bottom: 1px solid #ddd;
 }
