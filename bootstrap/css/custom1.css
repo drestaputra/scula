@@ -852,6 +852,9 @@ table tr:hover .row-actions {
     .mr-5 {
         margin-right: 5px;
     }
+    .mr-10 {
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 776px) {
