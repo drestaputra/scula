@@ -360,6 +360,9 @@ nav.navbar.navbar-static-top {
 .mr-5{
     margin-right: 5px;
 }
+.p-0{
+    padding: 0px!important;
+}
 .p-5{
     padding: 5px;
 }
@@ -935,10 +938,15 @@ table tr:hover .row-actions {
     border: none!important;
     padding: 0px!important;
     box-shadow: 0px 0px 7px 0px #8282827a;
-    border-radius: 5px;
+    border-radius: 10px!important;
 }
 .user-menu .dropdown-menu .user-header{
     background-color: #ef6959!important;
+}
+.user-menu .dropdown-menu > li > a.active{
+    color: #f95353;
+    background-color: hsla(0,0%,40%,.1);
+    font-weight: 600;
 }
 .navbar-nav > .user-menu > .dropdown-menu > .user-body{
     padding : 5px 0px;
