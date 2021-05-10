@@ -138,6 +138,39 @@ input:checked + .switch-slider:before {
     color: rgb(0, 152, 218);
 }
 
+.logistic-card {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 225px;
+    padding: 1.5rem!important;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: #fff;
+    border-radius: .5rem;
+    -webkit-box-shadow: 0 0 3px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+.logistic-card:hover {
+    -webkit-box-shadow: 0 4px 25px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 4px 25px 0 rgb(0 0 0 / 10%);
+}
+.logistic-card.active {
+    background-color: #fff4de;
+    -webkit-box-shadow: 0 0 0 2px #fa962b;
+    box-shadow: 0 0 0 2px #fa962b;
+}
+.logistic-value {
+    color: #fa962b;
+    font-size: 1.8em;
+    font-weight: 700;
+    overflow-wrap: break-word;
+}
+.logistic-label {
+    margin-bottom: .25rem!important;
+}
+
 @media (min-width: 992px) {
     .switch-flex {
         display: flex;
