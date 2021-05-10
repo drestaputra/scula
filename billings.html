@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bootstrap/css/custom1.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
@@ -29,272 +28,258 @@
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
 
 <body class="hold-transition skin-blue layout-top-nav">
-    <div class="wrapper">
-        <header class="main-header">
-            <nav class="navbar navbar-static-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <a href="#" class="navbar-brand"><b>Scula</b></a>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                <i class="fa fa-bars"></i>
-              </button>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-                      <ul class="nav navbar-nav">
-                          <li><a href="dashboard.html">Dashboard</a></li>
-                          <li><a href="products.html">Products</a></li>
-                          <li><a href="order.html">Order</a></li>
-                          <li><a href="http://backscula.organilife.id/">Funnels</a></li>
-                          <li><a href="contacts.html">Contacts</a></li>
-                          <li><a href="report.html">Reports</a></li>
-                          <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
-                              <ul class="dropdown-menu" role="menu">
-                              <li><a href="coupons.html">Coupons</a></li>
-                              <li><a href="expenses.html">Expenses</a></li>
-                              <li><a href="inventory.html">Inventory</a></li>
-                              <li><a href="payments.html">Payments</a></li>
-                              <li><a href="logistics.html">Logistics</a></li>
-                              <li><a href="team-members.html">Team Members</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
-                      </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                    <!-- Navbar Right Menu -->
-                    <div class="navbar-custom-menu">
-                      <ul class="nav navbar-nav">
-                          <!-- Messages: style can be found in dropdown.less-->
-                          <li class="dropdown messages-menu">
-                              <!-- Menu toggle button -->
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                  <i class="fa fa-envelope-o"></i>
-                                  <span class="label label-success">4</span>
-                              </a>
-                              <ul class="dropdown-menu">
-                                  <li class="header">You have 4 messages</li>
-                                  <li>
-                                      <!-- inner menu: contains the messages -->
-                                      <ul class="menu">
-                                          <li>
-                                              <!-- start message -->
-                                              <a href="#">
-                                                  <div class="pull-left">
-                                                      <!-- User Image -->
-                                                      <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
-                                                  </div>
-                                                  <!-- Message title and timestamp -->
-                                                  <h4>
-                                                      Support Team
-                                                      <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                                  </h4>
-                                                  <!-- The message -->
-                                                  <p>Why not buy a new awesome theme?</p>
-                                              </a>
-                                          </li>
-                                          <!-- end message -->
-                                      </ul>
-                                      <!-- /.menu -->
-                                  </li>
-                                  <li class="footer"><a href="#">See All Messages</a></li>
-                              </ul>
-                          </li>
-                          <!-- /.messages-menu -->
-            
-                          <!-- Notifications Menu -->
-                          <li class="dropdown notifications-menu">
-                              <!-- Menu toggle button -->
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                  <i class="fa fa-bell-o"></i>
-                                  <span class="label label-warning">10</span>
-                              </a>
-                              <ul class="dropdown-menu">
-                                  <li class="header">You have 10 notifications</li>
-                                  <li>
-                                      <!-- Inner Menu: contains the notifications -->
-                                      <ul class="menu">
-                                          <li>
-                                              <!-- start notification -->
-                                              <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
-                                          </li>
-                                          <!-- end notification -->
-                                      </ul>
-                                  </li>
-                                  <li class="footer"><a href="#">View all</a></li>
-                              </ul>
-                          </li>
-                          <!-- Tasks Menu -->
-                          <li class="dropdown tasks-menu" style="display: none">
-                              <!-- Menu Toggle Button -->
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                  <i class="fa fa-flag-o"></i>
-                                  <span class="label label-danger">9</span>
-                              </a>
-                              <ul class="dropdown-menu">
-                                  <li class="header">You have 9 tasks</li>
-                                  <li>
-                                      <!-- Inner menu: contains the tasks -->
-                                      <ul class="menu">
-                                          <li>
-                                              <!-- Task item -->
-                                              <a href="#">
-                                                  <!-- Task title and progress text -->
-                                                  <h3>
-                                                      Design some buttons
-                                                      <small class="pull-right">20%</small>
-                                                  </h3>
-                                                  <!-- The progress bar -->
-                                                  <div class="progress xs">
-                                                      <!-- Change the css width attribute to simulate progress -->
-                                                      <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                          <span class="sr-only">20% Complete</span>
-                                                      </div>
-                                                  </div>
-                                              </a>
-                                          </li>
-                                          <!-- end task item -->
-                                      </ul>
-                                  </li>
-                                  <li class="footer">
-                                      <a href="#">View all tasks</a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <!-- User Account Menu -->
-                          <li class="dropdown user user-menu">
-
-
-                            <!-- Menu Toggle Button -->
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                              <!-- The user image in the navbar-->
-                              <span class="hidden-xs">Alexander Pierce</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <!-- The user image in the menu -->
-                              <li class="user-header text-left">
-                                <p>
-                                  <strong>Yokayuga</strong> (OWNER)
-                                  <small><a href="mailto:yokayuga@gmail.com" class="text-white">yokayuga@gmail.com</a></small>
-                                </p>
-                              </li>
-                              <!-- Menu Body -->
-                              <li class="">
-                                <a href="profile.html" class="dropdown-item"><i class="material-icons">account_circle</i><span>Profile</span></a>
-                                <a href="credit.html" class="dropdown-item"><i class="material-icons">account_balance_wallet</i><span>Credits</span></a>
-                                <a href="billings.html" class="dropdown-item"><i class="material-icons">payment</i><span>Billings</span></a>
-                                <a href="change-plan.html" class="dropdown-item"><i class="material-icons">local_offer</i>Change Plan</a>
-                                <a href="apps.html" class="dropdown-item"><i class="material-icons">extension</i>Apps</a>
-                                <a href="bonus.html" class="dropdown-item"><i class="material-icons">star</i>Bonuses</a>
-                                <a href="settings.html" class="dropdown-item"><i class="material-icons">settings</i>Settings</a>
-                                <a href="tutorials.html" target="_blank" class="dropdown-item"><i class="material-icons">dvr</i>Tutorials</a>
-                                <a class="dropdown-item"><i class="material-icons">power_settings_new</i>Sign Out</a>
-
-                              </li>
-                            </ul>
-
-
-                          </li>
-                      </ul>
-                    </div>
-            <!-- /.navbar-custom-menu -->
-          </div>
-          <!-- /.container-fluid -->
-        </nav>
-      </header>
-      <!-- Full Width Column -->
-      <div class="content-wrapper">
+  <div class="wrapper">
+    <header class="main-header">
+      <nav class="navbar navbar-fixed-top">
         <div class="container">
-          <!-- Content Header (Page header) -->
-          <section>
-            <div class="row" style="margin-left: -6px">
-              <h3 style="margin-left: 3px">Billings</h3>
-            </div>
-          </section>
+          <div class="navbar-header">
+            <a href="#" class="navbar-brand"><b>Scula</b></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="material-icons-outlined">horizontal_split</span>
+            </button>
+          </div>
 
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="order.html">Order</a></li>
+              <li><a href="http://backscula.organilife.id/">Funnels</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="report.html">Reports</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="coupons.html">Coupons</a></li>
+                  <li><a href="expenses.html">Expenses</a></li>
+                  <li><a href="inventory.html">Inventory</a></li>
+                  <li><a href="payments.html">Payments</a></li>
+                  <li><a href="logistics.html">Logistics</a></li>
+                  <li><a href="team-members.html">Team Members</a></li>
+                </ul>
+              </li>
+              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <!-- Menu toggle button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="material-icons md-16">mail</span>
+                  <span class="label label-success">4</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 4 messages</li>
+                  <li>
+                    <!-- inner menu: contains the messages -->
+                    <ul class="menu">
+                      <li>
+                        <!-- start message -->
+                        <a href="#">
+                          <div class="pull-left">
+                            <!-- User Image -->
+                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                          </div>
+                          <!-- Message title and timestamp -->
+                          <h4>
+                            Support Team
+                            <small><span class="material-icons-outlined">schedule</span> 5 mins</small>
+                          </h4>
+                          <!-- The message -->
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
+                      <!-- end message -->
+                    </ul>
+                    <!-- /.menu -->
+                  </li>
+                  <li class="footer"><a href="#">See All Messages</a></li>
+                </ul>
+              </li>
+              <!-- /.messages-menu -->
+
+              <!-- Notifications Menu -->
+              <li class="dropdown notifications-menu">
+                <!-- Menu toggle button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="material-icons md-16">notifications</span>
+                  <span class="label label-warning">10</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 10 notifications</li>
+                  <li>
+                    <!-- Inner Menu: contains the notifications -->
+                    <ul class="menu">
+                      <li>
+                        <!-- start notification -->
+                        <a href="#"> <span class="material-icons-outlined">person</span> 5 new members joined today </a>
+                      </li>
+                      <!-- end notification -->
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">View all</a></li>
+                </ul>
+              </li>
+              <!-- Tasks Menu -->
+              <li class="dropdown tasks-menu" style="display: none">
+                <!-- Menu Toggle Button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-flag-o"></i>
+                  <span class="label label-danger">9</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 9 tasks</li>
+                  <li>
+                    <!-- Inner menu: contains the tasks -->
+                    <ul class="menu">
+                      <li>
+                        <!-- Task item -->
+                        <a href="#">
+                          <!-- Task title and progress text -->
+                          <h3>
+                            Design some buttons
+                            <small class="pull-right">20%</small>
+                          </h3>
+                          <!-- The progress bar -->
+                          <div class="progress xs">
+                            <!-- Change the css width attribute to simulate progress -->
+                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                              <span class="sr-only">20% Complete</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- end task item -->
+                    </ul>
+                  </li>
+                  <li class="footer">
+                    <a href="#">View all tasks</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- User Account Menu -->
+              <li class="dropdown user user-menu">
+                <!-- Menu Toggle Button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <!-- The user image in the navbar-->
+                  <span class="hidden-xs">Alexander Pierce</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- The user image in the menu -->
+                  <li class="user-header text-left">
+                    <p>
+                      <strong>Yokayuga</strong> (OWNER)
+                      <small><a href="mailto:yokayuga@gmail.com" class="text-white">yokayuga@gmail.com</a></small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <li class="">
+                    <a href="profile.html" class="dropdown-item"><i class="material-icons">account_circle</i><span>Profile</span></a>
+                    <a href="credit.html" class="dropdown-item active"><i class="material-icons">account_balance_wallet</i><span>Credits</span></a>
+                    <a href="billings.html" class="dropdown-item"><i class="material-icons">payment</i><span>Billings</span></a>
+                    <a href="change-plan.html" class="dropdown-item"><i class="material-icons">local_offer</i>Change Plan</a>
+                    <a href="apps.html" class="dropdown-item"><i class="material-icons">extension</i>Apps</a>
+                    <a href="bonus.html" class="dropdown-item"><i class="material-icons">star</i>Bonuses</a>
+                    <a href="settings.html" class="dropdown-item"><i class="material-icons">settings</i>Settings</a>
+                    <a href="tutorials.html" target="_blank" class="dropdown-item"><i class="material-icons">dvr</i>Tutorials</a>
+                    <a class="dropdown-item"><i class="material-icons">power_settings_new</i>Sign Out</a>
+
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Navbar Right Menu -->
+
+          <!-- /.navbar-custom-menu -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </header>
+    <!-- Full Width Column -->
+    <div class="content-wrapper mt-50">
+      <div class="container">
+        <div class="content">
+          <!-- Content Header (Page header) -->
+          <div class="row mb-20">
+            <div class="col-xs-6">
+              <h1 class="mb-0 judul-halaman">Billing</h1>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-3">
-              <div class="info-box" style="height: 40px">
-                <span
-                  style="
-                    margin-left: 5px;
-                    font-size: 25px;
-                    font-weight: 600;
-                    color: red;
-                  "
-                  >Rp1.490.000</span
-                >
-                <h4 style="margin-left: 5px">Outstanding Payments</h4>
-              </div>
-            </div>
-          </div>
-
-          <section class="content-header">
-            <div class="row">
-              <div class="col-md-9 col-xs-4" style="margin-left: -15px">
-                <select name="type" id="types" style="height: 33px">
-                  <option value="All">All</option>
-                  <option value="Return Shipping Cost">
-                    Return Shipping Cost
-                  </option>
-                  <option value="Plan Subcription">Plan Subcription</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-
-              <div class="col-md-3">
-                <div style="display: flex">
-                  <div style="margin-right: 20px">
-                    <select
-                      name="type"
-                      id="types"
-                      style="width: 120px; height: 33px"
-                    >
-                      <option value="All">All</option>
-                      <option value="Unpaid">Unpaid</option>
-                      <option value="Verifying">Verifying</option>
-                      <option value="Paid">Paid</option>
-                      <option value="Cancelled">Cancelled</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group">
-                    <div class="input-group">
-                      <div class="form-group">
-                        <div class="input-group">
-                          <button
-                            type="button"
-                            class="btn btn-default pull-right"
-                            id="daterange-btn"
-                          >
-                            <span>
-                              <i class="fa fa-calendar"></i> Date range picker
-                            </span>
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+              <div class="info-box p-10-15">
+                <span class="info-box-title text-red text-bold">Rp. 0</span>
+                <div class="row">
+                  <div class="col-md-12">
+                    <span class="fs-16">Outstanding Payment </span>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+          <hr style="border-top: 1px solid #d8d8d8;">
 
-          <!-- <section class="content-header "> -->
+          <div class="content-header">
+            <div class="row">
+              <div class="col-md-2 col-xs-12 p-0">
+                <div class="form-group">
+                  <select class="form-control" name="type" id="types" >
+                    <option value="All">All</option>
+                    <option value="Return Shipping Cost">
+                      Return Shipping Cost
+                    </option>
+                    <option value="Plan Subcription">Plan Subcription</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4 col-md-offset-6 col-xs-offset-0 col-xs-12">
+                <div class="row">
+                  <div class="col-md-6">
+                    
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Unpaid</option>
+                      <option>Verifying</option>
+                      <option>Paid</option>
+                      <option>Canceled</option>
+                    </select>
+                  </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12">
+                    
+
+                <div class="form-group pull-right">
+                <div class="input-group">
+                  <button type="button" class="btn btn-default pull-right btn-rounded-20" id="daterange-btn"> 
+                    <span class="material-icons md-18">date_range</span> <span class="span-label">Date range picker</span>
+                    <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
+                  </button>
+                </div>
+                  </div>
+              </div>
+              
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- <section class="content-header "> -->
           <div class="row">
             <div class="col-md-3 col-xs-12">
-              <div class="info-box" style="margin-top: -20px; height: 60px">
-                <!-- <span class="info-box-icon bg-aqua "><i class="fa fa-envelope-o "></i></span> -->
-
-                <h4 style="margin-left: 5px">Total Billings</h4>
-                <span
-                  style="margin-left: 5px; font-size: 25px; font-weight: 600"
-                  >0</span
-                >
-                <!-- /.info-box-content -->
+              <div class="info-box p-10-15">
+                    <span class="fs-16">Total Billing </span>
+                <div class="row">
+                  <div class="col-md-12">
+                <span class="info-box-title text-bold"> 0</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -305,10 +290,7 @@
             <!-- /.box-header -->
             <div class="box-body">
               <div class="table-responsive">
-                <table
-                  id="example1 "
-                  class="table table-bordered table-striped"
-                >
+                <table id="example1 " class="table table-bordered table-striped table-hover">
                   <thead>
                     <tr>
                       <th>ID</th>
@@ -326,22 +308,14 @@
                       <td>Subscription Plan Personal - (12 month(s))</td>
                       <td>Rp1.490.000</td>
                       <td>
-                        <p
-                          style="
-                            background-color: red;
-                            border-radius: 25px;
-                            padding-left: 20px;
-                          "
-                        >
-                          Unpaid
-                        </p>
+                        <p class="order-status status-danger">Unpaid</p>
                       </td>
                       <td>29-04-2021 - 20:57</td>
                       <td>04-05-2021 - 20:57</td>
                       <td>
                         <button class="btn btn-success btn-sm">Pay</button>
                         <button class="btn btn-primary btn-sm">Confirm</button>
-                        <button><i class="fa fa-search"></i></button>
+                        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalInvoice"><span class="material-icons-outlined md-18">search</span></button>
                       </td>
                     </tr>
                     <tr>
@@ -349,22 +323,14 @@
                       <td>Subscription Plan Personal - (1 month(s))</td>
                       <td>Rp149.000</td>
                       <td>
-                        <p
-                          style="
-                            background-color: grey;
-                            border-radius: 25px;
-                            padding-left: 20px;
-                          "
-                        >
-                          Canceled
-                        </p>
+                        <p class="order-status status-default">Canceled</p>
                       </td>
                       <td>29-04-2021 - 20:57</td>
                       <td>04-05-2021 - 20:57</td>
                       <td>
                         <button class="btn btn-success btn-sm">Pay</button>
                         <button class="btn btn-primary btn-sm">Confirm</button>
-                        <button><i class="fa fa-search"></i></button>
+                        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalInvoice"><span class="material-icons-outlined md-18">search</span></button>
                       </td>
                     </tr>
                   </tbody>
@@ -373,75 +339,136 @@
             </div>
             <!-- /.box-body -->
           </div>
-          <!-- </section> -->
-
-          <!-- /.content -->
-        </div>
-        <!-- /.container -->
-      </div>
-
-      <!-- /.content-wrapper -->
-      <footer class="main-footer">
-        <div class="container">
-          <strong
-            >Copyright &copy; 2021
-            <a href="http://almsaeedstudio.com ">Scula</a>.</strong>
-                                            All rights reserved.
-                                        </div>
-                                        <!-- /.container -->
-                                        </footer>
+          <div class="modal fade" id="modalInvoice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-abu-abu">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel"><b>Billing Detail</b></h4>
+                </div>
+                <div class="modal-body p-0">
+                  <div class="invoice">
+                    <div class="invoice-header">
+                      <div class="invoice-image">
+                        <img src="dist/img/scula/logo.png" class="invoice-logo">
+                      </div>
+                      <div class="invoice-info text-right">
+                        <div class="invoice-title">Invoice #<span class="invoice__id">5415</span></div>
+                        <div class="invoice-date "><span>Date: </span><span class="invoice__date-value">02-05-2021</span></div>
+                        <div class="invoice-date"><span>Due Date: </span><span class="invoice__date-value">07-05-2021</span></div>
+                      </div>
                     </div>
-                    <!-- ./wrapper -->
+                    <div class="invoice-body">
+                      <div class="invoice-customer">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <h4>indoistimewa.com</h4>
+                          </div>
+                          <div class="col-md-3 col-md-offset-6">
+                            <button class="btn order-status status-canceled pull-right">CANCELED</button>
+                          </div>
+                        </div>
+                        <p>08231312</p>
+                        <p>Ringinsari, Tamanmartani,Kalasan</p>
+                      </div>
+                      <div class="invoice-item table-responsive">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>Items</th>
+                              <th>Price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Subscription Plan Personal - (12 month(s))</td>
+                              <td><b>Rp1.490.000</b></td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td><b>Total</b></td>
+                              <td><b class="text-primary">Rp. 312.321</b></td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="invoice-footer">
+                    <p>Silahkan lakukan pembayaran atas invoice tersebut ke rekening berikut:</p>
+                    <h5><b>Bank: BCA</b></h5>
+                    <h5>No. Rek: <b>3219390</b></h5>
+                    <h5>Atas Nama: </h5>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                  <button type="submit" class="btn btn-primary"> Download Invoice</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- </section> -->
+        </div>
+        <!-- /.content -->
+      </div>
+      <!-- /.container -->
+    </div>
 
-                    <!-- jQuery 2.2.3 -->
-                    <script src="plugins/jQuery/jquery-2.2.3.min.js "></script>
-                    <!-- Bootstrap 3.3.6 -->
-                    <script src="bootstrap/js/bootstrap.min.js "></script>
-                    <!-- SlimScroll -->
-                    <script src="plugins/slimScroll/jquery.slimscroll.min.js "></script>
-                    <!-- FastClick -->
-                    <script src="plugins/fastclick/fastclick.js "></script>
-                    <!-- AdminLTE App -->
-                    <script src="dist/js/app.min.js "></script>
-                    <!-- AdminLTE for demo purposes -->
-                    <script src="dist/js/demo.js "></script>
-                    <!-- ChartJS 1.0.1 -->
-                    <!-- <script src="plugins/chartjs/Chart.min.js "></script> -->
-                    <script src="plugins/datatables/jquery.dataTables.min.js "></script>
-                    <script src="plugins/datatables/dataTables.bootstrap.min.js "></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-                    <script src="plugins/daterangepicker/daterangepicker.js"></script>
-                    <script>
-                        $(function() {
-                            $("#daterange-btn").daterangepicker({
-                                    ranges: {
-                                        Today: [moment(), moment()],
-                                        Yesterday: [
-                                            moment().subtract(1, "days"),
-                                            moment().subtract(1, "days"),
-                                        ],
-                                        "Last 7 Days": [moment().subtract(6, "days"), moment()],
-                                        "Last 30 Days": [moment().subtract(29, "days"), moment()],
-                                        "This Month": [
-                                            moment().startOf("month"),
-                                            moment().endOf("month"),
-                                        ],
-                                        "Last Month": [
-                                            moment().subtract(1, "month").startOf("month"),
-                                            moment().subtract(1, "month").endOf("month"),
-                                        ],
-                                    },
-                                    startDate: moment().subtract(29, "days"),
-                                    endDate: moment(),
-                                },
-                                function(start, end) {
-                                    $("#daterange-btn span").html(
-                                        start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
-                                    );
-                                }
-                            );
-                        });
-                    </script>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="container">
+        <strong >Copyright &copy; 2021 <a href="http://almsaeedstudio.com ">Scula</a>.</strong> All rights reserved.
+      </div>
+      <!-- /.container -->
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery 2.2.3 -->
+  <script src="plugins/jQuery/jquery-2.2.3.min.js "></script>
+  <!-- Bootstrap 3.3.6 -->
+  <script src="bootstrap/js/bootstrap.min.js "></script>
+  <!-- SlimScroll -->
+  <script src="plugins/slimScroll/jquery.slimscroll.min.js "></script>
+  <!-- FastClick -->
+  <script src="plugins/fastclick/fastclick.js "></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/app.min.js "></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js "></script>
+  <!-- ChartJS 1.0.1 -->
+  <!-- <script src="plugins/chartjs/Chart.min.js "></script> -->
+  <script src="plugins/datatables/jquery.dataTables.min.js "></script>
+  <script src="plugins/datatables/dataTables.bootstrap.min.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <script>
+    $(function() {
+       $('#daterange-btn').daterangepicker({
+      ranges: {
+              'Today': [moment(), moment()],
+              'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+              'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+              'This Month': [moment().startOf('month'), moment().endOf('month')],
+              'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          "alwaysShowCalendars": true,
+          "startDate": "05/04/2021",
+          "endDate": "05/10/2021",
+          "opens": "left"
+      }, function(start, end, label) {
+
+        $("#daterange-btn .span-label").html(
+        start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+      );
+    });
+    });
+  </script>
 </body>
 
 </html>
