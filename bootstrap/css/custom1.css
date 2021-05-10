@@ -424,7 +424,8 @@ nav.navbar.navbar-static-top {
     padding: 90px 0!important;
 }
 .table-span-red span{
-    color: #fd6257;;
+    color: #e04b4b;
+    font-weight: 600;
 }
 .table-header-menu .dropdown{
     display: inline-block;
