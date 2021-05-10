@@ -102,6 +102,10 @@ nav.navbar.navbar-static-top {
     margin-bottom: 2rem;
     font-size: 16px !important;
 }
+.info-box .info-box-title{
+    font-size: 25px;
+    font-weight: 600;
+}
 
 .info-box-number {
     text-align: center !important;
@@ -164,7 +168,7 @@ nav.navbar.navbar-static-top {
     display: block;
 }
 .text-green {
-    color: green;
+    color: #28a745!important;
 }
 
 /* CHANGE PLAN */
@@ -295,6 +299,9 @@ nav.navbar.navbar-static-top {
 .text-red {
     color: #F95353 !important;
 }
+.fs-16{
+    font-size: 16px!important;
+}
 .text-left {
     text-align: left !important;
 }
@@ -355,6 +362,9 @@ nav.navbar.navbar-static-top {
 }
 .p-5{
     padding: 5px;
+}
+.p-10-15{
+    padding: 10px 15px!important;
 }
 .pt-20{
     padding-top: 20px!important;
@@ -474,6 +484,13 @@ legend table th,legend table td{
 .text-white{
     color: white;
 }
+.text-orange{
+    color: orange;
+}
+.text-bold{
+    font-weight: 600;
+}
+
 .background-table {
     background-color: #F8FBFF;
     border: 1px solid #ddd;
