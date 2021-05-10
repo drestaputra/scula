@@ -215,7 +215,7 @@
                 <div class="form-group pull-right">
                 <div class="input-group">
                   <button type="button" class="btn btn-default pull-right btn-rounded-20" id="daterange-btn"> 
-                    <span class="material-icons md-18">date_range</span> Date range picker
+                    <span class="material-icons md-18">date_range</span> <span class="span-label">Date range picker</span>
                     <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
                   </button>
                 </div>
@@ -1742,7 +1742,7 @@
       endDate: moment(),
       },
       function(start, end) {
-          $("#daterange-btn span").html(
+          $("#daterange-btn .span-label").html(
               start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
           );
       }
