@@ -63,6 +63,81 @@ input:checked + .switch-slider:before {
     margin-left: 10px;
 }
 
+/* MENU PAYMENT */
+.payment-product-image {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #d7d7da;
+}
+.invoice-header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.invoice-customer {
+    margin-top: 1em;
+}
+.invoice-item {
+    margin-top: 2em;
+}
+.invoice-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+}
+.invoice-customer-top {
+    display: flex;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.customer-name {
+    padding-right: 1em;
+    max-width: 75%;
+}
+.invoice-status {
+    color: rgb(91, 132, 27);
+    padding: 0.2em 0.5em;
+    font-weight: 700;
+    border: 3px solid rgb(91, 132, 27);
+    text-transform: uppercase;
+}
+.invoice-item-header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0.7em;
+    padding-bottom: 0.3em;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.invoice-item-list {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px dashed rgb(187, 187, 187);
+}
+.invoice-footer {
+    margin-top: 20px;
+    padding: 1em;
+    background-color: rgb(249, 249, 249);
+}
+.invoice-total {
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 700;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.invoice-total-price {
+    color: rgb(0, 152, 218);
+}
+
 @media (min-width: 992px) {
     .switch-flex {
         display: flex;
