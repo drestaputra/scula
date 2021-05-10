@@ -235,7 +235,7 @@
               <div class="col-md-6">
                 <!-- AREA CHART -->
                 <div class="box">
-                  <div class="box-body">
+                  <div class="">
                     <div class="chart">
                       <canvas id="myChart" style="height: 250px"></canvas>
                     </div>
@@ -314,7 +314,7 @@
               <div class="col-md-6">
                 <!-- AREA CHART -->
                 <div class="box">
-                  <div class="box-body">
+                  <div class="">
                     <div class="chart">
                       <canvas id="barChart" style="height: 250px"></canvas>
                     </div>
@@ -1628,6 +1628,7 @@ var myChart = new Chart(ctx, {
         ]
     },
     options: {
+        responsive: true,
         scales: {
             y: {
                 beginAtZero: true
