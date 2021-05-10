@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>General - Settings | Scula</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css" />
+
+
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css" />
+
+    <link rel="stylesheet" href="bootstrap/css/custom1.css" />
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+
+<body class="hold-transition skin-blue layout-top-nav">
+    <div class="wrapper">
+        <header class="main-header">
+      <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+              <a href="#" class="navbar-brand"><b>Scula</b></a>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="material-icons-outlined">horizontal_split</span>
+              </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="order.html">Order</a></li>
+              <li><a href="http://backscula.organilife.id/">Funnels</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="report.html">Reports</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="coupons.html">Coupons</a></li>
+                  <li><a href="expenses.html">Expenses</a></li>
+                  <li><a href="inventory.html">Inventory</a></li>
+                  <li><a href="payments.html">Payment</a></li>
+                  <li><a href="logistics.html">Logistics</a></li>
+                  <li><a href="team-members.html">Team Members</a></li>
+                </ul>
+              </li>
+              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <!-- Messages: style can be found in dropdown.less-->
+                <li class="dropdown messages-menu">
+                    <!-- Menu toggle button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="material-icons md-16">mail</span>
+                        <span class="label label-success">4</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">You have 4 messages</li>
+                        <li>
+                            <!-- inner menu: contains the messages -->
+                            <ul class="menu">
+                                <li>
+                                    <!-- start message -->
+                                    <a href="#">
+                                        <div class="pull-left">
+                                            <!-- User Image -->
+                                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                        </div>
+                                        <!-- Message title and timestamp -->
+                                        <h4>
+                                            Support Team
+                                            <small><span class="material-icons-outlined">schedule</span> 5 mins</small>
+                                        </h4>
+                                        <!-- The message -->
+                                        <p>Why not buy a new awesome theme?</p>
+                                    </a>
+                                </li>
+                                <!-- end message -->
+                            </ul>
+                            <!-- /.menu -->
+                        </li>
+                        <li class="footer"><a href="#">See All Messages</a></li>
+                    </ul>
+                </li>
+                <!-- /.messages-menu -->
+  
+                <!-- Trackings Menu -->
+                <li class="dropdown notifications-menu">
+                    <!-- Menu toggle button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="material-icons md-16">notifications</span>
+                        <span class="label label-warning">10</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">You have 10 notifications</li>
+                        <li>
+                            <!-- Inner Menu: contains the notifications -->
+                            <ul class="menu">
+                                <li>
+                                    <!-- start notification -->
+                                    <a href="#"> <span class="material-icons-outlined">person</span> 5 new members joined today </a>
+                                </li>
+                                <!-- end notification -->
+                            </ul>
+                        </li>
+                        <li class="footer"><a href="#">View all</a></li>
+                    </ul>
+                </li>
+                <!-- Tasks Menu -->
+                <li class="dropdown tasks-menu" style="display: none">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-flag-o"></i>
+                        <span class="label label-danger">9</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">You have 9 tasks</li>
+                        <li>
+                            <!-- Inner menu: contains the tasks -->
+                            <ul class="menu">
+                                <li>
+                                    <!-- Task item -->
+                                    <a href="#">
+                                        <!-- Task title and progress text -->
+                                        <h3>
+                                            Design some buttons
+                                            <small class="pull-right">20%</small>
+                                        </h3>
+                                        <!-- The progress bar -->
+                                        <div class="progress xs">
+                                            <!-- Change the css width attribute to simulate progress -->
+                                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="sr-only">20% Complete</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- end task item -->
+                            </ul>
+                        </li>
+                        <li class="footer">
+                            <a href="#">View all tasks</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- User Account Menu -->
+                <li class="dropdown user user-menu">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <!-- The user image in the navbar-->
+                        <i class="material-icons hidden-md">account_circle</i>
+                        <span class="hidden-xs">Alexander Pierce</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- The user image in the menu -->
+                        <li class="user-header text-left">
+                            <p>
+                                <strong>Yokayuga</strong> (OWNER)
+                                <small><a href="mailto:yokayuga@gmail.com" class="text-white">yokayuga@gmail.com</a></small>
+                            </p>
+                        </li>
+                        <!-- Menu Body -->
+                        <li class="">
+                            <a href="profile.html" class="dropdown-item"><i class="material-icons">account_circle</i><span>Profile</span></a>
+                            <a href="credit.html" class="dropdown-item"><i class="material-icons">account_balance_wallet</i><span>Credits</span></a>
+                            <a href="billings.html" class="dropdown-item"><i class="material-icons">payment</i><span>Billings</span></a>
+                            <a href="change-plan.html" class="dropdown-item"><i class="material-icons">local_offer</i>Change Plan</a>
+                            <a href="apps.html" class="dropdown-item"><i class="material-icons">extension</i>Apps</a>
+                            <a href="bonus.html" class="dropdown-item"><i class="material-icons">star</i>Bonuses</a>
+                            <a href="settings.html" class="dropdown-item active"><i class="material-icons">settings</i>Settings</a>
+                            <a href="tutorials.html" target="_blank" class="dropdown-item"><i class="material-icons">dvr</i>Tutorials</a>
+                            <a class="dropdown-item"><i class="material-icons">power_settings_new</i>Sign Out</a>
+
+                          </li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <!-- Navbar Right Menu -->
+                    
+          <!-- /.navbar-custom-menu -->
+        </div>
+          <!-- /.container-fluid -->
+      </nav>
+    </header>
+        <!-- Full Width Column -->
+        <div class="content-wrapper mt-50">
+            <div class="container">
+                <!-- Main content -->
+                <div class="content">
+                    <div class="row mb-20">
+                        <div class="col-md-12">
+                            <h1 class="mt-10  judul-halaman"><a href="settings.html">Settings </a> <i class="material-icons">chevron_right</i>  <span class="page-breadcrumb">General</span></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                    	<div class="page-content">
+                    		<div class="box p-0">
+                    			<div class="integration-item">
+                    				<div class="integration-app">
+                    					<div class="wrapper">
+                    						<button type="button" class="btn btn-default"> <b>Stock Management</b> </button>
+                    					</div>
+                    				</div>
+                    				<div>
+                    					<div class="integration-accounts">
+                    						<div class="wrapper">
+                    							<div class="container-fluid p-0">
+                    								<div class="row">
+                    									<div class="col-md-6">
+                    										<div class="form-group">
+                    											<label><strong>Deduction Trigger</strong></label>
+                    											<select class="form-control">
+                    												<option value="completed">Order is Completed</option>
+                    												<option value="processing">Order is Processing</option>
+                    												<option value="pending">Order is Pending / Order is Placed</option>
+                    											</select>
+                    											<i class="pc-input-desc">When the product's stock will be reduced</i>
+                    										</div>
+                    									</div>
+                    									<div class="col-md-6">
+                    										<div class="form-group">
+                    											<label><strong>Restore Trigger</strong></label>
+                    											<select class="form-control">
+                    												<option value="cancelled">Order is Cancelled</option>
+                    											</select>
+                    											<i class="pc-input-desc">When the product's stock will be restored</i>
+                    										</div>
+                    									</div>
+                    									<div class="col-md-6">
+                    										<div class="form-group">
+                    											<label><strong>Visibility</strong></label>
+                    											<select class="form-control">
+                    												<option value="true">Visible to visitor</option>
+                    												<option value="false">Hide the stock to visitor</option>
+                    											</select>
+                    										</div>
+                    									</div>
+                    								</div>
+                    								<div>
+                    									<div class="form-group text-right"><button class="btn btn-primary" type="button"><em class="material-icons">save</em>Save</button></div>
+                    								</div>
+                    							</div>
+                    						</div>
+                    					</div>
+                    				</div>
+                    			</div>
+                    			<div class="integration-item">
+                    				<div class="integration-app">
+                    					<div class="wrapper">
+                    						<button type="button" class="btn btn-default"> <b>Order Auto Cancel</b> </button>
+                    					</div>
+                    				</div>
+                    				<div>
+                    					<div class="integration-accounts">
+                    						<div class="wrapper">
+                    							<div class="container-fluid p-0">
+                    								<div class="row">
+                    									<div class="col-md-12">
+                    										<div class="form-group">
+                    											<label class="label-checkbox"><input type="checkbox" class="input-checkbox input-checkbox-large"><span></span><span class="input-checkbox-text">Enable order auto cancel</span></label>
+                    										</div>
+                    									</div>
+                    									
+                    									<div class="col-md-6">
+                    										<div class="form-group">
+                    											<label><strong>Cancel Order After (days):</strong></label>
+                    											<input class="input form-control input-small" max="14" min="1" type="number" />
+                    										</div>
+                    									</div>
+                    								</div>
+                    								<div>
+                    									<div class="form-group text-right"><button class="btn btn-primary" type="button"><em class="material-icons">save</em>Save</button></div>
+                    								</div>
+                    							</div>
+                    						</div>
+                    					</div>
+                    				</div>
+                    			</div>
+                    			<div class="integration-item">
+                    				<div class="integration-app">
+                    					<div class="wrapper">
+                    						<div class="integration-app-logo">
+                    							<div class="text"><button class="btn btn-default"><b>Transactional Email</b></button></div>
+                    						</div>
+                    					</div>
+                    				</div>
+                    				<div class="integration-accounts">
+                    					<div class="integration-account">
+                    						<div class="wrapper">
+                    							<div class="container-fluid p-0">
+                    								<div class="form-group"><label class="label-checkbox"><input class="input-checkbox input-checkbox-large" type="checkbox" /><span class="input-checkbox-text">Enable send email notification to customer</span></label></div>
+                    								<div class="form-group"><label><strong>Email Reply-To</strong></label><input class="input form-control input-medium" type="text" placeholder="Reply-to Email" /></div>
+                    								<div>
+                    									<div class="form-group text-right"><button class="btn btn-primary" type="button"><em class="material-icons">save</em>Save</button></div>
+                    								</div>
+                    							</div>
+                    						</div>
+                    					</div>
+                    				</div>
+                    			</div>
+                    			<div class="integration-item">
+                    				<div class="integration-app">
+                    					<div class="wrapper">
+                    						<div class="integration-app-logo">
+                    							<button type="button" class="btn btn-default"> <b>Security</b> </button>
+                    						</div>
+                    					</div>
+                    				</div>
+                    				<div class="integration-accounts">
+                    					<div class="integration-account">
+                    						<div class="wrapper">
+                    							<div class="container-fluid p-0">
+                    								<div class="row">
+                    									<div class="col-md-6">
+                    										<div class="form-group"><label><strong>Add IP to Block</strong></label><textarea class="form-control" placeholder="192.168.XXX.XXX"></textarea><button class="btn btn-default mt-3" type="button"> Block IP </button></div>
+                    									</div>
+                    									<div class="col-md-6">
+                    										<div class="form-group"><label><strong>Blocked IP Address</strong></label>
+                    											<div class="selected-options">
+                    												<div class="selected-option bg-grey">114.5.253.170<em class="material-icons selected-option-remove has-tooltip" data-original-title="null">close</em></div>
+                    												<div class="selected-option bg-grey">114.5.217.162<em class="material-icons selected-option-remove has-tooltip" data-original-title="null">close</em></div>
+                    												<div class="selected-option bg-grey">36.72.212.110<em class="material-icons selected-option-remove has-tooltip" data-original-title="null">close</em></div>
+                    												<div class="selected-option bg-grey">182.2.38.48<em class="material-icons selected-option-remove has-tooltip" data-original-title="null">close</em></div>
+                    												<div class="selected-option bg-grey">120.188.87.163<em class="material-icons selected-option-remove has-tooltip" data-original-title="null">close</em></div>
+                    											</div>
+                    										</div>
+                    									</div>
+                    									
+                    								</div>
+                    								<div>
+                    									<div class="form-group text-right"><button class="btn btn-primary" type="button"><em class="material-icons mr-1">save</em>Save</button></div>
+                    								</div>
+                    							</div>
+                    						</div>
+                    					</div>
+                    				</div>
+                    			</div>
+                    			<div class="integration-item">
+                    				<div class="integration-app">
+                    					<div class="wrapper">
+                    						<div class="integration-app-logo">
+                    							<button type="button" class="btn btn-default"> <b>E-Payment Settings</b> </button>
+                    						</div>
+                    					</div>
+                    				</div>
+                    				<div class="integration-accounts">
+                    					<div class="integration-account">
+                    						<div class="wrapper">
+                    							<div class="container-fluid p-0">
+                    								<div class="row">
+                    									<div class="col-sm-6">
+                    										<div class="form-group"><label><strong>Status Change</strong></label><select class="form-control input-medium">
+                    											<option value="processing">Processing</option>
+                    											<option value="completed">Completed</option>
+                    											<option value="initial">Don't Change</option>
+                    										</select></div>
+                    									</div>
+                    									<div class="col-sm-6">
+                    										<div class="form-group"><label><strong>Enable Logistics</strong></label><label class="label-checkbox"><input class="input-checkbox input-checkbox-large" type="checkbox" /><span class="input-checkbox-text">Enable E-Payment for OrderOnline Logistics (SiCepat, J&amp;T, JNE)</span></label></div>
+                    									</div>
+                    								</div>
+                    								<div>
+                    									<div class="form-group text-right"><button class="btn btn-primary" type="button"><em class="material-icons mr-1">save</em>Save</button></div>
+                    								</div>
+                    							</div>
+                    						</div>
+                    					</div>
+                    				</div>
+                    			</div>
+                    			<div class="integration-item">
+                    				<div class="integration-app">
+                    					<div class="wrapper">
+                    						<div class="integration-app-logo">
+                    							<button type="button" class="btn btn-default"> <b>Custom Meta Tags</b> </button>
+                    						</div>
+                    					</div>
+                    				</div>
+                    				<div class="integration-accounts">
+                    					<div class="integration-account">
+                    						<div class="wrapper">
+                    							<div class="container-fluid p-0">
+                    								<div>
+                    									<div class="border border-dashed border-gray rounded text-center p-3">No Meta Found</div>
+                    									<button class="btn btn-sm btn-outline-primary mt-2 px-4">Add Meta</button></div>
+                    									<div>
+                    										<div class="form-group text-right"><button class="btn btn-primary" type="button"><em class="material-icons mr-1">save</em>Save</button></div>
+                    									</div>
+                    								</div>
+                    							</div>
+                    						</div>
+                    					</div>
+                    				</div>
+                    		</div>
+                    	</div>
+                    </div>
+                </div>
+                <!-- /.content -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <div class="modal fade" id="modalAddGetResponse"  role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    GetResponse
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                	<div class="col-md-12">
+                                		<div class="text-center">
+                                			<p>How to Integrate</p>
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="row">
+                                	<iframe width="100%" height="315" src="https://www.youtube.com/embed/MGUFX0-2wU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="row">
+                                	<form>
+                                	<div class="col-md-12">
+                                		<div class="input-group input-group-sm">
+                                			<input type="text" class="form-control" placeholder="GetResponse API Key">
+                                			<span class="input-group-btn">
+                                				<button type="button" class="btn btn-info btn-flat">Integrate</button>
+                                			</span>
+                                		</div>
+                                	</div>
+                                	</form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="container">\
+                <strong>Copyright &copy; 2021 <a href="http://almsaeedstudio.com">Scula</a>.</strong> All rights reserved.
+            </div>
+            <!-- /.container -->
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery 2.2.3 -->
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="plugins/fastclick/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/app.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+</body>
+
+</html>
