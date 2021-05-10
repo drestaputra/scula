@@ -87,7 +87,7 @@ nav.navbar.navbar-static-top {
     box-shadow: inset 0 -4px 0 0 #f93f3f,0 2px 2px rgba(36,37,38,.08)!important;   
 }
 .btn.btn-product {
-    padding: 5px 10px;
+    padding: 5px 8px;
     margin-top: 8px;
 }
 .btn.btn-product:hover {
@@ -975,6 +975,11 @@ table tr:hover .row-actions {
     background-color: hsla(0,0%,40%,.1);
     font-weight: 600;
 }
+.navbar-nav>li>a {
+    /*padding-top: 10px!important;*/
+    padding-bottom: 10px;
+    line-height: 28px!important;
+}
 .navbar-nav > .user-menu > .dropdown-menu > .user-body{
     padding : 5px 0px;
 }
@@ -985,7 +990,7 @@ table tr:hover .row-actions {
     vertical-align: top;
 }
 .user-menu .dropdown-menu > li > a {
-    color: #777;
+    color: #777!important;
     padding: 13px 20px;
     font-weight: 400;
 }

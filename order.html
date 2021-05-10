@@ -11,15 +11,14 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bootstrap/css/custom1.css" />
     <!-- Font Awesome -->
-
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     
     <!-- Theme style -->
+    <link rel="stylesheet" type="text/css" href="plugins/select2/select2.css">
     <link rel="stylesheet" href="dist/css/AdminLTE.min.css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css" />
-    <link rel="stylesheet" type="text/css" href="plugins/select2/select2.css">
 
     <!-- daterange picker -->
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
@@ -27,180 +26,183 @@
     <link rel="stylesheet" href="plugins/datepicker/datepicker3.css" />
     <!-- alphine js -->
 
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css" />
 </head>
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
 
 <body class="hold-transition skin-blue layout-top-nav">
     <div class="wrapper">
         <header class="main-header">
-            <nav class="navbar navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <a href="#" class="navbar-brand"><b>Scula</b></a>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><span class="material-icons-outlined md-18"> horizontal_split</span></button>
-                    </div>
+      <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+              <a href="#" class="navbar-brand"><b>Scula</b></a>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="material-icons-outlined">horizontal_split</span>
+              </button>
+          </div>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="dashboard.html">Dashboard</a></li>
-                            <li><a href="products.html">Products</a></li>
-                            <li class="active"><a href="order.html">Order <span class="sr-only">(current)</span></a></li>
-                            <li><a href="http://backscula.organilife.id/">Funnels</a></li>
-                            <li><a href="contacts.html">Contacts</a></li>
-                            <li><a href="report.html">Reports</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="coupons.html">Coupons</a></li>
-                                    <li><a href="expenses.html">Expenses</a></li>
-                                    <li><a href="inventory.html">Inventory</a></li>
-                                    <li><a href="payments.html">Payments</a></li>
-                                    <li><a href="logistics.html">Logistics</a></li>
-                                    <li><a href="team-members.html">Team Members</a></li>
-                                </ul>
-                            </li>
-                            <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons-outlined md-18"> add</span> Add Product</a></li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                    <!-- Navbar Right Menu -->
-                    <div class="navbar-custom-menu">
-                        <ul class="nav navbar-nav">
-                            <!-- Messages: style can be found in dropdown.less-->
-                            <li class="dropdown messages-menu">
-                                <!-- Menu toggle button -->
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="material-icons md-18"> mail</span>
-                                    <span class="label label-success">4</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="header">You have 4 messages</li>
-                                    <li>
-                                        <!-- inner menu: contains the messages -->
-                                        <ul class="menu">
-                                            <li>
-                                                <!-- start message -->
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <!-- User Image -->
-                                                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
-                                                    </div>
-                                                    <!-- Message title and timestamp -->
-                                                    <h4>
-                                                        Support Team
-                                                        <small><span class="material-icons-outlined md-18">schedule</span> 5 mins</small>
-                                                    </h4>
-                                                    <!-- The message -->
-                                                    <p>Why not buy a new awesome theme?</p>
-                                                </a>
-                                            </li>
-                                            <!-- end message -->
-                                        </ul>
-                                        <!-- /.menu -->
-                                    </li>
-                                    <li class="footer"><a href="#">See All Messages</a></li>
-                                </ul>
-                            </li>
-                            <!-- /.messages-menu -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a></li>
+              <li><a href="products.html">Products</a></li>
+              <li class="active"><a href="order.html">Order</a></li>
+              <li><a href="http://backscula.organilife.id/">Funnels</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="report.html">Reports</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="coupons.html">Coupons</a></li>
+                  <li><a href="expenses.html">Expenses</a></li>
+                  <li><a href="inventory.html">Inventory</a></li>
+                  <li><a href="payments.html">Payments</a></li>
+                  <li><a href="logistics.html">Logistics</a></li>
+                  <li><a href="team-members.html">Team Members</a></li>
+                </ul>
+              </li>
+              <li class="line-height"><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <!-- Messages: style can be found in dropdown.less-->
+                <li class="dropdown messages-menu">
+                    <!-- Menu toggle button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="material-icons md-16">mail</span>
+                        <span class="label label-success">4</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">You have 4 messages</li>
+                        <li>
+                            <!-- inner menu: contains the messages -->
+                            <ul class="menu">
+                                <li>
+                                    <!-- start message -->
+                                    <a href="#">
+                                        <div class="pull-left">
+                                            <!-- User Image -->
+                                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                        </div>
+                                        <!-- Message title and timestamp -->
+                                        <h4>
+                                            Support Team
+                                            <small><span class="material-icons-outlined">schedule</span> 5 mins</small>
+                                        </h4>
+                                        <!-- The message -->
+                                        <p>Why not buy a new awesome theme?</p>
+                                    </a>
+                                </li>
+                                <!-- end message -->
+                            </ul>
+                            <!-- /.menu -->
+                        </li>
+                        <li class="footer"><a href="#">See All Messages</a></li>
+                    </ul>
+                </li>
+                <!-- /.messages-menu -->
+  
+                <!-- Notifications Menu -->
+                <li class="dropdown notifications-menu">
+                    <!-- Menu toggle button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="material-icons md-16">notifications</span>
+                        <span class="label label-warning">10</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">You have 10 notifications</li>
+                        <li>
+                            <!-- Inner Menu: contains the notifications -->
+                            <ul class="menu">
+                                <li>
+                                    <!-- start notification -->
+                                    <a href="#"> <span class="material-icons-outlined">person</span> 5 new members joined today </a>
+                                </li>
+                                <!-- end notification -->
+                            </ul>
+                        </li>
+                        <li class="footer"><a href="#">View all</a></li>
+                    </ul>
+                </li>
+                <!-- Tasks Menu -->
+                <li class="dropdown tasks-menu" style="display: none">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-flag-o"></i>
+                        <span class="label label-danger">9</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">You have 9 tasks</li>
+                        <li>
+                            <!-- Inner menu: contains the tasks -->
+                            <ul class="menu">
+                                <li>
+                                    <!-- Task item -->
+                                    <a href="#">
+                                        <!-- Task title and progress text -->
+                                        <h3>
+                                            Design some buttons
+                                            <small class="pull-right">20%</small>
+                                        </h3>
+                                        <!-- The progress bar -->
+                                        <div class="progress xs">
+                                            <!-- Change the css width attribute to simulate progress -->
+                                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="sr-only">20% Complete</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- end task item -->
+                            </ul>
+                        </li>
+                        <li class="footer">
+                            <a href="#">View all tasks</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- User Account Menu -->
+                <li class="dropdown user user-menu">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <!-- The user image in the navbar-->
+                        <i class="material-icons hidden-md">account_circle</i>
+                        <span class="hidden-xs">Alexander Pierce</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- The user image in the menu -->
+                        <li class="user-header text-left">
+                            <p>
+                                <strong>Yokayuga</strong> (OWNER)
+                                <small><a href="mailto:yokayuga@gmail.com" class="text-white">yokayuga@gmail.com</a></small>
+                            </p>
+                        </li>
+                        <!-- Menu Body -->
+                        <li class="">
+                            <a href="profile.html" class="dropdown-item"><i class="material-icons">account_circle</i><span>Profile</span></a>
+                            <a href="credit.html" class="dropdown-item"><i class="material-icons">account_balance_wallet</i><span>Credits</span></a>
+                            <a href="billings.html" class="dropdown-item"><i class="material-icons">payment</i><span>Billings</span></a>
+                            <a href="change-plan.html" class="dropdown-item"><i class="material-icons">local_offer</i>Change Plan</a>
+                            <a href="apps.html" class="dropdown-item"><i class="material-icons">extension</i>Apps</a>
+                            <a href="bonus.html" class="dropdown-item"><i class="material-icons">star</i>Bonuses</a>
+                            <a href="settings.html" class="dropdown-item"><i class="material-icons">settings</i>Settings</a>
+                            <a href="tutorials.html" target="_blank" class="dropdown-item"><i class="material-icons">dvr</i>Tutorials</a>
+                            <a class="dropdown-item"><i class="material-icons">power_settings_new</i>Sign Out</a>
 
-                            <!-- Notifications Menu -->
-                            <li class="dropdown notifications-menu">
-                                <!-- Menu toggle button -->
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="material-icons md-18"> notifications</span>
-                                    <span class="label label-warning"> 10</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="header">You have 10 notifications</li>
-                                    <li>
-                                        <!-- Inner Menu: contains the notifications -->
-                                        <ul class="menu">
-                                            <li>
-                                                <!-- start notification -->
-                                                <a href="#"> <span class="material-icons-outlined md-18"> person</span> 5 new members joined today </a>
-                                            </li>
-                                            <!-- end notification -->
-                                        </ul>
-                                    </li>
-                                    <li class="footer"><a href="#">View all</a></li>
-                                </ul>
-                            </li>
-                            <!-- Tasks Menu -->
-                            <li class="dropdown tasks-menu" style="display: none">
-                                <!-- Menu Toggle Button -->
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="material-icons-outlined md-18"> flag</span>
-                                    <span class="label label-danger">9</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="header">You have 9 tasks</li>
-                                    <li>
-                                        <!-- Inner menu: contains the tasks -->
-                                        <ul class="menu">
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <!-- Task title and progress text -->
-                                                    <h3>
-                                                        Design some buttons
-                                                        <small class="pull-right">20%</small>
-                                                    </h3>
-                                                    <!-- The progress bar -->
-                                                    <div class="progress xs">
-                                                        <!-- Change the css width attribute to simulate progress -->
-                                                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">20% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                        </ul>
-                                    </li>
-                                    <li class="footer">
-                                        <a href="#">View all tasks</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- User Account Menu -->
-                            <li class="dropdown user user-menu">
-                                <!-- Menu Toggle Button -->
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <!-- The user image in the navbar-->
-                                    <span class="hidden-xs">Alexander Pierce</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <!-- The user image in the menu -->
-                                    <li class="user-header text-left">
-                                        <p>
-                                            <strong>Yokayuga</strong> (OWNER)
-                                            <small><a href="mailto:yokayuga@gmail.com" class="text-white">yokayuga@gmail.com</a></small>
-                                        </p>
-                                    </li>
-                                    <!-- Menu Body -->
-                                    <li class="">
-                                        <a href="profile.html" class="dropdown-item"><i class="material-icons">account_circle</i><span>Profile</span></a>
-                                        <a href="credit.html" class="dropdown-item"><i class="material-icons">account_balance_wallet</i><span>Credits</span></a>
-                                        <a href="billings.html" class="dropdown-item"><i class="material-icons">payment</i><span>Billings</span></a>
-                                        <a href="change-plan.html" class="dropdown-item"><i class="material-icons">local_offer</i>Change Plan</a>
-                                        <a href="apps.html" class="dropdown-item"><i class="material-icons">extension</i>Apps</a>
-                                        <a href="bonus.html" class="dropdown-item"><i class="material-icons">star</i>Bonuses</a>
-                                        <a href="settings.html" class="dropdown-item"><i class="material-icons">settings</i>Settings</a>
-                                        <a href="tutorials.html" target="_blank" class="dropdown-item"><i class="material-icons">dvr</i>Tutorials</a>
-                                        <a class="dropdown-item"><i class="material-icons">power_settings_new</i>Sign Out</a>
-
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-custom-menu -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </header>
+                          </li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <!-- Navbar Right Menu -->
+                    
+          <!-- /.navbar-custom-menu -->
+        </div>
+          <!-- /.container-fluid -->
+      </nav>
+    </header>
         <!-- Full Width Column -->
         <div class="content-wrapper mt-50">
             <div class="container">
