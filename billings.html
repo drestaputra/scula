@@ -341,24 +341,77 @@
             <!-- /.box-body -->
           </div>
           <div class="modal fade" id="modalInvoice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">Withdraw</h4>
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-abu-abu">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel"><b>Billing Detail</b></h4>
+                </div>
+                <div class="modal-body p-0">
+                  <div class="invoice">
+                    <div class="invoice-header">
+                      <div class="invoice-image">
+                        <img src="dist/img/scula/logo.png" class="invoice-logo">
                       </div>
-                      <div class="modal-body">
-                        
+                      <div class="invoice-info text-right">
+                        <div class="invoice-title">Invoice #<span class="invoice__id">5415</span></div>
+                        <div class="invoice-date "><span>Date: </span><span class="invoice__date-value">02-05-2021</span></div>
+                        <div class="invoice-date"><span>Due Date: </span><span class="invoice__date-value">07-05-2021</span></div>
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"> Cancel </button>
-                        <button type="submit" class="btn btn-primary"> Submit</button>
+                    </div>
+                    <div class="invoice-body">
+                      <div class="invoice-customer">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <h4>indoistimewa.com</h4>
+                          </div>
+                          <div class="col-md-3 col-md-offset-6">
+                            <button class="btn order-status status-canceled pull-right">CANCELED</button>
+                          </div>
+                        </div>
+                        <p>08231312</p>
+                        <p>Ringinsari, Tamanmartani,Kalasan</p>
+                      </div>
+                      <div class="invoice-item table-responsive">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>Items</th>
+                              <th>Price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Subscription Plan Personal - (12 month(s))</td>
+                              <td><b>Rp1.490.000</b></td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td><b>Total</b></td>
+                              <td><b class="text-primary">Rp. 312.321</b></td>
+                            </tr>
+                          </tfoot>
+                        </table>
                       </div>
                     </div>
                   </div>
+                  <div class="invoice-footer">
+                    <p>Silahkan lakukan pembayaran atas invoice tersebut ke rekening berikut:</p>
+                    <h5><b>Bank: BCA</b></h5>
+                    <h5>No. Rek: <b>3219390</b></h5>
+                    <h5>Atas Nama: </h5>
+                  </div>
                 </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                  <button type="submit" class="btn btn-primary"> Download Invoice</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- </section> -->
         </div>
         <!-- /.content -->

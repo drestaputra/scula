@@ -382,7 +382,7 @@ nav.navbar.navbar-static-top {
     min-height: 310px;
 }
 .bg-abu-abu{
-    background: #f8fbff;
+    background: #e8e8e8;
 }
 @media (min-width: 1600px) and (min-width: 1400px){
     .container {
@@ -1017,4 +1017,28 @@ table tr:hover .row-actions {
 }
 .table-padding-15 th,.table-padding-15 td{
     padding: 15px!important;
+}
+.invoice-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.invoice-logo{
+    width: 100%;
+    max-width: 175px;
+    height: auto;
+}
+.invoice .invoice-info{
+    color: black;
+}
+.invoice .invoice-title{
+    font-size: 26px;
+    font-weight: 900;
+}
+.invoice-footer{
+    color: black;
+    padding: 20px 40px;
 }
