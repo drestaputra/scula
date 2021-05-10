@@ -737,6 +737,11 @@ table tr:hover .row-actions {
     background-color: #fff;
     border-radius: 3px;
 }
+.box-settings{
+    margin: auto;
+    /*margin-top: 3em;*/
+    max-width: 1000px;
+}
 .forms-overview {
     position: relative;
     padding-top: 2.2em;
