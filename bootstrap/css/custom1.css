@@ -842,6 +842,13 @@ table tr:hover .row-actions {
         border-bottom: 30px solid transparent;
         border-left: 23px solid #91eae4;
     }
+    .flex-group-button {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .mr-5 {
+        margin-right: 5px;
+    }
 }
 
 @media (max-width: 776px) {
