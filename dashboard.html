@@ -1721,63 +1721,23 @@
     barChart.Bar(barChartData, barChartOptions);
 
     $('#daterange-btn').daterangepicker({
-    "singleDatePicker": true,
-    "showDropdowns": true,
-    "showWeekNumbers": true,
-    "showISOWeekNumbers": true,
-    ranges: {
-        'Today': [moment(), moment()],
-        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-        'This Month': [moment().startOf('month'), moment().endOf('month')],
-        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-    },
-    "locale": {
-        "format": "MM/DD/YYYY",
-        "separator": " - ",
-        "applyLabel": "Apply",
-        "cancelLabel": "Cancel",
-        "fromLabel": "From",
-        "toLabel": "To",
-        "customRangeLabel": "Custom",
-        "weekLabel": "W",
-        "daysOfWeek": [
-            "Su",
-            "Mo",
-            "Tu",
-            "We",
-            "Th",
-            "Fr",
-            "Sa"
-        ],
-        "monthNames": [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"
-        ],
-        "firstDay": 1
-    },
-    "alwaysShowCalendars": true,
-    "startDate": "05/04/2021",
-    "endDate": "05/10/2021",
-    "opens": "left",
-    "drops": "auto"
-}, function(start, end, label) {
-
-    $("#daterange-btn .span-label").html(
-      start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
-    );
-});
+      ranges: {
+              'Today': [moment(), moment()],
+              'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+              'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+              'This Month': [moment().startOf('month'), moment().endOf('month')],
+              'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          "alwaysShowCalendars": true,
+          "startDate": "05/04/2021",
+          "endDate": "05/10/2021",
+          "opens": "center"
+      }, function(start, end, label) {
+        $("#daterange-btn .span-labelg").html(
+        start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+      );
+      });
   });
 </script>
 </body>
