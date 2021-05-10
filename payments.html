@@ -9,6 +9,7 @@
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap/css/custom1.css">
+  <link rel="stylesheet" href="bootstrap/css/customv2.css">
   <!-- Font Awesome -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
@@ -272,98 +273,19 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Filter Contact</h4>
+                <h4 class="modal-title" id="myModalLabel"><span class="material-icons-outlined md-18">filter_list</span> Filter Payments</h4>
               </div>
               <div class="modal-body">
                 <form>
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>Product</label>
+                        <label>Status</label>
                         <select class="form-control select2" style="width: 100%;">
-                          <option selected="selected">Select Product</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
+                          <option selected="selected">Select Status..</option>
+                          <option>Pending</option>
+                          <option>Processing</option>
                         </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="buyer" class="control-label">Buyer Status</label>
-                        <select class="form-control" id="buyer">
-                          <option value="" selected disabled>Buyer Status</option>
-                          <option>Show All</option>
-                          <option>Show Buyer Only</option>
-                          <option>Show Except Buyer</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="province" class="control-label">Province</label>
-                        <select class="form-control" id="province">
-                          <option value="" selected disabled>Customer Province</option>
-                          <option>Yogyakarta</option>
-                          <option>Jakarta</option>
-                          <option>Bali</option>
-                          <option>Bandung</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Last Contacted</label>
-                        <div class="input-group">
-                          <div class="input-group-addon">
-                            <i class="fa fa-calendar"></i>
-                          </div>
-                          <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="city" class="control-label">City</label>
-                        <select class="form-control" id="city">
-                          <option value="" selected disabled>Customer City</option>
-                          <option>Sleman</option>
-                          <option>Bantul</option>
-                          <option>Kulonprogo</option>
-                          <option>Gunungkidul</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label for="subdistrict" class="control-label">Subdistrict</label>
-                        <select class="form-control" id="subdistrict">
-                          <option value="" selected disabled>Customer Subdistrict</option>
-                          <option>Condongcatur</option>
-                          <option>Banguntapan</option>
-                          <option>Wates</option>
-                          <option>Wonosari</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="handled" class="control-label">Handled By</label>
-                        <select class="form-control" id="handled">
-                          <option value="" selected disabled>Select CS</option>
-                          <option>Condongcatur</option>
-                          <option>Banguntapan</option>
-                          <option>Wates</option>
-                          <option>Wonosari</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="tags-filter" class="control-label">Tags</label>
-                        <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" id="tags-filter">
                       </div>
                     </div>
                   </div>
@@ -378,432 +300,134 @@
           </div>
         </div>
         
-        <!-- Tabel -->
+        <!-- TABEL -->
         <div class="row">
           <div class="col-md-12">
             <div class="box">
               <!-- /.box-header -->
               <div class="box-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="example1" class="table table-bordered table-striped product">
                   <thead>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform(s)</th>
-                      <th>Engine version</th>
-                      <th>CSS grade</th>
+                      <th class="text-left"><input type="checkbox"></th>
+                      <th class="text-center"></th>
+                      <th class="text-left">Order ID</th>
+                      <th class="text-left">Account Name</th>
+                      <th class="text-left mobile-none">Transfer To</th>
+                      <th class="text-left mobile-none">Transfer Amount</th>
+                      <th class="text-left mobile-none">Transfer Date</th>
+                      <th class="text-left mobile-none">Transfer Receipt</th>
+                      <th class="text-left mobile-none">Processed By</th>
+                      <th class="text-left mobile-none">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 4.0
+                      <td class="text-left"><input type="checkbox"></td>
+                      <td class="text-center" style="width: 5%;">
+                        <a href="product-detail.html" data-toggle="tooltip" data-placement="top" title="Suratprofit">
+                          <img src="dist/img/scula/suratprofit.png" class="payment-product-image">
+                        </a>
+                    </td>
+                      <td class="text-left">
+                        <button type="button" class="no-button" data-toggle="modal" data-target="#modalOrderDetail">
+                          <b>#38296794</b>
+                        </button>
                       </td>
-                      <td>Win 95+</td>
-                      <td> 4</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 5.0
+
+                      <td class="text-left">
+                        Syaiful alam
                       </td>
-                      <td>Win 95+</td>
-                      <td>5</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 5.5
+                      <td class="text-left mobile-none">
+                        BCA - Rizhan - 7880768942
                       </td>
-                      <td>Win 95+</td>
-                      <td>5.5</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 6
+                      <td class="text-left mobile-none">
+                        Rp497.000
                       </td>
-                      <td>Win 98+</td>
-                      <td>6</td>
-                      <td>A</td>
+                      <td class="text-left mobile-none">
+                        24-04-2021
+                      </td>
+                      <td class="text-left mobile-none">
+                        <a href="">
+                          <img src="dist/img/scula/suratprofit.png" class="payment-product-image">
+                        </a>
+                      </td>
+                      <td class="text-left mobile-none">
+                        
+                      </td>
+                      <td class="text-left mobile-none">
+                        
+                      </td>
                     </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet Explorer 7</td>
-                      <td>Win XP SP2+</td>
-                      <td>7</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>AOL browser (AOL desktop)</td>
-                      <td>Win XP</td>
-                      <td>6</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 1.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 1.5</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 2.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 3.0</td>
-                      <td>Win 2k+ / OSX.3+</td>
-                      <td>1.9</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Camino 1.0</td>
-                      <td>OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Camino 1.5</td>
-                      <td>OSX.3+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Netscape 7.2</td>
-                      <td>Win 95+ / Mac OS 8.6-9.2</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Netscape Browser 8</td>
-                      <td>Win 98SE+</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Netscape Navigator 9</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.0</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.1</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.1</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.2</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.2</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.3</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.3</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.4</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.4</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.5</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.5</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.6</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>1.6</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.7</td>
-                      <td>Win 98+ / OSX.1+</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Mozilla 1.8</td>
-                      <td>Win 98+ / OSX.1+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Seamonkey 1.1</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Epiphany 2.20</td>
-                      <td>Gnome</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>Safari 1.2</td>
-                      <td>OSX.3</td>
-                      <td>125.5</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>Safari 1.3</td>
-                      <td>OSX.3</td>
-                      <td>312.8</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>Safari 2.0</td>
-                      <td>OSX.4+</td>
-                      <td>419.3</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>Safari 3.0</td>
-                      <td>OSX.4+</td>
-                      <td>522.1</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>OmniWeb 5.5</td>
-                      <td>OSX.4+</td>
-                      <td>420</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>iPod Touch / iPhone</td>
-                      <td>iPod</td>
-                      <td>420.1</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Webkit</td>
-                      <td>S60</td>
-                      <td>S60</td>
-                      <td>413</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 7.0</td>
-                      <td>Win 95+ / OSX.1+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 7.5</td>
-                      <td>Win 95+ / OSX.2+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 8.0</td>
-                      <td>Win 95+ / OSX.2+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 8.5</td>
-                      <td>Win 95+ / OSX.2+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 9.0</td>
-                      <td>Win 95+ / OSX.3+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 9.2</td>
-                      <td>Win 88+ / OSX.3+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 9.5</td>
-                      <td>Win 88+ / OSX.3+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera for Wii</td>
-                      <td>Wii</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Nokia N800</td>
-                      <td>N800</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Nintendo DS browser</td>
-                      <td>Nintendo DS</td>
-                      <td>8.5</td>
-                      <td>C/A<sup>1</sup></td>
-                    </tr>
-                    <tr>
-                      <td>KHTML</td>
-                      <td>Konqureror 3.1</td>
-                      <td>KDE 3.1</td>
-                      <td>3.1</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>KHTML</td>
-                      <td>Konqureror 3.3</td>
-                      <td>KDE 3.3</td>
-                      <td>3.3</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>KHTML</td>
-                      <td>Konqureror 3.5</td>
-                      <td>KDE 3.5</td>
-                      <td>3.5</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Tasman</td>
-                      <td>Internet Explorer 4.5</td>
-                      <td>Mac OS 8-9</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Tasman</td>
-                      <td>Internet Explorer 5.1</td>
-                      <td>Mac OS 7.6-9</td>
-                      <td>1</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Tasman</td>
-                      <td>Internet Explorer 5.2</td>
-                      <td>Mac OS 8-X</td>
-                      <td>1</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>NetFront 3.1</td>
-                      <td>Embedded devices</td>
-                      <td>-</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>NetFront 3.4</td>
-                      <td>Embedded devices</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>Dillo 0.8</td>
-                      <td>Embedded devices</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>Links</td>
-                      <td>Text only</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>Lynx</td>
-                      <td>Text only</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>IE Mobile</td>
-                      <td>Windows Mobile 6</td>
-                      <td>-</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>PSP browser</td>
-                      <td>PSP</td>
-                      <td>-</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Other browsers</td>
-                      <td>All others</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>U</td>
-                    </tr>
+
                   </tbody>
                 </table>
+              </div>
+
+              <!-- Modal Order Detail-->
+              <div class="modal fade" id="modalOrderDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Order Detail</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="invoice-header">
+                        <div class="invoice-image">
+                          <img src="dist/img/scula/logo.png" width="45" alt="">
+                        </div>
+                        <div class="invoive-info">
+                          <div class="invoice-title">
+                            Invoice #76549952
+                          </div>
+                          <span class="text-uppercaser">(COMPLETED)</span> Order Date: 18-04-2021
+                        </div>
+                      </div>
+
+                      <div class="invoice-customer">
+                        <div class="invoice-customer-top">
+                          <div class="customer-name">
+                            Syaiful Alam
+                          </div>
+                          <div class="invoice-status">
+                            PAID
+                          </div>
+                        </div>
+                        <div class="mb-10">
+                          <span class="material-icons-outlined md-18">mail</span> <a href="mailto: syalam_1309@yahoo.co.id">syalam_1309@yahoo.co.id</a>
+                        </div>
+                        <div class="mb-10">
+                          <span class="material-icons-outlined md-18">phone</span> +6285883345380
+                        </div>
+                        <div class="mb-10">
+                          <span class="material-icons-outlined md-18">home</span> Yogyakarta
+                        </div>
+                      </div>
+
+                      <div class="incoive-items">
+                        <div class="invoice-item-header">
+                          <div>Items</div>
+                          <div>Price</div>
+                        </div>
+                        <div class="invoice-item-list">
+                          <div><a href="product-detail.html">Suratprofit</a></div>
+                          <div class="font-weight-bold">Rp497.000</div>
+                        </div>
+                      </div>
+
+                      <div class="invoice-footer">
+                        <div class="invoice-total">
+                          <div class="invoice-total-label">Total</div>
+                          <div class="invoice-total-price">Rp497.000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- /.box-body -->
             </div>
