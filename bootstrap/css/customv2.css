@@ -177,7 +177,7 @@ input:checked + .switch-slider:before {
     border-radius: 3px;
     -webkit-box-shadow: rgb(0 0 0 / 10%) 0 1px 3px 0, rgb(0 0 0 / 6%) 0 1px 2px 0;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
-    min-height: 190px;
+    /* min-height: 190px; */
 }
 .profile-content {
     padding: 2em;
