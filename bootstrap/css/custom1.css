@@ -631,6 +631,12 @@ table tr:hover .row-actions {
     padding: 30px;
     text-align: center;
 }
+.sms-gateway-2 {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fff;
+}
 
 /* PAGE BUILDER */
 .font-weight-thin {
