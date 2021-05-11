@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Payment Confirmation Page | Toko Ghoib</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/custom1.css" />
+    <link rel="stylesheet" href="bootstrap/css/customv2.css" />
+    <!-- bootstrap slider -->
+    <link rel="stylesheet" href="plugins/bootstrap-slider/slider.css">
+    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+    folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css" />
+    <!-- Tags Input -->
+    <link rel="stylesheet" href="plugins/tags-input/bootstrap-tagsinput.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css" />
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+
+<body class="hold-transition skin-blue layout-top-nav">
+    <div class="wrapper">
+        <header class="main-header">
+            <nav class="navbar navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand"><b>Scula</b></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="order.html">Order</a></li>
+                            <li><a href="http://backscula.organilife.id/">Funnels</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="report.html">Reports</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                <li><a href="coupons.html">Coupons</a></li>
+                                <li><a href="expenses.html">Expenses</a></li>
+                                <li><a href="inventory.html">Inventory</a></li>
+                                <li><a href="payments.html">Payments</a></li>
+                                <li><a href="logistics.html">Logistics</a></li>
+                                <li><a href="team-members.html">Team Members</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="add-product.html" class="btn btn-sm btn-warning btn-product"><span class="material-icons md-18">add</span> Add Product</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <!-- Navbar Right Menu -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- Messages: style can be found in dropdown.less-->
+                            <li class="dropdown messages-menu">
+                                <!-- Menu toggle button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="material-icons md-16">mail</span>
+                                    <span class="label label-success">4</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">You have 4 messages</li>
+                                    <li>
+                                        <!-- inner menu: contains the messages -->
+                                        <ul class="menu">
+                                            <li>
+                                                <!-- start message -->
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <!-- User Image -->
+                                                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                                    </div>
+                                                    <!-- Message title and timestamp -->
+                                                    <h4>
+                                                        Support Team
+                                                        <small><span class="material-icons-outlined">schedule</span> 5 mins</small>
+                                                    </h4>
+                                                    <!-- The message -->
+                                                    <p>Why not buy a new awesome theme?</p>
+                                                </a>
+                                            </li>
+                                            <!-- end message -->
+                                        </ul>
+                                        <!-- /.menu -->
+                                    </li>
+                                    <li class="footer"><a href="#">See All Messages</a></li>
+                                </ul>
+                            </li>
+                            <!-- /.messages-menu -->
+              
+                            <!-- Notifications Menu -->
+                            <li class="dropdown notifications-menu">
+                                <!-- Menu toggle button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="material-icons md-16">notifications</span>
+                                    <span class="label label-warning">10</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">You have 10 notifications</li>
+                                    <li>
+                                        <!-- Inner Menu: contains the notifications -->
+                                        <ul class="menu">
+                                            <li>
+                                                <!-- start notification -->
+                                                <a href="#"> <span class="material-icons-outlined">person</span> 5 new members joined today </a>
+                                            </li>
+                                            <!-- end notification -->
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#">View all</a></li>
+                                </ul>
+                            </li>
+                            <!-- Tasks Menu -->
+                            <li class="dropdown tasks-menu" style="display: none">
+                                <!-- Menu Toggle Button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-flag-o"></i>
+                                    <span class="label label-danger">9</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">You have 9 tasks</li>
+                                    <li>
+                                        <!-- Inner menu: contains the tasks -->
+                                        <ul class="menu">
+                                            <li>
+                                                <!-- Task item -->
+                                                <a href="#">
+                                                    <!-- Task title and progress text -->
+                                                    <h3>
+                                                        Design some buttons
+                                                        <small class="pull-right">20%</small>
+                                                    </h3>
+                                                    <!-- The progress bar -->
+                                                    <div class="progress xs">
+                                                        <!-- Change the css width attribute to simulate progress -->
+                                                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">20% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end task item -->
+                                        </ul>
+                                    </li>
+                                    <li class="footer">
+                                        <a href="#">View all tasks</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- User Account Menu -->
+                            <li class="dropdown user user-menu">
+                                <!-- Menu Toggle Button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <!-- The user image in the navbar-->
+                                    <i class="material-icons hidden-md">account_circle</i>
+                                    <span class="hidden-xs">Alexander Pierce</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- The user image in the menu -->
+                                    <li class="user-header text-left">
+                                        <p>
+                                            <strong>Yokayuga</strong> (OWNER)
+                                            <small><a href="mailto:yokayuga@gmail.com" class="text-white">yokayuga@gmail.com</a></small>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Body -->
+                                    <li class="">
+                                        <a href="profile.html" class="dropdown-item"><i class="material-icons">account_circle</i><span>Profile</span></a>
+                                        <a href="credit.html" class="dropdown-item"><i class="material-icons">account_balance_wallet</i><span>Credits</span></a>
+                                        <a href="billings.html" class="dropdown-item"><i class="material-icons">payment</i><span>Billings</span></a>
+                                        <a href="change-plan.html" class="dropdown-item"><i class="material-icons">local_offer</i>Change Plan</a>
+                                        <a href="apps.html" class="dropdown-item"><i class="material-icons">extension</i>Apps</a>
+                                        <a href="bonus.html" class="dropdown-item"><i class="material-icons">star</i>Bonuses</a>
+                                        <a href="settings.html" class="dropdown-item"><i class="material-icons">settings</i>Settings</a>
+                                        <a href="tutorials.html" target="_blank" class="dropdown-item"><i class="material-icons">dvr</i>Tutorials</a>
+                                        <a class="dropdown-item"><i class="material-icons">power_settings_new</i>Sign Out</a>
+            
+                                      </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-custom-menu -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!-- Full Width Column -->
+        <div class="content-wrapper">
+            <div class="container">
+                <!-- Content Header (Page header) -->
+                <section class="content-detail">
+                    <a href="payments.html"><span class="material-icons-outlined md-18">arrow_back_ios</span> Back to List</a>
+                    <div class="row mb-20">
+                        <div class="col-md-12 btn-group-modal">
+                            <h1 class="mt-0 judul-halaman">Payment Confirmation Page</h1>
+                        </div>
+                    </div>
+
+                    <div class="row mt-20">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header"><span class="material-icons-outlined md-20 text-orange">reorder</span> Requested Fields</div>
+                                <div class="card-body">
+                                    <table>
+                                        <!-- Order ID -->
+                                        <tr>
+                                            <td>
+                                                <div class="form-group mb-0">
+                                                
+                                                </div>
+                                            </td>
+                                            <td style="width: 100%;">
+                                                <div class="card-panel-2">
+                                                    <label class="mb-0">Order ID <span class="text-red">*</span></label>
+                                                    <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalOrderId" data-toggle="tooltip" data-placement="top" title="Field Config">
+                                                        <span class="material-icons-outlined md-16">settings</span>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="modalOrderId" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Label</label>
+                                                                        <input type="text" class="form-control" value="Order Id">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Placeholder</label>
+                                                                        <input type="text" class="form-control" value="No. Pesanan">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="display:flex;padding: 6px 0">
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_less</span></button>
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_more</span></button>
+                                            </td>
+                                        </tr>
+                                        <!-- Atas Nama Rekening -->
+                                        <tr>
+                                            <td>
+                                                <div class="form-group mb-0">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="width: 100%;">
+                                                <div class="card-panel-2">
+                                                    <label class="mb-0">Atas Nama Rekening <span class="text-red">*</span></label>
+                                                    <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalRekening" data-toggle="tooltip" data-placement="top" title="Field Config">
+                                                        <span class="material-icons-outlined md-16">settings</span>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="modalRekening" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Required</label>
+                                                                        <select class="form-control" >
+                                                                            <option value="" selected disabled>Options</option>
+                                                                            <option>Yes (Required)</option>
+                                                                            <option>No</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Label</label>
+                                                                        <input type="text" class="form-control" value="Atas Nama Rekening">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Placeholder</label>
+                                                                        <input type="text" class="form-control" value="Pemilik Rekening">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="display:flex;padding: 6px 0">
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_less</span></button>
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_more</span></button>
+                                            </td>
+                                        </tr>
+                                        <!-- Transfer ke -->
+                                        <tr>
+                                            <td>
+                                                <div class="form-group mb-0">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                        <input type="checkbox">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="width: 100%;">
+                                                <div class="card-panel-2">
+                                                    <label class="mb-0">Transfer ke <span class="text-red">*</span></label>
+                                                    <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalTransferke"><span class="material-icons-outlined md-16">settings</span></button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="modalTransferke" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Required</label>
+                                                                        <select class="form-control" id="required">
+                                                                            <option value="" selected disabled>Options</option>
+                                                                            <option>Yes (Required)</option>
+                                                                            <option>No</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Label</label>
+                                                                        <input type="text" class="form-control" value="">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Placeholder</label>
+                                                                        <input type="text" class="form-control" value="Transfer ke">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="display:flex;padding: 6px 0">
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_less</span></button>
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_more</span></button>
+                                            </td>
+                                        </tr>
+                                        <!-- Tanggal Transfer -->
+                                        <tr>
+                                            <td>
+                                                <div class="form-group mb-0">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                        <input type="checkbox">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="width: 100%;">
+                                                <div class="card-panel-2">
+                                                    <label class="mb-0">Tanggal Transfer <span class="text-red">*</span></label>
+                                                    <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalTglTransfer" data-toggle="tooltip" data-placement="top" title="Field Config">
+                                                        <span class="material-icons-outlined md-16">settings</span>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="modalTglTransfer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Required</label>
+                                                                        <select class="form-control" id="required">
+                                                                            <option value="" selected disabled>Options</option>
+                                                                            <option>No</option>
+                                                                            <option>Yes (Required)</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Label</label>
+                                                                        <input type="text" class="form-control" value="Tanggal Transfer">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Placeholder</label>
+                                                                        <input type="text" class="form-control" value="Tanggal Transfer">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="display:flex;padding: 6px 0">
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_less</span></button>
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_more</span></button>
+                                            </td>
+                                        </tr>
+                                        <!-- Jumlah Transfer -->
+                                        <tr>
+                                            <td>
+                                                <div class="form-group mb-0">
+                                                    
+                                                </div>
+                                            </td>
+                                            <td style="width: 100%;">
+                                                <div class="card-panel-2">
+                                                    <label class="mb-0">Jumlah Transfer <span class="text-red">*</span></label>
+                                                    <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalJumlahTransfer" data-toggle="tooltip" data-placement="top" title="Field Config">
+                                                        <span class="material-icons-outlined md-16">settings</span>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="modalJumlahTransfer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Label</label>
+                                                                        <input type="text" class="form-control" value="Jumlah Transfer">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Placeholder</label>
+                                                                        <input type="text" class="form-control" value="Contoh =>  10000" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="display:flex;padding: 6px 0">
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_less</span></button>
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_more</span></button>
+                                            </td>
+                                        </tr>
+                                        <!-- Bukti Transfer -->
+                                        <tr>
+                                            <td>
+                                                <div class="form-group mb-0">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                        <input type="checkbox">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="width: 100%;">
+                                                <div class="card-panel-2">
+                                                    <label class="mb-0">Bukti Transfer <span class="text-red">*</span></label>
+                                                    <button type="button" class="no-button" style="float: right;" data-toggle="modal" data-target="#modalAlamat" data-toggle="tooltip" data-placement="top" title="Field Config">
+                                                        <span class="material-icons-outlined md-16">settings</span>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="modalAlamat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Required</label>
+                                                                        <select class="form-control" id="required">
+                                                                            <option value="" selected disabled>Options</option>
+                                                                            <option>Yes (Required)</option>
+                                                                            <option>No</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Label</label>
+                                                                        <input type="text" class="form-control" value="Bukti Transfer">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Placeholder</label>
+                                                                        <input type="text" class="form-control" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="display:flex;padding: 6px 0">
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_less</span></button>
+                                                <button type="button" class="btn btn-default btn-sm"><span class="material-icons-outlined md-16">expand_more</span></button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="card mt-20">
+                                <div class="card-header"><span class="material-icons-outlined md-20 text-orange">reorder</span> Payment Confirmation Success Content</div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <textarea class="textarea-description" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mt-20">
+                                <div class="card-header"><span class="material-icons-outlined md-20 text-orange">polymer</span> Toko Ghoib Logo</div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <div class="switch-flex">
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="switch-slider round"></span>
+                                            </label>
+                                            <span class="show-product"> Show product in Storefront</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" id="form-tracking">
+                                <div class="card-header"><span class="material-icons-outlined md-20 text-orange">code</span> Payment Confirmation Tracking</div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label class="control-label font-weight-thin">Facebook Pixel</label>
+                                        <table style="width: 100%;">
+                                            <!-- 082762343856435893 -->
+                                            <tr>
+                                                <td style="width: 100%;">
+                                                    <div class="card-panel-2">
+                                                        <label class="mb-0 font-weight-thin">082762343856435893</label>
+                                                        <div style="float: right;">
+                                                            <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td style="width: 100%;">
+                                                    <div class="card-panel-2">
+                                                        <label class="mb-0 font-weight-thin">082762343856435893</label>
+                                                        <div style="float: right;">
+                                                            <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="control-label font-weight-thin">Pixel IDs</label>
+                                        <select class="form-control" >
+                                            <option value="" selected disabled>Input or Select Pixel ID</option>
+                                            <option>082762343856435893</option>
+                                            <option>485853458934659</option>
+                                            <option>328946329462394</option>
+                                            <option>343849328462923489</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="control-label font-weight-thin">Pixel Events</label>
+                                        <table style="width: 100%;">
+                                            <!-- ViewContent -->
+                                            <tr>
+                                                <td style="width: 100%;">
+                                                    <div class="card-panel-2">
+                                                        <label class="mb-0 font-weight-thin">ViewContent</label>
+                                                        <div style="float: right;">
+                                                            <button type="button" class="no-button" data-toggle="modal" data-target="#modalView"><span class="material-icons-outlined md-16">settings</span></button>
+                                                            <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                        </div>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="modalView" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                        <h4 class="modal-title" id="myModalLabel">Pixel Event Settings</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <label class="control-label font-weight-thin">Event:</label>
+                                                                        <table style="width: 100%;">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="value" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="currency" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <input type="text" class="form-control" value="" placeholder="Param Value">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="content_name" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="content_category" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                    
+                                                                        <div class="form-group mt-20">
+                                                                            <label class="control-label font-weight-thin">Add More Parameter</label>
+                                                                            <select class="form-control" >
+                                                                                <option value="" selected disabled>Select or type to add new param</option>
+                                                                                <option>value</option>
+                                                                                <option>currency</option>
+                                                                                <option>content_name</option>
+                                                                                <option>content_category</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                                        <button type="button" class="btn btn-primary">Save</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td style="width: 100%;">
+                                                    <div class="card-panel-2">
+                                                        <label class="mb-0 font-weight-thin">AddToWishlist</label>
+                                                        <div style="float: right;">
+                                                            <button type="button" class="no-button" data-toggle="modal" data-target="#modalAddToWishlist"><span class="material-icons-outlined md-16">settings</span></button>
+                                                            <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                        </div>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="modalAddToWishlist" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                        <h4 class="modal-title" id="myModalLabel">Pixel Event Settings</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <label class="control-label font-weight-thin">Event:</label>
+                                                                        <table style="width: 100%;">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="value" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="currency" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <input type="text" class="form-control" value="" placeholder="Param Value">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="content_name" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="content_category" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                    
+                                                                        <div class="form-group mt-20">
+                                                                            <label class="control-label font-weight-thin">Add More Parameter</label>
+                                                                            <select class="form-control" >
+                                                                                <option value="" selected disabled>Select or type to add new param</option>
+                                                                                <option>value</option>
+                                                                                <option>currency</option>
+                                                                                <option>content_name</option>
+                                                                                <option>content_category</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                                        <button type="button" class="btn btn-primary">Save</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                    
+                                    <div class="form-group">
+                                        <select class="form-control" >
+                                            <option value="" selected disabled>Input or Select Pixel Events</option>
+                                            <option>Add Payment Info</option>
+                                            <option>Add To Cart</option>
+                                            <option>Add To Whislist</option>
+                                            <option>Lead</option>
+                                        </select>
+                                    </div>
+                    
+                                    <label class="control-label">Google Tag Manager</label>
+                                    <br>
+                                    <label class="control-label font-weight-thin">GTM IDs</label>
+                                    <tr>
+                                        <td style="width: 100%;">
+                                            <div class="card-panel-2">
+                                                <label class="mb-0 font-weight-thin">GTM-M6VTWFM</label>
+                                                <div style="float: right;">
+                                                    <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 100%;">
+                                            <div class="card-panel-2">
+                                                <label class="mb-0 font-weight-thin">GTM-M6VTWFM</label>
+                                                <div style="float: right;">
+                                                    <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                    
+                                    <div class="form-group mt-20">
+                                        <select class="form-control" >
+                                            <option value="" selected disabled>Input or Select GTM ID</option>
+                                            <option>GTM-MMHGFU</option>
+                                            <option>GTM-MMHGFU</option>
+                                            <option>GTM-MMHGFU</option>
+                                            <option>GTM-MMHGFU</option>
+                                        </select>
+                                    </div>
+                    
+                                    <label class="control-label">TikTok Pixel</label>
+                                    <br>
+                                    <label class="control-label font-weight-thin">TikTok Pixel IDs</label>
+                                    <tr>
+                                        <td style="width: 100%;">
+                                            <div class="card-panel-2">
+                                                <label class="mb-0 font-weight-thin">Tiktok</label>
+                                                <div style="float: right;">
+                                                    <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                    
+                                    <div class="form-group mt-20">
+                                        <select class="form-control" >
+                                            <option value="" selected disabled>Input or Tiktok Pixel ID</option>
+                                            <option>Tiktok</option>
+                                            <option>Tiktok</option>
+                                            <option>Tiktok</option>
+                                            <option>Tiktok</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-20" id="succes-tracking">
+                                <div class="card-header"><span class="material-icons-outlined md-20 text-orange">code</span> Payment Confirmation Success Tracking</div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label class="control-label font-weight-thin">Facebook Pixel</label>
+                                        <table style="width: 100%;">
+                                            <!-- 082762343856435893 -->
+                                            <tr>
+                                                <td style="width: 100%;">
+                                                    <div class="card-panel-2">
+                                                        <label class="mb-0 font-weight-thin">082762343856435893</label>
+                                                        <div style="float: right;">
+                                                            <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td style="width: 100%;">
+                                                    <div class="card-panel-2">
+                                                        <label class="mb-0 font-weight-thin">082762343856435893</label>
+                                                        <div style="float: right;">
+                                                            <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="control-label font-weight-thin">Pixel IDs</label>
+                                        <select class="form-control" >
+                                            <option value="" selected disabled>Input or Select Pixel ID</option>
+                                            <option>082762343856435893</option>
+                                            <option>485853458934659</option>
+                                            <option>328946329462394</option>
+                                            <option>343849328462923489</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="control-label font-weight-thin">Pixel Events</label>
+                                        <table style="width: 100%;">
+                                            <!-- ViewContent -->
+                                            <tr>
+                                                <td style="width: 100%;">
+                                                    <div class="card-panel-2">
+                                                        <label class="mb-0 font-weight-thin">ViewContent</label>
+                                                        <div style="float: right;">
+                                                            <button type="button" class="no-button" data-toggle="modal" data-target="#modalView"><span class="material-icons-outlined md-16">settings</span></button>
+                                                            <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                        </div>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="modalView" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                        <h4 class="modal-title" id="myModalLabel">Pixel Event Settings</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <label class="control-label font-weight-thin">Event:</label>
+                                                                        <table style="width: 100%;">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="value" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="currency" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <input type="text" class="form-control" value="" placeholder="Param Value">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="content_name" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="content_category" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                    
+                                                                        <div class="form-group mt-20">
+                                                                            <label class="control-label font-weight-thin">Add More Parameter</label>
+                                                                            <select class="form-control" >
+                                                                                <option value="" selected disabled>Select or type to add new param</option>
+                                                                                <option>value</option>
+                                                                                <option>currency</option>
+                                                                                <option>content_name</option>
+                                                                                <option>content_category</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                                        <button type="button" class="btn btn-primary">Save</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td style="width: 100%;">
+                                                    <div class="card-panel-2">
+                                                        <label class="mb-0 font-weight-thin">AddToWishlist</label>
+                                                        <div style="float: right;">
+                                                            <button type="button" class="no-button" data-toggle="modal" data-target="#modalAddToWishlist"><span class="material-icons-outlined md-16">settings</span></button>
+                                                            <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                        </div>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="modalAddToWishlist" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                        <h4 class="modal-title" id="myModalLabel">Pixel Event Settings</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <label class="control-label font-weight-thin">Event:</label>
+                                                                        <table style="width: 100%;">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="value" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="currency" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <input type="text" class="form-control" value="" placeholder="Param Value">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="content_name" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                        
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="text" class="form-control" value="content_category" disabled>
+                                                                                </td>
+                                                                                <td style="padding: 5px;">
+                                                                                    <select class="form-control" >
+                                                                                        <option value="" selected disabled>Param Value</option>
+                                                                                        <option>{{total_price}}</option>
+                                                                                        <option>{{product_price}}</option>
+                                                                                        <option>{{product_name}}</option>
+                                                                                        <option>{{product_category_full}}</option>
+                                                                                    </select>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-default"><span class="material-icons-outlined md-16">delete</span></button>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                    
+                                                                        <div class="form-group mt-20">
+                                                                            <label class="control-label font-weight-thin">Add More Parameter</label>
+                                                                            <select class="form-control" >
+                                                                                <option value="" selected disabled>Select or type to add new param</option>
+                                                                                <option>value</option>
+                                                                                <option>currency</option>
+                                                                                <option>content_name</option>
+                                                                                <option>content_category</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                                        <button type="button" class="btn btn-primary">Save</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                    
+                                    <div class="form-group">
+                                        <select class="form-control" >
+                                            <option value="" selected disabled>Input or Select Pixel Events</option>
+                                            <option>Add Payment Info</option>
+                                            <option>Add To Cart</option>
+                                            <option>Add To Whislist</option>
+                                            <option>Lead</option>
+                                        </select>
+                                    </div>
+                    
+                                    <label class="control-label">Google Tag Manager</label>
+                                    <br>
+                                    <label class="control-label font-weight-thin">GTM IDs</label>
+                                    <tr>
+                                        <td style="width: 100%;">
+                                            <div class="card-panel-2">
+                                                <label class="mb-0 font-weight-thin">GTM-M6VTWFM</label>
+                                                <div style="float: right;">
+                                                    <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 100%;">
+                                            <div class="card-panel-2">
+                                                <label class="mb-0 font-weight-thin">GTM-M6VTWFM</label>
+                                                <div style="float: right;">
+                                                    <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                    
+                                    <div class="form-group mt-20">
+                                        <select class="form-control" >
+                                            <option value="" selected disabled>Input or Select GTM ID</option>
+                                            <option>GTM-MMHGFU</option>
+                                            <option>GTM-MMHGFU</option>
+                                            <option>GTM-MMHGFU</option>
+                                            <option>GTM-MMHGFU</option>
+                                        </select>
+                                    </div>
+                    
+                                    <label class="control-label">TikTok Pixel</label>
+                                    <br>
+                                    <label class="control-label font-weight-thin">TikTok Pixel IDs</label>
+                                    <tr>
+                                        <td style="width: 100%;">
+                                            <div class="card-panel-2">
+                                                <label class="mb-0 font-weight-thin">Tiktok</label>
+                                                <div style="float: right;">
+                                                    <button class="no-button" type="button"><span class="material-icons-outlined md-18">highlight_off</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                    
+                                    <div class="form-group mt-20">
+                                        <select class="form-control" >
+                                            <option value="" selected disabled>Input or Tiktok Pixel ID</option>
+                                            <option>Tiktok</option>
+                                            <option>Tiktok</option>
+                                            <option>Tiktok</option>
+                                            <option>Tiktok</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <!-- /.container -->
+        <!-- </div> -->
+
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="container">
+                <strong>Copyright &copy; 2021 <a href="http://almsaeedstudio.com">Scula</a>.</strong> All rights reserved.
+            </div>
+            <!-- /.container -->
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery 2.2.3 -->
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="plugins/fastclick/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/app.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- Tags Input -->
+    <script src="plugins/tags-input/bootstrap-tagsinput.js"></script>
+    <!-- Bootstrap slider -->
+    <script src="plugins/bootstrap-slider/bootstrap-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <!-- DataTables -->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable();
+        });
+    </script>
+    <script>
+        $(function() {
+            $('#ex1').slider({
+                formatter: function(value) {
+                    return 'Current value: ' + value;
+                }
+            });
+            $('#ex2').slider({
+                formatter: function(value) {
+                    return 'Current value: ' + value;
+                }
+            });
+            $('#ex3').slider({
+                formatter: function(value) {
+                    return 'Current value: ' + value;
+                }
+            });
+                
+            //bootstrap WYSIHTML5 - text editor
+            $(".textarea-description").wysihtml5();
+        });
+    </script>
+</body>
+
+</html>
