@@ -1590,6 +1590,7 @@
 <script src="plugins/daterangepicker/daterangepicker.js"></script>
 <script>
 var ctx = document.getElementById('myChart').getContext('2d');
+$("#myChart").css("height",320);
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -1629,6 +1630,7 @@ var myChart = new Chart(ctx, {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
         scales: {
             y: {
                 beginAtZero: true
@@ -1637,6 +1639,7 @@ var myChart = new Chart(ctx, {
     }
 });
 var bChart = document.getElementById('barChart').getContext('2d');
+$("#barChart").css("height",320);
 var myBChart = new Chart(bChart, {
     type: 'bar',
     data: {

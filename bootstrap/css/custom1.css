@@ -499,6 +499,10 @@ legend table th,legend table td{
     background: #e5e5e5;
     color: #777;
 }
+.order-status.status-primary{
+    background: #0098da;
+    color: white;
+}
 .text-grey {
     color: #bbbfca;
 }
@@ -1184,4 +1188,23 @@ fieldset[disabled] .btn-warning-gradient.focus {
 }
 .integration-item .container-fluid.p-0{
     width: 100%;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    position: relative;
+    display: inline-block;
+    padding: 4px 26px 4px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: #fff;
+    line-height: 1;
+    background-color: #41b883!important;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: white;
 }
