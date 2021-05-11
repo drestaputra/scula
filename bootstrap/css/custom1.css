@@ -1208,3 +1208,24 @@ fieldset[disabled] .btn-warning-gradient.focus {
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
     color: white;
 }
+.d-flex {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.flex-column {
+    -webkit-box-orient: vertical!important;
+    -ms-flex-direction: column!important;
+    flex-direction: column!important;
+}
+.flex-column, .flex-row {
+    -webkit-box-direction: normal!important;
+}
+.align-items-center {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.integration-account-icon{
+    width: 50px;
+}
