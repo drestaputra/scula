@@ -238,12 +238,15 @@
                             </div>
                             <div class="col-md-6 pull-right">
                                 <div class="form-group pull-right">
-                                <div class="input-group" style="display: block;">
-                                    <button type="button" class="btn btn-default pull-right btn-rounded-20" id="daterange-btn"> 
-                                        <span class="material-icons md-18">date_range</span> Date range picker
-                                        <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
-                                    </button>
-                                </div>
+                                    <div class="input-group" style="display: block;">
+                                        
+                                        <button type="button" class="btn btn-default pull-right btn-rounded-20" id="daterange-btn"> 
+                                          <span class="material-icons md-18">date_range</span> <span class="span-label">Date range picker</span>
+                                          <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
+                                      </button>
+
+                                      
+                                  </div>
                             </div>
                             </div>
                         </div>
@@ -541,22 +544,27 @@
                 $this.sparkline('html',pie);
             });
             $('#example1').DataTable();
-            $('#daterange-btn').daterangepicker({
-                    ranges: {
-                        Today: [moment(), moment()],
-                        Yesterday: [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                        'This Month': [moment().startOf('month'), moment().endOf('month')],
-                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
-                    },
-                    startDate: moment().subtract(29, 'days'),
-                    endDate: moment(),
-                },
-                function(start, end) {
-                    $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-                }
-            );
+            $(function() {
+    $('#daterange-btn').daterangepicker({
+          ranges: {
+                  'Today': [moment(), moment()],
+                  'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                  'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                  'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                  'This Month': [moment().startOf('month'), moment().endOf('month')],
+                  'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+              },
+              "alwaysShowCalendars": true,
+              "startDate": "05/04/2021",
+              "endDate": "05/10/2021",
+              "opens": "left"
+          }, function(start, end, label) {
+
+            $("#daterange-btn .span-label").html(
+            start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+          );
+        });
+  });
         });
     </script>
 </body>

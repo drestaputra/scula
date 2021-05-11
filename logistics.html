@@ -236,10 +236,14 @@
             <!-- Date and time range -->
             <div class="form-group">
               <div class="input-group">
+                
+                
                 <button type="button" class="btn btn-default pull-right btn-rounded-20" id="daterange-btn"> 
                   <span class="material-icons md-18">date_range</span> <span class="span-label">Date range picker</span>
                   <span class="material-icons-outlined md-18">arrow_drop_down_circle</span>
                 </button>
+              
+              
               </div>
             </div>
           </div>
@@ -479,66 +483,26 @@ Highcharts.mapChart('map', {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 <script src="plugins/daterangepicker/daterangepicker.js"></script>
 <script>
-  $(function () {
-    //Date range as a button
+  $(function() {
     $('#daterange-btn').daterangepicker({
-      "singleDatePicker": true,
-      "showDropdowns": true,
-      "showWeekNumbers": true,
-      "showISOWeekNumbers": true,
-      ranges: {
-          'Today': [moment(), moment()],
-          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-          'This Month': [moment().startOf('month'), moment().endOf('month')],
-          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-      },
-      "locale": {
-          "format": "MM/DD/YYYY",
-          "separator": " - ",
-          "applyLabel": "Apply",
-          "cancelLabel": "Cancel",
-          "fromLabel": "From",
-          "toLabel": "To",
-          "customRangeLabel": "Custom",
-          "weekLabel": "W",
-          "daysOfWeek": [
-              "Su",
-              "Mo",
-              "Tu",
-              "We",
-              "Th",
-              "Fr",
-              "Sa"
-          ],
-          "monthNames": [
-              "January",
-              "February",
-              "March",
-              "April",
-              "May",
-              "June",
-              "July",
-              "August",
-              "September",
-              "October",
-              "November",
-              "December"
-          ],
-          "firstDay": 1
-      },
-      "alwaysShowCalendars": true,
-      "startDate": "05/04/2021",
-      "endDate": "05/10/2021",
-      "opens": "left",
-      "drops": "auto"
-    }, function(start, end, label) {
+          ranges: {
+                  'Today': [moment(), moment()],
+                  'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                  'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                  'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                  'This Month': [moment().startOf('month'), moment().endOf('month')],
+                  'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+              },
+              "alwaysShowCalendars": true,
+              "startDate": "05/04/2021",
+              "endDate": "05/10/2021",
+              "opens": "left"
+          }, function(start, end, label) {
 
-        $("#daterange-btn .span-label").html(
-          start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
-        );
-    });
+            $("#daterange-btn .span-label").html(
+            start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+          );
+        });
   });
 </script>
 <!-- InputMask -->
