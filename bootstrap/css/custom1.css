@@ -401,6 +401,9 @@ nav.navbar.navbar-static-top {
 .bg-abu-abu{
     background: #e8e8e8;
 }
+.bg-white{
+    background: white;
+}
 @media (min-width: 1600px) and (min-width: 1400px){
     .container {
         width: 1650px!important;
@@ -1234,4 +1237,43 @@ fieldset[disabled] .btn-warning-gradient.focus {
 }
 .integration-account-icon{
     width: 50px;
+}
+.order-edit-section-title {
+    padding: 1em 1.5em;
+    background-color: #f6f6f6;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.order-edit-section-content {
+    padding: 1em 1.5em;
+}
+.container-fluid-custom {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.order-edit-sidebar {
+    background-color: #f6f6f6;
+    border-left: 1px solid #ddd;
+}
+.order-edit-sidebar .order-edit-section-title {
+    border-bottom: 0;
+    cursor: inherit;
+}
+.justify-content-between {
+    -webkit-box-pack: justify!important;
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+.order-edit-section-content label{
+    width: 100%;
+}
+.order-edit-section-content .select2-container{
+    width: 100%!important;
+}
+.bannerformmodal .container-fluid-custom{
+    background: #f6f6f6;
 }
