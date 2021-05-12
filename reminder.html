@@ -229,7 +229,7 @@
         
         <!-- Search Data -->
         <div class="row mb-20">
-          <div class="col-md-4">
+          <div class="col-md-8">
             <div class="table-header-menu">
               <button type="button" data-toggle="modal" data-target="#modalCreateNote" class="btn btn-default btn-md mr-5"><span class="material-icons-outlined md-16">edit</span> Create Note</button>
               <div class="dropdown">
@@ -249,11 +249,17 @@
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                       <h4 class="modal-title" id="myModalLabel"><b>Create Note</b></h4>
                     </div>
-                    <form> 
-                      <div class="form-group">
-                        <textarea class="form-control" rows="5" placeholder="Start typing to leave a note..."></textarea>
-                      </div>
-                    </form>
+                    <div class="modal-body">
+                      <form> 
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" rows="5" placeholder="Start typing to leave a note..."></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                       <button type="submit" class="btn btn-primary">Save</button>
@@ -299,26 +305,28 @@
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                       <h4 class="modal-title" id="myModalLabel"><b>Send Email</b></h4>
                     </div>
-                    <form class="form-border"> 
-                      <div class="form-group pl-20 p-7 m-0">
-                        <label>To 0 Contact</label>
-                      </div>
-                      <div class="form-group row pl-20 p-7 m-0">
-                        <label for="email-to" class="col-xs-3">From</label>
-                        <div class="col-xs-9">
-                          <input type="text" value="yokayuga@gmail.com" class="form-control" name="">
+                    <div class="modal-body">
+                      <form class="form-border"> 
+                        <div class="form-group pl-20 p-7 m-0">
+                          <label>To 0 Contact</label>
                         </div>
-                      </div>
-                      <div class="form-group row pl-20 p-7 m-0">
-                        <label for="email-to" class="col-xs-3">Subject</label>
-                        <div class="col-xs-9">
-                          <input type="text" class="form-control" name="" placeholder="Add a subject">
+                        <div class="form-group row pl-20 p-7 m-0">
+                          <label for="email-to" class="col-xs-3">From</label>
+                          <div class="col-xs-9">
+                            <input type="text" value="yokayuga@gmail.com" class="form-control" name="">
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-group">
-                        <textarea class="form-control" rows="5" placeholder="Start type..."></textarea>
-                      </div>
-                    </form>
+                        <div class="form-group row pl-20 p-7 m-0">
+                          <label for="email-to" class="col-xs-3">Subject</label>
+                          <div class="col-xs-9">
+                            <input type="text" class="form-control" name="" placeholder="Add a subject">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control" rows="5" placeholder="Start type..."></textarea>
+                        </div>
+                      </form>
+                    </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                       <button type="submit" class="btn btn-primary">Save</button>
@@ -477,7 +485,7 @@
 
             </div>
           </div>
-            <div class="col-md-8">
+            <div class="col-md-4">
               <div class="pull-right">
                 <div class="inline-block">
                   <input type="text" class="form-control" name="" placeholder="Search..">
@@ -591,23 +599,27 @@
     });
 
     //Date range as a button
-    $('#daterange-btn').daterangepicker(
-        {
-          ranges: {
-            'Today': [moment(), moment()],
-            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-            'This Month': [moment().startOf('month'), moment().endOf('month')],
-            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-          },
-          startDate: moment().subtract(29, 'days'),
-          endDate: moment()
-        },
-        function (start, end) {
-          $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-        }
-    );
+    $(function() {
+        $('#daterange-btn').daterangepicker({
+            ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                },
+                "alwaysShowCalendars": true,
+                "startDate": "05/04/2021",
+                "endDate": "05/10/2021",
+                "opens": "left"
+            }, function(start, end, label) {
+
+                $("#daterange-btn .span-label").html(
+                start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+            );
+            });
+    });
   });
 </script>
 <!-- InputMask -->

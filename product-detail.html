@@ -37,7 +37,7 @@
                     <div class="navbar-header">
                         <a href="#" class="navbar-brand"><b>Scula</b></a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                            <i class="fa fa-bars"></i>
+                            <span class="material-icons-outlined">horizontal_split</span>
                         </button>
                     </div>
 
@@ -236,7 +236,7 @@
 
                     <div class="row mb-20">
                         <div class="col-md-2 btn-group-modal">
-                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalFollow"><span class="material-icons-outlined md-20">title</span> Follow-up Text</button>
+                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalFollow"><span class="material-icons-outlined md-20">title</span> Follow-up Text</button>
                             <!-- Modal Follow -->
                             <div class="modal fade" id="modalFollow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog modal-xl" role="document">
@@ -537,7 +537,7 @@
                         </div>
 
                         <div class="col-md-2 btn-group-modal">
-                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalContact"><span class="material-icons-outlined md-20">account_circle</span> Google Contacts</button>
+                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalContact"><span class="material-icons-outlined md-20">account_circle</span> Google Contacts</button>
                             <!-- Modal Contact -->
                             <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
@@ -567,7 +567,7 @@
                         </div>
 
                         <div class="col-md-2 btn-group-modal">
-                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalAutoresponder"><span class="material-icons-outlined md-20">email</span> Autoresponder</button>
+                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalAutoresponder"><span class="material-icons-outlined md-20">email</span> Autoresponder</button>
                             <!-- Modal Autoresponder -->
                             <div class="modal fade" id="modalAutoresponder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
@@ -731,7 +731,7 @@
                         </div>
 
                         <div class="col-md-2 btn-group-modal">
-                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalCustomAudience"><span class="material-icons-outlined md-20">facebook</span> Custom Audience</button>
+                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalCustomAudience"><span class="material-icons-outlined md-20">facebook</span> Custom Audience</button>
                             <!-- Modal Custom Audience -->
                             <div class="modal fade" id="modalCustomAudience" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
@@ -877,7 +877,7 @@
                         </div>
 
                         <div class="col-md-2 btn-group-modal">
-                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalNotifications"><span class="material-icons-outlined md-20">notifications</span> Notifications</button>
+                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalNotifications"><span class="material-icons-outlined md-20">notifications</span> Notifications</button>
                             <!-- Modal Notifications -->
                             <div class="modal fade" id="modalNotifications" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
@@ -919,7 +919,7 @@
                         </div>
 
                         <div class="col-md-2 btn-group-modal">
-                            <button type="button" class="btn btn-lg btn-default btn-block" data-toggle="modal" data-target="#modalAssignation"><span class="material-icons-outlined md-20">people</span> Assingation</button>
+                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modalAssignation"><span class="material-icons-outlined md-20">people</span> Assingation</button>
                             <!-- Modal Assignation -->
                             <div class="modal fade" id="modalAssignation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
@@ -1157,7 +1157,7 @@
                     </div>
 
                     <div class="row mb-20">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <a href="#" class="btn btn-primary btn-group-modal"><span class="material-icons-outlined md-16">add</span> Create Checkout Page</a>
                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalEmbedCheckoutPage"><span class="material-icons-outlined md-16">code</span> Embed Checkout Page</button>
                             <!-- Modal Embed Checkout Page -->
@@ -1500,22 +1500,27 @@
             });
                 
             //Date picker
-            $('#daterange-btn').daterangepicker({
+            $(function() {
+                $('#daterange-btn').daterangepicker({
                     ranges: {
-                        Today: [moment(), moment()],
-                        Yesterday: [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                        'This Month': [moment().startOf('month'), moment().endOf('month')],
-                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
-                    },
-                    startDate: moment().subtract(29, 'days'),
-                    endDate: moment(),
-                },
-                function(start, end) {
-                    $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-                }
-            );
+                            'Today': [moment(), moment()],
+                            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                            'This Month': [moment().startOf('month'), moment().endOf('month')],
+                            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                        },
+                        "alwaysShowCalendars": true,
+                        "startDate": "05/04/2021",
+                        "endDate": "05/10/2021",
+                        "opens": "left"
+                    }, function(start, end, label) {
+
+                        $("#daterange-btn .span-label").html(
+                        start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+                    );
+                    });
+            });
         });
     </script>
 </body>

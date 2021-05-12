@@ -40,7 +40,7 @@
                     <div class="navbar-header">
                         <a href="#" class="navbar-brand"><b>Scula</b></a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                            <i class="fa fa-bars"></i>
+                            <span class="material-icons-outlined">horizontal_split</span>
                         </button>
                     </div>
 
@@ -487,6 +487,30 @@
     <script src="plugins/bootstrap-slider/bootstrap-slider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
     <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <script>
+        //Date picker
+        $(function() {
+                $('#daterange-btn').daterangepicker({
+                    ranges: {
+                            'Today': [moment(), moment()],
+                            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                            'This Month': [moment().startOf('month'), moment().endOf('month')],
+                            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                        },
+                        "alwaysShowCalendars": true,
+                        "startDate": "05/04/2021",
+                        "endDate": "05/10/2021",
+                        "opens": "left"
+                    }, function(start, end, label) {
+
+                        $("#daterange-btn .span-label").html(
+                        start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+                    );
+                    });
+            });
+    </script>
     <!-- DataTables -->
     <script src="plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
@@ -513,23 +537,7 @@
                 }
             });
                 
-            //Date picker
-            $('#daterange-btn').daterangepicker({
-                    ranges: {
-                        Today: [moment(), moment()],
-                        Yesterday: [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                        'This Month': [moment().startOf('month'), moment().endOf('month')],
-                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
-                    },
-                    startDate: moment().subtract(29, 'days'),
-                    endDate: moment(),
-                },
-                function(start, end) {
-                    $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-                }
-            );
+            
         });
     </script>
 </body>
