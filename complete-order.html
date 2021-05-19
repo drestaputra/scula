@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Complete Order | Toko Ghoib</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/custom1.css">
+  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+</head>
+
+<body class="hold-transition login-page">
+  <div class="container">
+    <div class="panel-complete-order text-center">
+      <div class="panel">
+        <div class="panel-body">
+          <div class="panel-header-complete">
+              <h3 class="panel-title-complete">Terimakasih sudah melakukan pemesanan akun OrderOnline paket Business</</h3>
+          </div>
+          <div class="row">
+            <p>Untuk menyelesaikan proses order, silahkan transfer sejumlah </p>
+            <div class="complete-total-price">Rp. 2.000.<span class="unique">643</span></div>
+            <div>
+              <div class="unique-desc"><b>PENTING!</b> Mohon transfer sesuai sampai dengan 3 digit terakhir</div>
+            </div>
+            <div>
+              <button class="btn btn-sm btn-copy" data-text="249698" type="button"><span class="material-icons-outlined">content_copy</span> Salin Jumlah</button>
+            </div>
+            <p class="m-20-0">ke salah satu bank berikut ini:</p>
+            <div class="bank-accounts">
+              <div class="row">
+              <div class="bank-account col-md-12">
+                <div class="bank-brand"><img src="https://orderonline.id/images/bank-bca.png" /></div>
+                <div class="bank-account_number">No. Rek: <strong>8745130301</strong></div>
+                <div class="bank-account_name">Atas nama: <span class="bank-account_name-value">Rovan Alfarry</span></div>
+                <div class="bank-account_copy"><button class="btn btn-sm btn-copy mb-0" type="button" data-text="8745130301"><span class="material-icons-outlined">content_copy</span> Salin No. Rekening</button></div>
+              </div>
+              </div>
+            </div>
+            <p class="m-20-10">Kami juga telah mengirimkan email yang berisi detail pemesanan akun OrderOnline.id Anda</p>
+            <p class="m-20-10">Setalah melakukan pembayaran, dalam waktu 10 s/d 20 menit Anda akan menerima email yang berisi informasi login/akses ke member area Anda</p>
+            <p class="m-20-10">Jika lebih dari 30 menit Anda belum mendapatkan informasi login, silahkan hubungi kami di lewat email support@orderonline.id atau hubungi kami via Live Chat.</p>
+          </div>
+        </div>
+        <div class="panel-footer">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="temp-input"></div>
+      
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script type="text/javascript">
+  $('.btn-copy').on('click', function(e) {
+      e.preventDefault();
+
+      var copyText = $(this).attr('data-text');
+
+      var textarea = document.createElement("textarea");
+      textarea.textContent = copyText;
+      textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in MS Edge.
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy"); 
+
+      document.body.removeChild(textarea);
+  })
+
+</script>
+</body>
+</html>

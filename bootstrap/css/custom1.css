@@ -332,6 +332,12 @@ nav.navbar.navbar-static-top {
     font-size: .8em;
     font-weight: 400;
 }
+.m-20-0{
+    margin: 20px 0px;
+}
+.m-20-10{
+    margin: 20px 10px;
+}
 .mt-0 {
     margin-top: 0 !important;
 }
@@ -1276,4 +1282,81 @@ fieldset[disabled] .btn-warning-gradient.focus {
 }
 .bannerformmodal .container-fluid-custom{
     background: #f6f6f6;
+}
+.panel-complete-order{
+    margin: 0 auto;
+    padding-top: 1em;
+    max-width: 60em;
+    min-height: 100%;
+}
+.panel-complete-order .panel-body{
+    background-color: #fff;
+    -webkit-box-shadow: 1px -1px 2em rgb(181 181 181 / 30%);
+    box-shadow: 1px -1px 2em rgb(181 181 181 / 30%);
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 30px;
+}
+.panel-header-complete{
+    margin: 20px auto;
+    max-width: 640px;
+    color: #252525;
+    font-size: 30px;
+    font-weight: 700;
+}
+.panel-title-complete{
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+}
+.complete-total-price{
+    display: inline-block;
+    color: #51ae7d;
+    line-height: 2.2;
+    font-size: 2em;
+    font-weight: 700;
+}
+.complete-total-price .unique{
+    display: inline-block;
+    position: relative;
+    color: #f7ad00;
+}
+.unique-desc{
+    display: inline-block;
+    padding: 0.9em 1.2em;
+    font-size: 1em;
+    border-radius: 3px;
+    background-color: #fcc84d;
+    color: black;
+}
+.btn-copy {
+    margin: 0.9em 0;
+    padding: .6em 1.1em;
+    border: 1px solid #555!important;
+    background-color: transparent!important;
+}
+.bank-accounts {
+    margin: auto;
+    margin-top: 30px;
+    max-width: 700px;
+}
+.bank-account {
+    margin-top: -1px;
+    margin-left: -1px;
+    padding: 1.5em;
+    min-width: 50%;
+    border: 1px dashed #a9a9a9;
+    text-align: center;
+}
+.bank-account:only-child {
+    margin-left: auto;
+    margin-right: auto;
+}
+.panel-complete-order .panel-footer{
+    height: 20px;
+    background-color: #e04b4b;
+}
+.btn-copy:hover {
+    color: #fff;
+    background-color: #555!important;
 }
