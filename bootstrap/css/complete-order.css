@@ -1,0 +1,146 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+.material-icons, .material-icons-outlined{
+    vertical-align: middle !important;
+    padding-bottom: 3px;
+}
+.material-icons-two-tone.md, .material-icons-outlined.md,.material-icons.md-6 { font-size: 6px; }
+.material-icons-two-tone.md-12, .material-icons-outlined.md-12,.material-icons.md-12 { font-size: 12px; }
+.material-icons-two-tone.md-13, .material-icons-outlined.md-13,.material-icons.md-13 { font-size: 13px; }
+.material-icons-two-tone.md-16, .material-icons-outlined.md-16,.material-icons.md-16 { font-size: 16px; }
+.material-icons-two-tone.md-18, .material-icons-outlined.md-18,.material-icons.md-18 { font-size: 18px; }
+.material-icons-two-tone.md-24, .material-icons-outlined.md-24,.material-icons.md-24 { font-size: 24px; }
+.material-icons-two-tone.md-36, .material-icons-outlined.md-36,.material-icons.md-36 { font-size: 36px; }
+.material-icons-two-tone.md-48, .material-icons-outlined.md-48,.material-icons.md-48 { font-size: 48px; }
+.material-icons-two-tone.md-60, .material-icons-outlined.md-60,.material-icons.md-60 { font-size: 60px; }
+
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.panel-complete-order{
+    margin: 0 auto;
+    padding-top: 1em;
+    max-width: 60em;
+    min-height: 100%;
+}
+.panel-complete-order .panel-body{
+    background-color: #fff;
+    -webkit-box-shadow: 1px -1px 2em rgb(181 181 181 / 30%);
+    box-shadow: 1px -1px 2em rgb(181 181 181 / 30%);
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 30px;
+}
+.panel-header-complete{
+    margin: 20px auto;
+    max-width: 640px;
+    color: #252525;
+    font-size: 30px;
+    font-weight: 700;
+}
+.panel-title-complete{
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+}
+.complete-total-price{
+    display: inline-block;
+    color: #51ae7d;
+    line-height: 2.2;
+    font-size: 2em;
+    font-weight: 700;
+}
+.complete-total-price .unique{
+    display: inline-block;
+    position: relative;
+    color: #f7ad00;
+}
+.unique-desc{
+    display: inline-block;
+    padding: 0.9em 1.2em;
+    font-size: 1em;
+    border-radius: 3px;
+    background-color: #fcc84d;
+    color: black;
+}
+.btn-copy {
+    margin: 0.9em 0;
+    padding: .6em 1.1em;
+    border: 1px solid #555!important;
+    background-color: transparent!important;
+}
+.bank-accounts {
+    margin: auto;
+    margin-top: 30px;
+    max-width: 700px;
+}
+.bank-account {
+    margin-top: -1px;
+    margin-left: -1px;
+    padding: 1.5em;
+    min-width: 50%;
+    border: 1px dashed #a9a9a9;
+    text-align: center;
+}
+.bank-account:only-child {
+    margin-left: auto;
+    margin-right: auto;
+}
+.panel-complete-order .panel-footer{
+    height: 20px;
+    background-color: #e04b4b;
+}
+.btn-copy:hover {
+    color: #fff;
+    background-color: #555!important;
+}
+
+.panel-complete-order .panel-footer{
+    color: #9a9d9e;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5em;
+}
+.m-20-0{
+    margin: 20px 0px;
+}
+.m-20-10{
+    margin: 20px 10px;
+}
+.m-auto{
+	margin: auto;
+}
+.app-footer{
+	padding: 4em;
+    text-align: center;
+}

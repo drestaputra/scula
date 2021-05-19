@@ -1360,3 +1360,12 @@ fieldset[disabled] .btn-warning-gradient.focus {
     color: #fff;
     background-color: #555!important;
 }
+
+.panel-complete-order .panel-footer{
+    color: #9a9d9e;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5em;
+}
