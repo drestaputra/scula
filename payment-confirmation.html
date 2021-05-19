@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Payment Confirmation | Toko Ghoib</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/custom2.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+</head>
+
+<body class="hold-transition login-page">
+  <div id="app">
+		<div class="container">
+			<div class="app-wrapper-payment app-wrapper-single">
+				<div class="app-content">
+          <div class="">
+            <div class="app-header">
+              <div class="app-header__logo">
+                <img src="dist/img/scula/logo.png" width="100" alt="toko-ghoib" title="toko-ghoib">
+              </div>
+              <h1 class="app-header__title">Konfirmasi Pembayaran</h1>
+              <h2 class="app-header__description"></h2>
+            </div>
+
+            <div class="card-confirmation">
+              <form action="" method="POST" class="form form-fluid" id="payment-confirmation-form" enctype="multipart/form-data">
+                <!-- <input type="hidden" name="_token" value="hRghK1bXRhfIj9j7wIjTJBpLO0PHdwnFyZAQ91dd">				
+                <input type="hidden" name="redirect_url" class="form-control" id="field-redirect-url" value="https://buy.orderonline.id/payment-success" required>
+                <input type="hidden" name="username" class="form-control" id="field-username" value="buy" required>
+                <input type="hidden" name="receipt_url" class="form-control" id="field-receipt-url" value=""> -->
+                <div class="form-group">
+                  <label for="field-order_id"><b>Order ID <span class="text-danger">*</span></b></label>
+                    <input type="text" name="order_id"  class="form-control" id="field-order_id" placeholder="No. Pesanan" value="40794772" required>
+                  </div>
+                <div class="form-group">
+                  <label for="field-account_name"><b>Atas Nama Rekening <span class="text-danger">*</span></b></label>
+                  <input type="text" name="account_name"  class="form-control" id="field-account_name" placeholder="Pemilik Rekening" value="" required>
+                </div>
+                <div class="form-group">
+                  <label for="field-transfer_to"><b>Transfer ke <span class="text-danger">*</span></b></label>
+                  <select type="text" name="transfer_to" class="select form-control" id="field-transfer_to" value="" required>
+                    <option value="BCA - Rovan Alfarry - 8745130301">BCA - Rovan Alfarry - 8745130301</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="field-transfer_date"><b>Tanggal Transfer <span class="text-danger">*</span></b></label>
+                  <input type="date" name="transfer_date"  class="form-control" id="field-transfer_date" placeholder="Tanggal Transfer" value="2021-05-19" required>
+                </div>
+                <div class="form-group">
+                  <label for="field-transfer_amount"><b>Jumlah Transfer <span class="text-danger">*</span></b></label>
+                  <input type="number" name="transfer_amount"  class="form-control" id="field-transfer_amount" placeholder="Contoh =&gt;  10000" value="" required>
+                </div>
+                <div class="form-group">
+                  <label for="field-transfer_receipt"><b>Bukti Transfer </b></label>
+                  <input type="file" name="transfer_receipt" accept=image/* class="form-control" id="field-transfer_receipt" placeholder="" value="" >
+                </div>
+
+                <div class="receipt-preview mb-2 hidden" id="receipt-preview">
+                  <img src="" id="receipt-preview-image">
+                  <button type="button" class="btn btn-plain" id="receipt-remove">Hapus Gambar</button>
+                </div>
+          
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-lg btn-block mt-4" id="payment-confirmation-form-submit">Kirim</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+				<div class="app-footer">
+					<div class="footer-title">
+						Powered by
+							<img src="dist/img/scula/logo.png" width="100" class="img-responsive m-auto" alt="toko-ghoib">
+						</div>
+						<div class="footer-copyright">Copyright &copy; 2021</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
