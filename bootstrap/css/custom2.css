@@ -52,6 +52,9 @@ body {
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
+.m-auto {
+    margin: auto;
+}
 .mb-1, .my-1 {
     margin-bottom: .25rem!important;
 }
@@ -462,6 +465,88 @@ input:checked + .switch-slider:before {
     background-color: #eee;
 }
 
+/* PAYMENT CONFIRMATION */
+.app-wrapper-payment {
+    max-width: 500px;
+    padding-top: 1em;
+}
+.app-wrapper-single {
+    min-height: 100%;
+    margin: 0 auto;
+}
+.app-wrapper-success {
+    min-height: 100%;
+    max-width: 43em;
+    margin: 0 auto;
+}
+.app-header {
+    padding: 1em;
+    text-align: center;
+}
+.app-header__logo {
+    margin-bottom: .5em;
+}
+.app-header__logo {
+    margin: auto;
+    margin-bottom: 1em;
+    max-width: 15em;
+}
+.app-header__logo img {
+    max-width: 100%;
+    height: auto;
+}
+.payment-confirmation .app-header__title {
+    font-size: 1.5em;
+}
+.app-header__title {
+    margin-top: .5em;
+    color: #000;
+    color: #252525;
+    font-size: 1.75em;
+    text-align: center;
+    font-weight: 700;
+}
+.card-confirmation {
+    padding: 2em 1em;
+    border: 0;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 1px -1px 2em rgb(181 181 181 / 30%);
+    box-shadow: 1px -1px 2em rgb(181 181 181 / 30%);
+    overflow: hidden;
+    background-clip: border-box;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    display: flex;
+    position: relative;
+}
+.app-header__description {
+    margin-bottom: 3rem;
+    color: #949494;
+    font-size: 1.2em;
+}
+.app-footer {
+    padding: 4em;
+    text-align: center;
+}
+.footer-title {
+    color: #9a9d9e;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5em;
+}
+.footer-copyright {
+    color: #babbbb;
+    font-size: .7em;
+}
+.confirmation-seccess-message {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
 /* PROFILE */
 .card-box {
     background-color: #fff;
@@ -646,6 +731,12 @@ input:checked + .switch-slider:before {
 }
 
 @media (min-width: 768px) {
+    .app-header {
+        font-size: 1em;
+    }
+    .card-confirmation {
+        padding: 2em;
+    }
     .nav-justified>li {
         background-color: #fff;
         border-right: 1px solid #ddd;
