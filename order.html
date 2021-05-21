@@ -2097,8 +2097,31 @@
                                             <td>-</td>
                                             <td>-</td>
                                             <td>-</td>
-                                            <td>1 2 3 4</td>
+                                            <td style="min-width: 300px;">
+                                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalWelcomeFollowUp" data-placement="top" title="Welcome">W</button>
+                                                <button type="button" class="btn btn-grey" data-toggle="modal" data-target="#modalFollowUp1" data-placement="top" title="Follow-Up 1">1</button>
+                                                <button type="button" class="btn btn-grey" data-toggle="modal" data-target="#modalFollowUp1" data-placement="top" title="Follow-Up 2">2</button>
+                                                <button type="button" class="btn btn-grey" data-toggle="modal" data-target="#modalFollowUp1" data-placement="top" title="Follow-Up 3">3</button>
+                                                <button type="button" class="btn btn-grey" data-toggle="modal" data-target="#modalFollowUp1" data-placement="top" title="Follow-Up 4">4</button>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-grey dropdown-toggle" data-toggle="dropdown" data-placement="top" title="More" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="material-icons-outlined md-16">more_vert</span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><label style="padding: 3px 10px;">Whatsapp</label></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalFollowUp1">Up Selling</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalFollowUp1">Order Detail</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalFollowUp1">Processing</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalFollowUp1">Completed</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><label style="padding: 3px 10px;">Whatsapp</label></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalSms">Send SMS</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalPhoneCall">Phone Call</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
                                         </tr>
+
                                         <tr>
                                             <td>
                                                 <div class="checkbox">
@@ -2138,7 +2161,29 @@
                                             <td>-</td>
                                             <td>-</td>
                                             <td>-</td>
-                                            <td>W 1 2 3 4</td>
+                                            <td style="min-width: 300px;">
+                                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalWelcomeFollowUp" data-placement="top" title="Welcome">W</button>
+                                                <button type="button" class="btn btn-grey" data-toggle="modal" data-target="#modalFollowUp1" data-placement="top" title="Follow-Up 1">1</button>
+                                                <button type="button" class="btn btn-grey" data-toggle="modal" data-target="#modalFollowUp1" data-placement="top" title="Follow-Up 2">2</button>
+                                                <button type="button" class="btn btn-grey" data-toggle="modal" data-target="#modalFollowUp1" data-placement="top" title="Follow-Up 3">3</button>
+                                                <button type="button" class="btn btn-grey" data-toggle="modal" data-target="#modalFollowUp1" data-placement="top" title="Follow-Up 4">4</button>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-grey dropdown-toggle" data-toggle="dropdown" data-placement="top" title="More" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="material-icons-outlined md-16">more_vert</span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><label style="padding: 3px 10px;">Whatsapp</label></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalFollowUp1">Up Selling</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalFollowUp1">Order Detail</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalFollowUp1">Processing</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalFollowUp1">Completed</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><label style="padding: 3px 10px;">Whatsapp</label></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalSms">Send SMS</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modalPhoneCall">Phone Call</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -2411,7 +2456,147 @@
             </div>
         </div>
     </div>
-    <!-- end modal edit 7 invoice order -->
+    
+    <!-- Modal Welcome Follow Up-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalWelcomeFollowUp">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Welcome</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Name: </label> Test Dev Rizal
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="text" value="62888888888888" placeholder="Phone Number" class="form-control">
+                        </div>
+                        <div class="Text">
+                            <label>Text</label>
+                            <textarea placeholder="Text" rows="5" class="form-control">Selamat datang di Toko kami Test Dev Rizal ☺️
+
+                                Kami sudah terima pesanan anda dengan rincian sebagai berikut,
+                                Produk: Dev test produk
+                                Harga: Rp50.000
+                                Ongkir: Rp17.000
+                                Total: Rp67.000
+                                
+                                
+                                Dikirim ke:
+                                Nama: Test Dev Rizal
+                                No HP: +62888888888888
+                                Alamat: Casa Grande Sleman
+                                Kota: Kab. Sleman
+                                Kecamatan: Depok
+                                
+                                
+                                Silahkan transfer senilai Rp67.000, ke salah satu rekening dibawah ini:
+                                BCA
+                                No. Rek: 7880768942
+                                Atas Nama: Rizhan</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Follow Up</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Follow Up 1-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalFollowUp1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Follow Up 1</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Name: </label> Test Dev Rizal
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="text" value="62888888888888" placeholder="Phone Number" class="form-control">
+                        </div>
+                        <div class="Text">
+                            <label>Text</label>
+                            <textarea placeholder="Text" rows="5" class="form-control">Hari ini mau transfer jam berapa Test Dev Rizal?
+                                Pesanan kami siapkan ya...</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Follow Up</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Phone Call-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalPhoneCall">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Follow Up</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Name: </label> Test Dev Rizal
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="text" value="62888888888888" placeholder="Phone Number" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Call</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SMS-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalSms">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Sms</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sms-gateway">
+                            <p>Integrate your SMS Gateway account to start using the auto sms feature</p>
+                            <button type="button" class="btn btn-primary">Integrate SMS Gateway</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <!-- /.content-wrapper -->
         <footer class="main-footer">
