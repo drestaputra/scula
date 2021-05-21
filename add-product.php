@@ -445,5 +445,10 @@
 <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
 <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
 
+<script src="add-product.js"></script>
+<script src="checkout.js"></script>
+<script src="success-page.js"></script>
+
+
 </body>
 </html>

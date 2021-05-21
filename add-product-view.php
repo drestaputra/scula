@@ -1,7 +1,7 @@
 <div class="row">
           <div class="col-md-6">
             <!-- Error Message -->
-            <div class="card mb-100">
+            <div class="card mb-20">
               <div class="card-body">
                 <h4><i class="fa fa-warning text-red"></i> Please fix fields error before proceeding to next step</h4>
                 <div class="callout callout-default" style="margin-bottom: 0!important;">
@@ -12,7 +12,7 @@
             
             <form>
               <!-- Options -->
-              <div class="card mb-100" id="options">
+              <div class="card mb-20" id="options">
                 <div class="card-header">Options</div>
                 <div class="card-body">
 
@@ -102,8 +102,8 @@
 
                 </div>
               </div>
-              <!-- Storefront -->
-              <div class="card mb-100" id="storefront">
+              <!-- Storefront BELUM DIPAKAI -->
+              <!-- <div class="card mb-20" id="storefront">
                 <div class="card-header">Storefront</div>
                 <div class="card-body">
 
@@ -134,9 +134,10 @@
                   </div>
 
                 </div>
-              </div>
+              </div> -->
+
               <!-- Images -->
-              <div class="card mb-100" id="images">
+              <div class="card mb-20" id="images">
                 <div class="card-header">Images</div>
                 <div class="card-body">
 
@@ -153,14 +154,14 @@
                 </div>
               </div>
               <!-- Pricing -->
-              <div class="card mb-100" id="pricing">
+              <div class="card mb-20" id="pricing">
                 <div class="card-header">Pricing</div>
                 <div class="card-body">
 
                   <label>Product Type <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Apakah produk ini memiliki variasi atau tidak"></i></label><br />
                   <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#simple" aria-controls="simple" role="tab" data-toggle="tab">Simple</a></li>
-                    <li role="presentation"><a href="#variable" aria-controls="variable" role="tab" data-toggle="tab">Variable</a></li>
+                    <!-- <li role="presentation"><a href="#variable" aria-controls="variable" role="tab" data-toggle="tab">Variable</a></li> -->
                   </ul>
 
                   <div class="tab-content">
@@ -211,7 +212,8 @@
                         </div>
                       </div>
 
-                      <a role="button" data-toggle="collapse" href="#addWholesaleProces" aria-expanded="false" aria-controls="addWholesaleProces">
+                      <!-- BELUM DIPAKAI -->
+                      <!-- <a role="button" data-toggle="collapse" href="#addWholesaleProces" aria-expanded="false" aria-controls="addWholesaleProces">
                         Add Wholesale Prices
                       </a>
                       <div class="collapse" id="addWholesaleProces">
@@ -284,10 +286,11 @@
                             </tr>
                           </table>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
 
-                    <div role="tabpanel" class="tab-pane" id="variable">
+                    <!-- BELUM DIPAKAI -->
+                    <!-- <div role="tabpanel" class="tab-pane" id="variable">
                       <div class="form-group mt-100">
                         <label>Multiple Variations</label>
                         <div class="checkbox">
@@ -406,7 +409,7 @@
                                         <br>
                                         <small style="color: red;">Wholesale Price Error</small>
                                       </div>
-                                      <!-- Modal -->
+
                                       <div class="modal fade" id="modalWholesale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                         <div class="modal-dialog" role="document">
                                           <div class="modal-content">
@@ -501,13 +504,13 @@
                           </tbody>
                         </table>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
 
                 </div>
               </div>
               <!-- Inventory -->
-              <div class="card mb-100" id="inventory">
+              <div class="card mb-20" id="inventory">
                 <div class="card-header">Inventory</div>
                 <div class="card-body">
 
@@ -574,7 +577,7 @@
                 </div>
               </div>
               <!-- Bump -->
-              <div class="card mb-100" id="bump">
+              <div class="card mb-20" id="bump">
                 <div class="card-header">Bump</div>
                 <div class="card-body">
 
@@ -628,7 +631,7 @@
                 </div>
               </div>
               <!-- Shipping -->
-              <div class="card mb-100" id="shipping">
+              <div class="card mb-20" id="shipping">
                 <div class="card-header">Shipping</div>
                 <div class="card-body">
 
@@ -775,7 +778,7 @@
                 </div>
               </div>
               <!-- Payment -->
-              <div class="card mb-100" id="payment">
+              <div class="card mb-20" id="payment">
                 <div class="card-header">Payment</div>
                 <div class="card-body">
 
@@ -973,7 +976,7 @@
                 </div>
               </div>
               <!-- Unique Code -->
-              <div class="card mb-100" id="unique">
+              <div class="card mb-20" id="unique">
                 <div class="card-header">Unique Code</div>
                 <div class="card-body">
 
@@ -1015,7 +1018,7 @@
                 </div>
               </div>
               <!-- Assign Product to -->
-              <div class="card mb-100" id="assign">
+              <div class="card mb-20" id="assign">
                 <div class="card-header">Assign Product to</div>
                 <div class="card-body">
 
@@ -1045,7 +1048,7 @@
 
                             <div class="tab-content">
                               <div role="tabpanel" class="tab-pane active" id="equals">
-                                <div class="data-service mb-100">
+                                <div class="data-service mb-20">
                                   <label class="font-weight-thin">Putri Naura</label> <button class="btn btn-default"><i class="fa fa-close"></i></button>
                                 </div>
                               </div>
@@ -1334,7 +1337,7 @@
                     </div>
       
                     <div class="product-features">
-                      <div class="product-features-header section-title mb-100">
+                      <div class="product-features-header section-title mb-20">
                         <span>Yang Anda Dapatkan:</span>
                       </div>
                       
